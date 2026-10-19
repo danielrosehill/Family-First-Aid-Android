@@ -40,7 +40,7 @@ back; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keye
 back; back
 tap "Spaced review";       expect "1 of 56 completed"; shot 11-review
 back
-tap "Emergency services";  expect "Maccabi"; shot 12-numbers
+tap "Emergency services";  expect "Magen David Adom (ambulance)"; shot 12-numbers; scrollto "Maccabi Moked"; expect "Maccabi Moked"; shot 13-numbers-kupah
 
 if adb logcat -d | grep -E "FATAL EXCEPTION|AndroidRuntime: .*$PKG"; then echo "crash in logcat"; exit 1; fi
 adb shell pidof "$PKG" >/dev/null || { echo "app not running"; exit 1; }
