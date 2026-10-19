@@ -1,0 +1,120 @@
+{
+  "id": "IL-ADULT-RECOVERY-POSITION-001",
+  "title": "Recovery Position / Unconscious Breathing Casualty — Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "recovery_position",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Training Department Manual — Recovery Position (Tanukhat Hit'oshshut)",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-01-01",
+    "edition": "MDA Emergency Medicine Manual 2024; MDA BLS Guide 2016"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and Hatzalah sources. Neither United Hatzalah (1221.org.il) nor Hatzalah Without Borders (hatzalah.org.il) publish a standalone recovery position protocol. MDA is the sole public source. Additional reference: Doctors.co.il, WikiRefuah. Hebrew terminology: Tanukhat Hit'oshshut (recovery position) or Tanukhat Tzad (lateral position)."
+  },
+  "protocol": {
+    "summary": "Place an unconscious but breathing person in the recovery position to maintain an open airway and prevent aspiration.",
+    "when_to_apply": "Person is unconscious (unresponsive) but breathing, with no suspected spinal injury and no need for CPR.",
+    "call_emergency": {
+      "number": "101",
+      "when": "As soon as the person is confirmed unresponsive but breathing — call MDA at 101 before or immediately after placing in recovery position."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Check responsiveness: call out 'Are you OK?' (Ata beseder?) and tap or gently shake the shoulders.",
+        "detail": "Pinch the shoulders if needed to assess response.",
+        "decision_point": {
+          "condition": "Does the person respond?",
+          "if_yes": "The person is conscious. Assess their condition and provide appropriate first aid. Do not place in recovery position.",
+          "if_no": "The person is unresponsive. Proceed to Step 2."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Check the airway: open the person's mouth and look inside. Tilt the body to the side and use a gripping motion to clear any visible obstructions (food, dentures, vomit)."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Check breathing: look for chest movement, listen for breathing sounds, and feel for breath on your cheek. Take no more than 10 seconds.",
+        "decision_point": {
+          "condition": "Is the person breathing?",
+          "if_yes": "Proceed to Step 4 — prepare to place in recovery position.",
+          "if_no": "Begin CPR immediately. Do NOT place in recovery position."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Call MDA at 101. Report an unconscious but breathing casualty.",
+        "decision_point": {
+          "condition": "Is there a suspected spinal injury (fall from height, road accident, blow to head/neck, diving accident, or person complains of neck/back pain)?",
+          "if_yes": "Do NOT move the person unless they are in immediate danger (fire, drowning). Support the head and neck in line with the body if movement is absolutely necessary.",
+          "if_no": "Proceed to Step 5 to place in recovery position."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Kneel beside the person who is lying on their back."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Extend the arm nearest to you at a right angle to the body, palm facing up."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Take the far arm and fold it across the chest so the back of the hand rests against the cheek closest to you. Hold it in place."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Bend the far knee up to a right angle using your free hand."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Roll the person toward you by pulling on the bent knee. They should roll smoothly onto their side."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Adjust the top leg so both the hip and knee are bent at right angles, stabilising the position."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Tilt the head back slightly to keep the airway open. Adjust the hand under the cheek to maintain the head tilt.",
+        "detail": "The person should now be lying on their side with the higher shoulder angled toward the ground, knees bent for stability, and airway open to allow drainage."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Monitor the person continuously until MDA arrives.",
+        "detail": "Check breathing regularly. Monitor for vomiting — the position should allow natural drainage, but clear the mouth if needed. Keep the person warm with a blanket.",
+        "decision_point": {
+          "condition": "Has the person stopped breathing?",
+          "if_yes": "Roll them onto their back and begin CPR immediately.",
+          "if_no": "Continue monitoring. If in recovery position for more than 30 minutes, turn to the opposite side to prevent pressure injuries."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT place in recovery position if the person is not breathing — begin CPR instead.",
+      "Do NOT move a person with suspected spinal injury unless they are in immediate danger.",
+      "Do NOT leave the person unattended — monitor breathing continuously.",
+      "Do NOT place the person on their back if they are unconscious and breathing — risk of airway obstruction and aspiration.",
+      "Do NOT forget to call 101 — an unconscious person always requires professional medical evaluation."
+    ],
+    "equipment_needed": [
+      "Blanket (to keep the person warm)",
+      "Phone to call MDA at 101"
+    ]
+  },
+  "tags": [
+    "recovery position",
+    "unconscious",
+    "airway management",
+    "aspiration prevention",
+    "lateral position",
+    "tanukhat hito'shshut"
+  ]
+}

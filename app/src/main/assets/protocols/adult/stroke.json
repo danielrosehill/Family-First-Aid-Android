@@ -1,0 +1,112 @@
+{
+  "id": "IL-ADULT-STROKE-001",
+  "title": "Stroke (Cerebrovascular Event) - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "stroke",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Stroke Recognition and First Aid (אירוע מוחי / שבץ מוחי)",
+    "url": "https://www.mdais.org/101/stroke",
+    "edition": "MDA 101 Public First Aid Guidance Series; supplemented by Ynet article quoting Dr. Shfir Botner (Head of MDA Paramedic School) and United Hatzalah educational material"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No contradictions were found between the two sources. MDA provides more specific bystander action steps (positioning, do-not lists, note time), while United Hatzalah provides more detailed neurological educational content (brain anatomy, artery-specific symptoms, hemorrhagic subtypes). United Hatzalah's material is primarily educational rather than a step-by-step bystander protocol and does not include an explicit 'what not to do' list. MDA source page returned a 471 error when fetched directly; content confirmed via search engine excerpts and cached data. Publication dates not explicitly stated on either source. ALS protocol guide dated April 2024. United Hatzalah adds additional warning signs beyond FAST: sudden consciousness changes, seizures in adults without prior history, abrupt vision loss or memory problems."
+  },
+  "protocol": {
+    "summary": "Recognise stroke signs using FAST (Face, Arm, Speech, Time), call 101 immediately, note time of symptom onset, position the person safely, and await paramedics.",
+    "when_to_apply": "Person shows one or more signs of stroke: facial drooping or asymmetry, arm weakness or inability to raise one arm, slurred speech or difficulty forming words, sudden confusion, sudden severe headache, sudden vision loss, sudden loss of balance or coordination, sudden change in consciousness. Even a single FAST sign warrants immediate emergency evaluation.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon recognising any FAST sign. Do not wait to see if symptoms resolve. MDA dispatch will provide guidance and pre-notify the receiving hospital's stroke team."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess for stroke using the FAST method.",
+        "detail": "F (Face): Check for facial drooping or asymmetry -- ask the person to smile and look for one-sided drooping. A (Arm): Ask the person to extend both arms forward -- look for one arm drifting downward or inability to raise it. S (Speech): Listen for slurred speech or difficulty forming words -- ask the person to repeat a simple sentence. T (Time): Note the exact time when symptoms first appeared. MDA states that even a single one of these signs warrants immediate emergency evaluation."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Do not wait to see if symptoms improve. Do not drive the person to hospital yourself unless absolutely unavoidable -- the ambulance crew will pre-notify the hospital stroke team and can begin assessment en route. The treatment window is approximately 6 hours from symptom onset, with a target hospital arrival within 60 minutes.",
+        "warning": "Every minute of delay results in approximately two million neurons dying in the brain (per MDA). Time is critical."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Record and report the exact time of symptom onset.",
+        "detail": "This information is critical for hospital treatment decisions, particularly eligibility for thrombolytic (clot-dissolving) treatment. If the person went to sleep with normal function and woke with symptoms, record the onset time as when sleep began.",
+        "warning": "Without an accurate onset time, doctors may not be able to administer time-sensitive treatments."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Assess whether the person is conscious and breathing.",
+        "decision_point": {
+          "condition": "Is the person conscious?",
+          "if_yes": "Lay the person down with their head slightly raised and supported. Proceed to step 5.",
+          "if_no": "Check for breathing. If breathing, place in the recovery position (on their side) to protect the airway. If not breathing, begin CPR and follow cardiac arrest protocol."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the person appropriately.",
+        "detail": "If conscious: lay them down with head slightly raised and supported. If vomiting or at risk of vomiting: place on their side (recovery position) to protect the airway from aspiration.",
+        "decision_point": {
+          "condition": "Is the person vomiting or at risk of vomiting?",
+          "if_yes": "Place the person on their side in the recovery position to protect the airway.",
+          "if_no": "Keep the person lying down with head slightly raised and supported."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Loosen restrictive clothing.",
+        "detail": "Remove or loosen scarves, ties, tight collars, and any other clothing that may restrict breathing."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Stay with the person and monitor their condition continuously.",
+        "detail": "Watch for changes in consciousness level, breathing difficulties, or worsening symptoms. Any change in consciousness level serves as a critical diagnostic indicator. Be prepared to report the person's condition to arriving paramedics.",
+        "decision_point": {
+          "condition": "Does the person lose consciousness or stop breathing while waiting?",
+          "if_yes": "If breathing stops, begin CPR immediately. Update MDA dispatch by phone. Place in recovery position if unconscious but breathing.",
+          "if_no": "Continue monitoring and providing reassurance until paramedics arrive."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Provide information to paramedics on arrival.",
+        "detail": "Report: the exact time symptoms began, what symptoms you observed (which FAST signs), whether symptoms changed or progressed, the person's current medications (if known), their medical history (if known), any changes in consciousness level."
+      }
+    ],
+    "do_not": [
+      "DO NOT give food or drink -- the person's swallowing reflex may be impaired (dysphagia is common in stroke), creating aspiration risk.",
+      "DO NOT give any medications, especially aspirin or blood thinners -- approximately 15% of strokes are hemorrhagic (caused by bleeding), and aspirin or blood thinners can worsen hemorrhagic stroke. Only medical professionals should decide on medication.",
+      "DO NOT delay calling 101 -- do not drive the person to hospital yourself unless absolutely unavoidable. The ambulance crew will pre-notify the hospital and begin assessment en route.",
+      "DO NOT ignore transient symptoms -- even if symptoms resolve (possible TIA / Transient Ischemic Attack), the person still needs emergency evaluation. Approximately 40% of TIA patients experience a full stroke within three months.",
+      "DO NOT allow the person to eat, drink, or take medications by mouth until a medical professional has assessed their swallowing function."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 and record symptom onset time",
+      "Pillow or support to slightly elevate the head"
+    ]
+  },
+  "tags": [
+    "stroke",
+    "cerebrovascular",
+    "FAST",
+    "facial drooping",
+    "arm weakness",
+    "speech difficulty",
+    "ischemic stroke",
+    "hemorrhagic stroke",
+    "TIA",
+    "transient ischemic attack",
+    "thrombolysis",
+    "golden hour",
+    "neurological emergency",
+    "emergency"
+  ]
+}

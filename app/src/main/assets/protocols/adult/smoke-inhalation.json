@@ -1,0 +1,147 @@
+{
+  "id": "IL-ADULT-SMOKE-INHALATION-001",
+  "title": "Smoke / Tear Gas Inhalation - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "smoke_inhalation",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA First Aid Guidelines - Smoke and Tear Gas Inhalation",
+    "url": "https://www.mdais.org/media/4954/mda-first-aid-guidelines-en.pdf",
+    "edition": "MDA First Aid Guidelines and wildfire emergency response protocols; supplemented by standard prehospital smoke inhalation protocols consistent with Israeli Ministry of Health standards"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. GAP: Neither MDA nor United Hatzalah publish detailed smoke inhalation or tear gas first aid protocols in publicly accessible online materials. The protocol is synthesised from MDA's general emergency response practices, documented wildfire responses (e.g., Yom HaZikaron 2023 central Israel wildfires), United Hatzalah documented fire responses (e.g., Shlomi building fire rescue), and standard prehospital smoke inhalation protocols consistent with Israeli Ministry of Health standards. Both organisations coordinate with Fire and Rescue (102) and follow Ministry of Health standards. No significant disagreements between the two sources. Israeli context includes wildfires, residential fires, tear gas exposure in protest/border situations, rocket attack secondary fires, and wartime building fires. Additional emergency number: Fire and Rescue 102. Tear gas section uses internationally accepted first aid standards where MDA-specific guidance was unavailable. Publication date not specified by MDA."
+  },
+  "protocol": {
+    "summary": "Ensure scene safety, remove the person to fresh air, call 101, position upright for easier breathing, monitor for respiratory distress, perform CPR if needed, assess for burns, and keep warm. For tear gas: remove from exposure, flush eyes with water for 15 minutes, decontaminate skin and clothing.",
+    "when_to_apply": "Person has inhaled smoke, fumes, or tear gas. Signs include: coughing, wheezing, difficulty breathing, hoarse voice, soot around mouth or nose, singed facial hair, burns to face or mouth, confusion or altered consciousness, eye irritation and tearing (tear gas).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for any smoke inhalation. Also call Fire and Rescue at 102 if fire is ongoing. For tear gas, call 101 if symptoms persist or worsen after removal from exposure."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety.",
+        "detail": "Do NOT re-enter a smoke-filled area to rescue someone unless you are trained and equipped (firefighter with breathing apparatus). If indoors, stay low where air is cleaner (smoke rises). Ensure the area is safe before approaching.",
+        "warning": "Never re-enter a burning or smoke-filled structure without proper protective equipment. Wait for Fire and Rescue (102)."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Determine the type of exposure.",
+        "decision_point": {
+          "condition": "Is this smoke inhalation (fire, wildfire, fumes) or tear gas exposure?",
+          "if_yes": "For smoke inhalation: proceed to Step 3 (move to fresh air and call 101 immediately).",
+          "if_no": "For tear gas exposure: proceed to Step 9 (tear gas protocol)."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Move the person to fresh air immediately.",
+        "detail": "Remove the person from the smoke-filled environment. Move them to an area with clean, fresh air.",
+        "decision_point": {
+          "condition": "Can you safely move the person out of the smoke-filled area?",
+          "if_yes": "Remove them immediately to fresh air. Proceed to Step 4.",
+          "if_no": "Wait for Fire and Rescue (102) or MDA (101). Do not risk your own safety."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Call MDA at 101.",
+        "detail": "Report the location, number of casualties, and whether the fire is still active. Also call Fire and Rescue at 102 if fire is ongoing. Every second counts in smoke inhalation."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the patient for easier breathing.",
+        "decision_point": {
+          "condition": "Is the person conscious?",
+          "if_yes": "Sit them in an upright position -- this helps with easier breathing.",
+          "if_no": "If unconscious but breathing, place in the recovery position (on their side). If unconscious and not breathing, lay flat for CPR (proceed to Step 7)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Monitor breathing and look for warning signs.",
+        "detail": "Watch for signs of respiratory distress: coughing, wheezing, difficulty breathing, hoarse voice. Look for soot around mouth/nose, singed facial hair, or burns to the face/mouth.",
+        "warning": "Symptoms may worsen over hours as airway swelling develops. A person who appears stable may deteriorate."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Begin CPR if the person stops breathing.",
+        "detail": "If the person stops breathing, begin CPR immediately (if trained). Use standard 30:2 compression-to-ventilation ratio. Continue until the person starts breathing or MDA arrives.",
+        "decision_point": {
+          "condition": "Is the person breathing?",
+          "if_yes": "Continue monitoring. Maintain upright position (if conscious) or recovery position (if unconscious).",
+          "if_no": "Begin CPR immediately with 30:2 compression-to-ventilation ratio. Continue until breathing resumes or MDA arrives."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Check for burns and keep the person warm.",
+        "detail": "Check for burns, especially to the face, neck, and hands. Cool burns with clean water. Do not remove clothing stuck to burns. Cover with clean, non-adherent dressing. Cover the person with a blanket -- smoke inhalation patients may become hypothermic."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Tear gas exposure: Remove from exposure area.",
+        "detail": "Move the person away from the tear gas source to fresh air. Move upwind if possible. Effects are normally self-limiting once exposure ends."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Tear gas exposure: Flush eyes with water.",
+        "detail": "Flush eyes with large amounts of clean, tepid water for at least 15 minutes. Water or saline are the safest options. Do NOT rub the eyes -- this worsens the irritation.",
+        "warning": "Do NOT use milk or other substances to flush eyes due to infection risk. Use only clean water or saline."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Tear gas exposure: Decontaminate skin and clothing.",
+        "detail": "Remove contaminated clothing. Wash affected skin with soap and water. Blow the nose to clear chemical residue from nasal passages."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Tear gas exposure: Monitor for deterioration.",
+        "detail": "Symptoms should begin to subside once exposure is eliminated. If symptoms do not improve or continue to worsen after 30 minutes in fresh air, call MDA at 101.",
+        "decision_point": {
+          "condition": "Are symptoms improving after removal from tear gas exposure?",
+          "if_yes": "Continue monitoring. Seek medical attention if the person has pre-existing respiratory conditions (asthma, COPD), is a child, elderly, or pregnant.",
+          "if_no": "Call MDA at 101 immediately. Seek medical attention for: persistent breathing difficulty, chest pain, severe eye pain, or vomiting."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT re-enter a smoke-filled or burning structure without proper firefighting equipment and training.",
+      "DO NOT rub eyes after tear gas exposure -- this worsens irritation and spreads the chemical.",
+      "DO NOT use milk or other substances to flush eyes -- use only clean water or saline due to infection risk.",
+      "DO NOT remove clothing stuck to burns.",
+      "DO NOT assume a smoke inhalation patient is stable -- symptoms may worsen over hours as airway swelling develops.",
+      "DO NOT leave a smoke inhalation patient alone -- continuous monitoring is required.",
+      "DO NOT ignore soot around the mouth/nose or singed facial hair -- these are indicators of potentially serious airway injury requiring hospital evaluation."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 (MDA) and 102 (Fire and Rescue)",
+      "Clean water for eye flushing (tear gas) and burn cooling",
+      "Clean cloth or non-adherent dressings for burns",
+      "Blanket for warmth",
+      "Soap for skin decontamination (tear gas)"
+    ]
+  },
+  "tags": [
+    "smoke inhalation",
+    "tear gas",
+    "CS gas",
+    "fire",
+    "wildfire",
+    "burns",
+    "respiratory",
+    "airway",
+    "carbon monoxide",
+    "inhalation injury",
+    "eye injury",
+    "decontamination",
+    "CPR",
+    "emergency"
+  ]
+}

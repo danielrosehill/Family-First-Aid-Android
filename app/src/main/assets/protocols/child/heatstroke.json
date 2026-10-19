@@ -1,0 +1,131 @@
+{
+  "id": "IL-CHILD-HEATSTROKE-001",
+  "title": "Heatstroke and Heat Exhaustion in Children",
+  "country": "israel",
+  "age_group": "child",
+  "category": "heatstroke",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Heat Stroke, Dehydration, and Children in Vehicles Guidelines; MDA Summer Emergency Guidelines; MDA ALS Manual 2024",
+    "url": "https://www.mdais.org/news/300820",
+    "publication_date": "2024-04-01",
+    "edition": "ALS Manual 2024; public guidelines 2020-2024"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA (primary) and United Hatzalah sources. No significant contradictions between the two organisations. United Hatzalah classifies heat injuries into three severity levels (dehydration, heat exhaustion, heat stroke) which informed the step structure. United Hatzalah also mentions high-concentration oxygen and arrhythmia monitoring as professional interventions not included here (beyond first-aid scope). MDA is more explicit about avoiding antipyretics and vehicular heat stroke in children. Supplementary child-specific clinical detail drawn from Dana-Dwek Children's Hospital (Ichilov/TASMC) as cited in MDA reference material. Some MDA web pages returned errors during research; content synthesised from available materials."
+  },
+  "protocol": {
+    "summary": "Emergency response protocol for heat exhaustion and heat stroke in children, including assessment, cooling, and when to call MDA.",
+    "when_to_apply": "When a child shows signs of heat-related illness: intense thirst, headache, profuse sweating, pale clammy skin, nausea, vomiting, dizziness, muscle cramps, floppiness or unusual sleepiness (young children), or more severe signs such as hot dry red skin, confusion, seizures, or loss of consciousness.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately if heat stroke is suspected (body temperature above 40 degrees C, hot dry red skin, confusion, seizures, loss of consciousness). Also call if heat exhaustion symptoms do not improve within 30 minutes of cooling."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the child's condition to determine severity.",
+        "detail": "Check for key signs: Is the child sweating (heat exhaustion) or is the skin hot, dry, and red (heat stroke)? Is the child conscious and responsive? Children aged 0-4 are at highest risk. Young children may become floppy or unusually sleepy rather than showing typical adult symptoms.",
+        "decision_point": {
+          "condition": "Does the child have hot, dry, red skin, body temperature above 40 degrees C, confusion, seizures, or loss of consciousness?",
+          "if_yes": "This is heat stroke -- a life-threatening emergency. Call MDA at 101 immediately and begin aggressive cooling (proceed to Step 2). Follow all steps in parallel.",
+          "if_no": "This is likely heat exhaustion. Move to shade and begin cooling. Call 101 if symptoms do not improve within 30 minutes. Proceed to Step 2."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call MDA at 101 or use the My MDA app.",
+        "detail": "For heat stroke, call immediately. For heat exhaustion, call if the child does not improve within 30 minutes of cooling. Follow dispatcher instructions until the ambulance arrives.",
+        "decision_point": {
+          "condition": "Is the child showing signs of heat stroke (hot dry skin, temperature above 40 degrees C, altered consciousness, seizures)?",
+          "if_yes": "Call 101 immediately. Do not delay -- heat stroke can cause organ damage and death within minutes to hours.",
+          "if_no": "Begin cooling measures. Monitor the child and call 101 if no improvement within 30 minutes."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Move the child to a cool environment immediately.",
+        "detail": "Remove the child from the heat source. Move to shade, an air-conditioned room, or the coolest available location. If the child was found in a vehicle, remove them from the vehicle immediately."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove excess and tight clothing.",
+        "detail": "Remove clothing to allow heat to dissipate from the body. Leave only minimal loose clothing."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Begin active cooling.",
+        "detail": "Pour or spray tepid to cool water (not ice-cold) over the child's body. Fan the child to promote evaporative cooling. Place ice packs or cold wet cloths in the armpits and groin areas, where major blood vessels are close to the skin surface. If available, direct air conditioning or a fan toward the child.",
+        "warning": "Do not use ice-cold water immersion for young children without medical supervision."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess the child's level of consciousness.",
+        "detail": "Determine whether the child is conscious and able to swallow safely.",
+        "decision_point": {
+          "condition": "Is the child conscious, alert, and able to swallow without vomiting?",
+          "if_yes": "Offer small, frequent sips of cool water or oral rehydration solution (ORS). Proceed to Step 7.",
+          "if_no": "Do NOT give any fluids. If the child is unconscious but breathing, place in the recovery position to maintain the airway. Proceed to Step 8."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Provide oral rehydration (conscious children only).",
+        "detail": "Give small, frequent sips of cool water or oral rehydration solution. Do not force fluids. Stop if the child begins vomiting.",
+        "warning": "Do NOT force fluids if the child is vomiting or has altered consciousness. A vomiting child should not drink due to risk of aspiration."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Maintain the airway.",
+        "detail": "If the child is unconscious, ensure the airway is open. Place the child in the recovery position if unconscious but breathing. Continue to monitor breathing.",
+        "decision_point": {
+          "condition": "Is the child breathing?",
+          "if_yes": "Maintain the recovery position, continue cooling, and wait for MDA.",
+          "if_no": "Begin CPR according to paediatric protocol (see IL-CHILD-CPR protocol) and continue until MDA arrives."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Continue cooling and monitoring until MDA arrives.",
+        "detail": "Do not stop cooling efforts. Continue fanning and applying cool water. Monitor the child's consciousness, breathing, and skin colour. Note the time cooling began to report to the paramedics."
+      },
+      {
+        "step_number": 10,
+        "instruction": "If the child was found in a vehicle, note the circumstances.",
+        "detail": "Temperatures inside a locked car in Israeli summer can reach 70 degrees C. If a child is found locked in a vehicle, break the window if necessary to extract the child. Report to MDA that the child was found in a vehicle, including estimated time of exposure if known.",
+        "warning": "A child left in a vehicle in Israeli summer conditions is a critical emergency. Every minute counts."
+      }
+    ],
+    "do_not": [
+      "Do NOT give fever-reducing medications (antipyretics) such as acetaminophen (Acamol), ibuprofen (Nurofen), or naproxen. These drugs do not reduce heat stroke temperature and may cause harm.",
+      "Do NOT use ice-cold water immersion for young children without medical supervision.",
+      "Do NOT force fluids if the child is vomiting or has altered consciousness.",
+      "Do NOT leave the child unattended at any point.",
+      "Do NOT give fluids to an unconscious child.",
+      "Do NOT delay calling 101 if heat stroke is suspected.",
+      "Do NOT leave a child unattended in a vehicle, even for a moment, even with windows open or air conditioning running."
+    ],
+    "equipment_needed": [
+      "Cool water (for pouring or spraying over the body)",
+      "Fan or means of fanning",
+      "Ice packs or cold wet cloths",
+      "Oral rehydration solution (ORS) or cool drinking water",
+      "Thermometer (if available)"
+    ]
+  },
+  "tags": [
+    "heatstroke",
+    "heat-exhaustion",
+    "hyperthermia",
+    "paediatric",
+    "children",
+    "cooling",
+    "summer",
+    "vehicle-safety",
+    "israel",
+    "mda"
+  ]
+}

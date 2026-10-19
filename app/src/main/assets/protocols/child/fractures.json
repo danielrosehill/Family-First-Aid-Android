@@ -1,0 +1,158 @@
+{
+  "id": "IL-CHILD-FRACTURES-001",
+  "title": "Fractures and Sprains - Child Protocol",
+  "country": "israel",
+  "age_group": "child",
+  "category": "fractures",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Fractures and Sprains First Aid Protocol - Children (שברים ונקעים בילדים)",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Israeli Ministry of Education 22-hour first aid course materials, Israeli Ministry of Health online first aid course, Rofe Yeladim paediatric resource, and Jerusalem Post coverage citing MDA protocols"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. United Hatzalah does not publish standalone fracture/sprain first aid protocols on their public website; their training programmes teach fracture management following the same Israeli national standards as MDA. No substantive differences found between the two organisations. MDA official website blocked direct content extraction (HTTP 471) at time of research; protocol reconstructed from Jerusalem Post coverage citing MDA sources, Israeli Ministry of Education training materials, Israeli Ministry of Health online course, Rofe Yeladim paediatric resource, and MDA-affiliated international training materials. Child-specific guidance (greenstick fractures, growth plate concerns, emotional management) synthesised from Israeli paediatric sources consistent with MDA training curriculum."
+  },
+  "protocol": {
+    "summary": "Immobilise the injury without realigning, apply cold in 15-minute intervals, manage bleeding for open fractures, keep the child calm, and call 101 (MDA) for serious injuries.",
+    "when_to_apply": "Suspected fracture or sprain in a child: severe pain worsening with movement; visible swelling and bruising; limb deformity (crooked, bent, or shortened); inability to move the injured area or bear weight; tenderness when touched; audible snap or crack at time of injury; child refuses to use the limb or holds it protectively against the body. In young children: sudden refusal to use an arm or leg after a fall, inconsolable crying, or unexplained irritability.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 for: open fractures (bone visible through skin), suspected spinal or neck injury, suspected hip or pelvis fracture, loss of sensation or circulation below the injury, severe limb deformity, heavy bleeding, child is unconscious or having difficulty breathing, multiple injuries, or any fracture in an infant or very young child. For less severe suspected fractures or sprains, transport the child to the nearest emergency department with the limb immobilised, or call 101 for guidance."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Stay calm and reassure the child.",
+        "detail": "Emotional management is critical. A frightened child in pain will tense muscles, increasing pain and making the injury harder to manage. Speak calmly and reassuringly at the child's eye level. Explain simply what you are doing ('I'm going to help your arm feel better'). Do not display panic or alarm -- children take cues from adults. Allow a parent or trusted adult to stay close for comfort. Use distraction techniques (talking, counting, singing) to help manage the child's fear."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess the injury and determine severity.",
+        "detail": "Look for: severe pain, swelling, bruising, limb deformity, inability to move the limb, tenderness, and whether bone is visible through the skin. In young children who cannot articulate pain, watch for refusal to use a limb, inconsolable crying, and irritability. Note that what appears to be a sprain in a child may actually be a growth plate fracture, since children's ligaments are stronger than their growth plates.",
+        "decision_point": {
+          "condition": "Is bone visible through the skin (open/compound fracture)?",
+          "if_yes": "This is a medical emergency. Call 101 (MDA) immediately. Proceed to Step 8 for open fracture management, then continue with immobilisation.",
+          "if_no": "Proceed to Step 3."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Call MDA at 101 if the injury meets emergency criteria.",
+        "detail": "Put the phone on speaker so you can follow dispatcher instructions while providing care. Describe: the child's age, location and nature of the injury, whether bone is visible, level of consciousness, and any bleeding. The MDA dispatcher will guide you through appropriate steps.",
+        "decision_point": {
+          "condition": "Is there suspected spinal or neck injury (e.g., fall from height, diving accident, traffic accident)?",
+          "if_yes": "Do NOT move the child at all. Call 101 immediately for ambulance transport only. Hold the child's head steady to prevent movement. This is a life-threatening emergency. Do not proceed with other steps -- wait for professional help.",
+          "if_no": "Proceed to Step 4."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Do NOT move or realign the injury.",
+        "detail": "NEVER attempt to straighten, pull, or push a bone back into place. MDA principle: 'Never try to straighten the limb, pull it, or return a bone to its place' (לעולם אל תנסו ליישר את הגפה, למשוך אותה או להחזיר עצם למקומה). Such actions can tear arteries and nerves, converting a simple fracture into a life-threatening injury. If the limb is in an unnatural position, leave it as found. This applies especially to children, where growth plate damage from manipulation could affect future development.",
+        "warning": "Attempting to realign a bone can damage arteries, nerves, and growth plates, potentially causing permanent harm to the child's future bone development."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Immobilise the injury.",
+        "detail": "MDA principle: 'Minimum movement, maximum stability' (תנועה מינימלית, יציבות מקסימלית). The best immobilisation for non-professionals is immobilisation to the body itself or to a stable surface. If you are not a certified medic, do not try to build complex splints.",
+        "decision_point": {
+          "condition": "Is the injury to an arm or to a leg?",
+          "if_yes": "ARM: Support the injured arm using the child's healthy hand. Create an improvised sling using a shirt, scarf, sweater, or available fabric folded into a triangle. Place the injured arm inside and tie around the child's neck. Secure the sling to the chest to prevent swinging.",
+          "if_no": "LEG: Ask the child not to move the leg. Place pillows, rolled blankets, towels, or clothing on both sides of the leg to prevent involuntary movement. For additional stability, gently bandage the injured leg to the healthy leg with padding between them. For suspected hip fractures: do NOT move the child; call for ambulance transport immediately."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If using an improvised splint, apply it correctly.",
+        "detail": "Improvised splints can be made from cardboard, rolled newspapers, magazines, rulers, or any rigid material. The splint must extend beyond the joints above and below the fracture. Pad the splint with soft material (clothing, towels) to prevent pressure on the injury. Tie the splint in place with fabric strips, scarves, or bandages -- firm but not tight enough to restrict circulation.",
+        "warning": "Check fingers or toes below the splint for warmth, colour, and sensation. If they turn blue, cold, or numb, loosen the splint immediately."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Apply cold to reduce pain and swelling.",
+        "detail": "Apply an ice pack or cold compress wrapped in a towel -- never apply ice directly to skin. Apply for 15-minute intervals, then remove for 15 minutes before reapplying. Be especially gentle with children and explain that it may feel cold but will help. In Israel's hot climate, cold packs from a first aid kit or a bag of frozen vegetables wrapped in cloth can be used.",
+        "warning": "Never apply ice directly to the child's skin. Always wrap in cloth to prevent cold burns."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Manage bleeding if this is an open (compound) fracture.",
+        "detail": "If bone is protruding through the skin, this is a medical emergency. Control bleeding through indirect pressure around (not on) the wound. Cover the exposed bone with a sterile dressing or the cleanest available cloth. Do NOT attempt to push the bone back in. Keep the MDA dispatcher on speaker for continuous guidance.",
+        "warning": "Do NOT push protruding bone back into the wound. Do NOT apply pressure directly on the wound site. Apply a tourniquet only if haemorrhage is severe and uncontrollable.",
+        "decision_point": {
+          "condition": "Is the bleeding severe and uncontrollable despite indirect pressure?",
+          "if_yes": "Apply a tourniquet if available (MDA protocol for severe uncontrollable haemorrhage). Maintain contact with MDA dispatcher.",
+          "if_no": "Continue indirect pressure and cover the wound. Keep the limb immobilised and wait for emergency services."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Remove constrictive items from the injured area.",
+        "detail": "Remove jewellery, watches, bracelets, and rings from the affected hand or fingers immediately. Remove shoes from an injured foot or ankle. Swelling occurs rapidly after a fracture, and constrictive items can cut off circulation."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Prevent shock.",
+        "detail": "Keep the child warm with a blanket or clothing (but avoid overheating in Israel's climate). Keep the child lying down if possible. Monitor breathing and consciousness.",
+        "decision_point": {
+          "condition": "Is there suspected spinal injury or is the child vomiting?",
+          "if_yes": "Do NOT elevate the legs. Keep the child in the position found (spinal injury) or on their side (vomiting). Continue monitoring.",
+          "if_no": "Elevate the legs slightly to help prevent shock. Continue monitoring breathing and consciousness."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Do not give the child food or drink.",
+        "detail": "Avoid giving the child food or drink, as surgery under general anaesthesia may be required. If the child is very thirsty, moisten their lips with a wet cloth."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Monitor the child until emergency services arrive or you reach the hospital.",
+        "detail": "Continue to reassure the child. Monitor for signs of shock (pale skin, rapid breathing, confusion). Keep the injured limb immobilised. If transporting to hospital yourself (for less severe injuries), ensure the limb remains immobilised during transport. Any suspected sprain in a child should be evaluated by a doctor to rule out growth plate injury."
+      }
+    ],
+    "do_not": [
+      "Do NOT attempt to straighten, pull, or realign a broken bone -- this can damage arteries, nerves, and growth plates, potentially affecting future bone development.",
+      "Do NOT move the child unnecessarily, especially if spinal injury is suspected.",
+      "Do NOT apply heat to the injury (no hot compresses, no warm water).",
+      "Do NOT apply ice directly to the child's skin -- always wrap in cloth first.",
+      "Do NOT tie splints or bandages too tightly -- monitor circulation (warmth, colour, sensation) below the injury.",
+      "Do NOT allow the child to bear weight on an injured leg.",
+      "Do NOT remove clothing by pulling over the injury -- cut it away if necessary.",
+      "Do NOT give aspirin to children (risk of Reye's syndrome); use paracetamol (Acamol) or ibuprofen (Nurofen for Children) if needed for pain.",
+      "Do NOT push a protruding bone back into the wound in an open fracture.",
+      "Do NOT give the child food or drink -- surgery under anaesthesia may be required."
+    ],
+    "equipment_needed": [
+      "Improvised sling material (shirt, scarf, sweater, or triangular bandage)",
+      "Improvised splint material (cardboard, rolled newspapers, magazines, rulers, or rigid material)",
+      "Padding material (clothing, towels, blankets) for splint and leg immobilisation",
+      "Ice pack or cold compress (or bag of frozen vegetables)",
+      "Cloth or towel for wrapping ice pack",
+      "Sterile dressings or clean cloth (for open fractures)",
+      "Bandages or fabric strips for securing splints",
+      "Blanket for warmth and shock prevention",
+      "Tourniquet (for severe uncontrollable bleeding in open fractures, if available)"
+    ]
+  },
+  "tags": [
+    "fractures",
+    "sprains",
+    "broken bone",
+    "greenstick fracture",
+    "growth plate",
+    "immobilisation",
+    "splint",
+    "sling",
+    "paediatric",
+    "child",
+    "open fracture",
+    "compound fracture",
+    "musculoskeletal",
+    "emergency",
+    "orthopaedic"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "IL-CHILD-CHOKING-001",
+  "title": "Choking (Foreign Body Airway Obstruction) - Child and Infant Protocol",
+  "country": "israel",
+  "age_group": "child",
+  "category": "choking",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Choking in Children and Infants - MDA First Aid Protocol (כיצד לטפל בחנק מגוף זר בילדים ותינוקות)",
+    "url": "https://www.mdais.org/101/asphyxia",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Maccabi Health Services and Israeli media sources citing MDA instructors"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No substantive differences found between the two organisations -- both follow ILCOR-aligned guidelines. United Hatzalah sources provided additional detail on CPR transition and compression techniques, which has been incorporated. MDA source page could not be directly fetched due to bot protection; protocol reconstructed from Israeli media articles quoting MDA instructors by name, Maccabi Health Services (Israeli HMO aligned with national standard of care), and Dr. Moshe Yosef (Meuhedet pediatrician) writing in the Jerusalem Post. Age categories: infant (0-1 year), child (1-8 years). Physical size should guide technique selection, not age alone."
+  },
+  "protocol": {
+    "summary": "Back blows and chest thrusts for choking infants (under 1 year); abdominal thrusts (Heimlich) for choking children (1-8 years); transition to CPR if victim becomes unresponsive.",
+    "when_to_apply": "Child or infant is choking: inability to speak, cry, or make sounds; weak or absent cough; difficulty breathing with visible chest retractions; bluish skin colour (cyanosis); high-pitched wheezing. Note: young children may NOT grasp their throats (the universal choking sign).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Have a bystander call 101 (MDA) immediately upon identifying complete airway obstruction. If alone, perform 1-2 minutes of intervention first (approximately 5 cycles of CPR if unresponsive), then call 101."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the choking victim. Determine whether the obstruction is partial or complete.",
+        "detail": "Look for: inability to speak, cry, or make sounds; weak or absent cough; difficulty breathing with chest retractions; cyanosis (bluish skin); loss of consciousness. Young children may not grasp their throats as adults do.",
+        "decision_point": {
+          "condition": "Can the child cough forcefully, cry, or breathe adequately?",
+          "if_yes": "DO NOT intervene. Encourage coughing -- it is the body's most effective mechanism for clearing the airway. The body maintains 'spare air' that creates expulsion pressure. Monitor closely and be ready to act if the situation worsens.",
+          "if_no": "The airway is severely or completely obstructed. Proceed immediately to Step 2."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call for help. Instruct a bystander to call 101 (MDA) immediately.",
+        "detail": "If alone, perform 1-2 minutes of intervention first, then call 101. Do not delay life-saving actions to make the call."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine the victim's age category to select the correct technique.",
+        "decision_point": {
+          "condition": "Is the victim an infant (under 1 year of age)?",
+          "if_yes": "Use the infant protocol: back blows and chest thrusts. Proceed to Step 4.",
+          "if_no": "Use the child protocol: abdominal thrusts (Heimlich manoeuvre). Proceed to Step 7."
+        },
+        "warning": "Physical size should guide technique selection, not age alone. A very small 1-year-old may need infant techniques."
+      },
+      {
+        "step_number": 4,
+        "instruction": "INFANT: Deliver 5 back blows.",
+        "detail": "Place the infant face-down on your forearm, supporting the jaw and head with your hand. Rest your forearm on your thigh for support. Tilt the infant's head downward -- head must be lower than the body. Deliver 5 quick, forceful strikes between the shoulder blades using the heel of your other hand.",
+        "warning": "DO NOT use abdominal thrusts (Heimlich manoeuvre) on infants under 1 year. Risk of organ damage."
+      },
+      {
+        "step_number": 5,
+        "instruction": "INFANT: If the object was not dislodged, deliver 5 chest thrusts.",
+        "detail": "Turn the infant face-up, supporting the body and head on your other arm. Locate an imaginary horizontal line between the nipples. Place two fingers just below this line at the centre of the chest (sternum). Perform 5 chest compressions, approximately 4 cm deep. These should be firm but controlled -- avoid excessive force.",
+        "decision_point": {
+          "condition": "Has the object been expelled?",
+          "if_yes": "Stop intervention. Monitor the infant closely and seek medical evaluation.",
+          "if_no": "Continue alternating 5 back blows and 5 chest thrusts (return to Step 4). If the infant loses consciousness, proceed to Step 9."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "INFANT: Continue alternating 5 back blows and 5 chest thrusts until the object is expelled or the infant becomes unresponsive.",
+        "detail": "Check after each cycle whether the object has been dislodged. If the infant loses consciousness at any point, proceed immediately to Step 9.",
+        "decision_point": {
+          "condition": "Is the infant still conscious and responsive?",
+          "if_yes": "Continue alternating back blows (Step 4) and chest thrusts (Step 5).",
+          "if_no": "Stop back blows and chest thrusts. Proceed to Step 9 (CPR)."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "CHILD (1-8 years): Perform abdominal thrusts (Heimlich manoeuvre).",
+        "detail": "Stand or kneel behind the child (adjust to the child's height). Wrap your arms around the child's waist. Make a fist and place it above the navel and below the rib cage. Grasp your fist with your other hand. Perform quick, forceful thrusts inward and upward. For smaller children, position the child against your leg with your fist placed precisely below the ribcage.",
+        "warning": "Do NOT use excessive force that would lift the child off the ground."
+      },
+      {
+        "step_number": 8,
+        "instruction": "CHILD: Continue abdominal thrusts until the object is expelled or the child becomes unresponsive.",
+        "decision_point": {
+          "condition": "Has the object been expelled and can the child breathe?",
+          "if_yes": "Stop thrusts. Monitor the child and seek medical evaluation even after successful removal.",
+          "if_no": "If the child is still conscious, continue thrusts (repeat Step 7). If the child loses consciousness, proceed to Step 9."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "If the victim (infant or child) loses consciousness: stop all choking manoeuvres immediately.",
+        "detail": "Carefully place the victim on a firm, flat surface. Call 101 (MDA) if not already done. If alone, perform 5 cycles of CPR (approximately 2 minutes) before calling 101."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Begin CPR appropriate to the victim's age.",
+        "detail": "Solo rescuer: 30 compressions to 2 rescue breaths. Two rescuers: 15 compressions to 2 rescue breaths. Compression depth: approximately one-third of chest depth. Before each set of rescue breaths, open the airway and look in the mouth -- remove any visible object. Do NOT perform blind finger sweeps.",
+        "decision_point": {
+          "condition": "Is the victim an infant (under 1 year)?",
+          "if_yes": "Use two-finger chest compression technique (solo) or thumb-encircling method (two rescuers). Open airway with 'look to sky' position -- slight head tilt only; full head extension blocks the infant airway. Use mouth-to-mouth-and-nose ventilation.",
+          "if_no": "Use one-hand chest compression technique. Open airway with standard head-tilt chin-lift. Use standard mouth-to-mouth ventilation."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Continue CPR until emergency services arrive, the victim recovers, or an AED is available.",
+        "detail": "If an AED is available and paediatric pads overlap when positioned normally on a small child, apply one pad front-centre and one between the shoulder blades. Continue CPR cycles between AED analysis and shocks."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Special case: if the child is pregnant or obese, use chest thrusts instead of abdominal thrusts.",
+        "detail": "Position fist on the middle of the breastbone (sternum) and thrust firmly, rather than using abdominal thrusts."
+      }
+    ],
+    "do_not": [
+      "DO NOT perform abdominal thrusts (Heimlich manoeuvre) on infants under 1 year -- use only back blows and chest thrusts. Abdominal thrusts are contraindicated due to risk of organ damage.",
+      "DO NOT insert fingers blindly into the mouth to probe or search for objects (blind finger sweeps) -- only remove an object if you can clearly see it.",
+      "DO NOT force anything into the mouth -- you risk pushing the object deeper into the airway.",
+      "DO NOT attempt mouth manipulation if teeth are clenched.",
+      "DO NOT give food or fluids to a choking victim.",
+      "DO NOT intervene if the child is coughing effectively or breathing normally after aspiration -- allow the body to clear the obstruction naturally.",
+      "DO NOT use this protocol if choking is caused by asthma, infection/swelling (e.g. epiglottitis, croup), or head injury -- seek immediate medical care.",
+      "DO NOT use excessive force during abdominal thrusts that would lift the child off the ground.",
+      "DO NOT fully extend an infant's head when opening the airway -- use the 'look to sky' slight tilt position only. Full head tilt-back blocks the infant airway."
+    ],
+    "equipment_needed": [
+      "AED with paediatric pads (if available, for CPR transition)"
+    ]
+  },
+  "tags": [
+    "choking",
+    "airway obstruction",
+    "infant",
+    "child",
+    "paediatric",
+    "back blows",
+    "chest thrusts",
+    "heimlich",
+    "abdominal thrusts",
+    "CPR",
+    "foreign body",
+    "emergency",
+    "conscious",
+    "unconscious"
+  ]
+}

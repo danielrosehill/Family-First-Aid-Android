@@ -1,0 +1,127 @@
+{
+  "id": "IL-CHILD-TOURNIQUET-001",
+  "title": "Tourniquet Application First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "tourniquet",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Tourniquet Application Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and course curriculum, supplemented by Ichud Hatzalah missile strike response and tourniquet guidance, Israeli First Aid (israelifirstaid.com) tourniquet resources, and NAEMSP/TCCC pediatric tourniquet evidence"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a dedicated child-specific tourniquet protocol. MDA used as primary authority. Both organisations use the CAT (Combat Application Tourniquet) as the standard device. Hatzalah Shop sells CAT SAM XT and CAT-compatible tourniquets but no pediatric-specific devices. Pediatric tourniquet sizing evidence comes primarily from NAEMSP and TCCC studies, not Israeli-specific research. CAT Gen 7 is effective for limbs with circumference approximately 13-16 cm and above (most children aged 2+). For very small limbs (infants, small toddlers), SWAT-T and RATS tourniquets showed success across all pediatric sizes. Hatzalah explicitly states tourniquets are contraindicated for venomous animal bites. Improvised tourniquets can be used when manufactured devices are unavailable (documented in Hatzalah missile strike case study). United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "Tourniquet application for life-threatening limb haemorrhage in children in Israel. Children have less blood volume than adults and can decompensate rapidly. CAT tourniquet is effective for most children aged 2 and above; SWAT-T or RATS tourniquets recommended for very small limbs. For infants, direct pressure is the primary haemorrhage control method.",
+    "when_to_apply": "When a child has uncontrollable life-threatening limb haemorrhage from any cause: blast/shrapnel injuries, amputations or near-amputations, severe lacerations with arterial bleeding, or any situation where direct pressure is insufficient or impractical to control bleeding. Children have less total blood volume than adults and haemorrhagic shock develops faster.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for any child with life-threatening bleeding. Apply the tourniquet while waiting for emergency services -- do not delay haemorrhage control to make the call. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Identify life-threatening limb haemorrhage requiring a tourniquet.",
+        "detail": "A tourniquet is needed when bleeding from a limb is massive and uncontrollable with direct pressure, when the wound involves an amputation or near-amputation, or when direct pressure is impractical (multiple casualties, other injuries requiring attention).",
+        "decision_point": {
+          "condition": "Is the bleeding from a limb and cannot be controlled with direct pressure?",
+          "if_yes": "Apply a tourniquet immediately. Proceed to Step 2.",
+          "if_no": "Use direct pressure with sterile gauze or clean cloth to control bleeding. If bleeding is from the torso, neck, or junctional area, pack the wound and apply maximum direct pressure."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Select the appropriate tourniquet for the child's limb size.",
+        "detail": "CAT (Combat Application Tourniquet) Gen 7: effective for most children aged approximately 2 years and above, with limb circumference of approximately 13-16 cm or greater. SWAT-T (elastic wrap) or RATS (ratcheting) tourniquet: effective across all pediatric sizes including very small limbs. For infants or very small toddlers with limbs under 13 cm circumference: use direct pressure and wound packing as primary method, or SWAT-T/RATS if available.",
+        "decision_point": {
+          "condition": "Is the child's limb large enough for a CAT tourniquet (approximately 13 cm circumference or greater, typically age 2+)?",
+          "if_yes": "Use the CAT tourniquet. Proceed to Step 3.",
+          "if_no": "Use a SWAT-T or RATS tourniquet if available. If no pediatric tourniquet is available, apply maximum direct pressure with wound packing, or improvise a tourniquet using a triangular bandage and windlass."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Apply the tourniquet 5-7 cm (2-3 inches) proximal to the wound.",
+        "detail": "Place the tourniquet on the limb between the wound and the heart, approximately 5-7 cm (2-3 inches) above the wound. Apply it over a single bone (upper arm or upper leg) when possible, not over a joint. Do not apply directly over the wound.",
+        "warning": "Do NOT apply the tourniquet over a joint (elbow, knee). Place it on the upper arm or upper thigh for best effectiveness."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Tighten the tourniquet until bleeding stops.",
+        "detail": "For CAT tourniquet: pull the strap tight, then turn the windlass rod until bleeding stops. Secure the windlass in the clip. For SWAT-T: stretch and wrap the elastic band tightly around the limb, overlapping each layer, until bleeding stops. Check that distal bleeding has stopped completely.",
+        "warning": "Tourniquet application is extremely painful. Warn the child and parent. Pain is expected and necessary -- an insufficiently tight tourniquet is worse than no tourniquet (venous bleeding without arterial occlusion)."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Record the time of tourniquet application.",
+        "detail": "Write the time of application clearly on the tourniquet, on the child's skin near the tourniquet, or on a piece of tape attached to the child. Use 24-hour format. This information is critical for hospital staff.",
+        "warning": "Recording the time is essential. Prolonged tourniquet application can cause tissue damage, and hospital staff need this information to plan care."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Do NOT remove the tourniquet once applied.",
+        "detail": "Only hospital personnel should remove a tourniquet. Premature removal can cause recurrence of life-threatening bleeding and release of accumulated toxins into the bloodstream."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Re-assess and monitor the child frequently.",
+        "detail": "Check that bleeding has stopped. Check the tourniquet has not loosened. Monitor the child for signs of shock (rapid weak pulse, pallor, cool mottled skin, altered consciousness). Children decompensate rapidly from blood loss. Keep the child warm to prevent hypothermia.",
+        "decision_point": {
+          "condition": "Has the bleeding stopped after tourniquet application?",
+          "if_yes": "Maintain the tourniquet in place. Monitor for shock. Transport urgently.",
+          "if_no": "Apply a second tourniquet proximal (closer to the body) to the first one. Tighten both. If bleeding still continues, apply maximum direct pressure in addition to the tourniquets."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Transport urgently to hospital.",
+        "detail": "All tourniquet patients require urgent hospital care. Transport as quickly as possible. Report the time of tourniquet application, the device used, and the child's condition to arriving emergency services or hospital staff."
+      }
+    ],
+    "do_not": [
+      "Do NOT remove a tourniquet once applied -- only hospital personnel should remove it.",
+      "Do NOT apply a tourniquet for venomous animal bites (snakes, scorpions, spiders) -- tourniquets worsen envenomation outcomes.",
+      "Do NOT apply a tourniquet over a joint (elbow, knee) -- place on upper arm or upper thigh.",
+      "Do NOT apply a tourniquet too loosely -- an insufficiently tight tourniquet causes venous bleeding without arterial occlusion, worsening blood loss.",
+      "Do NOT use a standard CAT tourniquet on very small infant limbs (under approximately 13 cm circumference) -- it will not be effective.",
+      "Do NOT delay tourniquet application to attempt prolonged direct pressure on massive haemorrhage -- apply the tourniquet immediately.",
+      "Do NOT forget to record the time of application."
+    ],
+    "equipment_needed": [
+      "CAT (Combat Application Tourniquet) Gen 7 -- for children aged approximately 2+ with sufficient limb size",
+      "SWAT-T tourniquet -- for all pediatric sizes including very small limbs",
+      "RATS tourniquet -- alternative for all pediatric sizes",
+      "Improvised tourniquet materials (triangular bandage + rigid windlass object) -- if no manufactured device available",
+      "Marker or pen (to record time of application)",
+      "Sterile gauze (for wound packing if needed)",
+      "Phone (to call 101)"
+    ]
+  },
+  "tags": [
+    "tourniquet",
+    "haemorrhage",
+    "bleeding",
+    "CAT",
+    "SWAT-T",
+    "RATS",
+    "arterial bleeding",
+    "amputation",
+    "blast injury",
+    "trauma",
+    "pediatric",
+    "child",
+    "infant",
+    "emergency",
+    "MDA",
+    "101",
+    "PHTLS",
+    "security",
+    "limb injury"
+  ]
+}

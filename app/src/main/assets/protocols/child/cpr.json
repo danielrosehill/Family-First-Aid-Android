@@ -1,0 +1,167 @@
+{
+  "id": "IL-CHILD-CPR-001",
+  "title": "CPR (Cardiopulmonary Resuscitation) for Children and Infants",
+  "country": "israel",
+  "age_group": "child",
+  "category": "cpr",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA BLS Guide and CPR Training Materials for Children/Infants",
+    "url": "https://www.mdais.org/kursim/cpr-children",
+    "publication_date": "2024-04-01",
+    "edition": "BLS Guide 2016 / ALS Professional Handbook 2024"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA (primary) and United Hatzalah sources. Both sources are fully aligned on all key protocol elements: C-A-B sequence, compression depths, ratios, AED guidance, and lone-rescuer timing. No significant differences found between MDA and Hatzalah for paediatric CPR. MDA website blocked automated access during research; protocol reconstructed from MDA training materials, MDA-referenced BLS documents, Israeli health service publications, and BLS training resources citing MDA protocols. The two-finger technique for single-rescuer infant CPR is still referenced in Israeli protocols, though the 2025 AHA guidelines have moved away from it; it is not confirmed whether MDA has adopted this change."
+  },
+  "protocol": {
+    "summary": "CPR protocol for unresponsive, non-breathing infants (1 month to 1 year) and children (1 year to puberty) in Israel, following MDA guidelines aligned with ILCOR consensus.",
+    "when_to_apply": "Child or infant is unresponsive and not breathing normally (absent breathing or only gasping). In children, cardiac arrest is almost always secondary to respiratory failure or hypoxia, making rescue breaths critically important.",
+    "call_emergency": {
+      "number": "101",
+      "when": "If alone, perform 2 minutes of CPR first (approximately 5 cycles of 30:2), then call 101. If another person is present, send them to call 101 immediately while you begin CPR."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure the scene is safe before approaching the child or infant."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Check responsiveness.",
+        "detail": "For infants: tap the sole of the foot. For children: tap and shout, or gently squeeze the trapezius muscle. Call the child's name or use familiar sounds.",
+        "decision_point": {
+          "condition": "Is the child/infant responsive?",
+          "if_yes": "Do not perform CPR. Monitor the child, keep them comfortable, and call 101 if concerned.",
+          "if_no": "Proceed to Step 3 to check breathing."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Check for breathing. Look, listen, and feel for no more than 10 seconds.",
+        "decision_point": {
+          "condition": "Is the child/infant breathing normally?",
+          "if_yes": "Place in recovery position on their side. Monitor breathing continuously and call 101.",
+          "if_no": "The child/infant is in cardiac arrest. Proceed to Step 4."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Call for help or send someone to call 101 (MDA).",
+        "detail": "If alone: perform 2 minutes of CPR first (approximately 5 cycles of 30:2), then call 101. If another person is present: send them to call 101 immediately and to fetch an AED while you begin CPR.",
+        "decision_point": {
+          "condition": "Are you alone with the child/infant?",
+          "if_yes": "Begin CPR immediately. After 2 minutes (5 cycles of 30:2), call 101 and get an AED if available.",
+          "if_no": "Send the other person to call 101 and fetch an AED. Begin CPR immediately."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Begin chest compressions (C). Place the child on a firm, flat surface.",
+        "detail": "Compress the lower third of the sternum, on a line between the nipples. Push hard and fast at a rate of 100-120 compressions per minute. Allow full chest recoil between compressions. Minimise interruptions.",
+        "decision_point": {
+          "condition": "Is the patient an infant (under 1 year)?",
+          "if_yes": "Use the two-finger technique (single rescuer): place 2 straight fingers at 90 degrees on the centre of the chest. If two rescuers: use the two-thumb encircling hands technique, wrapping both hands around the torso and compressing with both thumbs while fingers support the back. Compress to a depth of approximately 4 cm (one-third of chest depth).",
+          "if_no": "Use the heel of one hand or two hands depending on the child's size. Compress to a depth of approximately 5 cm (one-third of chest depth)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Open the airway (A).",
+        "detail": "For infants: keep the head in a neutral/sniffing position with only a gentle chin lift. Do NOT hyperextend the neck. For children: perform a head-tilt chin-lift with mild extension.",
+        "warning": "Do NOT hyperextend an infant's neck. Infants in their first months are obligate nasal breathers.",
+        "decision_point": {
+          "condition": "Is the patient an infant (under 1 year)?",
+          "if_yes": "Keep the head in neutral/sniffing position. Tilt head back only gently and lift the chin.",
+          "if_no": "Perform head-tilt chin-lift with mild extension."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Deliver 2 rescue breaths (B).",
+        "detail": "Each breath should be delivered over approximately 1 second, just enough to see the chest rise. Avoid excessive volume or pressure to prevent gastric distension.",
+        "warning": "Rescue breaths are ESSENTIAL in paediatric CPR. Unlike adult CPR, compression-only CPR is not adequate for children and infants because the arrest is almost always respiratory in origin.",
+        "decision_point": {
+          "condition": "Is the patient an infant (under 1 year)?",
+          "if_yes": "Seal your mouth over the infant's mouth AND nose (the face is small enough to cover both). Deliver gentle puffs from your cheeks, not deep lung breaths.",
+          "if_no": "Pinch the child's nose closed and seal your mouth over the child's mouth. Deliver breaths until chest rise is visible."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "If the chest does not rise with rescue breaths, reposition the airway and try again.",
+        "detail": "Re-tilt the head and re-lift the chin, then attempt another breath. If still unsuccessful, consider the possibility of a foreign body airway obstruction.",
+        "decision_point": {
+          "condition": "Does the chest rise with rescue breaths?",
+          "if_yes": "Continue CPR cycles (proceed to Step 9).",
+          "if_no": "Reposition the head/airway and reattempt the breath. If still no chest rise, suspect foreign body obstruction."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Continue CPR cycles using the correct compression-to-breath ratio.",
+        "detail": "Single rescuer: 30 compressions to 2 breaths (30:2). Two rescuers: 15 compressions to 2 breaths (15:2). Continue without interruption.",
+        "decision_point": {
+          "condition": "Are there two or more rescuers?",
+          "if_yes": "Use 15:2 ratio (15 compressions to 2 breaths). For infants, switch to the two-thumb encircling hands technique for compressions.",
+          "if_no": "Use 30:2 ratio (30 compressions to 2 breaths)."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Use an AED as soon as one becomes available.",
+        "detail": "Use paediatric pads or a paediatric dose attenuator if available. If only adult pads are available, use them but ensure the pads do not touch each other. For small children and infants whose chest is too small for standard anterolateral placement, use anteroposterior placement (one pad on the front of the chest, one pad on the back). Follow the AED voice prompts.",
+        "warning": "If using adult pads on a small child or infant, ensure the pads do not touch or overlap each other."
+      },
+      {
+        "step_number": 11,
+        "instruction": "After any AED shock, immediately resume CPR starting with chest compressions.",
+        "detail": "Resume 5 cycles of compressions and breaths before reassessing rhythm."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Continue CPR until one of the following occurs.",
+        "detail": "Stop CPR when: (1) Professional help arrives (MDA ambulance), (2) The child starts breathing and responding (place in recovery position on their side), (3) You are physically unable to continue.",
+        "decision_point": {
+          "condition": "Has the child started breathing and responding?",
+          "if_yes": "Stop CPR. Place the child in the recovery position on their side. Monitor breathing continuously until MDA arrives.",
+          "if_no": "Continue CPR without interruption until professional help arrives or you are physically unable to continue."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT hyperextend an infant's neck when opening the airway -- use neutral/sniffing position only.",
+      "Do NOT insert fingers into the infant's or child's mouth (risk of pushing objects deeper).",
+      "Do NOT deliver deep lung breaths to infants -- use gentle puffs from your cheeks.",
+      "Do NOT use excessive volume or pressure when delivering rescue breaths (risk of gastric distension).",
+      "Do NOT skip rescue breaths in paediatric CPR -- compression-only CPR is NOT adequate for children and infants.",
+      "Do NOT delay CPR to call for help when alone -- perform 2 minutes of CPR first, then call 101.",
+      "Do NOT allow AED pads to touch or overlap each other on a small child or infant.",
+      "Do NOT stop CPR to check for pulse unless there are clear signs of recovery (breathing, movement).",
+      "Do NOT compress over the xiphoid process (the very bottom tip of the sternum)."
+    ],
+    "equipment_needed": [
+      "AED with paediatric pads or paediatric dose attenuator (if available)",
+      "Barrier device or pocket mask (optional, for rescue breaths)",
+      "Bag-valve-mask -- infant size (250-350 cc) or paediatric size (if available)"
+    ]
+  },
+  "tags": [
+    "cpr",
+    "cardiac-arrest",
+    "paediatric",
+    "infant",
+    "child",
+    "rescue-breaths",
+    "chest-compressions",
+    "aed",
+    "defibrillator",
+    "bls",
+    "life-threatening",
+    "mda",
+    "israel"
+  ]
+}

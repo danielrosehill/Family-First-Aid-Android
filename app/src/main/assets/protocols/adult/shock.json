@@ -1,0 +1,163 @@
+{
+  "id": "IL-ADULT-SHOCK-001",
+  "title": "Shock (Helem) - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "shock",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Shock (הלם) - MDA-Approved First Aid Curriculum and BLS Guide",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA-regulated first aid curriculum; corroborated by MDA BLS Guide 2016 and Israeli first aid course materials"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. United Hatzalah does not publish specific shock treatment protocols on their public-facing websites; their volunteers operate under Israeli Ministry of Health regulations and MDA-approved curricula, so no significant protocol differences are expected. MDA's official online first aid content (mdais.org/101/first-aid) and published BLS/ALS PDF guides returned access-restricted errors during research. Protocol synthesised from Israeli first aid course materials that teach the MDA-approved curriculum and cross-referenced with international consensus guidelines. Publication date not specified by MDA (standing public guidance). Includes Israel-specific context for desert heat, security/blast injuries, and tourniquet/Israeli bandage use."
+  },
+  "protocol": {
+    "summary": "Identify shock type, call 101, perform ABC assessment, control bleeding, elevate legs approximately 30 cm, maintain body temperature, give nothing by mouth, and monitor until MDA arrives.",
+    "when_to_apply": "Patient presents with signs of shock: rapid weak pulse, pale/cold/clammy skin, cold perspiration, rapid shallow breathing, decreased consciousness or confusion, falling blood pressure, weakness, dizziness, fainting, nausea, vomiting, or thirst. May result from massive blood loss (hypovolemic), spinal cord injury (neurogenic), heart failure (cardiogenic), severe infection (septic), or severe allergic reaction (anaphylactic).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon recognising signs of shock. Provide location, number of casualties, nature of incident, and patient condition."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Provide the dispatcher with your location, number of casualties, nature of the incident, and the patient's condition. Keep the line open if possible."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Ensure the scene is safe.",
+        "detail": "Confirm the scene is safe for you and the patient before approaching. In security incidents, be aware of secondary threats."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Perform primary assessment (ABC).",
+        "detail": "A - Airway: ensure the airway is open and clear; tilt chin up slightly if needed. B - Breathing: check if the person is breathing effectively. C - Circulation: check for pulse and identify any severe bleeding.",
+        "decision_point": {
+          "condition": "Is the patient breathing?",
+          "if_yes": "Continue to Step 4 to assess and treat the cause of shock.",
+          "if_no": "Begin CPR immediately. Follow the CPR protocol (IL-ADULT-CPR-001)."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Identify the likely type of shock if possible.",
+        "detail": "Hypovolemic: blood loss, dehydration, burns (rapid pulse, pale/cold skin). Neurogenic: spinal injury (normal or slow pulse, warm red skin below injury). Cardiogenic: heart attack, cardiac tamponade (elevated jugular venous pressure, rapid or slow pulse). Septic: infection with high fever (gradual onset). Anaphylactic: allergic reaction with rash, swelling, wheeze, stridor.",
+        "decision_point": {
+          "condition": "Is the shock caused by visible bleeding?",
+          "if_yes": "Proceed to Step 5 for bleeding control before positioning.",
+          "if_no": "Skip to Step 6 for patient positioning."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Control any severe bleeding.",
+        "detail": "Apply direct pressure to wounds. Pack wounds if direct pressure is insufficient. Apply a tourniquet to limbs if bleeding cannot be controlled by other means. Note the time of tourniquet application. Use an Israeli bandage (emergency bandage) if available.",
+        "warning": "Tourniquet use is widely taught in Israeli civilian first aid due to security context. Always note the time a tourniquet is applied and report it to the MDA team."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Position the patient appropriately.",
+        "detail": "If conscious: lay the patient on their back and gently elevate legs approximately 30 cm (12 inches) above the level of the heart to improve blood flow to vital organs.",
+        "decision_point": {
+          "condition": "Is the patient conscious?",
+          "if_yes": "Lay on back with legs elevated approximately 30 cm, unless contraindicated (head/neck/spinal injury, broken hip or leg, causes pain, or patient has difficulty breathing).",
+          "if_no": "If unconscious but breathing, place in the recovery position (on their side). If not breathing, begin CPR."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Handle contraindications for leg elevation.",
+        "detail": "If the patient has difficulty breathing, keep them semi-upright instead of elevating legs. If head, neck, or spinal injury is suspected, do not elevate legs and do not move the patient unnecessarily. If broken hip or leg bones are suspected, do not elevate legs.",
+        "decision_point": {
+          "condition": "Does the patient have suspected head/neck/spinal injury, broken hip/leg, difficulty breathing, or does leg elevation cause pain?",
+          "if_yes": "Do NOT elevate legs. Keep patient flat (spinal/fracture) or semi-upright (breathing difficulty). Minimise movement.",
+          "if_no": "Elevate legs approximately 30 cm above heart level."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Maintain body temperature.",
+        "detail": "Cover the patient with a blanket, coat, or any available covering to prevent heat loss. Place insulation underneath the patient to protect from cold ground. Shock patients lose body heat even in hot weather.",
+        "warning": "In Israeli summer conditions, shade the patient from direct sun but still keep them warm. Do not overheat the patient."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Do NOT give food or drink.",
+        "detail": "Do not give the patient anything to eat or drink. If the patient is thirsty, moisten their lips with water only.",
+        "warning": "Giving food or drink to a shock patient may cause vomiting and aspiration, and may complicate potential surgery."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Administer epinephrine for anaphylactic shock if available.",
+        "detail": "If anaphylactic shock is suspected (allergic reaction with rash, swelling, wheeze, stridor) and the patient has a prescribed EpiPen, assist with administration.",
+        "decision_point": {
+          "condition": "Is anaphylactic shock suspected and is an EpiPen available?",
+          "if_yes": "Assist the patient with their EpiPen. Follow the anaphylaxis protocol (IL-ADULT-ALLERGIC-REACTION-001).",
+          "if_no": "Continue monitoring and supportive care. Keep the patient positioned and warm."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Monitor and reassure the patient continuously.",
+        "detail": "Monitor breathing and pulse continuously. Reassure and comfort the patient; keep them calm. Stay with the patient until MDA emergency services arrive.",
+        "decision_point": {
+          "condition": "Does the patient vomit?",
+          "if_yes": "If no spinal injury is suspected, turn the patient on their side to prevent choking. Clear the airway.",
+          "if_no": "Continue monitoring in current position."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Document and report to the arriving MDA team.",
+        "detail": "Note the time of injury or onset of symptoms. Note any treatments given, including tourniquet application time, medications administered, and changes in patient condition. Report all information to the arriving MDA paramedics."
+      }
+    ],
+    "do_not": [
+      "DO NOT give the patient anything to eat or drink -- moisten lips only if thirsty.",
+      "DO NOT elevate legs if head, neck, or spinal injury is suspected.",
+      "DO NOT elevate legs if the patient has a broken hip or leg.",
+      "DO NOT elevate legs if it causes the patient pain or further injury.",
+      "DO NOT elevate legs if the patient has difficulty breathing -- keep them semi-upright instead.",
+      "DO NOT overheat the patient when maintaining body temperature.",
+      "DO NOT move a patient with suspected spinal injury unnecessarily.",
+      "DO NOT delay calling 101 -- shock is a life-threatening emergency.",
+      "DO NOT remove a tourniquet once applied -- leave removal to MDA paramedics.",
+      "DO NOT leave the patient unattended."
+    ],
+    "equipment_needed": [
+      "Tourniquet -- widely available in Israeli first aid kits due to security context",
+      "Israeli bandage (emergency bandage / amtza'sh) -- for wound packing and pressure",
+      "Blanket or coat -- to maintain body temperature",
+      "Ground insulation -- to protect from cold ground",
+      "EpiPen (epinephrine auto-injector) -- for anaphylactic shock if patient has a prescription"
+    ]
+  },
+  "tags": [
+    "shock",
+    "helem",
+    "hypovolemic",
+    "neurogenic",
+    "cardiogenic",
+    "septic",
+    "anaphylactic",
+    "hemorrhagic",
+    "trauma",
+    "bleeding",
+    "tourniquet",
+    "Israeli bandage",
+    "leg elevation",
+    "ABC assessment",
+    "blood pressure",
+    "circulation",
+    "dehydration",
+    "security incident",
+    "blast injury",
+    "emergency"
+  ]
+}

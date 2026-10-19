@@ -1,0 +1,122 @@
+{
+  "id": "IL-CHILD-ASTHMA-001",
+  "title": "Asthma Attack First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "asthma",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Asthma First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-04-01",
+    "edition": "Current MDA training materials and ALS Professional Manual (April 2024), supplemented by Ichud Hatzalah asthma, respiratory distress, and pediatric treatment approach guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a dedicated child-specific asthma protocol publicly. MDA used as primary authority. Both sources agree on core BLS treatment steps. Hatzalah provides more detailed severity classification and trigger information which has been incorporated. Both sources note asthma is the most common chronic disease in Israeli children (5-10% prevalence). Both emphasise spacer use with inhaler for children under 6. MDA ALS manual (2024) was not accessible for pediatric drug dosing. ALS-level medications (Ventolin nebuliser, Atrovent, Solumedrol, adrenaline, magnesium sulfate) listed by Hatzalah are for reference only -- not BLS-level interventions. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for asthma attacks in children in Israel, emphasising upright positioning, rescue inhaler use with spacer for young children, calm reassurance, and monitoring for worsening symptoms. Asthma is the most common chronic disease in Israeli children with 5-10% prevalence.",
+    "when_to_apply": "When a child is experiencing an asthma attack. Signs include persistent cough, wheezing, difficulty breathing (especially exhaling), prolonged expiration, chest tightness, lip cyanosis, accessory muscle use, intercostal retractions, nasal flaring, tachycardia, and sweating. Attacks frequently occur early morning or late evening. In young children who cannot describe symptoms, observe for visible respiratory distress, pale skin, weakness, and lethargy.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 if the child does not improve after using rescue inhaler, if the child cannot speak in full sentences, if lips or fingernails turn blue, if breathing becomes very rapid or laboured, if the child becomes drowsy (dangerous sign of CO2 buildup), or if this is a first-time asthma attack without a prescribed inhaler. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Help the child sit upright to maximise lung expansion.",
+        "detail": "An upright or slightly forward-leaning position opens the airways and makes breathing easier. Do not lay the child down. Allow the child to find their most comfortable breathing position. Allow the child to sit with a parent for comfort."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Calm and reassure the child.",
+        "detail": "Speak directly to the child (not only to parents) in a calm, reassuring voice. Anxiety worsens bronchospasm. Introduce yourself by name and ask the child their name. Use age-appropriate explanations. Never lie about procedures.",
+        "warning": "Stress and anxiety are common asthma triggers and worsen an active attack. Keeping the child calm is a therapeutic intervention."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Assist the child with their prescribed rescue inhaler (Ventolin/salbutamol).",
+        "detail": "Help the child use their rescue inhaler. Typically 2-4 puffs, one at a time, with 30-60 seconds between puffs. For children under 6 years: use the inhaler with a spacer device (Volumatic or similar) for more effective medication delivery to small airways. In gan (kindergarten) or school settings, ask staff for the child's asthma action plan.",
+        "decision_point": {
+          "condition": "Does the child have a prescribed rescue inhaler available?",
+          "if_yes": "Assist with inhaler use. For children under 6, use with a spacer device if available. Administer 2-4 puffs as per the child's action plan.",
+          "if_no": "Keep the child calm and upright. Call 101 immediately. Do not administer someone else's inhaler without medical direction."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Administer high-concentration oxygen if available.",
+        "detail": "If supplemental oxygen is available, administer at 10 litres per minute via face mask. This is typically only available to trained first responders with equipment."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Obtain the child's medical history.",
+        "detail": "Ask the parent or child: Is the child a known asthmatic? What medications do they take? Have they been hospitalised for asthma before? What triggered this attack? When did symptoms start? Common triggers include allergens, air pollution, weather changes, physical exertion, cold air, and stress."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Monitor for improvement or worsening.",
+        "detail": "Reassess breathing after 5-10 minutes. Monitor for signs of severe attack: inability to complete sentences, SpO2 below 92% (if pulse oximeter available), rapid breathing, central cyanosis. Drowsiness is a late and dangerous sign indicating CO2 buildup.",
+        "decision_point": {
+          "condition": "Has the child's breathing improved after inhaler use?",
+          "if_yes": "Continue monitoring. A second dose of inhaler may be given after 10-15 minutes if needed. Advise parents to follow up with the child's doctor.",
+          "if_no": "Call 101 (MDA) immediately if not already done. The child needs advanced medical care. Continue to keep the child upright and calm while waiting for emergency services."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Assess for life-threatening attack (status asthmaticus).",
+        "detail": "A life-threatening attack is characterised by severe hypoxia, inability to speak, exhaustion, silent chest (no wheeze despite distress -- airways too constricted for air movement), drowsiness or confusion, and cyanosis. This requires immediate advanced life support.",
+        "warning": "A 'silent chest' (no wheezing despite obvious distress) is a dangerous sign -- it means airways are too constricted for air movement. This is worse than audible wheezing.",
+        "decision_point": {
+          "condition": "Is the child showing signs of a life-threatening attack (silent chest, drowsiness, exhaustion, inability to speak)?",
+          "if_yes": "This is a life-threatening emergency. Call 101 immediately if not already done. Be prepared to perform CPR if the child stops breathing. Continue rescue inhaler every 5-10 minutes until help arrives.",
+          "if_no": "Continue monitoring and supportive care. Transport to medical facility if symptoms persist."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Transport to medical facility if symptoms do not resolve.",
+        "detail": "Keep the child upright during transport. Bring the child's inhaler and any medication documentation. Report the number of inhaler puffs given and the times administered."
+      }
+    ],
+    "do_not": [
+      "Do NOT lay the child down -- upright position is essential for breathing.",
+      "Do NOT give the child cold drinks during an attack -- cold can worsen bronchospasm.",
+      "Do NOT leave the child alone during an attack.",
+      "Do NOT administer someone else's prescription inhaler without medical direction.",
+      "Do NOT delay calling 101 if the child is not improving.",
+      "Do NOT ignore drowsiness during an asthma attack -- this is a dangerous sign of CO2 buildup requiring immediate intervention.",
+      "Do NOT assume a quiet chest means improvement -- a silent chest during distress is a life-threatening sign."
+    ],
+    "equipment_needed": [
+      "Rescue inhaler (Ventolin/salbutamol) -- child's own prescribed inhaler",
+      "Spacer device (for children under 6)",
+      "Supplemental oxygen and face mask (if available -- typically first responder equipment)",
+      "Pulse oximeter (if available)",
+      "Phone (to call 101)"
+    ]
+  },
+  "tags": [
+    "asthma",
+    "asthma attack",
+    "respiratory",
+    "breathing difficulty",
+    "wheezing",
+    "bronchospasm",
+    "inhaler",
+    "Ventolin",
+    "salbutamol",
+    "spacer",
+    "pediatric",
+    "child",
+    "chronic disease",
+    "emergency",
+    "MDA",
+    "101",
+    "status asthmaticus"
+  ]
+}

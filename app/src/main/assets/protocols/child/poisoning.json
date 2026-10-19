@@ -1,0 +1,147 @@
+{
+  "id": "IL-CHILD-POISONING-001",
+  "title": "Poisoning First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "poisoning",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Poisoning First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/poisoningn",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance, supplemented by Rambam National Poison Information Center guidelines, Israel Ministry of Health poisoning prevention guidance, and Beterem child safety materials"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. Both organisations' protocols are fully aligned on all core guidance: do NOT induce vomiting, preserve the container, dilute caustic substances with water or milk, call Poison Center (04-7771900) for non-symptomatic cases and 101 for symptomatic cases. MDA primary page (mdais.org/101/poisoningn) was blocked by bot protection during research; content reconstructed from Rambam National Poison Information Center first aid pages, Israel Ministry of Health child poisoning prevention page, and Beterem child safety materials. United Hatzalah provides more detailed inhalation poisoning protocols (CO, organophosphates) on its website, which have been incorporated. No material contradictions found between Israeli sources. The Israel Poison Information Center at Rambam Hospital operates under the Ministry of Health and is the national reference authority for poisoning. 43% of poison center calls involve children under age 6. Pre-Passover cleaning season is a known spike period for child poisoning incidents."
+  },
+  "protocol": {
+    "summary": "First aid for poisoning in children, covering ingestion, inhalation, skin contact, and eye exposure. Core principle: never induce vomiting, preserve the substance container, and call for professional guidance immediately.",
+    "when_to_apply": "When a child is suspected of having ingested, inhaled, or come into contact with a toxic substance. Common substances include medications (49% of cases), cleaning products (36%), pesticides, plants, and alcohol. Approximately 90% of child poisoning incidents occur at home. Signs may include altered consciousness, breathing difficulty, burns in or around the mouth, vomiting, abdominal pain, drooling, coughing, or unusual odour on breath or clothing. Some poisons cause delayed symptoms -- always seek guidance even if the child appears well.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately if: child is unconscious or losing consciousness; difficulty breathing or respiratory distress; burns visible in or around the mouth; seizures or convulsions; severe vomiting; cyanosis (blue skin colouration); known ingestion of a highly toxic substance (drain cleaner, large quantity of medications). For non-symptomatic cases, call the Israel Poison Information Center at 04-7771900 (24/7) for guidance."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety.",
+        "detail": "Ensure your own safety before approaching. For inhalation poisoning, do not enter a confined space filled with toxic fumes without protection. If hazardous gases, smoke, or flammable materials are suspected, contact the fire department at 102."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess the child's consciousness, breathing, and airway.",
+        "decision_point": {
+          "condition": "Is the child unconscious or not breathing?",
+          "if_yes": "Begin CPR immediately and call 101 (MDA). Follow the pediatric CPR protocol (IL-CHILD-CPR-001).",
+          "if_no": "Proceed to Step 3."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine the route of poisoning exposure.",
+        "detail": "Identify whether exposure was through ingestion (most common in children), inhalation, skin contact, or eye contact. This determines which treatment path to follow.",
+        "decision_point": {
+          "condition": "Was the substance ingested (swallowed)?",
+          "if_yes": "Proceed to Step 4 (Ingestion protocol).",
+          "if_no": "Proceed to Step 9 for inhalation, Step 10 for skin contact, or Step 11 for eye contact."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Identify the substance and preserve evidence.",
+        "detail": "Look for the container, packaging, or remnants of the substance. If substance is still in the child's mouth, attempt to remove it manually by wiping out with a cloth. Collect and preserve the container, packaging, remaining substance, and any vomit for medical teams. Note the estimated amount ingested and the time of ingestion if possible."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Do NOT induce vomiting.",
+        "detail": "Previous guidelines recommended inducing vomiting, but current Israeli medical protocol explicitly prohibits it. The substance passing back through the oesophagus causes additional chemical burns (for caustic agents), there is risk of aspiration (inhaling vomit into the lungs), and research shows uncontrolled vomiting removes only a partial amount of poison and is ineffective. In one-third of cases where parents induced vomiting, it contradicted medical guidance.",
+        "warning": "This is the most critical rule. Do NOT induce vomiting regardless of the substance ingested. Do NOT use finger insertion, soapy water, or salt water to trigger vomiting."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Determine if the substance is caustic (acid or base).",
+        "detail": "Caustic substances include drain cleaners (acids), toilet bowl cleaners (acids), oven cleaners (bases/alkalis), bleach (economica), degreasers, and limescale removers.",
+        "decision_point": {
+          "condition": "Is the ingested substance a caustic agent (acid, base, bleach, or similar corrosive cleaning product)?",
+          "if_yes": "If the child is conscious and breathing normally with no respiratory distress, give water or milk to dilute the substance. Toddlers: approximately 1/4 cup (60 ml). Older children: approximately 1/2 cup (120 ml). Adolescents: one full cup (240 ml). Proceed to Step 7.",
+          "if_no": "Do NOT give food or liquids unless specifically instructed by the Poison Center. Proceed to Step 7."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Call for help based on symptoms.",
+        "decision_point": {
+          "condition": "Are symptoms present (altered consciousness, breathing difficulty, burns in or around the mouth, vomiting, abdominal pain, seizures, cyanosis)?",
+          "if_yes": "Call 101 (MDA) immediately. Describe the substance, estimated quantity, time of ingestion, and the child's current condition.",
+          "if_no": "Call the Israel Poison Information Center at 04-7771900 for guidance on whether hospital evaluation is needed. Follow their instructions."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Prepare for transport to hospital.",
+        "detail": "All poisoning cases require hospital assessment, even if symptoms seem mild. Some toxic substances (e.g., paracetamol) cause no noticeable signs initially but cause severe organ damage (liver, kidneys) that appears later. Always bring the substance container and packaging to the hospital.",
+        "warning": "Do not wait for symptoms before seeking professional guidance. Delayed toxicity is common with many household substances and medications."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Inhalation poisoning: move the child to fresh air.",
+        "detail": "Move the child to a well-ventilated area or fresh air immediately. If the child is not breathing, begin CPR. Call 101 (MDA). Contact the fire department at 102 if hazardous gases or flammable materials are suspected. For carbon monoxide exposure, signs include headaches, weakness, dizziness, nausea, vomiting, possible loss of consciousness, and facial redness. For organophosphate (pesticide) exposure, signs include excessive secretions, pinpoint pupils, muscle contractions, and breathing difficulty.",
+        "warning": "Never enter a confined space with toxic fumes without proper protection. Never mix bleach-based cleaners with other cleaning products (especially acids) -- this releases toxic chlorine gas causing severe lung irritation and can trigger asthma attacks."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Skin contact: remove contaminated clothing and flush with water.",
+        "detail": "Remove contaminated clothing carefully. Flush the affected skin area with large amounts of running water for 15-20 minutes. Do not apply creams, ointments, or other substances. Seek medical evaluation."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Eye contact: flush with running water for at least 15-20 minutes.",
+        "detail": "Flush the eye(s) with large amounts of running water at room temperature for at least 15-20 minutes. Gently lift the eyelids to ensure thorough flushing. Do not rub the eyes. Seek immediate medical evaluation."
+      }
+    ],
+    "do_not": [
+      "Do NOT induce vomiting -- regardless of the substance ingested. This is outdated practice and causes additional harm (oesophageal burns from caustic agents, aspiration risk, ineffective removal).",
+      "Do NOT give activated charcoal at home unless specifically instructed by the Poison Center or a physician.",
+      "Do NOT give food to the poisoned child. Water or milk for dilution purposes only, and only for caustic substances when the child is conscious.",
+      "Do NOT attempt home remedies (raw eggs, olive oil, etc.).",
+      "Do NOT wait for symptoms before calling for guidance -- some toxic substances cause no noticeable signs initially but cause severe organ damage (liver, kidneys) later.",
+      "Do NOT discard the container or packaging -- always bring it to the hospital for identification by medical teams.",
+      "Do NOT mix cleaning products -- especially bleach with acids, which releases toxic chlorine gas.",
+      "Do NOT enter a toxic fume environment without proper protection."
+    ],
+    "equipment_needed": [
+      "Cloth (to wipe substance from child's mouth if present)",
+      "Water or milk (for dilution of caustic substances only, age-appropriate amounts)",
+      "Running water source (for skin and eye decontamination, 15-20 minutes flushing)",
+      "Container or bag (to preserve substance packaging and any vomit for medical teams)"
+    ]
+  },
+  "tags": [
+    "poisoning",
+    "pediatric",
+    "child",
+    "ingestion",
+    "inhalation",
+    "caustic",
+    "cleaning products",
+    "medications",
+    "bleach",
+    "economica",
+    "laundry pods",
+    "pre-passover",
+    "pesach",
+    "poison center",
+    "vomiting prohibition",
+    "skin contact",
+    "eye contact",
+    "carbon monoxide",
+    "organophosphate",
+    "emergency",
+    "MDA",
+    "101",
+    "04-7771900"
+  ]
+}

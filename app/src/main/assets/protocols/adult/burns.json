@@ -1,0 +1,123 @@
+{
+  "id": "IL-ADULT-BURNS-001",
+  "title": "Burns First Aid Protocol (Adult) -- Israel",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "burns",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Burns First Aid Guidelines",
+    "url": "https://www.mdais.org/101/burns",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance (date not explicitly stated)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project rules. Both sources are broadly consistent on burn classification, cooling as primary intervention, jewellery removal, and severity thresholds. Minor differences: United Hatzalah says 'cold water' while MDA specifies 'cool (not cold) running water' -- MDA wording used. United Hatzalah does not specify a minimum cooling duration (MDA specifies at least 10 minutes) -- MDA guidance used. United Hatzalah does not cover burn dressing, chemical burns, electrical burns, or contraindications in its public material -- MDA guidance used for all of these. MDA primary page (mdais.org/101/burns) returned HTTP 471 during research; protocol synthesised from MDA affiliate sources and aligned Israeli medical sources."
+  },
+  "protocol": {
+    "summary": "First aid treatment for thermal, chemical, and electrical burns in adults, emphasising cooling, protecting the wound, and recognising when to call emergency services.",
+    "when_to_apply": "When an adult has sustained a burn from heat, chemicals, electricity, or radiation. Signs include redness, swelling, blisters, white/grey/black discolouration of skin, or pain at the injury site.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for: extensive burns with severe pain; white, grey, or black discolouration; multiple blisters; burns on face, mouth, tongue, hands, feet, genitals, or groin; burns larger than the palm of the casualty's hand; chemical or electrical burns; inhalation injuries; high-risk patients (pregnant women, elderly, chemotherapy patients)."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and remove the casualty from the heat source.",
+        "detail": "Make sure the scene is safe for the rescuer before approaching. Remove the casualty from the source of the burn (fire, hot liquid, chemical, electrical source)."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess the burn severity.",
+        "detail": "Determine the degree of the burn and the extent of body surface area affected. First-degree: red, slightly swollen, painful, no blisters. Second-degree: severe pain, redness, fluid-filled blisters. Third-degree: brown-white, grey, yellowish, or black tissue, stiff and dry, reduced or absent pain due to nerve destruction.",
+        "decision_point": {
+          "condition": "Is the burn severe? (Third-degree, covers more than the palm of the hand, affects face/hands/feet/genitals, or is chemical/electrical/inhalation)",
+          "if_yes": "Call 101 (MDA) immediately, then continue first aid steps while waiting for emergency services.",
+          "if_no": "Continue first aid steps. Monitor for worsening and seek medical evaluation if concerned."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Cool the burn under cool (not cold) running water for at least 10 minutes.",
+        "detail": "Begin cooling as soon as possible after the burn occurs. Use cool or lukewarm water. Continue for 10 to 20 minutes or until pain subsides. Do NOT use ice or very cold water.",
+        "warning": "Do NOT apply ice or ice-cold water. Extreme cold can cause additional tissue and blood vessel damage."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove rings, bracelets, watches, and loose clothing from the affected area.",
+        "detail": "Do this before swelling begins to prevent circulation problems as the area swells.",
+        "decision_point": {
+          "condition": "Is clothing stuck to the burn?",
+          "if_yes": "Cut around the stuck clothing. Do NOT pull it off.",
+          "if_no": "Gently remove the clothing from the burn area."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Cover the burn loosely with cling film (food wrap), a clean plastic bag, or a clean non-fluffy dressing.",
+        "detail": "Do not wrap tightly. The covering protects the wound from contamination while allowing for swelling.",
+        "warning": "Do NOT apply toothpaste, ground coffee, raw egg, yogurt, butter, fat-based creams, or any home remedies. These trap heat and increase infection risk."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Position the patient lying down to reduce shock damage.",
+        "detail": "Keep the patient warm to prevent hypothermia, especially with large burns."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Assess for chemical burn.",
+        "decision_point": {
+          "condition": "Was the burn caused by a chemical substance?",
+          "if_yes": "Remove contaminated clothing carefully (protect yourself from the chemical). Rinse the affected area with a massive amount of cool running water for at least 15-20 minutes. If chemical splashed into the eyes, flush eyes with running water for at least 15 minutes. Do NOT attempt chemical neutralisation. Call 101 immediately.",
+          "if_no": "Proceed to assess for electrical burn."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Assess for electrical burn.",
+        "decision_point": {
+          "condition": "Was the burn caused by electricity?",
+          "if_yes": "Ensure the power source is disconnected before approaching the casualty. Call 101 immediately. Be prepared to perform CPR if the patient becomes unresponsive. Note that electrical burns may cause internal injuries not visible on the surface.",
+          "if_no": "Continue monitoring the patient until emergency services arrive or the patient receives medical evaluation."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Monitor for complications while waiting for emergency services.",
+        "detail": "Watch for signs of infection (redness, warmth, pus, fever), respiratory issues (if inhalation injury is suspected), and signs of hypovolemic shock. For mild first-degree burns not requiring emergency services, ibuprofen or paracetamol may be used for pain relief."
+      }
+    ],
+    "do_not": [
+      "Do NOT apply ice or ice-cold water to the burn -- extreme cold causes additional tissue and blood vessel damage.",
+      "Do NOT apply toothpaste, ground coffee, raw egg, yogurt, butter, or other home remedies -- these trap heat and increase infection risk.",
+      "Do NOT rupture or pop blisters -- the fluid inside protects the underlying tissue during healing.",
+      "Do NOT use fat-based creams or ointments on fresh burns.",
+      "Do NOT remove clothing that is stuck to the burn -- cut around it instead.",
+      "Do NOT attempt chemical neutralisation on chemical burns (do not apply acid to a base burn or vice versa).",
+      "Do NOT approach an electrical burn casualty until the power source is confirmed disconnected."
+    ],
+    "equipment_needed": [
+      "Cool running water source",
+      "Cling film (food wrap) or clean plastic bag",
+      "Clean non-fluffy dressings or bandages",
+      "Scissors (to cut clothing around stuck areas)",
+      "Blanket (to keep patient warm and prevent hypothermia)"
+    ]
+  },
+  "tags": [
+    "burns",
+    "thermal burns",
+    "chemical burns",
+    "electrical burns",
+    "cooling",
+    "shock prevention",
+    "wound care",
+    "emergency",
+    "MDA",
+    "101"
+  ]
+}

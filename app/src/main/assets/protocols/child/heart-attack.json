@@ -1,0 +1,121 @@
+{
+  "id": "IL-CHILD-HEART-ATTACK-001",
+  "title": "Heart Attack / Chest Pain - Child Protocol",
+  "country": "israel",
+  "age_group": "child",
+  "category": "heart_attack",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Heart Attack and Chest Pain in Children - Synthesised from MDA First Aid Guidance, MDA BLS/ALS Guidelines, and MDA Training Curriculum",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA BLS Guide 2016; MDA ALS Guide 2022; MDA Training Syllabus 2026. Aligned with ILCOR/AHA international resuscitation guidelines."
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. United Hatzalah does not publish a specific pediatric heart attack/chest pain protocol; their general cardiac emergency approach aligns with MDA guidance. No substantive differences found between the two organisations. IMPORTANT: MDA does not publish a standalone public-facing protocol for heart attack in children, because true myocardial infarction in children is exceedingly rare. This protocol is synthesised from MDA's general heart attack first aid guidance (adapted with pediatric exclusions), MDA's pediatric BLS guidelines, MDA training curriculum, and international consensus guidelines (ILCOR/AHA) that MDA follows. Pediatric chest pain is almost always benign (musculoskeletal, anxiety, gastroesophageal reflux). Rare cardiac causes in children include myocarditis, congenital heart defects, hypertrophic cardiomyopathy, commotio cordis, Kawasaki disease, and inherited arrhythmias (e.g. Long QT syndrome). Children almost never have atherosclerotic coronary artery disease."
+  },
+  "protocol": {
+    "summary": "Recognise warning signs of cardiac distress in children, call 101 (MDA) immediately, position the child comfortably, do NOT give aspirin, monitor continuously, and be prepared to perform pediatric CPR if the child becomes unresponsive.",
+    "when_to_apply": "Child has persistent, severe, or worsening chest pain (especially during or after physical activity); chest pain with exertion that limits activity; syncope or near-fainting during physical activity; palpitations (racing, skipping, or pounding heart); unexplained shortness of breath disproportionate to activity; sudden collapse during sports or physical activity; cyanosis (bluish lips, fingertips, or skin); chest pain accompanied by fever (possible myocarditis/pericarditis); any new cardiac symptoms in a child with known heart condition.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon identifying any cardiac warning signs. Call 101 (MDA) before beginning other interventions. United Hatzalah can also be reached at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Stay calm and reassure the child. Assess for cardiac warning signs.",
+        "detail": "Look for: persistent or severe chest pain, pain during exertion, syncope or near-syncope, palpitations, unexplained breathlessness, cyanosis, sudden collapse. Red flags suggesting a cardiac rather than benign cause include: pain during exertion (not at rest), associated syncope or dizziness, known congenital heart condition, family history of sudden cardiac death at a young age, recent viral illness followed by new chest pain/fatigue/breathlessness (possible myocarditis), or direct blow to the chest immediately before collapse (commotio cordis)."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Describe the child's symptoms, age, and any known medical conditions to the dispatcher. Follow all instructions from the MDA dispatcher. If a bystander is present, have them make the call while you stay with the child."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Assess the child's level of consciousness and breathing.",
+        "decision_point": {
+          "condition": "Is the child conscious and breathing?",
+          "if_yes": "Position the child comfortably. Proceed to Step 4.",
+          "if_no": "If the child is unconscious but breathing, place in the recovery position (on their side). If the child is not breathing or has no pulse, proceed immediately to Step 7 (CPR)."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Position the conscious child in a comfortable position -- typically sitting up or semi-reclined.",
+        "detail": "A sitting or semi-reclined position eases breathing. Allow the child to adopt whatever position feels most comfortable."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Keep the child calm and monitor continuously.",
+        "detail": "Loosen tight clothing around the chest and neck. Keep the child warm but not overheated. Do NOT allow the child to eat or drink (in case hospital procedures are needed). Continuously monitor breathing and level of consciousness. Note the time symptoms began and relay this to the ambulance crew.",
+        "warning": "Do NOT give aspirin to the child. Unlike the adult heart attack protocol, aspirin is not indicated for pediatric chest pain and carries a risk of Reye's syndrome. Do NOT give any medications unless specifically instructed by the 101 dispatcher or a physician."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess whether the situation involves commotio cordis.",
+        "decision_point": {
+          "condition": "Did the child collapse immediately after a direct blow to the chest during sports or physical activity?",
+          "if_yes": "This is likely commotio cordis -- a time-critical emergency. Check responsiveness immediately. If unresponsive and not breathing, begin CPR (Step 7) and use an AED as fast as possible. Defibrillation within 3 minutes gives the best chance of survival.",
+          "if_no": "Continue monitoring the child and wait for emergency services. Keep the child calm and in a comfortable position."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "If the child becomes unresponsive and is not breathing normally, begin pediatric CPR immediately.",
+        "detail": "Single rescuer: compression-to-ventilation ratio of 30:2. Two rescuers: compression-to-ventilation ratio of 15:2. Compression rate: 100-120 per minute. Compression depth: approximately 5 cm (one-third of chest depth) for children aged 1 year to puberty. After 5 cycles (approximately 2 minutes), call 101 if not already done.",
+        "warning": "Do NOT delay CPR while waiting for an AED. Begin compressions immediately."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Use an AED as soon as one is available.",
+        "detail": "Use pediatric pads or a dose attenuator if available for children under 8 years or under 25 kg. If only adult pads are available, use them -- do not delay defibrillation. MDA has deployed over 4,000 public-access defibrillators across Israel; their locations are available via the MDA app and website.",
+        "decision_point": {
+          "condition": "Are pediatric AED pads available?",
+          "if_yes": "Use pediatric pads or dose attenuator. Follow AED voice prompts.",
+          "if_no": "Use adult pads. If pads overlap on a small child, place one pad on the front of the chest and one between the shoulder blades. Follow AED voice prompts."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Continue CPR and AED use until emergency services arrive, the child recovers, or you are too exhausted to continue.",
+        "detail": "Continue CPR cycles between AED analysis and shocks. If multiple rescuers are present, rotate the compressor role every 2 minutes to maintain quality compressions."
+      }
+    ],
+    "do_not": [
+      "Do NOT give aspirin to a child -- unlike the adult heart attack protocol, aspirin is not indicated for pediatric chest pain and carries a risk of Reye's syndrome.",
+      "Do NOT give nitroglycerin or any cardiac medication to a child unless prescribed and directed by a physician.",
+      "Do NOT dismiss chest pain in a child who has recently been ill, has a known heart condition, collapsed during activity, or has a family history of sudden cardiac death.",
+      "Do NOT attempt to drive the child to hospital yourself if cardiac arrest is suspected -- call 101 for an ambulance equipped with monitoring and defibrillation equipment.",
+      "Do NOT leave the child unattended while waiting for the ambulance.",
+      "Do NOT give the child food or drink (in case hospital procedures are needed).",
+      "Do NOT give any medications unless specifically instructed by the 101 dispatcher or a physician."
+    ],
+    "equipment_needed": [
+      "AED with pediatric pads or dose attenuator (if available)",
+      "Phone to call 101 (MDA) or 1221 (United Hatzalah)",
+      "MDA app (for AED locator and emergency calling)"
+    ]
+  },
+  "tags": [
+    "heart attack",
+    "chest pain",
+    "cardiac",
+    "pediatric",
+    "child",
+    "myocarditis",
+    "commotio cordis",
+    "CPR",
+    "AED",
+    "no aspirin",
+    "Reye's syndrome",
+    "congenital heart defect",
+    "hypertrophic cardiomyopathy",
+    "arrhythmia",
+    "syncope",
+    "emergency"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "IL-ADULT-SCORPION-STINGS-001",
+  "title": "Scorpion Stings - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "scorpion_stings",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "First Aid for Scorpion Stings (עקיצת עקרב - עזרה ראשונה)",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Israeli Ministry of Health guidelines and United Hatzalah training material"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. Key disagreement: Israeli Ministry of Health (2026) explicitly states 'do NOT cool the area' for scorpion stings, while United Hatzalah recommends applying a cold compress for 10 minutes with breaks (ice wrapped in cloth, no direct skin contact). Some MDA-attributed quotes in Israeli news sources also recommend cooling. This protocol follows the more conservative Ministry of Health position (no cooling) as the default. If cooling is applied on MDA dispatcher instruction, it should be indirect and brief. MDA source pages could not be directly fetched due to site restrictions (471 status); protocol synthesised from MDA page snippets, Israeli Ministry of Health guidance (successfully fetched), United Hatzalah pages (successfully fetched), Israeli first aid course material aligned with MDA curriculum, Israel Poison Information Center clinical data, and corroborating Israeli news sources. Publication date not specified by MDA. Israel Poison Information Center 24/7 hotline: 04-7771900 (Rambam Health Care Campus, Haifa). Primary dangerous species: Leiurus quinquestriatus (deathstalker/yellow scorpion) -- most dangerous scorpion in Israel and one of the most dangerous in the world. Five dangerous species total out of approximately 21 species in Israel. The common myth that black scorpions are not dangerous is FALSE. Peak season: spring through autumn, with highest incidence in Negev desert region. MDA reported 212 scorpion sting cases from June to August 2023 alone."
+  },
+  "protocol": {
+    "summary": "Call 101 immediately, keep the victim calm and still, immobilise the affected limb, remove constrictive items, monitor for systemic reaction, and transport to hospital for mandatory observation (minimum 6 hours).",
+    "when_to_apply": "Person has been stung or suspected stung by a scorpion. Signs include: immediate intense pain at the sting site, mild to moderate swelling and redness, numbness or tingling at the sting site. May progress to systemic symptoms including restlessness, altered consciousness, seizures, difficulty breathing, excessive sweating, tachycardia, hypertension, nausea, or vomiting. Local symptom severity does NOT reliably predict systemic danger.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon a scorpion sting. MDA dispatch will provide telephone guidance until the medical team arrives. Also consider calling the Israel Poison Information Center at 04-7771900 for specialist toxicology advice."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call MDA immediately at 101.",
+        "detail": "Request an ambulance. Follow dispatch instructions until the medical team arrives. All scorpion stings require hospital evaluation -- do not wait to see if symptoms develop."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Keep the victim calm and still.",
+        "detail": "Reassure the victim and reduce stress and anxiety. Have the victim lie down. Minimise all movement -- movement and elevated heart rate accelerate venom spread through the bloodstream. Panic and agitation worsen the clinical outcome."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Immobilise the affected limb.",
+        "detail": "Keep the stung limb as still as possible. Position the limb at or below heart level to slow venom distribution."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove constrictive items from the sting area.",
+        "detail": "Remove jewellery, watches, rings, and tight clothing near the sting site. The area may swell significantly.",
+        "warning": "Swelling can progress rapidly. Remove all constrictive items as early as possible."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess for signs of systemic envenomation.",
+        "detail": "Watch for: restlessness, altered consciousness, confusion, difficulty breathing or swallowing, excessive sweating, salivation, or tearing, rapid or irregular heartbeat, seizures or muscle twitching, nausea, vomiting, abdominal pain, changes in blood pressure.",
+        "decision_point": {
+          "condition": "Is the victim showing any systemic symptoms beyond local pain (altered consciousness, difficulty breathing, seizures, cardiovascular changes)?",
+          "if_yes": "Report symptoms immediately to MDA dispatch. This is a severe envenomation requiring urgent hospital transport. Maintain airway (ABC). If the victim stops breathing, begin CPR. Provide oxygen if available and trained to do so.",
+          "if_no": "Continue monitoring while keeping the victim calm and still. All scorpion sting victims still require hospital transport and observation."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Attempt to identify the scorpion if it can be done safely.",
+        "detail": "If possible, photograph the scorpion or note its colour and size. The deathstalker (Leiurus quinquestriatus) is yellow and is the most dangerous species in Israel. However, the common belief that black scorpions are not dangerous is FALSE -- several black species are medically significant.",
+        "decision_point": {
+          "condition": "Can the scorpion be safely identified or photographed without risk of additional stings?",
+          "if_yes": "Take a photograph or note the scorpion's colour, size, and any distinguishing features. Share this information with arriving paramedics.",
+          "if_no": "Do not approach the scorpion. Report any details you observed to paramedics when they arrive."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Maintain ABC (Airway, Breathing, Circulation) support while awaiting paramedics.",
+        "detail": "Continuously monitor the victim's airway, breathing, and circulation. Be prepared to intervene if the victim's condition deteriorates.",
+        "decision_point": {
+          "condition": "Is the victim conscious and breathing adequately?",
+          "if_yes": "Continue monitoring. Keep the victim lying down with the stung limb immobilised at or below heart level.",
+          "if_no": "If unconscious but breathing, place in recovery position. If not breathing, begin CPR immediately. Report status change to MDA dispatch."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Wait for MDA paramedics and prepare for hospital transport.",
+        "detail": "All scorpion sting victims must be observed in the emergency department for a minimum of 6 hours from the time of sting (Israel Poison Information Center guideline). Scorpion antivenom is available in Israeli hospitals and may be administered in rare, severe cases based on clinical presentation.",
+        "decision_point": {
+          "condition": "Is the victim in a remote location where MDA response will be significantly delayed?",
+          "if_yes": "If safe transport is available, begin moving the victim to the nearest hospital while keeping them immobile and the stung limb at or below heart level. Maintain phone contact with MDA dispatch for guidance.",
+          "if_no": "Wait for MDA paramedics to arrive. Do not move the victim unnecessarily."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT apply a tourniquet -- it traps venom locally and causes tissue damage; it does not prevent systemic spread.",
+      "DO NOT suck the venom out of the wound -- this is ineffective and potentially harmful.",
+      "DO NOT cut the sting area -- this increases infection risk and does not remove venom.",
+      "DO NOT apply ice or cool the sting area -- the Israeli Ministry of Health (2026) explicitly advises against cooling. If MDA dispatch specifically instructs cooling, use indirect application only (ice wrapped in cloth) and keep it brief.",
+      "DO NOT give the victim food or drink -- this risks venom dispersal and may complicate hospital treatment.",
+      "DO NOT allow the victim to walk or move the stung limb -- movement accelerates venom circulation."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 (MDA) and optionally 04-7771900 (Poison Center)",
+      "Phone or camera to photograph the scorpion if safe to do so"
+    ]
+  },
+  "tags": [
+    "scorpion",
+    "scorpion sting",
+    "envenomation",
+    "venom",
+    "leiurus quinquestriatus",
+    "deathstalker",
+    "neurotoxin",
+    "negev",
+    "desert",
+    "poison",
+    "poison center",
+    "antivenom",
+    "immobilisation",
+    "emergency"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "id": "IL-ADULT-EYE-INJURIES-001",
+  "title": "Eye Injuries — Adult First Aid Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "eye_injuries",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Training Department Manual — Eye Injury First Aid",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and Hatzalah Without Borders sources. Hatzalah Without Borders provides a brief guide consistent with MDA protocols, emphasising immediate flushing and professional follow-up. MDA provides more detailed injury-type-specific guidance. United Hatzalah (1221.org.il) does not publish a standalone eye injury protocol. No significant differences between sources. Protocol covers multiple injury types: foreign body, chemical splash, embedded objects, blunt trauma, and lacerations."
+  },
+  "protocol": {
+    "summary": "First aid for eye injuries including foreign bodies, chemical splashes, embedded objects, blunt trauma, and lacerations.",
+    "when_to_apply": "Person has sustained an eye injury from a foreign body, chemical splash, penetrating object, blunt force, or laceration.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for any penetrating injury, chemical burns (after initiating flushing), sudden vision loss, blood in the eye, embedded objects, or eyeball laceration."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the type of eye injury.",
+        "decision_point": {
+          "condition": "Is there a chemical splash in the eye?",
+          "if_yes": "Go to Step 2 (chemical splash protocol).",
+          "if_no": "Go to Step 5 to assess other injury types."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "CHEMICAL SPLASH: Flush the affected eye immediately with a stream of running water for 15 to 30 minutes.",
+        "detail": "Hold the eyelid open during flushing to ensure the chemical is fully washed out. Tilt the head so water runs away from the unaffected eye.",
+        "warning": "Do not delay flushing — begin immediately, even before calling emergency services."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Remove contact lenses if present, after starting the flush.",
+        "detail": "If possible, note the chemical product name or bring the container for the medical team."
+      },
+      {
+        "step_number": 4,
+        "instruction": "After flushing, take the casualty to an emergency room. Call MDA at 101 for severe chemical burns or if the person cannot open their eye."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess whether an object is embedded or penetrating the eye.",
+        "decision_point": {
+          "condition": "Is there an object embedded in or penetrating the eye?",
+          "if_yes": "Go to Step 6 (embedded object protocol).",
+          "if_no": "Go to Step 9 to assess other injury types."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "EMBEDDED OBJECT: Do NOT attempt to remove the object. Do NOT apply pressure to the eye or the object.",
+        "warning": "Attempting to remove an embedded object can cause severe permanent damage."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Cover BOTH eyes loosely to prevent sympathetic eye movement.",
+        "detail": "Use a cup, cone, or ring of cloth around the object to protect it from being pushed further in."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Keep the casualty calm and still. Call MDA at 101 immediately — this requires hospital treatment."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Assess whether the injury is a non-embedded foreign body, blunt trauma, or laceration.",
+        "decision_point": {
+          "condition": "Is there a non-embedded foreign body (dust, sand, metal shaving)?",
+          "if_yes": "Go to Step 10 (foreign body protocol).",
+          "if_no": "Go to Step 13 (blunt trauma / laceration protocol)."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "FOREIGN BODY: Do NOT rub the eye.",
+        "warning": "Rubbing can embed the object further and cause additional damage."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Rinse the eye with lukewarm running water for approximately 15 minutes. Check every 5 minutes whether the foreign body has been dislodged."
+      },
+      {
+        "step_number": 12,
+        "instruction": "If the object does not come out with flushing, or if symptoms persist after removal (pain, redness, tearing), seek medical attention at an emergency room.",
+        "decision_point": {
+          "condition": "Has the foreign body been successfully removed and symptoms resolved?",
+          "if_yes": "Monitor for any delayed symptoms. Seek medical attention if pain, redness, or tearing returns.",
+          "if_no": "Go to emergency room for professional removal."
+        }
+      },
+      {
+        "step_number": 13,
+        "instruction": "BLUNT TRAUMA: Apply a cold compress gently. Do NOT press on the eyeball.",
+        "decision_point": {
+          "condition": "Is vision affected, or are there signs of serious injury (double vision, blood in eye, irregular pupil, severe pain)?",
+          "if_yes": "Call MDA at 101 immediately. Seek emergency medical evaluation.",
+          "if_no": "Seek medical evaluation even if the eye looks normal — internal damage may not be visible."
+        }
+      },
+      {
+        "step_number": 14,
+        "instruction": "LACERATION: If there is a cut to the eyeball or eyelid, do NOT wash the eye. Cover loosely with a sterile pad without applying pressure.",
+        "warning": "Do not wash a lacerated eyeball — this can worsen the injury."
+      },
+      {
+        "step_number": 15,
+        "instruction": "Call MDA at 101 — lacerations require emergency room treatment. Keep the casualty lying down if possible."
+      }
+    ],
+    "do_not": [
+      "Do NOT rub the eye when a foreign body is present.",
+      "Do NOT attempt to remove an embedded or penetrating object.",
+      "Do NOT apply pressure to an injured eye or embedded object.",
+      "Do NOT wash the eye if there is a laceration to the eyeball.",
+      "Do NOT delay flushing for chemical splashes — start immediately.",
+      "Do NOT press a cold compress onto the eyeball for blunt trauma."
+    ],
+    "equipment_needed": [
+      "Clean running water source for flushing",
+      "Sterile eye pads or clean cloth",
+      "Cold compress (for blunt trauma)",
+      "Cup or cone (to protect embedded objects)",
+      "Bandages to loosely cover both eyes if needed"
+    ]
+  },
+  "tags": [
+    "eye injury",
+    "foreign body",
+    "chemical splash",
+    "embedded object",
+    "blunt trauma",
+    "laceration",
+    "ophthalmology",
+    "workplace injury"
+  ]
+}

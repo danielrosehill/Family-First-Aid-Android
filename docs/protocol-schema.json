@@ -1,0 +1,173 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "First Aid Protocol",
+  "description": "Structured first aid protocol record with full provenance metadata",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "country",
+    "age_group",
+    "source",
+    "import_metadata",
+    "protocol"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier, e.g. IL-ADULT-CHOKING-001"
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable protocol title"
+    },
+    "country": {
+      "type": "string",
+      "enum": ["israel", "usa"]
+    },
+    "age_group": {
+      "type": "string",
+      "enum": ["adult", "child"]
+    },
+    "category": {
+      "type": "string",
+      "description": "Protocol category, e.g. choking, bleeding, burns, cardiac_arrest, allergic_reaction"
+    },
+    "source": {
+      "type": "object",
+      "required": ["authority", "document_title"],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "description": "Issuing authority, e.g. Magen David Adom, American Heart Association, American Red Cross"
+        },
+        "document_title": {
+          "type": "string",
+          "description": "Title of the source document or guideline"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL where the source was accessed"
+        },
+        "publication_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the guideline was published (YYYY-MM-DD)"
+        },
+        "edition": {
+          "type": "string",
+          "description": "Edition or version of the guideline"
+        }
+      }
+    },
+    "import_metadata": {
+      "type": "object",
+      "required": ["imported_date", "imported_by"],
+      "properties": {
+        "imported_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date this protocol was imported into the repository (YYYY-MM-DD)"
+        },
+        "imported_by": {
+          "type": "string",
+          "description": "Who performed the import"
+        },
+        "last_verified_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the protocol was last verified against the source"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Any notes about the import process"
+        }
+      }
+    },
+    "protocol": {
+      "type": "object",
+      "required": ["steps"],
+      "properties": {
+        "summary": {
+          "type": "string",
+          "description": "Brief one-line summary of the protocol"
+        },
+        "when_to_apply": {
+          "type": "string",
+          "description": "Conditions/signs indicating this protocol should be used"
+        },
+        "call_emergency": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "string",
+              "description": "Emergency number to call, e.g. 101 (Israel MDA), 911 (USA)"
+            },
+            "when": {
+              "type": "string",
+              "description": "When to call emergency services relative to the protocol steps"
+            }
+          }
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step_number", "instruction"],
+            "properties": {
+              "step_number": {
+                "type": "integer"
+              },
+              "instruction": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string",
+                "description": "Additional detail or rationale for this step"
+              },
+              "warning": {
+                "type": "string",
+                "description": "Critical safety warning for this step"
+              },
+              "decision_point": {
+                "type": "object",
+                "description": "If this step involves a yes/no or branching decision",
+                "properties": {
+                  "condition": {
+                    "type": "string"
+                  },
+                  "if_yes": {
+                    "type": "string"
+                  },
+                  "if_no": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "do_not": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of things NOT to do"
+        },
+        "equipment_needed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

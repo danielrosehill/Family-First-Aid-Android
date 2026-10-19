@@ -1,0 +1,115 @@
+{
+  "id": "IL-CHILD-EYE-INJURIES-001",
+  "title": "Eye Injuries First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "eye_injuries",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Eye Injury First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and general first aid guidance, supplemented by Ichud Hatzalah and Hatzalah Without Borders eye injury protocols (November 2021)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah/Hatzalah Without Borders sources. Neither organisation publishes a dedicated child-specific eye injury protocol. MDA used as primary authority. Hatzalah Without Borders (hatzalah.org.il) provides more detailed guidance on chemical burns and irrigation duration (15-30 minutes), which has been incorporated. Both sources agree on core principles: irrigate chemical burns immediately, do not apply pressure to penetrating injuries, use rigid shield for penetrating objects. Children may need two adults for irrigation (one to hold, one to irrigate). MDA first aid portal was not accessible during research. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for eye injuries in children in Israel, covering chemical burns, foreign objects, penetrating injuries, and blunt trauma. Emphasises immediate irrigation for chemical exposure, rigid shielding for penetrating injuries, and calm approach with age-appropriate communication.",
+    "when_to_apply": "When a child has sustained any eye injury including chemical splash, foreign object in the eye, penetrating injury, blunt trauma, thermal or UV burn. Common causes in Israeli children include playground injuries (sand, sticks, swings), household chemical products (bleach, cleaning agents), and toy-related injuries.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 for any penetrating eye injury, chemical burn to the eye, significant blunt trauma with vision changes, or any eye injury where the child is in severe distress. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the type of eye injury.",
+        "detail": "Determine if the injury is from a chemical substance, foreign object, penetrating object, blunt trauma, or thermal/UV burn. The treatment approach differs significantly based on the type of injury.",
+        "decision_point": {
+          "condition": "Is this a chemical burn to the eye?",
+          "if_yes": "Proceed immediately to Step 2 (chemical burn irrigation). Time is critical -- begin irrigation within seconds.",
+          "if_no": "Proceed to Step 3 to assess for other injury types."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "For chemical burns: irrigate the eye immediately with clean flowing water for 15 to 30 minutes.",
+        "detail": "Tilt the child's head so water runs from the inner corner of the affected eye outward, away from the unaffected eye. Use sterile water if available, otherwise tap water. Hold eyelids open during irrigation. For young children who resist, two adults may be needed -- one to hold the child securely, one to irrigate. Continue irrigation for a full 15-30 minutes even if the child protests. After irrigation, transport urgently to hospital.",
+        "warning": "Do NOT delay irrigation to call emergency services. Begin irrigation immediately and have someone else call 101. Identify the chemical substance and bring the container or its MSDS to hospital if possible."
+      },
+      {
+        "step_number": 3,
+        "instruction": "For foreign objects: determine if the object is embedded or superficial.",
+        "detail": "Ask the child (if old enough) what happened. Look for visible objects on the surface of the eye or under the eyelid.",
+        "decision_point": {
+          "condition": "Is the foreign object embedded in the eye or visibly penetrating the surface?",
+          "if_yes": "Do NOT attempt removal. Cover both eyes with sterile dressings without applying pressure. Transport to hospital immediately. Proceed to Step 5.",
+          "if_no": "Attempt gentle flushing with clean lukewarm water for approximately 15 minutes to dislodge the object. Even after successful removal, seek ophthalmological evaluation to check for remaining injury."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "For penetrating eye injuries: protect the eye without pressure.",
+        "detail": "Do NOT apply any pressure to the eye. Do NOT apply bandages. Place a rigid shield (such as a paper cup or plastic eye shield) over the injured eye without the shield touching the eye. Position the child supine (lying on back) for transport. Cover the uninjured eye as well to reduce sympathetic eye movement.",
+        "warning": "Do NOT apply pressure or bandage to a penetrating eye injury -- this worsens the wound and can cause further damage. Do NOT attempt to remove any embedded object."
+      },
+      {
+        "step_number": 5,
+        "instruction": "For blunt trauma: apply a cold compress gently.",
+        "detail": "Apply a cold compress (ice wrapped in cloth) gently over the closed eyelid for 10-15 minutes. Do not press firmly. Monitor for vision changes, increasing pain, or swelling. Seek medical evaluation.",
+        "decision_point": {
+          "condition": "Does the child report vision changes, double vision, or severe pain?",
+          "if_yes": "Call 101 immediately. This may indicate internal eye bleeding or retinal damage requiring urgent hospital evaluation.",
+          "if_no": "Continue cold compress and seek routine ophthalmological evaluation within 24 hours."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Calm and reassure the child throughout treatment.",
+        "detail": "Approach calmly. Explain procedures honestly using age-appropriate language. Allow the child to sit with a parent during assessment when possible. Children may not report vision changes accurately -- observe behaviour for signs of visual difficulty (bumping into objects, squinting, covering one eye).",
+        "warning": "Do NOT rub the affected eye. Instruct the child not to rub their eye."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Transport to hospital with on-call ophthalmologist.",
+        "detail": "All significant eye injuries in children require hospital evaluation. For penetrating injuries, transport supine. Bring the chemical container or its MSDS if applicable. Note the time of injury and substances involved for medical staff."
+      }
+    ],
+    "do_not": [
+      "Do NOT rub the injured eye -- worsens damage from foreign objects and chemical burns.",
+      "Do NOT apply pressure or bandages to a penetrating eye injury.",
+      "Do NOT attempt to remove an embedded object from the eye.",
+      "Do NOT delay irrigation for chemical burns -- begin immediately.",
+      "Do NOT use any eye drops or ointments without medical direction.",
+      "Do NOT allow the child to rub or touch the injured eye.",
+      "Do NOT apply antiseptic or alcohol to the eye."
+    ],
+    "equipment_needed": [
+      "Clean water source (tap water or sterile water for irrigation)",
+      "Rigid eye shield or paper cup",
+      "Sterile gauze or clean cloth",
+      "Cold compress or ice wrapped in cloth",
+      "Phone (to call 101)"
+    ]
+  },
+  "tags": [
+    "eye injury",
+    "chemical burn",
+    "foreign object",
+    "penetrating injury",
+    "blunt trauma",
+    "irrigation",
+    "ophthalmology",
+    "pediatric",
+    "child",
+    "emergency",
+    "MDA",
+    "101",
+    "household chemicals",
+    "playground injury"
+  ]
+}

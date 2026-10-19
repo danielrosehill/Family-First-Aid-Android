@@ -1,0 +1,142 @@
+{
+  "id": "IL-CHILD-SEIZURES-001",
+  "title": "Seizures in Children (Including Febrile Seizures)",
+  "country": "israel",
+  "age_group": "child",
+  "category": "seizures",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Treat Febrile Seizures - MDA First Aid Protocol (כיצד לטפל בפרכוסי חום)",
+    "url": "https://www.mdais.org/101/seizures",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Israeli Ministry of Health parenting guidance"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No substantive disagreements found between the two organisations. MDA source is focused on febrile seizures in children (layperson guidance); United Hatzalah source covers general seizure response for all ages (volunteer EMT-level guidance). United Hatzalah's page does not contain a dedicated paediatric febrile seizure section. Additional detail on seizure types (absence seizures, status epilepticus threshold) drawn from United Hatzalah material. MDA source page could not be directly fetched due to bot protection; content reconstructed from search engine excerpts and cross-referenced with Israeli Ministry of Health official guidance. Febrile seizures affect children aged 6 months to 5-6 years, peak incidence at 18-22 months, prevalence approximately 3-4%."
+  },
+  "protocol": {
+    "summary": "Protect the seizing child from injury, position on their side, time the seizure, and call 101 if it is a first seizure, lasts more than 5 minutes, or the child does not recover consciousness.",
+    "when_to_apply": "Child is experiencing a seizure: rhythmic jerking or stiffening of the body, unresponsiveness, eyes rolling, loss of consciousness. For febrile seizures: seizure occurring in a child aged 6 months to 5-6 years in the context of fever or rapidly rising body temperature.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately if: this is the child's first seizure; the seizure lasts more than 5 minutes; the child has difficulty breathing, choking, or skin discolouration (cyanosis/pallor); the child does not regain consciousness after the seizure ends; multiple seizures occur in a short period; anti-seizure medication has been given but the seizure persists."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure safety. Remove dangerous objects from the child's vicinity to prevent injury during the seizure.",
+        "detail": "Move furniture, sharp objects, and hard items away from the child. If possible, pad the area around the child with pillows or blankets."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Lay the child on their side with the head supported and tilted to the side or slightly downward.",
+        "detail": "This keeps the airway clear and prevents choking if the child vomits. Do not move the child unless they are in immediate danger (e.g., near traffic or a ledge)."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Loosen tight clothing, especially around the neck.",
+        "detail": "Undo buttons, ties, or anything constricting the airway or chest."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Time the seizure. Note when it started and how long it lasts.",
+        "detail": "Seizure duration is critical information for emergency responders and determines whether to call 101. A seizure lasting more than 5 minutes is a medical emergency (status epilepticus).",
+        "warning": "A seizure lasting 5 or more minutes, or multiple consecutive seizures without recovery of consciousness between them, constitutes status epilepticus and requires immediate emergency response. Untreated cases beyond 30 minutes risk permanent brain damage."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess whether this is the child's first seizure.",
+        "decision_point": {
+          "condition": "Is this the child's first seizure?",
+          "if_yes": "Call 101 (MDA) immediately. A first seizure always requires medical evaluation. MDA will transport the child to hospital.",
+          "if_no": "Continue to Step 6 to assess seizure duration and severity."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Monitor the seizure duration and assess severity.",
+        "decision_point": {
+          "condition": "Has the seizure lasted more than 5 minutes, or does the child show difficulty breathing, choking, or skin discolouration (blue/pale)?",
+          "if_yes": "Call 101 (MDA) immediately. This is a medical emergency.",
+          "if_no": "Continue monitoring. Stay with the child and observe. Proceed to Step 7."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "If the child has a prescribed seizure-stopping medication (e.g., rectal diazepam), administer it according to the doctor's instructions.",
+        "detail": "Only administer medication that has been specifically prescribed for this child by their doctor. Do NOT give any medication by mouth during the seizure.",
+        "decision_point": {
+          "condition": "Has medication been administered but the seizure persists?",
+          "if_yes": "Call 101 (MDA) immediately.",
+          "if_no": "Continue monitoring until the seizure stops."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "For febrile seizures: wrap the child in a damp (lukewarm) towel to help reduce fever.",
+        "detail": "Use lukewarm water only. Do NOT use cold water or ice. Do NOT put the child in a bath or shower during the seizure.",
+        "warning": "Do NOT attempt to cool the child rapidly with cold water, ice, or cold baths. Use only lukewarm damp towels."
+      },
+      {
+        "step_number": 9,
+        "instruction": "If the child is in a vehicle during the seizure, keep the child secured in their safety seat.",
+        "detail": "Pull over safely if driving. Do not remove the child from the safety seat during the seizure."
+      },
+      {
+        "step_number": 10,
+        "instruction": "After the seizure stops: place the child in the recovery position (on their side) and monitor breathing.",
+        "detail": "The child may be drowsy, confused, or sleepy after the seizure. This post-ictal state is normal and can last minutes to hours. Stay with the child and provide reassurance."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Assess the child's recovery after the seizure ends.",
+        "decision_point": {
+          "condition": "Does the child regain consciousness and begin to recover?",
+          "if_yes": "Continue to monitor. After a febrile seizure, the child should be examined by a paediatrician. For a first seizure, seek immediate medical evaluation.",
+          "if_no": "Call 101 (MDA) immediately if not already called. The child not regaining consciousness is a medical emergency."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Once the child has recovered and if the seizure was febrile, manage the fever to reduce recurrence risk.",
+        "detail": "Administer age- and weight-appropriate fever-reducing medication (paracetamol or ibuprofen) as directed by the family doctor. Dress the child in light clothing. Ventilate the room. Give plenty of fluids. A lukewarm bath for approximately 20 minutes may be given only when the child is NOT actively seizing.",
+        "warning": "Antipyretics may improve comfort but have NOT been proven to prevent febrile seizures (per Israeli Ministry of Health and current medical evidence). Dosage should be determined by the family doctor."
+      }
+    ],
+    "do_not": [
+      "DO NOT force the child's mouth open -- the child will not swallow their tongue.",
+      "DO NOT insert anything into the mouth -- this can injure teeth or jaw.",
+      "DO NOT attempt resuscitation movements (CPR) during the seizure -- this can only cause harm.",
+      "DO NOT put the child in a bath or shower during the seizure.",
+      "DO NOT splash water on the child during the seizure.",
+      "DO NOT try to wake the child or stop the seizure by restraining or holding them down.",
+      "DO NOT give medications by mouth during the seizure.",
+      "DO NOT attempt to cool the child rapidly with cold water or ice.",
+      "DO NOT insert an airway device during an active seizure.",
+      "DO NOT attempt forced airway opening during an active seizure."
+    ],
+    "equipment_needed": [
+      "Lukewarm damp towel (for febrile seizures)",
+      "Pillows or blankets (to pad surroundings)",
+      "Prescribed seizure-stopping medication if available (e.g., rectal diazepam)",
+      "Fever-reducing medication for post-seizure fever management (paracetamol or ibuprofen, as directed by doctor)"
+    ]
+  },
+  "tags": [
+    "seizures",
+    "febrile seizures",
+    "convulsions",
+    "fever",
+    "paediatric",
+    "child",
+    "infant",
+    "epilepsy",
+    "status epilepticus",
+    "tonic-clonic",
+    "post-ictal",
+    "emergency",
+    "recovery position"
+  ]
+}

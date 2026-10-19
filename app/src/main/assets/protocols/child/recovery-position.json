@@ -1,0 +1,119 @@
+{
+  "id": "IL-CHILD-RECOVERY-POSITION-001",
+  "title": "Recovery Position First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "recovery_position",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Recovery Position Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2016-01-01",
+    "edition": "Current MDA training materials and BLS Guide (2016), supplemented by Ichud Hatzalah pediatric treatment approach and respiratory distress guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a standalone recovery position page. MDA used as primary authority. Both sources agree: children aged 1-8 use the standard adult lateral recovery position with greater gentleness; infants under 1 year use the cradle/arm position (face-down on rescuer's forearm). Both sources emphasise that children have proportionally larger heads requiring careful positioning to avoid neck flexion and airway obstruction. Hatzalah provides no step-by-step instructions but references recovery position in multiple articles (respiratory distress, missile strike response). MDA BLS guide (2016) was not accessible for full extraction. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "Recovery position technique for unconscious, breathing children in Israel. Children aged 1-8 use the standard lateral recovery position; infants under 1 year are held face-down on the rescuer's forearm. Purpose is to maintain an open airway, facilitate drainage of secretions, and reduce aspiration risk.",
+    "when_to_apply": "When a child is unconscious but breathing normally and has no suspected spinal injury. The recovery position maintains an open airway, facilitates drainage of secretions, and reduces the risk of aspiration. Do NOT use if spinal injury is suspected -- stabilise the spine instead.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 for any unconscious child. Place the child in the recovery position while waiting for emergency services. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Confirm the child is unconscious but breathing normally.",
+        "detail": "Check responsiveness by speaking loudly and tapping the child's shoulders. Check for normal breathing by looking for chest rise and fall, listening for breath sounds, and feeling for air on your cheek for up to 10 seconds.",
+        "decision_point": {
+          "condition": "Is the child breathing normally?",
+          "if_yes": "Proceed with the recovery position. Call 101 or have someone else call.",
+          "if_no": "If the child is not breathing or only gasping, begin CPR immediately. Do NOT place in recovery position."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Check for suspected spinal injury.",
+        "detail": "Assess the mechanism of injury. Spinal injury should be suspected if the child fell from a height, was in a vehicle collision, has head or neck trauma, or complains of neck/back pain.",
+        "decision_point": {
+          "condition": "Is spinal injury suspected?",
+          "if_yes": "Do NOT move the child into recovery position. Stabilise the head and spine in the position found. Maintain airway using jaw thrust manoeuvre without tilting the head. Wait for emergency services.",
+          "if_no": "Proceed with the recovery position appropriate for the child's age."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine the appropriate recovery position technique based on age.",
+        "detail": "For children aged 1 to 8 years: use the standard lateral recovery position (same as for adults, performed more gently). For infants under 1 year: use the cradle/arm position.",
+        "decision_point": {
+          "condition": "Is the child under 1 year of age (infant)?",
+          "if_yes": "Use the infant recovery position: hold the infant face-down on your forearm with the head lower than the body, supporting the head and jaw with one hand. Proceed to Step 7.",
+          "if_no": "Use the standard lateral recovery position for children aged 1-8 years. Proceed to Step 4."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "For children aged 1-8: kneel beside the child and position the near arm.",
+        "detail": "Kneel beside the child. Place the arm nearest to you at a right angle to the body, with the elbow bent and the palm facing upward."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Bring the far arm across the chest and roll the child towards you.",
+        "detail": "Take the child's far arm and bring it across the chest. Hold the back of their hand against the cheek nearest to you. With your other hand, bend the child's far knee. Roll the child towards you by pulling on the bent knee. Perform this movement gently -- children require less force than adults."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Adjust the position and ensure airway patency.",
+        "detail": "Adjust the upper leg so that the hip and knee are both at right angles. Tilt the head back gently to keep the airway open. Children have proportionally larger heads -- position carefully to avoid neck flexion which can obstruct the airway. The child should be stable on their side with the mouth angled downward to allow drainage.",
+        "warning": "Children have proportionally larger heads than adults. Ensure the head position does not flex the neck forward, as this can obstruct the airway."
+      },
+      {
+        "step_number": 7,
+        "instruction": "For infants under 1 year: use the cradle/arm recovery position.",
+        "detail": "Pick up the infant and hold face-down along your forearm, with the head supported by your hand and the head lower than the body. This allows gravity-assisted drainage of fluids from the airway. Support the jaw with your fingers. Do NOT use the standard lateral recovery position for small infants.",
+        "warning": "Do NOT place infants in the standard lateral (side-lying) recovery position. Use the forearm cradle position only."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Monitor breathing continuously until emergency services arrive.",
+        "detail": "Check breathing regularly (every minute). Ensure the airway remains open. Cover the child with a blanket to prevent hypothermia while in the recovery position. Be prepared to begin CPR if breathing stops.",
+        "decision_point": {
+          "condition": "Has the child stopped breathing?",
+          "if_yes": "Roll the child onto their back and begin CPR immediately.",
+          "if_no": "Continue monitoring in the recovery position. Maintain body warmth and airway patency."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT use the recovery position if the child is not breathing -- begin CPR instead.",
+      "Do NOT use the recovery position if spinal injury is suspected -- stabilise the spine.",
+      "Do NOT place infants under 1 year in the standard lateral recovery position -- use the forearm cradle position.",
+      "Do NOT leave the child unattended in the recovery position -- monitor breathing continuously.",
+      "Do NOT allow the child's head to flex forward (especially in children with larger heads) -- this can obstruct the airway.",
+      "Do NOT forget to cover the child to prevent hypothermia."
+    ],
+    "equipment_needed": [
+      "Blanket or coat (to prevent hypothermia)",
+      "Phone (to call 101)"
+    ]
+  },
+  "tags": [
+    "recovery position",
+    "unconscious",
+    "breathing",
+    "airway management",
+    "lateral position",
+    "infant",
+    "pediatric",
+    "child",
+    "aspiration prevention",
+    "emergency",
+    "MDA",
+    "101",
+    "BLS"
+  ]
+}

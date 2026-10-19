@@ -1,0 +1,143 @@
+{
+  "id": "IL-CHILD-DROWNING-001",
+  "title": "Drowning - Child Protocol",
+  "country": "israel",
+  "age_group": "child",
+  "category": "drowning",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Drowning First Aid Protocol for Children - MDA Public First Aid Guidance (synthesised from MDA training materials, public guidance pages, and MDA-attributed media reports)",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA 101 Public First Aid Guidance Series; supplemented by MDA 2024 drowning statistics (mdais.org/en/news/311224-numbers) and Dr. Itai Gal guidance (Maariv article-1102981)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project rules. No substantive differences were identified between the two organisations' publicly available guidance for pediatric drowning response -- both are fully consistent on compression-to-ventilation ratios (30:2 solo, 15:2 two rescuers), compression rate (100-120/min), compression depth (1/3 to 1/2 chest depth), rescue breathing emphasis, and recovery position guidance. Neither organisation publishes a standalone drowning-specific protocol document; the protocol is reconstructed from their general pediatric CPR guidance applied to the drowning context, supplemented by drowning-specific notes from course descriptions and media-attributed guidance. MDA's professional ALS protocol (als-2024.pdf) was not accessible for public review. Israeli epidemiological context: drowning is the 2nd leading cause of unintentional death in children under 18 in Israel (after traffic accidents); 83% of drownings in children under 10 occur in swimming pools (MDA 2024 statistics)."
+  },
+  "protocol": {
+    "summary": "Remove drowning child from water safely, assess responsiveness, and begin CPR with rescue breaths (critical for hypoxic emergency). Rescue breaths are essential -- compression-only CPR is insufficient for drowning.",
+    "when_to_apply": "A child (aged 1 year to puberty, approximately 10-14 years) has been submerged or immersed in water and is unresponsive, not breathing, or breathing inadequately. Signs include: unconsciousness, absence of breathing, cyanosis (blue skin), limp body, water in or around the airway.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Have a bystander call 101 (MDA) immediately. If alone with the child, perform 2 minutes of CPR (5 cycles of 30:2) BEFORE calling 101, as drowning is a hypoxic emergency and early ventilation is critical."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety. Do not enter the water unless you are a trained water rescuer.",
+        "detail": "Drowning rescuers frequently become victims themselves. Use reaching aids (pole, rope, towel) or throwing aids (flotation device) to bring the child to safety. If you must enter water, bring a flotation device.",
+        "warning": "Do NOT enter the water without a flotation device or proper training. You risk becoming a victim."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Remove the child from the water as quickly as possible without risking your own life.",
+        "detail": "Support the head and neck during removal if spinal injury is suspected (e.g., diving accident, fall from height, or unknown mechanism of injury).",
+        "decision_point": {
+          "condition": "Is spinal injury suspected (diving accident, fall, visible head/neck injury)?",
+          "if_yes": "Immobilise the head and neck in a neutral position during extraction. Maintain spinal alignment. Avoid twisting or bending the neck.",
+          "if_no": "Remove the child from the water as quickly as possible and place on a firm, flat surface."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Assess responsiveness. Tap the child's shoulder firmly and call out loudly: 'Are you okay?'",
+        "decision_point": {
+          "condition": "Is the child responsive (moving, coughing, breathing)?",
+          "if_yes": "Place the child in the recovery position (Step 9). Call 101 (MDA). Monitor closely -- always transport to hospital due to secondary drowning risk.",
+          "if_no": "The child is unresponsive. Place on their back on a firm, flat surface away from the water's edge. Proceed to Step 4."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Call for help. Instruct a bystander to call 101 (MDA) immediately.",
+        "detail": "If a second person is present, have them call 101 while you begin resuscitation. If alone, perform 2 minutes of CPR (5 cycles) before stopping to call 101.",
+        "decision_point": {
+          "condition": "Is a second person available to call 101?",
+          "if_yes": "Direct them to call 101 immediately while you proceed to Step 5.",
+          "if_no": "Perform 2 minutes of CPR first (5 cycles of 30:2), then call 101. Return to CPR immediately after the call."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Open the airway. Gently tilt the child's head back and lift the chin with two fingers (head-tilt chin-lift).",
+        "detail": "Look, listen, and feel for breathing for 5-10 seconds: observe chest rise, listen for breath sounds, feel for air on your cheek.",
+        "decision_point": {
+          "condition": "Is the child breathing normally?",
+          "if_yes": "Place the child in the recovery position (Step 9). Continue monitoring until MDA arrives. Always transport to hospital.",
+          "if_no": "The child is not breathing. Begin CPR immediately (Step 6)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Give 2 initial rescue breaths. Drowning is a hypoxic emergency -- rescue breaths are CRITICAL.",
+        "detail": "Pinch the child's nose closed. Seal your mouth over the child's mouth. Give 2 gentle rescue breaths, each lasting approximately 1 second. Watch for visible chest rise with each breath.",
+        "warning": "Compression-only CPR is insufficient for drowning victims. Rescue breaths are essential because drowning is primarily an oxygen-deprivation emergency.",
+        "decision_point": {
+          "condition": "Does the chest rise visibly with each rescue breath?",
+          "if_yes": "Breaths are effective. Proceed to chest compressions (Step 7).",
+          "if_no": "Reposition the head (re-tilt and re-lift chin) and try again. If chest still does not rise after repositioning, proceed to compressions -- compressions may help dislodge water or foreign material."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Begin chest compressions.",
+        "detail": "Place the heel of one hand on the centre of the chest, between the nipples, on the lower third of the sternum. Press down firmly to a depth of one-third to one-half the depth of the chest. Compress at a rate of 100-120 compressions per minute. Allow full chest recoil between compressions. Count compressions aloud.",
+        "warning": "Avoid compressing over the xiphoid process (bottom tip of the sternum). Allow full chest recoil -- do not lean on the chest between compressions."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Continue CPR cycles using the correct compression-to-breath ratio.",
+        "detail": "Solo rescuer: 30 compressions followed by 2 rescue breaths. Two rescuers: 15 compressions followed by 2 rescue breaths. Perform cycles continuously. Switch rescuers every 2 minutes (5 cycles) if two rescuers are available, to prevent fatigue. Minimise interruptions -- avoid pauses longer than 10 seconds.",
+        "decision_point": {
+          "condition": "Does the child show signs of life (breathing, coughing, movement)?",
+          "if_yes": "Stop compressions. Place the child in the recovery position (Step 9). Continue monitoring breathing until MDA arrives.",
+          "if_no": "Continue CPR cycles without interruption until MDA arrives, an AED becomes available, or you are physically unable to continue."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Recovery position: if the child resumes spontaneous breathing, place them on their side.",
+        "detail": "Place the child on their side with the upper knee bent forward to stabilise the position. This maintains airway patency and allows water or vomit to drain from the mouth. Continue monitoring breathing until MDA arrives. Maintain warmth -- children are particularly vulnerable to hypothermia after water immersion.",
+        "warning": "Even if the child appears to recover fully, ALWAYS transport to hospital. Secondary drowning (delayed pulmonary oedema) and dangerous electrolyte imbalances can develop hours after the event."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Hospital transport is mandatory. All drowning victims must be evaluated at a hospital.",
+        "detail": "Secondary drowning (delayed pulmonary oedema) can develop hours after a drowning event, even if the child initially appears to recover. Electrolyte imbalances can also occur. Do not assume the child is fine based on initial recovery."
+      }
+    ],
+    "do_not": [
+      "DO NOT attempt to remove water from the lungs -- this is impossible and can endanger the victim.",
+      "DO NOT perform abdominal thrusts (Heimlich manoeuvre) to expel water -- this is not effective for drowning and risks aspiration of stomach contents.",
+      "DO NOT delay CPR to attempt water removal.",
+      "DO NOT use compression-only CPR for drowning -- rescue breaths are essential because drowning is a hypoxic (oxygen-deprivation) emergency.",
+      "DO NOT assume the child is fine if they regain consciousness -- always transport to hospital due to risk of secondary drowning (delayed pulmonary oedema) and electrolyte imbalances.",
+      "DO NOT enter the water to rescue the child unless you are a trained water rescuer with a flotation device -- drowning rescuers frequently become victims themselves.",
+      "DO NOT use excessive ventilation force or volume -- this can cause gastric distention (stomach inflation) in children."
+    ],
+    "equipment_needed": [
+      "Reaching aid (pole, rope, towel) or throwing aid (flotation device) for water rescue",
+      "Firm, flat surface for CPR",
+      "Blanket or covering to maintain warmth (hypothermia prevention)"
+    ]
+  },
+  "tags": [
+    "drowning",
+    "submersion",
+    "immersion",
+    "water rescue",
+    "child",
+    "paediatric",
+    "CPR",
+    "rescue breaths",
+    "hypoxic emergency",
+    "recovery position",
+    "secondary drowning",
+    "pool safety",
+    "swimming",
+    "emergency",
+    "101"
+  ]
+}

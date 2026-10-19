@@ -1,0 +1,157 @@
+{
+  "id": "IL-ADULT-DIABETIC-EMERGENCIES-001",
+  "title": "Diabetic Emergencies - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "diabetic_emergencies",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Treat a Diabetes Patient (טיפול בחולה סוכרת)",
+    "url": "https://www.mdais.org/101/diabetes",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by MDA Course 60 training materials and United Hatzalah volunteer training material"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. Both sources are broadly consistent on all key points: sugar administration for conscious hypoglycaemic patients, nothing by mouth for unconscious patients, no insulin administration by first aiders, and immediate EMS activation for severe cases. United Hatzalah adds complementary emphasis on: (1) hypoglycemia in non-diabetic populations (kidney, liver, adrenal causes), (2) explicit insulin pump disconnection protocol, (3) glucogel packets as standard volunteer equipment, and (4) glucagon kit recognition. United Hatzalah also emphasises two-stage symptom progression for hypoglycemia (adrenergic then neuroglycopenic). MDA publication date not stated on page; MDA Course 60 blog post dated January 2012. United Hatzalah 1221.org.il hypoglycemia article undated; Hatzalah Without Borders hypoglycemia article by Arie Levi dated 2021-11-21. Some Hatzalah Without Borders article body text could not be extracted due to JavaScript-rendered content. United Hatzalah dispatch number is 1221 in addition to MDA 101; this protocol uses 101 as the primary emergency number per MDA default."
+  },
+  "protocol": {
+    "summary": "Assess whether the patient has low blood sugar (hypoglycemia) or high blood sugar (hyperglycemia). When in doubt, treat for hypoglycemia by giving sugar -- this is the safer default. Call 101 for all severe or uncertain cases.",
+    "when_to_apply": "Person is a known or suspected diabetic showing signs of altered consciousness, confusion, weakness, trembling, sweating, behavioural changes, excessive thirst, fruity breath odour, or rapid deep breathing. Also apply when any person has unexplained altered consciousness (rule out hypoglycemia even in non-diabetic patients).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately if the patient is unconscious, has seizures, shows signs of diabetic ketoacidosis, does not improve within 10-15 minutes of sugar administration, or if you are unsure of the type of diabetic emergency."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the scene and check for medical identification.",
+        "detail": "Look for a medical alert bracelet, necklace, or card in the patient's wallet that may confirm a diabetes diagnosis and current medications. Check for insulin pumps, pens, or glucometers nearby."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Check blood glucose level if a glucometer is available.",
+        "detail": "A reading below 60-70 mg/dL indicates hypoglycemia. A reading above 250 mg/dL indicates hyperglycemia. MDA and United Hatzalah volunteers carry glucometers as standard equipment. Glucose testing should be performed on any patient with unexplained altered consciousness, even if they are not a known diabetic.",
+        "decision_point": {
+          "condition": "Is a glucometer available and can you obtain a reading?",
+          "if_yes": "Use the reading to determine whether the patient has hypoglycemia (low) or hyperglycemia (high), and proceed to the appropriate steps.",
+          "if_no": "Assess based on signs and symptoms. If uncertain whether blood sugar is high or low, treat for hypoglycemia (give sugar) -- this is the safer default."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine whether the patient has hypoglycemia or hyperglycemia based on signs and symptoms.",
+        "detail": "Hypoglycemia (rapid onset): sweating, pallor, trembling, confusion, irritability, hunger, rapid pulse, seizures. Hyperglycemia (gradual onset over hours to days): excessive thirst, frequent urination, fruity/acetone breath, fast deep breathing (Kussmaul), warm dry skin, nausea, weakness.",
+        "decision_point": {
+          "condition": "Do the signs suggest hypoglycemia (low blood sugar)?",
+          "if_yes": "Proceed to Step 4 (hypoglycemia treatment pathway).",
+          "if_no": "If signs suggest hyperglycemia, proceed to Step 8 (hyperglycemia treatment pathway). If unsure, treat for hypoglycemia (give sugar) as the safer default."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "HYPOGLYCEMIA PATHWAY: Assess the patient's level of consciousness.",
+        "decision_point": {
+          "condition": "Is the patient conscious and able to swallow safely?",
+          "if_yes": "Proceed to Step 5 (give sugar to conscious patient).",
+          "if_no": "Proceed to Step 6 (assess if patient has reduced consciousness or is fully unconscious)."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Give sugar immediately to the conscious patient.",
+        "detail": "Administer rapidly absorbed sugars: sweetened drink (fruit juice, sugary soft drink -- NOT diet), sugar cubes or glucose tablets, glucogel packets (15g glucose -- standard in United Hatzalah volunteer kits), honey or jam. Choose foods and drinks WITHOUT added fat, as fat slows sugar absorption. After symptoms improve, give a complex carbohydrate (bread, crackers) to maintain blood sugar levels. Monitor the patient and do not leave them alone.",
+        "decision_point": {
+          "condition": "Do symptoms improve within 10-15 minutes of giving sugar?",
+          "if_yes": "Continue monitoring the patient. Provide complex carbohydrates. Do not leave the patient alone.",
+          "if_no": "Call 101 (MDA) immediately. The patient may need intravenous dextrose from paramedics."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess whether the patient has reduced consciousness or is fully unconscious.",
+        "decision_point": {
+          "condition": "Is the patient partially responsive (confused, drowsy, but not fully unconscious)?",
+          "if_yes": "If safe to do so, apply a sweet paste (honey, chocolate spread) under the tongue or to the inside of the cheek for absorption through the oral mucosa. Call 101 (MDA) immediately.",
+          "if_no": "Patient is unconscious. Proceed to Step 7."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Treat the unconscious hypoglycaemic patient.",
+        "detail": "Place patient in the recovery position (on their side) to maintain an open airway. Call 101 (MDA) immediately. If the patient has a glucagon injection kit and you are trained to use it, administer glucagon. If the patient has an insulin pump, disconnect it gently to stop further insulin delivery. Monitor breathing continuously and be prepared to perform CPR if breathing stops. Wait for MDA paramedics, who can administer intravenous dextrose.",
+        "warning": "DO NOT give food or drink to an unconscious patient -- risk of choking and aspiration. DO NOT give insulin -- it will further lower blood sugar and worsen the emergency.",
+        "decision_point": {
+          "condition": "Is the patient breathing?",
+          "if_yes": "Maintain recovery position and continue monitoring until MDA paramedics arrive.",
+          "if_no": "Begin CPR immediately and continue until paramedics arrive or the patient resumes breathing."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "HYPERGLYCEMIA PATHWAY: Call 101 (MDA) immediately if diabetic ketoacidosis or severe hyperglycemia is suspected.",
+        "detail": "Signs of diabetic ketoacidosis include fruity/acetone breath, fast deep breathing (Kussmaul breathing), nausea, vomiting, confusion, and warm dry skin."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Ensure the airway is open and clear.",
+        "detail": "Loosen tight clothing that may restrict breathing."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Allow the patient to drink water if conscious.",
+        "detail": "This helps combat dehydration, which worsens hyperglycemia. In Israel's hot climate, dehydration can be a significant exacerbating factor.",
+        "decision_point": {
+          "condition": "Is the patient conscious and able to drink?",
+          "if_yes": "Offer water in small sips. Continue monitoring.",
+          "if_no": "Do not give anything by mouth. Place the patient in the recovery position. Monitor breathing and be prepared to perform CPR."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Monitor the patient until MDA paramedics arrive.",
+        "detail": "Watch for deterioration of consciousness. Be prepared to place the patient in the recovery position if they lose consciousness, and to begin CPR if breathing stops.",
+        "warning": "DO NOT administer insulin -- insulin dosing requires medical expertise and equipment. This is a paramedic/physician intervention only."
+      }
+    ],
+    "do_not": [
+      "DO NOT administer insulin as a first aider -- insulin dosing requires medical expertise and clinical assessment. Leave this to MDA paramedics or physicians.",
+      "DO NOT give food or drink to an unconscious patient -- risk of choking and aspiration.",
+      "DO NOT give diet drinks or sugar-free foods when treating hypoglycemia -- they will not raise blood sugar.",
+      "DO NOT give sugary foods high in fat (chocolate bars, ice cream) as first-line treatment for hypoglycemia -- fat slows sugar absorption.",
+      "DO NOT withhold sugar when in doubt about whether blood sugar is high or low -- giving sugar to a hypoglycaemic patient is life-saving, and giving sugar to a hyperglycaemic patient will not cause significant immediate additional harm.",
+      "DO NOT leave a diabetic emergency patient unattended -- their condition can deteriorate rapidly.",
+      "DO NOT delay calling 101 if the patient is unconscious, seizing, or not improving after sugar administration.",
+      "DO NOT disconnect an insulin pump roughly -- disconnect gently to avoid damaging the device or the insertion site."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 (MDA) or 1221 (United Hatzalah)",
+      "Glucometer and test strips (if available)",
+      "Rapidly absorbed sugar source (glucose tablets, glucogel packets, fruit juice, sugar cubes, honey)",
+      "Complex carbohydrate for follow-up (bread, crackers)",
+      "Glucagon injection kit (if available and trained to use)"
+    ]
+  },
+  "tags": [
+    "diabetes",
+    "diabetic emergency",
+    "hypoglycemia",
+    "hyperglycemia",
+    "low blood sugar",
+    "high blood sugar",
+    "diabetic ketoacidosis",
+    "DKA",
+    "insulin",
+    "glucagon",
+    "glucose",
+    "glucometer",
+    "insulin pump",
+    "sugar",
+    "endocrine",
+    "metabolic",
+    "altered consciousness",
+    "seizures",
+    "recovery position"
+  ]
+}

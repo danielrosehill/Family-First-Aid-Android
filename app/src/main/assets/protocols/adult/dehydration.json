@@ -1,0 +1,121 @@
+{
+  "id": "IL-ADULT-DEHYDRATION-001",
+  "title": "Dehydration and Heat-Related Illness — Adult First Aid Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "dehydration",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Training Department Manual — Dehydration and Heat-Related Illness First Aid",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and Hatzalah Without Borders sources. Both sources are fully consistent: both emphasise gradual rehydration with small sips and warn against rapid fluid replacement due to electrolyte imbalance risk. MDA provides additional detail on distinguishing dehydration from heat stroke, active cooling measures, ORS preparation, and specific criteria for calling 101. United Hatzalah (1221.org.il) does not publish a standalone dehydration protocol. Hatzalah Without Borders guide is undated."
+  },
+  "protocol": {
+    "summary": "First aid for dehydration through gradual rehydration with small sips, cooling, and rest. Escalates to emergency treatment for heat stroke.",
+    "when_to_apply": "Person shows signs of dehydration: increased thirst, dry mouth, reduced or dark urine, fatigue, dizziness, headache, rapid pulse. Or signs of heat stroke: body temperature above 40 degrees C, hot dry skin (sweating has stopped), confusion, loss of consciousness.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for heat stroke (body temperature above 40 degrees C, sweating has stopped, confusion or loss of consciousness, seizures). Also call if dehydration symptoms do not improve after 30 minutes of rest and rehydration, if vomiting prevents oral rehydration, or if signs of shock appear."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the severity of the condition.",
+        "decision_point": {
+          "condition": "Does the person show signs of heat stroke (body temperature above 40 degrees C, hot/dry/red skin with NO sweating, confusion, loss of consciousness)?",
+          "if_yes": "This is a medical emergency. Go to Step 8 (heat stroke protocol).",
+          "if_no": "Proceed to Step 2 for dehydration management."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Stop all physical activity. Ensure complete rest."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Move the person to a shaded, cool place — air-conditioned room if available."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove excess clothing and loosen tight garments."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Rehydrate gradually with small sips of water or ORS (Oral Rehydration Solution).",
+        "detail": "ORS is preferred over plain water for moderate dehydration. Use a straw for small sips if needed. ORS can be prepared at home: 1 litre of clean water + 6 teaspoons sugar + 0.5 teaspoon salt. Commercial ORS (Electrolit, Hydralite) available at Israeli pharmacies.",
+        "warning": "Do NOT drink rapidly — rapid fluid replacement can worsen symptoms due to electrolyte imbalance and may increase nausea and vomiting."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Cool the body with wet cloths, a fan, or cool (not cold) water spray."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the person's condition.",
+        "decision_point": {
+          "condition": "Have symptoms improved after 30 minutes of rest and rehydration?",
+          "if_yes": "Continue gradual rehydration and rest. Monitor for relapse.",
+          "if_no": "Call MDA at 101. The person may need intravenous fluids."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "HEAT STROKE EMERGENCY: Call MDA at 101 immediately.",
+        "warning": "Heat stroke is a life-threatening emergency. Body temperature regulation has failed and internal organs are being damaged."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Move the person to a shaded, ventilated, or air-conditioned location. Remove excess clothing."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Cool the body rapidly using ice, wet towels, fans, and cold water on the torso.",
+        "detail": "Active cooling must continue until MDA arrives."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Assess consciousness.",
+        "decision_point": {
+          "condition": "Is the person conscious?",
+          "if_yes": "Offer small sips of water only.",
+          "if_no": "Lay on back, elevate legs. If breathing, place in recovery position. Do NOT give fluids."
+        },
+        "warning": "Do NOT wet the head — risk of choking if consciousness is altered."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Continue active cooling and monitoring until MDA arrives."
+      }
+    ],
+    "do_not": [
+      "Do NOT give large quantities of water quickly — rapid fluid replacement disrupts electrolyte balance.",
+      "Do NOT give sugary drinks, coffee, or alcohol.",
+      "Do NOT wet the head of a heat stroke patient — choking risk if consciousness is altered.",
+      "Do NOT ignore the key distinction: dehydration involves continued sweating; heat stroke involves ABSENT sweating with high body temperature.",
+      "Do NOT delay calling 101 for heat stroke — it is a medical emergency requiring hospital treatment.",
+      "Do NOT give fluids to an unconscious person."
+    ],
+    "equipment_needed": [
+      "Water or ORS (Oral Rehydration Solution)",
+      "Fan or method of creating air flow",
+      "Wet cloths or towels for cooling",
+      "Ice packs (for heat stroke)",
+      "Straw (for controlled sipping)"
+    ]
+  },
+  "tags": [
+    "dehydration",
+    "heat stroke",
+    "heat exhaustion",
+    "rehydration",
+    "ORS",
+    "electrolyte imbalance",
+    "environmental emergency",
+    "summer safety"
+  ]
+}

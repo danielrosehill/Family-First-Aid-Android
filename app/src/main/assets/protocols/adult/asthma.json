@@ -1,0 +1,107 @@
+{
+  "id": "IL-ADULT-ASTHMA-001",
+  "title": "Asthma Attack — Adult First Aid Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "asthma",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Training Department Manual and Israeli Asthma Association — Asthma First Aid Guidelines",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2022-01-01",
+    "edition": "MDA ALS Protocol Manual 2022"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and Hatzalah sources. Neither United Hatzalah (1221.org.il) nor Hatzalah Without Borders (hatzalah.org.il) publish a standalone asthma protocol. MDA is the sole public source, supplemented by the Israeli Asthma Association (asthma.org.il). MDA ALS manual publication date is 2022. Israeli Asthma Association articles are undated."
+  },
+  "protocol": {
+    "summary": "First aid for an asthma attack: position upright, administer rescue inhaler, and call 101 if symptoms do not improve.",
+    "when_to_apply": "Person is experiencing an asthma attack: shortness of breath, wheezing, persistent coughing, chest tightness, difficulty speaking, or visible breathing effort. Severe signs include inability to complete a sentence, cyanosis (blue lips/fingertips), silent chest, or no response to inhaler.",
+    "call_emergency": {
+      "number": "101",
+      "when": "If symptoms do not improve within minutes of inhaler use, if the person cannot speak in full sentences, if lips or fingertips turn blue, if the person loses consciousness, or if no inhaler is available."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Help the person sit upright or lean slightly forward.",
+        "detail": "This position makes breathing easier by reducing pressure on the airways. Do NOT lay them down.",
+        "warning": "Do not lay the person down — this worsens breathing difficulty during an asthma attack."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Reassure and calm the person. Stay with them — do not leave them alone.",
+        "detail": "Speak calmly. Anxiety worsens bronchospasm and can escalate the attack."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Check if the person has a rescue inhaler (Ventolin / mashaf).",
+        "decision_point": {
+          "condition": "Does the person have their own rescue inhaler available?",
+          "if_yes": "Provide the inhaler immediately. Go to Step 4.",
+          "if_no": "Call MDA at 101 immediately. Continue to monitor and reassure while waiting for help."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Administer the rescue inhaler: 2-4 puffs initially.",
+        "detail": "If the person cannot operate the inhaler themselves, operate it for them. Use a spacer device (merkhav) if available — it significantly improves drug delivery."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Wait several minutes and assess the effect of the inhaler.",
+        "decision_point": {
+          "condition": "Has breathing improved after the initial dose?",
+          "if_yes": "Continue to monitor the person. Allow time to recover. If symptoms return, repeat 2-4 puffs.",
+          "if_no": "Repeat 2-4 puffs. If still no improvement, go to Step 6."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Call MDA at 101 if symptoms do not improve after repeated inhaler use.",
+        "decision_point": {
+          "condition": "Are any of the following present: cannot speak in full sentences, blue lips or fingertips, loss of consciousness, silent chest?",
+          "if_yes": "This is a life-threatening emergency. Call 101 immediately if not already done. Stay with the person and keep them upright.",
+          "if_no": "Continue monitoring. Seek medical evaluation even if symptoms partially improve."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor continuously until emergency services arrive.",
+        "detail": "Watch for worsening signs: skin colour changes (cyanosis), increased breathing effort, decreased responsiveness, silent chest (no wheezing despite obvious distress — indicates minimal air movement)."
+      },
+      {
+        "step_number": 8,
+        "instruction": "If the person loses consciousness and stops breathing, begin CPR.",
+        "decision_point": {
+          "condition": "Has the person lost consciousness and stopped breathing?",
+          "if_yes": "Begin CPR immediately. Ensure 101 has been called.",
+          "if_no": "Continue to keep them upright and monitor until help arrives."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT lay the person down — the upright position is essential for breathing.",
+      "Do NOT leave the person alone during an attack.",
+      "Do NOT administer controller medications (inhaled corticosteroids) for acute relief — these do not provide immediate effect.",
+      "Do NOT delay calling 101 if no inhaler is available.",
+      "Do NOT ignore a 'silent chest' — absence of wheezing during obvious distress indicates a life-threatening emergency with minimal air movement."
+    ],
+    "equipment_needed": [
+      "Rescue inhaler (Ventolin / Salbutamol)",
+      "Spacer device (merkhav) if available"
+    ]
+  },
+  "tags": [
+    "asthma",
+    "respiratory emergency",
+    "bronchospasm",
+    "inhaler",
+    "ventolin",
+    "breathing difficulty",
+    "wheezing"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "IL-CHILD-SHOCK-001",
+  "title": "Shock (Helem) -- Child",
+  "country": "israel",
+  "age_group": "child",
+  "category": "shock",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA BLS Guide (2016) and MDA 101 First Aid Public Guidance -- Pediatric Shock",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project convention. No material disagreements were identified between the two organisations on this topic -- both teach the same three-stage shock model, the same emphasis on tachycardia as earliest sign, and the same treatment priorities. MDA's official BLS/ALS protocol PDFs could not be automatically fetched due to bot protection on mdais.org; content is synthesised from MDA-aligned Israeli medical education sources (Rofe Yeladim, Ynet first aid guide) and United Hatzalah educational articles (1221.org.il). United Hatzalah provides additional pathophysiology detail (blood loss classification table, cellular-level anaerobic metabolism description) aimed at EMT-level volunteers, but first aid treatment steps are consistent with MDA guidance. Age-specific vital sign ranges for children were not available in either source's publicly accessible materials."
+  },
+  "protocol": {
+    "summary": "Recognise and manage shock in a child by calling 101 immediately, controlling bleeding, positioning appropriately, maintaining warmth, and monitoring for sudden deterioration.",
+    "when_to_apply": "A child showing signs of inadequate tissue perfusion from any cause: tachycardia (earliest sign), pale or cool skin, prolonged capillary refill (>2 seconds), cold clammy extremities, anxiety or irritability, rapid shallow breathing, mottled skin, altered mental status, or hypotension (a late sign). Common pediatric causes include hemorrhage (trauma), dehydration (vomiting/diarrhea), burns, severe allergic reaction (anaphylaxis), and severe infection (sepsis). Children have much lower total blood volumes than adults (a newborn has only ~240 mL, a one-year-old ~800 mL), so small fluid losses that would be insignificant in adults can be life-threatening in children.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon suspecting shock in a child. Do not delay. Shock in children requires urgent professional medical care, IV fluid resuscitation, and hospital treatment. Emphasise to the 101 dispatcher that the patient is a child and provide approximate age if known."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call 101 (Magen David Adom) immediately.",
+        "detail": "Provide your location, the child's approximate age, and describe the signs you are observing (rapid pulse, pale skin, altered behaviour). Shock in children is a time-critical emergency -- early hospital treatment with IV fluids and medications is essential.",
+        "warning": "Do not delay calling 101. Children can appear deceptively stable during compensated shock and then deteriorate suddenly."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess and manage life threats -- check airway, breathing, and circulation (ABC).",
+        "decision_point": {
+          "condition": "Is the child breathing?",
+          "if_yes": "Continue to Step 3.",
+          "if_no": "Begin CPR immediately (see IL-CHILD-CPR protocol). Continue CPR until EMS arrives or the child resumes breathing."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Control any visible bleeding.",
+        "detail": "Apply direct pressure to wounds with a sterile bandage, clean cloth, or your gloved hand. Hemorrhage is the most common cause of hypovolemic shock in pediatric trauma. In children, even small volumes of blood loss can be life-threatening due to their low total blood volume.",
+        "decision_point": {
+          "condition": "Is there visible external bleeding?",
+          "if_yes": "Apply firm, direct pressure to the wound. Use sterile gauze or clean cloth. Do not remove blood-soaked dressings -- add layers on top. See IL-CHILD-SEVERE-BLEEDING protocol for escalation if bleeding is uncontrolled.",
+          "if_no": "Proceed to Step 4. Note that shock may result from internal bleeding, dehydration, anaphylaxis, or infection -- the absence of visible bleeding does not exclude shock."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Assess the child's level of consciousness and determine positioning.",
+        "decision_point": {
+          "condition": "Is the child conscious?",
+          "if_yes": "Lay the child flat on their back. Gently elevate the legs above the level of the head (e.g., rest legs on a chair, pillow, or folded blanket) to increase blood flow to the brain and vital organs. Proceed to Step 6.",
+          "if_no": "Proceed to Step 5 to assess for spinal injury before positioning."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position an unconscious child appropriately.",
+        "decision_point": {
+          "condition": "Is spinal injury suspected (e.g., fall from height, car accident, diving injury, mechanism of injury suggests spinal trauma)?",
+          "if_yes": "Do NOT move the child. Stabilise the head and neck in the position found. Maintain an open airway using a jaw-thrust manoeuvre without tilting the head. Wait for EMS.",
+          "if_no": "Place the child in the recovery position (lateral/side-lying position) to protect the airway from vomit or secretions. Continue to Step 6."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Keep the child warm -- cover with a blanket, coat, or clothing.",
+        "detail": "One function of circulating blood is thermoregulation. When perfusion is inadequate, the body loses heat rapidly. Cover the child and insulate from cold ground as well (place a blanket or clothing beneath them). Even in warm weather, a child in shock can become hypothermic due to poor perfusion."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Remove or loosen any restrictive clothing.",
+        "detail": "Loosen belts, tight waistbands, collars, or other clothing that may impair breathing or circulation."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Calm and reassure the child.",
+        "detail": "Anxiety and distress worsen the physiological response to shock by increasing heart rate and oxygen demand. Speak gently and stay with the child. If a parent or caregiver is present, involve them -- position them where the child can see and hear them."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Moisten the child's lips with water if they are thirsty.",
+        "detail": "Use a damp cloth or a small amount of water on the lips only.",
+        "warning": "Do NOT give the child anything to eat or drink. The child may need surgery or anaesthesia, and a full stomach increases the risk of aspiration."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Monitor the child continuously until EMS arrives.",
+        "detail": "Track breathing rate, pulse (check for tachycardia or bradycardia), skin colour (pale, mottled, or cyanotic), capillary refill time, and level of consciousness. Reassess frequently -- children can transition from compensated to decompensated shock suddenly and without warning.",
+        "warning": "Be prepared for sudden deterioration. Tachycardia is the earliest sign of shock. Bradycardia (abnormally slow heart rate) is a pre-arrest sign in children -- if the child develops bradycardia, be ready to begin CPR.",
+        "decision_point": {
+          "condition": "Is the child's condition worsening (increasing heart rate, falling consciousness, mottled skin spreading, weak or absent pulses)?",
+          "if_yes": "Urgently update the 101 dispatcher on the child's deterioration. Ensure legs remain elevated (if conscious) or airway is protected (if unconscious). Re-check bleeding control. Prepare for CPR if cardiac arrest occurs.",
+          "if_no": "Continue monitoring and maintaining warmth, positioning, and reassurance until MDA arrives."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not sit the child upright -- this reduces blood flow to the brain and worsens shock.",
+      "Do not give the child anything to eat or drink -- moisten lips only.",
+      "Do not leave the child unattended -- continuous monitoring is essential due to risk of sudden deterioration.",
+      "Do not delay calling 101 -- early hospital treatment with IV fluids and medications is critical for survival.",
+      "Do not assume a child with normal blood pressure is not in shock -- children maintain blood pressure through strong compensatory mechanisms until they suddenly decompensate.",
+      "Do not attribute tachycardia solely to anxiety, fear, or pain -- suspect shock until proven otherwise.",
+      "Do not move a child with suspected spinal injury -- stabilise and wait for EMS.",
+      "Do not remove blood-soaked dressings from wounds -- add additional layers on top."
+    ],
+    "equipment_needed": [
+      "Blanket or coat (for warmth and insulation from ground)",
+      "Sterile gauze or clean cloth (for bleeding control)",
+      "Disposable gloves",
+      "Pillow or folded blanket (for leg elevation)"
+    ]
+  },
+  "tags": [
+    "shock",
+    "helem",
+    "pediatric",
+    "child",
+    "hypovolemic",
+    "anaphylactic",
+    "compensated-shock",
+    "decompensated-shock",
+    "tachycardia",
+    "perfusion",
+    "blood-volume",
+    "trauma",
+    "dehydration"
+  ]
+}

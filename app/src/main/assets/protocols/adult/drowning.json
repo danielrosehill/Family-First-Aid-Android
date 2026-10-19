@@ -1,0 +1,123 @@
+{
+  "id": "IL-ADULT-DROWNING-001",
+  "title": "Drowning (Near-Drowning) - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "drowning",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Drowning (טביעה) - MDA 101 Public First Aid Guidance Series",
+    "url": "https://www.mdais.org/101/drowning",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by MDA ALS Manual April 2024"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No significant protocol differences found between MDA and United Hatzalah for adult drowning -- both organisations agree on CPR approach, AED dry-patient precaution, and mandatory hospital transport. United Hatzalah does not publish a standalone step-by-step drowning protocol; their public content focuses on secondary drowning awareness and prevention. MDA source page could not be directly fetched due to site restrictions (HTTP 471); protocol synthesised from MDA page snippets, MDA ALS Manual 2024, MDA CPR guidance, and corroborating Israeli media sources that cite MDA guidelines directly. Includes Israel-specific context for Dead Sea, Mediterranean, and Kinneret hazards. Publication date not specified by MDA (standing public guidance)."
+  },
+  "protocol": {
+    "summary": "Rescue from water, assess breathing, perform CPR (ABC sequence preferred for trained rescuers), and transport to hospital -- even if the person recovers.",
+    "when_to_apply": "Person found submerged or immersed in water, person rescued from water who is unresponsive or not breathing, person who has experienced a near-drowning event in any body of water including pools, sea, lakes, or the Dead Sea.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon identifying a drowning victim. Call 101 (MDA) before or during rescue. Place the dispatcher on speakerphone. Provide exact location (beach name, pool address, GPS coordinates if possible). If a bystander is present, send them to locate the nearest AED."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure your own safety before attempting any rescue.",
+        "detail": "Assess the scene. Do not enter the water unless you are a trained swimmer or lifeguard. Use reaching aids (pole, rope, flotation device) if possible. Alert a lifeguard if one is present.",
+        "warning": "Untrained rescuers who enter the water frequently become drowning victims themselves.",
+        "decision_point": {
+          "condition": "Are you a trained swimmer or lifeguard?",
+          "if_yes": "You may enter the water to perform a rescue, using appropriate technique and flotation aids.",
+          "if_no": "Do NOT enter the water. Use reaching aids (pole, rope, flotation device), throw a buoyant object, or call for a trained rescuer. Wait for the person to be brought to shore."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Keep the dispatcher on speakerphone. Provide your exact location (beach name, pool address, GPS coordinates if possible). If another person is present, send them to locate the nearest AED (defibrillator). AEDs are commonly found at lifeguard stations, first aid rooms, and public facilities with 500+ occupants in Israel."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Remove the person from the water as quickly as possible.",
+        "detail": "Extract the drowning person from the water. Move them to a dry area away from the water's edge. Do not endanger yourself in the process."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Check responsiveness and breathing.",
+        "detail": "Call to the person and tap their shoulder. Observe the chest: is it rising and falling? Listen for breath sounds. Look for signs of life.",
+        "decision_point": {
+          "condition": "Is the person responsive and breathing normally?",
+          "if_yes": "Place the person in the recovery position (on their side). Monitor breathing continuously until MDA arrives. Keep them warm -- remove wet clothing if possible and cover with dry blankets or clothing. Proceed to Step 8.",
+          "if_no": "The person needs immediate CPR. Proceed to Step 5."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the person on their back on a firm, flat surface away from the water.",
+        "detail": "Ensure the surface is dry. This is essential for effective chest compressions and safe AED use."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Begin CPR.",
+        "detail": "Drowning is a hypoxic (oxygen-deprivation) emergency, making rescue breaths especially important. The recommended CPR sequence for drowning differs from standard cardiac arrest.",
+        "decision_point": {
+          "condition": "Are you trained in full CPR with rescue breaths?",
+          "if_yes": "Use the ABC approach (Airway, Breathing, Compressions): open the airway, give 2 rescue breaths, then begin chest compressions. Continue at a ratio of 30 compressions to 2 rescue breaths. Compress at a rate of 100 compressions per minute.",
+          "if_no": "Perform hands-only CPR (chest compressions only) at a rate of 100 compressions per minute. Use the song 'Stayin' Alive' by the Bee Gees as a tempo guide. Continue without stopping until MDA paramedics arrive."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Use an AED if one is available.",
+        "detail": "Dry the patient's chest thoroughly and ensure they are on a dry surface before applying AED pads. Follow the AED's voice prompts. Continue CPR between AED analysis/shock cycles as directed by the device.",
+        "warning": "Using an AED on a wet patient or wet surface risks electrical injury to the patient and rescuer. Always dry the chest and move to a dry area first."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Continue CPR or monitoring until MDA paramedics arrive.",
+        "detail": "Do not stop CPR unless the person begins breathing on their own or professional medical help takes over. If the person regains consciousness, place them in the recovery position and monitor continuously."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Ensure hospital transport regardless of apparent recovery.",
+        "detail": "Even if the person regains consciousness and appears stable, mandatory hospital transport is required. Dangerous electrolyte imbalances (changes in blood salt levels) can develop after drowning that may threaten the person's life even if they appear well. Secondary drowning (delayed pulmonary edema) can cause symptoms to appear 1-24 hours after the incident.",
+        "warning": "Do NOT allow the person to refuse treatment or walk away. A person who appears recovered can deteriorate rapidly hours later due to secondary drowning or electrolyte toxicity."
+      }
+    ],
+    "do_not": [
+      "DO NOT enter the water to rescue someone unless you are a trained swimmer or lifeguard -- untrained rescuers frequently become drowning victims.",
+      "DO NOT attempt to remove water from the victim's lungs. MDA explicitly states this is impossible to achieve, dangerous to the victim, and a waste of critical time.",
+      "DO NOT perform the Heimlich maneuver, turn the person upside down, or use any other method to 'drain' water from the lungs.",
+      "DO NOT use an AED on a wet patient or on a wet surface -- dry the chest and move to a dry area first.",
+      "DO NOT allow a near-drowning victim to refuse hospital transport, even if they appear fully recovered. Secondary drowning and electrolyte imbalances can be fatal hours later.",
+      "DO NOT stop CPR until the person is breathing on their own or professional medical help takes over.",
+      "DO NOT delay calling 101 -- call immediately, even before attempting rescue if you are alone."
+    ],
+    "equipment_needed": [
+      "AED (defibrillator) -- commonly available at lifeguard stations and public facilities in Israel",
+      "Reaching aids (pole, rope, flotation device) for water rescue",
+      "Dry blankets or clothing to keep the victim warm after extraction"
+    ]
+  },
+  "tags": [
+    "drowning",
+    "near-drowning",
+    "secondary drowning",
+    "water rescue",
+    "CPR",
+    "AED",
+    "hypoxia",
+    "recovery position",
+    "Mediterranean",
+    "Dead Sea",
+    "Kinneret",
+    "electrolyte imbalance",
+    "pulmonary edema",
+    "emergency",
+    "beach safety"
+  ]
+}

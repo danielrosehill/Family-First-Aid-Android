@@ -1,0 +1,156 @@
+{
+  "id": "IL-ADULT-ELECTROCUTION-001",
+  "title": "Electrocution / Electrical Injury First Aid Protocol (Adult) -- Israel",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "electrocution",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Electrocution First Aid Guidelines",
+    "url": "https://www.mdais.org/101/electrocution",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance (date not explicitly stated)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project rules. No substantive differences identified between MDA and United Hatzalah protocols -- both follow Israeli Ministry of Health standards. United Hatzalah does not publish a dedicated electrocution protocol on its public website; their training content is consistent with MDA. MDA primary page (mdais.org/101/electrocution) returned HTTP 471 during research; protocol synthesised from MDA search result snippets, MDA-affiliated Israeli medical sources (Doctors.co.il, firstaidcourse.co.il), and MDA training materials. Israel uses 220V AC / 50Hz household supply, which is higher than USA (120V) and carries greater risk."
+  },
+  "protocol": {
+    "summary": "First aid response for adult electrocution or electrical injury, emphasising scene safety, power disconnection before any contact, CPR readiness, burns assessment, and mandatory hospital evaluation.",
+    "when_to_apply": "When an adult has received an electrical shock from any source: household appliances, power lines, industrial equipment, lightning. Signs include burns (entry/exit wounds), loss of consciousness, muscle spasms, breathing difficulty, cardiac arrest, confusion, or the victim being visibly in contact with an electrical source.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for all electrocution incidents. For high-voltage incidents, also call Fire Services at 102 and Israel Electric Corporation (IEC) at 103."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety -- DO NOT touch the victim.",
+        "detail": "Contact with a victim still connected to an electrical source can be fatal to the rescuer. Multiple rescuers have been killed by 'chain electrocution'. Assess whether the victim is still in contact with the electrical source before approaching.",
+        "warning": "DO NOT touch the victim with bare hands or any wet/damp object while they may still be in contact with the electrical source."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Determine whether the incident involves low-voltage or high-voltage electricity.",
+        "detail": "Low-voltage is under 1,000 volts (household and most workplace). High-voltage is 1,000 volts and above (power lines, substations, industrial equipment). Standard Israeli household supply is 220V AC / 50Hz.",
+        "decision_point": {
+          "condition": "Is this a high-voltage incident (power lines, substations, industrial equipment)?",
+          "if_yes": "DO NOT approach. Maintain at least 10 metres distance. Call MDA (101), Fire Services (102), and Israel Electric Corporation (103). Wait for professional teams to de-energise the source before approaching.",
+          "if_no": "Proceed to disconnect the power source (step 3)."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Disconnect the power source (low-voltage incidents only).",
+        "detail": "Turn off the power at the mains breaker or fuse box, or unplug the appliance from the wall socket.",
+        "decision_point": {
+          "condition": "Can you disconnect the power at the mains or unplug the device?",
+          "if_yes": "Switch off the mains breaker or unplug the appliance. Confirm the power is off before approaching the victim.",
+          "if_no": "Use a dry, non-conducting object (dry wooden broom handle, dry rope, dry rubber mat, dry clothing) to push or pull the victim away from the electrical source. Stand on a dry, insulating surface (dry wood, dry rubber mat, stack of newspapers) while doing so. Ensure the object is completely dry."
+        },
+        "warning": "Never use a wet or damp object. Never touch the victim or the electrical source directly."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Call emergency services.",
+        "detail": "Call MDA at 101 immediately. For high-voltage incidents, also call Fire Services at 102 and Israel Electric Corporation at 103. Report: location, number of casualties, whether the power source has been disconnected, and the victim's condition."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess consciousness and breathing once the scene is confirmed safe.",
+        "detail": "Call out to the victim and tap their shoulders to check consciousness. Look, listen, and feel for breathing for no more than 10 seconds.",
+        "decision_point": {
+          "condition": "Is the victim responsive?",
+          "if_yes": "Keep the victim still. Proceed to step 8 (burns assessment). Monitor continuously for deterioration.",
+          "if_no": "Check breathing immediately (step 6)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Check breathing of the unresponsive victim.",
+        "decision_point": {
+          "condition": "Is the victim breathing normally (not just gasping)?",
+          "if_yes": "Place in the recovery position (on their side). Monitor breathing continuously until EMS arrives. Be prepared to begin CPR if breathing stops.",
+          "if_no": "Begin CPR immediately (step 7)."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Begin CPR if the victim is unresponsive and not breathing (or only gasping).",
+        "detail": "Perform 30 chest compressions followed by 2 rescue breaths. Compression rate: 100-120 per minute. Compression depth: 5-6 cm. Allow full chest recoil between compressions. If an AED (defibrillator) is available, use it -- ensure the victim's chest is dry before applying pads. Do NOT stop resuscitation until professional EMS teams arrive.",
+        "warning": "Electrocution victims, particularly younger patients, have a higher-than-average survival rate from cardiac arrest if CPR is started promptly. Do not give up."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Assess and treat burns.",
+        "detail": "Look for entry and exit wound burns. External burns may appear small but conceal severe internal tissue damage along the current pathway. Once the scene is confirmed safe, cool visible burns with cool (not cold) running water for at least 10 minutes. Cover burns loosely with cling film or a clean, non-fluffy dressing.",
+        "warning": "Do NOT apply water to burns while the victim is still connected to the electrical source. Do NOT apply creams, ointments, or home remedies to electrical burns."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Assess for spinal injury.",
+        "decision_point": {
+          "condition": "Did the victim fall from height or get thrown by the electrical force?",
+          "if_yes": "Suspect spinal injury. Minimise movement of the head, neck, and spine. Wait for professional extraction if possible.",
+          "if_no": "Proceed to treat for shock (step 10)."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Treat for shock.",
+        "detail": "Keep the victim lying down. Keep them warm by covering with a blanket. Do not give food or drink.",
+        "decision_point": {
+          "condition": "Is spinal injury suspected or is the victim having difficulty breathing?",
+          "if_yes": "Do NOT elevate legs. Keep the victim flat and still. Wait for EMS.",
+          "if_no": "Elevate the victim's legs slightly to improve circulation."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Ensure hospital evaluation for all electrocution victims.",
+        "detail": "All electrocution victims must be evaluated at a hospital, even if the injury appears minor. Cardiac arrhythmias can develop hours after the incident. Internal tissue damage may not be immediately apparent. Rhabdomyolysis (muscle breakdown) can cause kidney failure. Neurological symptoms may be delayed.",
+        "warning": "Do NOT assume the injury is minor based on small visible burns -- internal damage may be severe."
+      }
+    ],
+    "do_not": [
+      "Do NOT touch the victim while they may still be in contact with the electrical source -- this can kill the rescuer (chain electrocution).",
+      "Do NOT use wet or damp objects to separate the victim from the electrical source.",
+      "Do NOT approach high-voltage incidents (power lines, substations) -- maintain at least 10 metres distance and wait for professional teams (IEC 103).",
+      "Do NOT perform CPR on a conscious victim.",
+      "Do NOT apply water to burns while the victim is still connected to the electrical source.",
+      "Do NOT apply creams, ointments, or home remedies to electrical burns.",
+      "Do NOT assume the injury is minor based on small visible burns -- internal damage along the current pathway may be severe.",
+      "Do NOT give food or drink to an electrocution victim."
+    ],
+    "equipment_needed": [
+      "Dry non-conducting object for separating victim from source (dry wooden broom handle, dry rope, dry rubber mat)",
+      "Dry insulating surface to stand on (dry wood, dry rubber mat, newspapers)",
+      "AED (automated external defibrillator)",
+      "Cool running water source (for burn cooling after scene is safe)",
+      "Cling film or clean non-fluffy dressings (for burn covering)",
+      "Blanket (for shock prevention)"
+    ]
+  },
+  "tags": [
+    "electrocution",
+    "electrical injury",
+    "electric shock",
+    "high voltage",
+    "low voltage",
+    "220V",
+    "CPR",
+    "AED",
+    "burns",
+    "cardiac arrest",
+    "scene safety",
+    "chain electrocution",
+    "spinal injury",
+    "rhabdomyolysis",
+    "MDA",
+    "101",
+    "IEC",
+    "103"
+  ]
+}

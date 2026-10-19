@@ -1,0 +1,147 @@
+{
+  "id": "IL-CHILD-ELECTROCUTION-001",
+  "title": "Electrocution First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "electrocution",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Electrocution First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/electrocution",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance, supplemented by MDA-referenced Israeli medical sources (Doctors.co.il, Rofe Yeladim)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA primary page (mdais.org/101/electrocution) returned HTTP 471 during research; content reconstructed from MDA ALS manual references, MDA-affiliated sources (Doctors.co.il), and Rofe Yeladim pediatric resource. Hatzalah Without Borders published a general electrocution article (2021-09-13) but no child-specific protocol; their extractable content is fully consistent with MDA guidance with no contradictions. MDA does not publish a separate child-specific electrocution protocol; child-specific elements synthesised from Rofe Yeladim, AAP (HealthyChildren.org), and pediatric emergency medicine principles applied to the MDA framework. Key child-specific concerns: oral electrical burns from cord-biting in children under 6, delayed labial artery bleeding risk, lower body resistance increasing injury severity at 220V Israeli household supply, and mandatory hospitalisation for all pediatric electrocution incidents."
+  },
+  "protocol": {
+    "summary": "First aid for electrical shock injuries in children, emphasising scene safety (disconnect power before touching the child), CPR readiness, burn care, and mandatory hospital evaluation for all cases.",
+    "when_to_apply": "When a child has sustained an electric shock from any source: household outlet (220V in Israel), electrical cord (especially oral contact/biting in toddlers), faulty appliance, exposed wiring, or high-voltage source. Signs include burns at contact points, loss of consciousness, muscle rigidity or spasms, difficulty breathing, cardiac arrest, or the child being found unresponsive near an electrical source.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately after separating the child from the electrical source. For high-voltage incidents (power lines, transformer boxes), also call Fire Services at 102 and the Israel Electric Corporation at 103. Do NOT approach high-voltage sources -- wait for emergency services."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure your own safety -- do NOT touch the child while they are in contact with the electrical source.",
+        "detail": "Touching a person who is still connected to an electrical source will cause chain electrocution (התחשמלות שרשרת). Assess the scene before approaching. Stand on a dry, insulating surface if possible.",
+        "warning": "You will become an additional victim if you touch the child while they are still in contact with the electrical source. Scene safety is the absolute first priority."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Disconnect the electrical source.",
+        "detail": "The safest action is to turn off the main circuit breaker (מפסק ראשי) or unplug the appliance at the wall socket. If you cannot reach the power source, use a long, dry, non-conductive object (wooden broom handle, dry wooden stick, plastic chair, dry rolled newspaper) to separate the child from the electrical source.",
+        "warning": "Never use metal objects or anything wet or damp to separate the child from the source.",
+        "decision_point": {
+          "condition": "Is this a high-voltage source (power lines, transformer box, industrial equipment)?",
+          "if_yes": "Do NOT approach. Call 101 (MDA), 102 (Fire Services), and 103 (Israel Electric Corporation) immediately. Maintain a safe distance and keep bystanders away until emergency services arrive.",
+          "if_no": "Turn off the main circuit breaker or unplug the appliance. If that is not possible, use a dry non-conductive object to separate the child from the source."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Call 101 (MDA) immediately once the child is separated from the electrical source.",
+        "detail": "Provide clearly: your phone number, exact address or location, your name, the child's approximate age, what happened (electrocution, type of source), and the child's current condition (conscious or unconscious, breathing or not breathing). MDA dispatchers can guide you through first aid steps while the ambulance is en route."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Assess the child's responsiveness, breathing, and pulse.",
+        "detail": "Call the child's name and tap gently to check responsiveness. Look for chest rise and listen for breath sounds to check breathing. Check for a pulse.",
+        "decision_point": {
+          "condition": "Is the child responsive?",
+          "if_yes": "Keep the child still and calm. Proceed to step 6 (burn assessment) and step 7 (treat for shock).",
+          "if_no": "Check breathing and pulse immediately. If the child is not breathing or has no pulse, proceed to step 5 (CPR)."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Begin CPR immediately if the child is not breathing and/or has no pulse.",
+        "detail": "Child CPR (age 1-8): 30 compressions to 2 breaths; compress to a depth of approximately 5 cm using one or two hands on the lower half of the sternum. Infant CPR (under age 1): 30 compressions to 2 breaths; compress to a depth of approximately 4 cm using two fingers on the sternum, just below the nipple line. Continue CPR without stopping until MDA paramedics arrive. Use an AED (defibrillator) if available; use pediatric pads if available, otherwise use adult pads.",
+        "warning": "Do not stop CPR based on apparent lack of vital signs. Electrocution victims can sometimes be resuscitated after prolonged efforts.",
+        "decision_point": {
+          "condition": "Is an AED available?",
+          "if_yes": "Apply the AED as soon as possible. Use pediatric pads if available; if only adult pads are available, use them. Follow AED voice prompts. Continue CPR between shocks.",
+          "if_no": "Continue manual CPR (30 compressions to 2 breaths) without interruption until MDA paramedics arrive."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess and treat burns at current entry and exit points.",
+        "detail": "Look for burns where the current entered and exited the body. Cool visible burns with cool (not ice-cold) running water. Cover with sterile, non-adherent dressing. Remember: electrical burns are often internal and far more severe than what is visible on the skin surface.",
+        "warning": "Do NOT apply creams, ointments, toothpaste, or home remedies to electrical burns. Do NOT apply ice.",
+        "decision_point": {
+          "condition": "Is the burn an oral electrical burn (from biting or sucking on an electrical cord)?",
+          "if_yes": "The burn may appear as a localised white or grey area on the lip, tongue, or inside the mouth. Cool the area if possible. Do NOT apply pressure to the wound. Warn parents about delayed bleeding risk: bleeding from the labial artery can occur hours or even days after the initial injury. If bleeding occurs later, apply firm pressure and call 101 immediately. Requires immediate medical evaluation.",
+          "if_no": "Cool visible burns with cool running water. Cover with sterile, non-adherent dressing. Do NOT apply creams or ointments."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Treat the child for shock (הלם).",
+        "detail": "Lay the child down if conscious and no spinal injury is suspected. Keep the child warm with a blanket. Elevate legs slightly if no spinal injury is suspected. Do not give food or drink.",
+        "decision_point": {
+          "condition": "Is spinal injury suspected (child was thrown or fell during electrocution)?",
+          "if_yes": "Do NOT move the child. Keep the child completely still and wait for MDA paramedics. Support the head and neck in the position found.",
+          "if_no": "Lay the child down, keep warm with a blanket, and elevate legs slightly."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Minimise movement of the child.",
+        "detail": "Electrocution can cause involuntary muscle contractions that throw the child, potentially causing spinal or other traumatic injuries. Avoid unnecessary movement. If spinal injury is suspected, keep the child completely still and wait for MDA."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Ensure the child is transported to hospital for evaluation -- this is MANDATORY.",
+        "detail": "Every child who experiences an electric shock, even if it appears minor, MUST be evaluated at a hospital. Internal injuries, cardiac arrhythmias, and organ damage (particularly kidneys from rhabdomyolysis) may not be immediately apparent. Delayed complications can occur hours after the incident. ECG monitoring is typically required to check for cardiac rhythm abnormalities. For oral electrical burns, warn parents about delayed bleeding from the labial artery which can occur hours or even days later.",
+        "warning": "Do NOT assume the child is fine because external injuries appear minor. Internal damage may be hidden. A seemingly small and superficial skin injury may conceal deep internal damage."
+      }
+    ],
+    "do_not": [
+      "Do NOT touch the child while they are in contact with the electrical source -- you will become an additional victim (chain electrocution).",
+      "Do NOT use metal objects or wet/damp materials to separate the child from the electrical source.",
+      "Do NOT apply ice to electrical burns.",
+      "Do NOT apply creams, ointments, toothpaste, or home remedies to electrical burns.",
+      "Do NOT assume the child is fine because external injuries appear minor -- internal damage from electrical current may be hidden and far more severe than surface injuries suggest.",
+      "Do NOT delay calling 101 -- every electrocution in a child requires professional medical evaluation and hospital assessment.",
+      "Do NOT move the child unnecessarily -- spinal and traumatic injuries from being thrown or muscle contractions may be present.",
+      "Do NOT approach high-voltage sources (power lines, transformer boxes) -- call 101, 102, and 103 and maintain a safe distance.",
+      "Do NOT stop CPR based on apparent lack of vital signs -- electrocution victims can sometimes be resuscitated after prolonged efforts.",
+      "Do NOT give food or drink to a child in shock after electrocution."
+    ],
+    "equipment_needed": [
+      "Non-conductive object for separating victim from source (wooden broom handle, dry stick, plastic chair)",
+      "AED / defibrillator (with pediatric pads if available)",
+      "Cool running water source (for burn cooling)",
+      "Sterile non-adherent dressings (for burn coverage)",
+      "Blanket (for warmth and shock treatment)"
+    ]
+  },
+  "tags": [
+    "electrocution",
+    "electric shock",
+    "electrical burns",
+    "oral burns",
+    "cord biting",
+    "pediatric",
+    "child",
+    "cardiac arrest",
+    "CPR",
+    "AED",
+    "220V",
+    "outlet safety",
+    "scene safety",
+    "chain electrocution",
+    "delayed bleeding",
+    "labial artery",
+    "rhabdomyolysis",
+    "emergency",
+    "MDA",
+    "101",
+    "high voltage"
+  ]
+}

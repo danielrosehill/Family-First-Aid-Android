@@ -1,0 +1,87 @@
+{
+  "groups": [
+    {
+      "title": "Breathing and circulation",
+      "topics": [
+        "cpr",
+        "aed-operation",
+        "choking",
+        "recovery-position",
+        "heart-attack",
+        "stroke",
+        "asthma",
+        "allergic-reaction",
+        "drowning"
+      ]
+    },
+    {
+      "title": "Bleeding and trauma",
+      "topics": [
+        "severe-bleeding",
+        "tourniquet",
+        "shock",
+        "head-spinal-injury",
+        "fractures",
+        "burns",
+        "eye-injuries",
+        "blast-injuries",
+        "electrocution"
+      ]
+    },
+    {
+      "title": "Medical",
+      "topics": [
+        "seizures",
+        "diabetic-emergencies",
+        "poisoning",
+        "smoke-inhalation",
+        "dehydration"
+      ]
+    },
+    {
+      "title": "Environment",
+      "topics": [
+        "heatstroke",
+        "hypothermia"
+      ]
+    },
+    {
+      "title": "Bites and stings",
+      "topics": [
+        "snakebite",
+        "scorpion-stings",
+        "spider-bites"
+      ]
+    }
+  ],
+  "names": {
+    "cpr": "CPR",
+    "aed-operation": "Using an AED",
+    "choking": "Choking",
+    "recovery-position": "Recovery position",
+    "heart-attack": "Heart attack / chest pain",
+    "stroke": "Stroke",
+    "asthma": "Asthma attack",
+    "allergic-reaction": "Anaphylaxis / allergic reaction",
+    "drowning": "Drowning",
+    "severe-bleeding": "Severe bleeding",
+    "tourniquet": "Tourniquet",
+    "shock": "Shock",
+    "head-spinal-injury": "Head and spinal injury",
+    "fractures": "Fractures and sprains",
+    "burns": "Burns",
+    "eye-injuries": "Eye injuries",
+    "blast-injuries": "Blast / shrapnel injuries",
+    "electrocution": "Electrocution",
+    "seizures": "Seizures",
+    "diabetic-emergencies": "Diabetic emergencies",
+    "poisoning": "Poisoning",
+    "smoke-inhalation": "Smoke / tear gas inhalation",
+    "dehydration": "Dehydration",
+    "heatstroke": "Heatstroke",
+    "hypothermia": "Hypothermia",
+    "snakebite": "Snakebite",
+    "scorpion-stings": "Scorpion sting",
+    "spider-bites": "Spider bite"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "IL-CHILD-HEAD-SPINAL-INJURY-001",
+  "title": "Head and Spinal Injury -- Child",
+  "country": "israel",
+  "age_group": "child",
+  "category": "head_spinal_injury",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA BLS Guide (2016), MDA ALS Professional Manual (2024), and Israeli Standard-of-Care Paediatric Head Injury Guidance (Maccabi, DrKids.co.il)",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project convention. No meaningful differences were identified between the two organisations -- both follow PHTLS-based trauma assessment (ABCDE), use jaw thrust for airway management in suspected spinal injury, and recommend selective immobilisation per modern PHTLS protocols. Neither organisation publishes a dedicated public-facing paediatric head/spinal injury first aid guide; the protocol is synthesised from MDA-aligned Israeli health service sources (Maccabi, DrKids.co.il) and United Hatzalah medical education articles (1221.org.il). United Hatzalah provides additional detail on selective immobilisation criteria and blast injury categories, which have been incorporated. MDA's official BLS/ALS protocol PDFs could not be automatically fetched due to bot protection on mdais.org. United Hatzalah's emergency number is 1221; MDA's 101 is used as the default throughout."
+  },
+  "protocol": {
+    "summary": "Manage suspected head or spinal injury in a child by keeping the child completely still, calling 101 immediately, stabilising the head and neck, controlling any scalp bleeding, and monitoring continuously until MDA arrives.",
+    "when_to_apply": "A child who has sustained or may have sustained a head or spinal injury from any mechanism including: falls from height exceeding 1 metre (or more than twice the child's height), motor vehicle accidents, bicycle or scooter crashes, falls from playground equipment, being struck by a heavy object, blast or shrapnel exposure, any fall onto a hard surface with direct head impact in an infant under 1 year, or any penetrating head wound. Also apply when a child after trauma shows: loss of consciousness (even briefly), seizures, repeated vomiting, unequal pupils, altered behaviour (confusion, irritability, excessive drowsiness), clear fluid or blood from nose or ears, weakness or inability to move a limb, neck or back pain, tingling or numbness, or bulging fontanelle in infants.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for any suspected head or spinal injury in a child. Always call 101 when the mechanism of injury is high-risk (fall from height, vehicle accident, blast exposure), even if the child initially appears alert and well. Provide: location, child's age, mechanism of injury, current symptoms, and level of consciousness."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety.",
+        "detail": "Check that the area is safe for you and the child before approaching. Wear gloves if available. In blast or security events, confirm the scene is clear before entering."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess the child's responsiveness without moving them.",
+        "detail": "Gently tap the child and call their name. For infants, tap the sole of the foot. Use the AVPU scale: A (Alert), V (responds to Voice), P (responds to Pain), U (Unresponsive).",
+        "warning": "Do NOT shake the child. Do NOT move the child unless they are in immediate danger (fire, traffic, structural collapse).",
+        "decision_point": {
+          "condition": "Is the child responsive?",
+          "if_yes": "Calmly instruct the child to stay completely still. Reassure them with eye contact and a calm voice. Proceed to Step 3.",
+          "if_no": "Check for breathing using the jaw thrust technique to open the airway (do NOT use head-tilt chin-lift). Proceed to Step 3 and call 101 immediately."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Call 101 (Magen David Adom) immediately.",
+        "detail": "Always call 101 for any suspected head or spinal injury in a child. Provide your location, the child's approximate age, the mechanism of injury, current symptoms, and level of consciousness (AVPU). Even if the child appears alert and well, call 101 for any high-risk mechanism.",
+        "warning": "Do not delay calling 101. Children can deteriorate rapidly after head injury. A child who appears fine initially may have a developing intracranial bleed."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Keep the child completely still -- do NOT move them.",
+        "detail": "This is the single most important instruction. If the child is lying down, do not sit them up. If the child is sitting, do not lay them down unless they become unconscious and need airway management. Maintain the child in the position found.",
+        "warning": "Moving a child with a spinal injury can cause permanent neurological damage or paralysis. Standing or walking ability does NOT exclude spinal cord injury.",
+        "decision_point": {
+          "condition": "Is the child in immediate danger (fire, traffic, structural collapse)?",
+          "if_yes": "Move the child only the minimum distance necessary to reach safety, keeping the head, neck, and spine aligned as much as possible.",
+          "if_no": "Do not move the child at all. Keep them in the position found and proceed to Step 5."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Stabilise the head and neck manually (manual in-line stabilisation).",
+        "detail": "Place your hands on either side of the child's head and hold it steady, aligned with the spine. Do not twist, bend, or rotate the head or neck. Maintain this position continuously until MDA paramedics arrive and take over. Two providers are ideal if available.",
+        "warning": "Do NOT attempt to straighten the neck if it is in an abnormal position. Hold it in the position found."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Manage the airway if the child is unconscious, using the jaw thrust manoeuvre.",
+        "detail": "If the child is unresponsive, open the airway using jaw thrust only -- place your fingers behind the angles of the lower jaw and lift the jaw forward. Do NOT use head-tilt chin-lift, as this can worsen a cervical spine injury. Position yourself near the child's face.",
+        "warning": "Never use head-tilt chin-lift on a child with suspected spinal injury. Jaw thrust is the only safe airway manoeuvre.",
+        "decision_point": {
+          "condition": "Is the child breathing after jaw thrust?",
+          "if_yes": "Maintain the jaw thrust and manual cervical stabilisation. Monitor breathing continuously. Proceed to Step 7.",
+          "if_no": "Begin CPR per MDA protocol (see IL-CHILD-CPR-001), maintaining spinal alignment as much as possible. Continue until MDA arrives or the child resumes breathing."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Control any visible scalp bleeding.",
+        "detail": "If the scalp is bleeding, apply gentle pressure with a clean cloth or sterile bandage. Scalp wounds can bleed heavily. In children, even moderate scalp bleeding can cause shock due to their smaller blood volume (an infant has only ~240 mL total, a one-year-old ~800 mL).",
+        "warning": "Do NOT apply direct pressure if you suspect a skull fracture (a depressed or unusually soft area of the skull). Do NOT push back any protruding matter or insert anything into a wound.",
+        "decision_point": {
+          "condition": "Do you suspect a skull fracture (depressed area, visible bone, clear fluid from ears or nose)?",
+          "if_yes": "Do not apply pressure to the wound. Loosely cover the wound with a sterile, non-adherent dressing. Do not attempt to stop the flow of clear fluid from ears or nose -- this may be cerebrospinal fluid.",
+          "if_no": "Apply gentle, direct pressure with a clean cloth or sterile bandage to control bleeding."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Assess for red flag warning signs and report to 101 dispatcher or arriving MDA crew.",
+        "detail": "Check for and note: loss of consciousness (even briefly), seizures or convulsions, repeated vomiting (more than once), unequal pupils (one larger than the other), clear fluid or blood draining from nose or ears, weakness or inability to move any limb, altered behaviour (unusual aggression, lethargy, confusion), bulging fontanelle in infants, and large or rapidly expanding scalp swelling.",
+        "decision_point": {
+          "condition": "Are any red flag signs present (loss of consciousness, seizures, repeated vomiting, unequal pupils, fluid from ears/nose, limb weakness)?",
+          "if_yes": "Communicate these findings urgently to the 101 dispatcher or arriving MDA crew. These signs suggest serious intracranial or spinal cord injury requiring immediate hospital treatment.",
+          "if_no": "Continue monitoring. Even without red flags, maintain immobilisation and await MDA assessment. Children can deteriorate after a delay."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Prevent hypothermia -- cover the child to maintain warmth.",
+        "detail": "Cover the child with a blanket, coat, or any available covering. Children lose body heat faster than adults due to their higher surface-area-to-body-mass ratio. Hypothermia worsens outcomes in trauma patients. In hot weather, provide shade instead.",
+        "warning": "Do not move the child to cover them. Place the covering over them in their current position."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Monitor continuously until MDA arrives.",
+        "detail": "Monitor breathing, level of consciousness (AVPU), and any changes in symptoms continuously. Note the time of injury and record any changes. Do not leave the child alone at any point. Keep the child calm and reassured.",
+        "decision_point": {
+          "condition": "Does the child vomit?",
+          "if_yes": "Carefully log-roll the child onto their side while a second person supports head and neck alignment (keeping head, neck, and body moving as one unit). This prevents aspiration. This technique requires training -- do the best you can to maintain spinal alignment.",
+          "if_no": "Maintain the child in their current position. Continue monitoring."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Do NOT remove a helmet if the child is wearing one.",
+        "detail": "If the child was wearing a bicycle, scooter, or other helmet at the time of injury, leave the helmet in place. Helmet removal requires two trained rescuers using a specific technique to avoid worsening a cervical spine injury. Leave this for MDA paramedics.",
+        "warning": "Improper helmet removal can cause catastrophic cervical spine injury. Never attempt to remove a helmet alone."
+      }
+    ],
+    "do_not": [
+      "Do NOT move the child unless they are in immediate life-threatening danger (fire, traffic, structural collapse)",
+      "Do NOT remove a helmet -- leave this for MDA paramedics (requires two trained rescuers)",
+      "Do NOT allow the child to stand up or walk, even if they want to -- standing or walking does NOT exclude spinal injury",
+      "Do NOT give the child food or drink (they may need surgery or imaging under anaesthesia)",
+      "Do NOT apply pressure to a depressed skull fracture or push back any protruding matter",
+      "Do NOT insert anything into a wound",
+      "Do NOT attempt to straighten the neck if it is in an abnormal position",
+      "Do NOT use head-tilt chin-lift to open the airway -- use jaw thrust only",
+      "Do NOT shake the child to assess responsiveness",
+      "Do NOT leave the child alone -- continuous monitoring is essential",
+      "Do NOT stop the flow of clear fluid from ears or nose (may be cerebrospinal fluid)"
+    ],
+    "equipment_needed": [
+      "Disposable gloves",
+      "Clean cloth or sterile bandages for wound control",
+      "Blanket or coat for warmth"
+    ]
+  },
+  "tags": [
+    "head injury",
+    "spinal injury",
+    "cervical spine",
+    "concussion",
+    "trauma",
+    "paediatric",
+    "child",
+    "immobilisation",
+    "jaw thrust",
+    "PHTLS",
+    "AVPU",
+    "skull fracture",
+    "red flags",
+    "MDA",
+    "101"
+  ]
+}

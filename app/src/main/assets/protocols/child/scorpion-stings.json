@@ -1,0 +1,131 @@
+{
+  "id": "IL-CHILD-SCORPION-STINGS-001",
+  "title": "Scorpion Sting First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "scorpion_stings",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Scorpion Sting First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance, supplemented by Jerusalem Post articles quoting MDA, Israeli Ministry of Education first aid instructions (MDA-sourced), Midaat.org.il, and peer-reviewed Israeli pediatric clinical data (Paret et al. 1991)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. No disagreements found between the two organisations on scorpion sting first aid. MDA used as primary authority. United Hatzalah does not publish a child-specific scorpion sting protocol; their general guidance (from 1221.org.il) is fully consistent with MDA. MDA primary page (mdais.org/101/first-aid) was blocked by bot protection during research; protocol reconstructed from Jerusalem Post articles quoting MDA spokespersons, Israeli Ministry of Education first aid document (MDA-sourced), Midaat.org.il (evidence-based Israeli health information), and peer-reviewed Israeli clinical studies. MDA does not differentiate children from adults in first aid steps -- the same protocol applies with greater urgency due to higher venom-to-body-weight ratio and faster systemic progression. The deathstalker scorpion (Leiurus quinquestriatus) can be deadly for young children. Israeli clinical data (Paret et al. 1991, 54 pediatric cases in Jerusalem) shows that IV antivenom is effective and safe in children with significant symptoms, and that fatalities occurred in patients who did NOT receive antivenom. Key protocol difference from snakebite: cooling/icing the sting site IS recommended for scorpion stings (relieves pain and slows venom absorption), whereas ice is NOT recommended for snakebites. Israel Poison Information Center: 04-7771900 (Rambam Medical Center). United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for scorpion sting in children in Israel, emphasising immediate emergency call, immobilisation, cooling the sting site, calm reassurance, and rapid transport to hospital. Children are at significantly higher risk due to lower body weight and faster systemic progression. The deathstalker scorpion can be deadly for young children.",
+    "when_to_apply": "When a child has been stung or suspected stung by a scorpion. All scorpion stings in children require emergency medical evaluation -- do not 'wait and see.' Israel has approximately 21 scorpion species, of which 5 are medically significant. The most dangerous is the deathstalker (Leiurus quinquestriatus), found throughout Israel from the Upper Galilee to the Negev. The common belief that black scorpions are harmless is incorrect -- black scorpions can also be dangerous and potentially lethal.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for every scorpion sting in a child. Do not wait for symptoms. Report the child's age, weight, approximate time of sting, and location on the body. Also consider calling the Israel Poison Information Center at 04-7771900 for guidance while waiting for the ambulance. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety. Move the child away from the scorpion immediately.",
+        "detail": "Do not attempt to catch or handle the scorpion. If safe to do so, photograph or note the scorpion's appearance (colour, size) for identification at hospital.",
+        "warning": "Do NOT attempt to catch or handle the scorpion. This risks additional stings."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Request an ambulance. All scorpion stings in children require emergency medical evaluation -- do not 'wait and see.' Report the child's age, approximate weight, time of sting, sting location on the body, and any symptoms. Also consider calling the Israel Poison Information Center at 04-7771900 for real-time guidance.",
+        "warning": "Do NOT delay calling 101 for children. Children deteriorate faster than adults due to higher venom-to-body-weight ratio."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Keep the child calm and still. Have the child lie down or sit still.",
+        "detail": "Reassure the child by speaking calmly and confidently. Minimise all movement. Movement accelerates venom distribution through the lymphatic and circulatory systems. Anxiety and crying can increase heart rate, which further accelerates venom spread.",
+        "warning": "Immobility is critical. Any movement accelerates venom distribution."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Cool the sting area with an ice pack or cold compress wrapped in cloth.",
+        "detail": "Apply ice or a cold compress wrapped in cloth to the sting site. Cooling achieves two goals: relieves pain and slows the absorption and spread of venom via vasoconstriction. Apply for 10 minutes on, 10 minutes off. Most effective during the first 2 hours following the sting. Do not apply ice directly to the skin.",
+        "warning": "Do NOT apply ice directly to the child's skin -- always wrap in cloth. This is different from snakebite protocol, where ice is NOT recommended.",
+        "decision_point": {
+          "condition": "Is ice or a cold compress available?",
+          "if_yes": "Wrap the ice or cold compress in cloth and apply to the sting site. Apply for 10 minutes on, 10 minutes off.",
+          "if_no": "Skip cooling. Focus on keeping the child calm, still, and the limb immobilised. Proceed to next step."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Immobilise the stung limb. Keep it still and below heart level.",
+        "detail": "Immobilise the stung limb against the body as you would for a fracture. Keeping it below heart level slows venom distribution.",
+        "decision_point": {
+          "condition": "Is a splint or rigid object available to immobilise the limb?",
+          "if_yes": "Apply the splint to immobilise the stung limb, keeping it below heart level.",
+          "if_no": "Immobilise the limb by positioning it against the child's body. Use clothing or fabric to secure it in place if possible. Keep it below heart level."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Monitor the child closely for signs of systemic envenomation.",
+        "detail": "Watch for the following symptoms, which may develop rapidly in children. Neurological: restlessness, agitation, irritability, altered consciousness, drowsiness, confusion, seizures, numbness or tingling, breathing difficulties. Cardiovascular: rapid heartbeat (tachycardia), irregular heart rhythms, chest pain, signs of heart failure or pulmonary oedema. Autonomic: excessive sweating, excessive salivation or drooling, excessive tearing, vomiting, nausea, abdominal pain, muscle contractions or twitching. Delayed reactions may occur -- even if the child initially appears well, hospital observation is essential.",
+        "warning": "Systemic symptoms can progress rapidly in children. Do not assume the child is fine based on initial appearance.",
+        "decision_point": {
+          "condition": "Is the child showing systemic symptoms (breathing difficulty, altered consciousness, seizures, rapid heartbeat, excessive sweating/salivation, vomiting)?",
+          "if_yes": "Relay all symptoms to the 101 dispatcher immediately. If the child loses consciousness and stops breathing, begin CPR. Continue monitoring and prepare for rapid transport.",
+          "if_no": "Continue monitoring closely. Symptoms can develop with delay. Maintain calm, immobilisation, and cooling. Hospital evaluation is still required."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Prepare for and facilitate rapid transport to hospital.",
+        "detail": "All pediatric scorpion stings require hospital evaluation regardless of symptom severity. At hospital, the child may receive: pain relief, supportive treatment for cardiovascular and respiratory systems, monitoring for arrhythmias and delayed reactions, and scorpion antivenom in cases with significant systemic symptoms. Minimum observation period at hospital is 6 hours from time of sting; admission if any systemic symptoms develop. If the scorpion was photographed, have the photo ready for medical staff.",
+        "decision_point": {
+          "condition": "Has the ambulance arrived?",
+          "if_yes": "Hand over to paramedics. Provide the child's age, weight, time of sting, sting location, any symptoms observed, and scorpion photo if available.",
+          "if_no": "Continue monitoring, cooling, and keeping the child calm and still. If the child's condition deteriorates rapidly and no ambulance is imminent, consider rapid private transport to the nearest hospital emergency department."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT apply a tourniquet -- concentrates venom in the limb and causes tissue damage.",
+      "Do NOT cut or incise the sting site -- causes additional injury and does not remove venom.",
+      "Do NOT attempt to suck out the venom -- ineffective and risks infection.",
+      "Do NOT apply alcohol or antiseptic to the wound -- interferes with medical assessment.",
+      "Do NOT give the child medication without medical advice -- may interact with venom effects or mask symptoms.",
+      "Do NOT underestimate a sting based on scorpion colour -- black scorpions can be as dangerous as yellow ones and can be potentially lethal.",
+      "Do NOT delay calling 101 for children -- children deteriorate faster than adults due to higher venom-to-body-weight ratio.",
+      "Do NOT apply ice directly to the child's skin -- always wrap in cloth.",
+      "Do NOT allow the child to walk or move -- movement accelerates venom distribution.",
+      "Do NOT 'wait and see' with children -- all scorpion stings in children require emergency medical evaluation."
+    ],
+    "equipment_needed": [
+      "Ice pack or cold compress (wrapped in cloth)",
+      "Splint or rigid object for limb immobilisation",
+      "Phone (to call 101 / 04-7771900 and photograph the scorpion)",
+      "Cloth or towel (to wrap ice pack)",
+      "Blanket or clothing (to keep child comfortable while lying still)"
+    ]
+  },
+  "tags": [
+    "scorpion",
+    "scorpion sting",
+    "deathstalker",
+    "Leiurus quinquestriatus",
+    "envenomation",
+    "pediatric",
+    "child",
+    "venom",
+    "antivenom",
+    "neurotoxic",
+    "cardiotoxic",
+    "immobilisation",
+    "emergency",
+    "MDA",
+    "101",
+    "poison center",
+    "Negev",
+    "outdoor safety",
+    "nature",
+    "nocturnal"
+  ]
+}

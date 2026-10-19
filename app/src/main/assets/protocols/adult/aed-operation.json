@@ -1,0 +1,151 @@
+{
+  "id": "IL-ADULT-AED-OPERATION-001",
+  "title": "AED Operation (Automated External Defibrillator) -- Adult",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "aed_operation",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA AED Operation Protocol -- synthesised from MDA defibrillator information page, Hebrew-language media guidance (Ynet, Maariv), AHA 2025 Guidelines for CPR and ECC (adopted by MDA), and MDA smart stand programme documentation",
+    "url": "https://www.mdais.org/kursim/defibrillator",
+    "publication_date": "2025-01-01",
+    "edition": "AHA 2025 Guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah reference material. No protocol-level differences were identified between the two organisations; both follow AHA guidelines for AED operation. MDA is used as the authoritative default per project rules. United Hatzalah does not publish a standalone AED protocol; their publicly available guidance is consistent with MDA/AHA. United Hatzalah's emergency number is 1221, but the national EMS number 101 (MDA) is used throughout. MDA does not publish a standalone English-language AED protocol; this JSON was synthesised from MDA's public defibrillator information page, Hebrew-language media articles based on MDA guidance, the AHA 2025 guidelines that MDA formally adopts, and MDA smart stand programme documentation. Israeli AED law (2008) and the Eifo-Defi app are referenced as Israel-specific infrastructure."
+  },
+  "protocol": {
+    "summary": "Step-by-step AED operation protocol for adults in cardiac arrest, integrated with CPR, following MDA/AHA guidelines with Israel-specific infrastructure (smart stands, Eifo-Defi app, Hebrew voice guidance).",
+    "when_to_apply": "An adult (age 8 and above, or showing signs of puberty) is found unresponsive, not breathing normally (absent breathing or only gasping/agonal breathing), and suspected to be in cardiac arrest.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon determining that the person is unresponsive and not breathing normally. Call 101 before or simultaneously with beginning CPR. MDA dispatch can locate and remotely unlock the nearest smart stand AED."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Confirm cardiac arrest: check responsiveness by calling out and shaking the person's shoulders. Check breathing for no more than 10 seconds by looking for chest rise, listening for breath sounds, and feeling for air on your cheek.",
+        "detail": "Gasping (agonal breathing) is NOT normal breathing -- treat it as cardiac arrest. If trained to check a pulse, do so simultaneously with the breathing check, but do not spend more than 10 seconds total.",
+        "decision_point": {
+          "condition": "Is the person unresponsive and not breathing normally?",
+          "if_yes": "Proceed to step 2 (call 101 and begin emergency response).",
+          "if_no": "Do not apply AED. If the person is unconscious but breathing normally, place in the recovery position and call 101. If conscious and breathing, provide appropriate first aid."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA emergency dispatch) immediately and put the phone on speakerphone.",
+        "detail": "MDA dispatchers provide real-time CPR and AED coaching over the phone. They can also identify the nearest smart stand AED and remotely unlock it. If another person is present, send them to fetch the nearest AED while you begin CPR."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Begin CPR immediately while waiting for the AED: place the person on a firm, flat surface. Deliver chest compressions at the centre of the chest (lower half of the sternum), at a rate of 100-120 per minute, to a depth of 5-6 cm (2-2.4 inches). Allow full chest recoil between compressions.",
+        "detail": "If trained and willing: deliver 2 rescue breaths after every 30 compressions (30:2 ratio). If untrained or unwilling: perform compression-only CPR. Do not delay compressions to wait for the AED.",
+        "decision_point": {
+          "condition": "Is another person available to retrieve the AED?",
+          "if_yes": "Send them to retrieve the nearest AED while you continue CPR without interruption.",
+          "if_no": "If the AED is immediately nearby (within a few seconds' reach), retrieve it quickly and return. Otherwise, continue CPR until help arrives with an AED."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Locate and retrieve the nearest AED.",
+        "detail": "Use the Eifo-Defi app to find the closest device. Call 101 -- MDA dispatch can locate the nearest smart stand and remotely unlock it (the case opens and a siren and flashing lights activate). Check nearby buildings, shopping centres, train stations, sports facilities, and public phone booth AED stations (bright yellow boxes). By Israeli law, any public space with 500+ daily visitors must have an AED."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Open the AED cover. The device will power on automatically (some models require pressing a power button). The AED will begin providing voice instructions in Hebrew (and possibly other languages: English, Arabic, Russian, Amharic depending on the model).",
+        "detail": "Follow the AED's voice and visual prompts throughout the process. The device will guide you step by step."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Prepare the patient's chest: expose the bare chest by removing or cutting away clothing, including bra. Ensure the chest is dry -- wipe off sweat, water, or other moisture.",
+        "detail": "Address special situations before applying pads.",
+        "decision_point": {
+          "condition": "Are there special chest conditions (excessive hair, medication patches, implanted pacemaker/defibrillator, or metal surface)?",
+          "if_yes": "Excessive chest hair: shave the pad areas using the razor often included in AED kits. Medication patches: remove any transdermal patches from the chest area and wipe the skin. Implanted pacemaker/defibrillator (visible lump under the skin): place pads at least 2.5 cm (1 inch) away from the device. Metal surface: move the person off the metal surface if possible; otherwise ensure nobody is in contact with the metal during shock delivery.",
+          "if_no": "Proceed directly to applying the electrode pads."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Apply the electrode pads to the bare, dry chest following the diagram printed on each pad. Use anterolateral placement for adults: Pad 1 (upper right) below the right collarbone to the right of the sternum; Pad 2 (lower left) on the left side of the chest below the armpit, in line with the nipple.",
+        "detail": "Connect the pads to the AED if they are not pre-connected (plug the cable into the AED unit). Some AEDs have pre-connected pads."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Allow the AED to analyse the heart rhythm. Stop CPR and ensure nobody is touching the patient during analysis.",
+        "warning": "Do not touch the patient during rhythm analysis. Any contact may interfere with the analysis and produce inaccurate results.",
+        "decision_point": {
+          "condition": "Does the AED advise a shock (shockable rhythm detected)?",
+          "if_yes": "Proceed to step 9 (deliver shock).",
+          "if_no": "The rhythm is not shockable. Resume CPR immediately (proceed to step 10). The AED will not deliver a shock and cannot harm a person who does not need one."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Deliver the shock: ensure nobody is touching the patient. Call out clearly 'Stand clear!' (Hebrew: 'Hitrachku!'). Press the shock button when instructed by the AED.",
+        "detail": "Some fully automatic AEDs deliver the shock automatically without requiring a button press. The AED will announce before delivering the shock.",
+        "warning": "Visually confirm that nobody is in contact with the patient before pressing the shock button. Electrocution risk to bystanders."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Resume CPR immediately after the shock is delivered (or after a 'no shock advised' result). Continue CPR for 2 minutes (approximately 5 cycles of 30:2).",
+        "detail": "Do not wait for the AED to re-analyse before resuming compressions. The AED will automatically prompt for another rhythm analysis after approximately 2 minutes."
+      },
+      {
+        "step_number": 11,
+        "instruction": "After 2 minutes of CPR, the AED will automatically re-analyse the heart rhythm. Stop CPR and ensure nobody is touching the patient during analysis. Follow the AED prompts (shock if advised, then resume CPR).",
+        "detail": "Continue the cycle of: CPR for 2 minutes -> AED analysis -> shock if advised -> CPR. Each cycle repeats until EMS arrives or the person shows signs of life."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Continue CPR and AED cycles until one of the following occurs: MDA paramedics arrive and take over; the person shows obvious signs of life (moves, breathes normally, opens eyes); or you are physically unable to continue.",
+        "warning": "Do not disconnect the AED pads even if the person regains consciousness. Do not turn off the AED. Leave the pads attached at all times.",
+        "decision_point": {
+          "condition": "Does the person show signs of life (breathing, movement, coughing)?",
+          "if_yes": "Stop CPR. Place the person in the recovery position. Keep AED pads attached and the device on. Monitor continuously until MDA arrives.",
+          "if_no": "Continue CPR and AED cycles without stopping."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not use the AED on a person who is conscious and breathing normally -- AEDs are only for cardiac arrest.",
+      "Do not apply AED pads while the person is submerged in water or lying in a puddle -- move them to dry ground first and dry the chest before applying pads.",
+      "Do not use an AED near flammable gases, fumes, or oxygen-enriched atmospheres -- risk of fire or explosion.",
+      "Do not place AED pads directly over an implanted pacemaker or defibrillator -- place pads at least 2.5 cm (1 inch) away from the device.",
+      "Do not place AED pads over transdermal medication patches -- remove patches and wipe the skin before placing pads.",
+      "Do not touch the patient during AED rhythm analysis or shock delivery.",
+      "Do not turn off the AED or disconnect the pads at any point, even if the person regains consciousness.",
+      "Do not delay defibrillation to wait for EMS -- early defibrillation is critical. For every minute defibrillation is delayed, survival decreases by approximately 7-10%.",
+      "Do not interrupt chest compressions for more than 10 seconds for any reason, including AED pad placement.",
+      "Do not use the AED on a person who is breathing and has a pulse, even if unconscious -- place them in the recovery position and monitor.",
+      "Do not allow AED pads to touch or overlap each other on the chest."
+    ],
+    "equipment_needed": [
+      "AED (Automated External Defibrillator) -- available from MDA smart stands, public locations, or via Eifo-Defi app locator",
+      "Razor (for shaving excessive chest hair -- often included in AED kits)",
+      "Towel or cloth (for drying the chest)",
+      "Scissors (for cutting away clothing -- often included in AED kits)",
+      "Phone (to call 101 and use speakerphone for dispatcher-guided CPR and AED use)"
+    ]
+  },
+  "tags": [
+    "aed",
+    "defibrillator",
+    "cardiac-arrest",
+    "defibrillation",
+    "cpr",
+    "bls",
+    "chain-of-survival",
+    "smart-stand",
+    "eifo-defi",
+    "adult",
+    "israel",
+    "mda",
+    "aha"
+  ]
+}

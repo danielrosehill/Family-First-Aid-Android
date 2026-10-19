@@ -1,0 +1,142 @@
+{
+  "id": "IL-CHILD-BLAST-INJURIES-001",
+  "title": "Blast / Shrapnel Injuries First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "blast_injuries",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Blast Injury First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-04-01",
+    "edition": "Current MDA training materials and PHTLS-aligned trauma protocols, supplemented by Ichud Hatzalah missile strike response, trauma patient assessment (SABCDE), and resuscitation in trauma guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a dedicated child-specific blast injury protocol. MDA used as primary authority. Both sources follow PHTLS (Prehospital Trauma Life Support) methodology with SABCDE assessment. Both sources classify blast injuries into primary (pressure wave), secondary (shrapnel/fragments), tertiary (victim thrown), and quaternary (burns, inhalation, crush). Both emphasise scene safety including secondary device risk. Both note paediatric vulnerability due to smaller body mass, thinner chest wall, less blood volume, and proximity to ground level. MDA and Hatzalah both operate psychotrauma units for paediatric psychological first aid. MDA ALS manual (2024) and mass casualty protocols were not accessible. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for blast and shrapnel injuries in children in Israel, following PHTLS methodology (Scene safety, Airway, Breathing, Circulation, Disability, Exposure). Children are at higher risk due to smaller body mass, thinner chest wall, less blood volume, and greater energy transfer per kilogram.",
+    "when_to_apply": "When a child has been injured by a blast event including rocket/missile attack, explosive device, or any explosion causing primary blast injuries (pressure wave), secondary injuries (shrapnel/fragments), tertiary injuries (thrown by blast), or quaternary injuries (burns, inhalation, crush from structural collapse). Common contexts in Israel include rocket attacks, terrorist bombings, and injuries during rush to shelters (miklat/mamad).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for any blast-injured child. Report the nature of the blast, number of casualties, child's condition, and your location. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety before approaching.",
+        "detail": "Assess for secondary explosive device risk, structural collapse, fire, and ongoing danger. Do not enter an unsafe scene. Wait for security forces to clear the area if there is any doubt.",
+        "warning": "Risk of secondary explosive devices is significant in terror-related blast events. Do NOT rush in without confirming scene safety. Structural collapse can occur minutes after the initial blast."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Report the blast event, your location, number of casualties, and the involvement of children. MDA dispatch will coordinate ambulances and psychotrauma teams. If multiple casualties, triage may be directed by dispatch."
+      },
+      {
+        "step_number": 3,
+        "instruction": "A -- Assess and maintain the child's airway.",
+        "detail": "Check airway patency. Look for blood, debris, vomit, or foreign objects in the mouth. In children, airways are smaller and more prone to obstruction. The tongue is proportionally larger and can block the airway. For infants, maintain nasal patency (obligate nasal breathers). Use jaw thrust manoeuvre if spinal injury is suspected.",
+        "warning": "Check for stridor (noisy breathing) which may indicate thermal airway injury from blast. Stridor in children indicates significant airway compromise.",
+        "decision_point": {
+          "condition": "Is the child's airway clear and open?",
+          "if_yes": "Proceed to breathing assessment (Step 4).",
+          "if_no": "Clear the airway manually. Remove visible debris. Position the head to open the airway (head-tilt/chin-lift unless spinal injury suspected, then jaw thrust only)."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "B -- Assess breathing quality and symmetry.",
+        "detail": "Look for chest rise and fall. Assess symmetry -- asymmetric chest rise indicates thoracic trauma (possible pneumothorax). Monitor respiratory rate and effort. Look for accessory muscle use, nasal flaring, and intercostal retractions (common signs of respiratory distress in children). Blast lung is the most immediately life-threatening primary blast injury.",
+        "decision_point": {
+          "condition": "Is the child breathing adequately with symmetric chest rise?",
+          "if_yes": "Proceed to circulation assessment (Step 5).",
+          "if_no": "If not breathing: begin rescue breathing/CPR. If asymmetric chest rise: suspect pneumothorax -- position child with injured side down if possible. Administer oxygen if available."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "C -- Control bleeding and assess circulation.",
+        "detail": "Evaluate for massive haemorrhage. Children have less blood volume than adults and can decompensate rapidly from blood loss. Check radial and carotid pulses. Assess capillary refill (press fingernail bed -- refill longer than 4-5 seconds indicates shock).",
+        "decision_point": {
+          "condition": "Is there uncontrollable limb haemorrhage?",
+          "if_yes": "Apply a tourniquet proximal to the wound. If no tourniquet available, apply maximum direct pressure with cloth or hands. Record time of tourniquet application. See tourniquet protocol for child-specific guidance.",
+          "if_no": "Apply direct pressure to any bleeding wounds using sterile gauze or clean cloth. Elevate bleeding limbs if no fracture suspected."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "D -- Assess neurological status (Disability).",
+        "detail": "Use AVPU scale: Alert, responds to Voice, responds to Pain, Unresponsive. Check pupil size and reactivity. A non-communicative child after blast does NOT necessarily mean absence of serious injury -- children may be in psychological shock.",
+        "warning": "A silent, non-communicative child after a blast event may have serious injuries. Do not assume the child is uninjured because they are quiet."
+      },
+      {
+        "step_number": 7,
+        "instruction": "E -- Expose and examine for additional injuries, then prevent hypothermia.",
+        "detail": "Carefully expose the child's body to check for additional wounds, burns, embedded objects, and fractures. Children's smaller bodies mean organs are closer together, increasing risk of multi-organ injury. After examination, cover the child immediately to prevent hypothermia -- children lose heat rapidly due to higher surface-area-to-mass ratio.",
+        "warning": "Do NOT remove embedded objects (shrapnel, fragments). Stabilise them in place. Removing them may worsen bleeding."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Cover wounds and stabilise embedded objects.",
+        "detail": "Cover open wounds with sterile dressings. If objects are embedded (shrapnel, glass, debris), do NOT remove them. Build padding around embedded objects to stabilise them. Use bulky dressings to protect wound sites."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Keep the child with their parent or caregiver when possible.",
+        "detail": "Separation from caregivers compounds psychological trauma in children. If the parent is also injured, assign another trusted adult to stay with the child. Speak calmly and honestly to the child. MDA 101 dispatch can coordinate psychological first responders (psychotrauma teams)."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Prepare for transport and monitor continuously.",
+        "detail": "Keep the child warm and covered. Monitor breathing, pulse, and consciousness level continuously. Be prepared to perform CPR if the child deteriorates. If multiple casualties, follow triage instructions from MDA dispatch. Report all interventions and times to arriving emergency services."
+      }
+    ],
+    "do_not": [
+      "Do NOT enter an unsafe blast scene -- risk of secondary devices and structural collapse.",
+      "Do NOT remove embedded objects (shrapnel, fragments) -- stabilise them in place.",
+      "Do NOT assume a quiet child is uninjured -- children may be in psychological shock.",
+      "Do NOT remove a tourniquet once applied -- hospital personnel will manage removal.",
+      "Do NOT forget to prevent hypothermia after examination -- children lose heat rapidly.",
+      "Do NOT separate the child from their parent or caregiver unnecessarily.",
+      "Do NOT ignore asymmetric chest rise -- this indicates thoracic trauma requiring urgent attention.",
+      "Do NOT give the child food or drink if significant injuries are present -- they may need anaesthesia at hospital."
+    ],
+    "equipment_needed": [
+      "Tourniquet (CAT or equivalent -- see tourniquet protocol for child-specific sizing)",
+      "Sterile gauze and bandages",
+      "Blankets (for hypothermia prevention)",
+      "Rigid splints (for fracture immobilisation)",
+      "Phone (to call 101)",
+      "Supplemental oxygen and mask (if available)"
+    ]
+  },
+  "tags": [
+    "blast injury",
+    "shrapnel",
+    "explosion",
+    "rocket attack",
+    "missile",
+    "trauma",
+    "PHTLS",
+    "ABCDE",
+    "tourniquet",
+    "haemorrhage",
+    "pneumothorax",
+    "blast lung",
+    "psychotrauma",
+    "pediatric",
+    "child",
+    "emergency",
+    "MDA",
+    "101",
+    "mass casualty",
+    "shelter",
+    "miklat",
+    "mamad",
+    "security"
+  ]
+}

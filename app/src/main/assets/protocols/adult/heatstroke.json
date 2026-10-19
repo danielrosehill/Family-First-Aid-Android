@@ -1,0 +1,136 @@
+{
+  "id": "IL-ADULT-HEATSTROKE-001",
+  "title": "Heatstroke and Heat Exhaustion -- Adult Protocol (Israel)",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "heatstroke",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA First Aid Guidelines -- Heat-Related Illness",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA is the authoritative default per project rules. Minor difference: United Hatzalah recommends withholding all fluids in confirmed heat stroke to avoid cardiac strain, while MDA allows small sips of cool water if the patient is fully conscious and able to swallow. MDA guidance is followed here. MDA PDFs (BLS Guide 2016, Emergency Medicine Reference 2024, Summer Guidelines) could not be directly fetched; content synthesised from search result summaries and publicly referenced training materials."
+  },
+  "protocol": {
+    "summary": "Assessment and first aid for heat exhaustion and heat stroke in adults, including recognition, cooling, and escalation to emergency services.",
+    "when_to_apply": "Person showing signs of heat-related illness after prolonged heat exposure or physical exertion in hot conditions. Signs include heavy sweating, dizziness, nausea, confusion, hot dry skin, or loss of consciousness.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for suspected heat stroke (temperature above 40 degrees C, confusion, hot dry skin, seizures, loss of consciousness). For heat exhaustion, call 101 if symptoms do not improve or worsen despite first aid."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the person's condition to determine whether this is heat exhaustion or heat stroke.",
+        "detail": "Heat exhaustion: heavy sweating, warm moist skin, dizziness, nausea, headache, weakness, muscle cramps, rapid pulse. Heat stroke: body temperature above 40 degrees C, hot dry skin (sweating may have stopped), confusion, disorientation, staggering gait, seizures, hallucinations, loss of consciousness.",
+        "decision_point": {
+          "condition": "Does the person show signs of heat stroke (confusion, hot dry skin, temperature above 40C, seizures, loss of consciousness)?",
+          "if_yes": "This is a life-threatening emergency. Go to step 2 (heat stroke pathway).",
+          "if_no": "Treat as heat exhaustion. Go to step 8 (heat exhaustion pathway)."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "HEAT STROKE: Call MDA immediately at 101.",
+        "detail": "Heat stroke is a life-threatening emergency. Do not delay calling emergency services.",
+        "warning": "Do not delay calling 101 for suspected heat stroke."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Move the person to shade or an air-conditioned area immediately."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove unnecessary clothing."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Begin aggressive cooling: apply wet towels to the body (especially neck, armpits, groin), spray or pour cool/cold water on the body, fan the person vigorously, and apply cold packs to neck, armpits, and groin if available.",
+        "detail": "Target the neck, armpits, and groin where major blood vessels are close to the skin surface for maximum cooling effect."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess whether the person is fully conscious and able to swallow.",
+        "decision_point": {
+          "condition": "Is the person fully conscious and able to swallow?",
+          "if_yes": "Offer small sips of cool water continuously.",
+          "if_no": "Do NOT give any fluids. Place in recovery position if breathing. Monitor airway."
+        },
+        "warning": "Do not give fluids to a person who is not fully conscious -- aspiration risk."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the person continuously until MDA arrives.",
+        "detail": "Elevate legs if blood pressure drops (signs of shock). If the person becomes unresponsive and stops breathing, begin CPR.",
+        "decision_point": {
+          "condition": "Has the person become unresponsive and stopped breathing?",
+          "if_yes": "Begin CPR immediately.",
+          "if_no": "Continue cooling and monitoring. Stay with the patient until ambulance arrives."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "HEAT EXHAUSTION: Move the person to a shaded or air-conditioned location."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Have the person lie down. Elevate legs slightly if blood pressure appears low."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Remove excess or tight clothing."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Begin cooling: apply wet towels, spray with cool water, fan the person."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Assess whether the person is fully conscious and able to swallow.",
+        "decision_point": {
+          "condition": "Is the person fully conscious and able to swallow?",
+          "if_yes": "Offer small sips of cool water continuously.",
+          "if_no": "Do NOT give fluids. Call MDA at 101 immediately."
+        }
+      },
+      {
+        "step_number": 13,
+        "instruction": "Monitor for deterioration.",
+        "decision_point": {
+          "condition": "Are symptoms improving with first aid?",
+          "if_yes": "Continue cooling and hydration. Keep monitoring.",
+          "if_no": "Call MDA at 101. The condition may be progressing to heat stroke. Return to step 1 and reassess."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not administer fever-reducing medications (paracetamol, ibuprofen) -- antipyretics do not work for environmental hyperthermia and may cause harm.",
+      "Do not give fluids to a person who is not fully conscious or who cannot swallow safely.",
+      "Do not delay calling 101 for suspected heat stroke.",
+      "Do not ignore early signs of heat exhaustion -- it can progress to life-threatening heat stroke.",
+      "Do not leave the person unattended while waiting for emergency services."
+    ],
+    "equipment_needed": [
+      "Wet towels or cloths",
+      "Cool/cold water (for spraying, pouring, and drinking)",
+      "Cold packs or ice packs (if available)",
+      "Fan or other means of air circulation (if available)"
+    ]
+  },
+  "tags": [
+    "heat",
+    "heatstroke",
+    "heat-exhaustion",
+    "hyperthermia",
+    "cooling",
+    "environmental",
+    "summer",
+    "desert",
+    "sharav",
+    "hamsin"
+  ]
+}

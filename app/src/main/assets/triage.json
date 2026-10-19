@@ -1,0 +1,284 @@
+{
+  "root": "root",
+  "nodes": {
+    "root": {
+      "id": "root",
+      "question": "What's happening?",
+      "helper": "Pick the closest match. Call 101 immediately if the person is unresponsive, not breathing, or bleeding severely.",
+      "answers": [
+        {
+          "label": "Collapsed / unresponsive",
+          "emphasis": "danger",
+          "action": {
+            "goto": "unresponsive"
+          }
+        },
+        {
+          "label": "Choking — can't speak or cough",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "choking"
+          }
+        },
+        {
+          "label": "Severe bleeding",
+          "emphasis": "danger",
+          "action": {
+            "goto": "bleeding"
+          }
+        },
+        {
+          "label": "Chest pain / heart attack signs",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "heart-attack"
+          }
+        },
+        {
+          "label": "Stroke signs (face droop / slurred speech / weak arm)",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "stroke"
+          }
+        },
+        {
+          "label": "Seizure",
+          "action": {
+            "route": "protocol",
+            "category": "seizures"
+          }
+        },
+        {
+          "label": "Severe allergic reaction / anaphylaxis",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "allergic-reaction"
+          }
+        },
+        {
+          "label": "Can't breathe / asthma attack",
+          "action": {
+            "route": "protocol",
+            "category": "asthma"
+          }
+        },
+        {
+          "label": "Burn",
+          "action": {
+            "route": "protocol",
+            "category": "burns"
+          }
+        },
+        {
+          "label": "Poisoning / overdose / suspect ingestion",
+          "action": {
+            "route": "protocol",
+            "category": "poisoning"
+          }
+        },
+        {
+          "label": "Drowning / pulled from water",
+          "action": {
+            "goto": "drowning"
+          }
+        },
+        {
+          "label": "Electrocution",
+          "action": {
+            "route": "protocol",
+            "category": "electrocution"
+          }
+        },
+        {
+          "label": "Heat emergency (hot + altered / unwell)",
+          "action": {
+            "route": "protocol",
+            "category": "heatstroke"
+          }
+        },
+        {
+          "label": "Cold emergency / hypothermia",
+          "action": {
+            "route": "protocol",
+            "category": "hypothermia"
+          }
+        },
+        {
+          "label": "Head or spinal injury",
+          "action": {
+            "route": "protocol",
+            "category": "head-spinal-injury"
+          }
+        },
+        {
+          "label": "Suspected broken bone",
+          "action": {
+            "route": "protocol",
+            "category": "fractures"
+          }
+        },
+        {
+          "label": "Eye injury",
+          "action": {
+            "route": "protocol",
+            "category": "eye-injuries"
+          }
+        },
+        {
+          "label": "Bite or sting",
+          "action": {
+            "goto": "bite"
+          }
+        },
+        {
+          "label": "Diabetic emergency (low / high blood sugar)",
+          "action": {
+            "route": "protocol",
+            "category": "diabetic-emergencies"
+          }
+        },
+        {
+          "label": "Explosion / blast injury",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "blast-injuries"
+          }
+        },
+        {
+          "label": "Smoke inhalation / fire victim",
+          "action": {
+            "route": "protocol",
+            "category": "smoke-inhalation"
+          }
+        },
+        {
+          "label": "Dehydration / very thirsty, weak",
+          "action": {
+            "route": "protocol",
+            "category": "dehydration"
+          }
+        },
+        {
+          "label": "Shock (pale, clammy, weak pulse)",
+          "action": {
+            "route": "protocol",
+            "category": "shock"
+          }
+        }
+      ]
+    },
+    "unresponsive": {
+      "id": "unresponsive",
+      "question": "Is the person breathing normally?",
+      "helper": "Look for chest rise, listen for breath, feel for air — up to 10 seconds. Agonal gasping = NOT normal breathing.",
+      "answers": [
+        {
+          "label": "NO / not sure / only gasping",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "cpr"
+          }
+        },
+        {
+          "label": "YES — breathing normally",
+          "emphasis": "ok",
+          "action": {
+            "route": "protocol",
+            "category": "recovery-position"
+          }
+        },
+        {
+          "label": "AED is available",
+          "action": {
+            "route": "protocol",
+            "category": "aed-operation"
+          }
+        }
+      ]
+    },
+    "bleeding": {
+      "id": "bleeding",
+      "question": "Can direct pressure control the bleeding?",
+      "helper": "Apply firm, continuous pressure to the wound with a clean cloth for several minutes before deciding.",
+      "answers": [
+        {
+          "label": "NO — blood keeps soaking through / spurting",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "tourniquet"
+          }
+        },
+        {
+          "label": "YES / unsure — continue pressure",
+          "action": {
+            "route": "protocol",
+            "category": "severe-bleeding"
+          }
+        }
+      ]
+    },
+    "bite": {
+      "id": "bite",
+      "question": "What caused the bite or sting?",
+      "answers": [
+        {
+          "label": "Snake",
+          "action": {
+            "route": "protocol",
+            "category": "snakebite"
+          }
+        },
+        {
+          "label": "Spider",
+          "action": {
+            "route": "protocol",
+            "category": "spider-bites"
+          }
+        },
+        {
+          "label": "Scorpion",
+          "action": {
+            "route": "protocol",
+            "category": "scorpion-stings"
+          }
+        },
+        {
+          "label": "Severe allergic reaction to sting",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "allergic-reaction"
+          }
+        }
+      ]
+    },
+    "drowning": {
+      "id": "drowning",
+      "question": "Is the person breathing?",
+      "answers": [
+        {
+          "label": "NO",
+          "emphasis": "danger",
+          "action": {
+            "route": "protocol",
+            "category": "cpr"
+          }
+        },
+        {
+          "label": "YES",
+          "action": {
+            "route": "protocol",
+            "category": "drowning"
+          }
+        }
+      ]
+    }
+  }
+}

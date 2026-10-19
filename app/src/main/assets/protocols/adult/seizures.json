@@ -1,0 +1,141 @@
+{
+  "id": "IL-ADULT-SEIZURES-001",
+  "title": "Seizures (Epileptic Seizure / Convulsions) - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "seizures",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Seizure First Aid Protocol (synthesised from MDA course materials, Israeli Epilepsy Association, and corroborating Israeli medical sources)",
+    "url": "https://www.mdais.org/101/first-aid",
+    "edition": "MDA First Aid Provider Course 2026; MDA ALS Professional Manual April 2024; corroborated by Israeli Epilepsy Association and Schneider Children's Medical Center guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No significant divergence between the two organisations was identified for seizure management. MDA does not publish a standalone public seizure first aid page; seizure management is taught under 'states of unconsciousness' in their first aid courses. Protocol synthesised from MDA course descriptions, Israeli Epilepsy Association (epilepsy.org.il) guidelines, Schneider Children's Medical Center emergency guidelines, and Israeli League for Prevention of Epilepsy (Feb 2026) wartime/emergency guidance. MDA PDFs (BLS Guide 2016, ALS Manual 2024) were confirmed to exist and cover seizures but content was inaccessible to automated retrieval. United Hatzalah does not publish a dedicated seizure protocol online; their case study material and course descriptions confirm the same fundamental approach as MDA. Status epilepticus defined as seizure lasting >5 minutes. Rescue medications (Midazolam/Buccolam, Diazepam/Stesolid, Clonazepam/Rivotril) are prescription-only and should only be administered by trained caregivers with a valid prescription. Israeli Epilepsy Association support line: 02-5000283."
+  },
+  "protocol": {
+    "summary": "Protect the person from injury during the seizure, time the seizure, place in recovery position after it ends, and call 101 if the seizure lasts more than 5 minutes or meets other emergency criteria.",
+    "when_to_apply": "Person is having a tonic-clonic (grand mal) seizure. Signs include: sudden loss of consciousness, body stiffening (tonic phase), rhythmic jerking of limbs (clonic phase), eyes rolling upward, jaw clenching, excessive salivation or foaming at the mouth, possible loss of bladder or bowel control, grunting or snoring sounds, bluish skin (cyanosis) especially around the lips.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA (101) if the seizure lasts more than 5 minutes, if a second seizure follows without the person regaining consciousness, if this is a first-time seizure, if the person has difficulty breathing after the seizure, if the person is pregnant or has diabetes, or if injury occurs during the seizure."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Stay calm and note the time the seizure started.",
+        "detail": "Most seizures end on their own within 1-3 minutes. Timing is critical for determining whether the seizure qualifies as status epilepticus (>5 minutes) and whether emergency services are needed."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Clear the area around the person to prevent injury.",
+        "detail": "Move sharp objects, furniture, hard items, or anything that could cause injury during convulsions. If the person is standing or seated, gently guide them to the ground."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Place something soft and flat under the person's head.",
+        "detail": "Use a folded jacket, towel, cushion, or blanket to prevent head injury from repeated impact with the ground."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Loosen tight clothing around the neck.",
+        "detail": "Remove or loosen ties, scarves, collars, necklaces, and belts to aid breathing."
+      },
+      {
+        "step_number": 5,
+        "instruction": "If the person is vomiting or producing excessive saliva, turn them onto their side (recovery position).",
+        "detail": "Position the mouth pointing downward to prevent aspiration and keep the airway clear. Tilt the head slightly to the side or downward to allow fluids to drain from the mouth.",
+        "decision_point": {
+          "condition": "Is the person vomiting or producing excessive saliva during the seizure?",
+          "if_yes": "Turn the person onto their side (recovery position) with the mouth pointing downward to prevent aspiration.",
+          "if_no": "Allow the seizure to run its course. Do not move the person unless they are in immediate danger."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Stay with the person throughout the seizure and monitor the duration.",
+        "detail": "Remain with the person and do not leave them alone. There is a risk of additional seizures.",
+        "decision_point": {
+          "condition": "Has the seizure lasted more than 5 minutes?",
+          "if_yes": "Call 101 (MDA) immediately. This is status epilepticus -- a medical emergency that can cause irreversible brain damage.",
+          "if_no": "Continue monitoring. Most seizures end within 1-3 minutes."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "After the seizure ends, place the person in the recovery position (on their side) if not already done.",
+        "detail": "This keeps the airway clear and allows any fluids to drain from the mouth."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Check that the person is breathing normally.",
+        "decision_point": {
+          "condition": "Is the person breathing normally after the seizure?",
+          "if_yes": "Continue to monitor. Stay with the person until they are fully alert and oriented.",
+          "if_no": "Call 101 (MDA) immediately. If the person stops breathing, begin CPR."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Speak calmly and reassuringly as the person regains consciousness.",
+        "detail": "The person will likely be confused and disoriented (postictal state) and will have no memory of the seizure. Tell them calmly what happened."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Assess whether this is a first-time seizure or differs from the person's known pattern.",
+        "decision_point": {
+          "condition": "Is this the person's first seizure, or is it different from their typical seizure pattern (longer, more intense, or different type)?",
+          "if_yes": "Call 101 (MDA). A first-time seizure always requires medical evaluation. An unusual seizure in a known epilepsy patient also requires evaluation.",
+          "if_no": "If the person has known epilepsy and this was a typical seizure that resolved within 5 minutes, stay with them until fully recovered. Ensure they have someone to accompany them."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Do not offer food, water, or medication by mouth until the person is fully conscious and able to swallow safely.",
+        "detail": "Wait until you are certain the person is fully alert before offering anything by mouth to avoid choking risk.",
+        "warning": "Offering food or drink before the person is fully conscious can cause choking or aspiration."
+      },
+      {
+        "step_number": 12,
+        "instruction": "If the person has a prescribed rescue medication and a trained caregiver is present, administer it according to the neurologist's instructions.",
+        "detail": "Rescue medications include Midazolam (Buccolam) given buccally, Diazepam (Stesolid) given rectally, or Clonazepam (Rivotril) given as oral drops. These are given if the seizure lasts more than 3 minutes. Only administer if a valid prescription exists and the caregiver has been trained.",
+        "warning": "Rescue medications are prescription-only. Only administer at the dose prescribed by the treating neurologist. If the medication is given and the seizure does not stop, call 101 immediately.",
+        "decision_point": {
+          "condition": "Does the person have a prescribed rescue medication available, and is a trained caregiver present?",
+          "if_yes": "Administer the rescue medication at the prescribed dose if the seizure has lasted more than 3 minutes. If the seizure does not stop after medication, call 101.",
+          "if_no": "Do not administer any medication. Call 101 if the seizure lasts more than 5 minutes."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT restrain the person or try to hold them down. You cannot stop a seizure by force, and restraining can cause fractures, dislocations, or soft tissue injury.",
+      "DO NOT put anything in the person's mouth -- no spoons, wallets, sticks, fingers, or any other object. The person cannot swallow their tongue. Objects in the mouth risk breaking teeth, injuring the jaw, or causing bite injuries.",
+      "DO NOT attempt mouth-to-mouth resuscitation during the seizure. People usually resume breathing on their own once the seizure ends.",
+      "DO NOT pour water on the person or attempt to 'wake them up'.",
+      "DO NOT offer food, drinks, or medication by mouth during or immediately after the seizure until the person is fully alert and able to swallow safely.",
+      "DO NOT crowd around the person -- give them space and privacy. Ask bystanders to step back.",
+      "DO NOT move the person unless they are in immediate danger (e.g., in the middle of a road, near a ledge, next to fire or water)."
+    ],
+    "equipment_needed": [
+      "Soft padding for under the head (jacket, towel, cushion, blanket)",
+      "Watch or phone to time the seizure duration",
+      "Prescribed rescue medication if available (Buccolam, Stesolid, or Rivotril -- prescription only)"
+    ]
+  },
+  "tags": [
+    "seizures",
+    "epilepsy",
+    "convulsions",
+    "tonic-clonic",
+    "grand mal",
+    "status epilepticus",
+    "loss of consciousness",
+    "recovery position",
+    "postictal",
+    "neurological",
+    "emergency"
+  ]
+}

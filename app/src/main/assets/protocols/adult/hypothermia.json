@@ -1,0 +1,105 @@
+{
+  "id": "IL-ADULT-HYPOTHERMIA-001",
+  "title": "Hypothermia / Cold Exposure — Adult First Aid Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "hypothermia",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Training Department Manual — Hypothermia and Cold Exposure First Aid",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-01-01",
+    "edition": "MDA Emergency Medicine Manual 2024"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and Hatzalah sources. Hatzalah (United Hatzalah and Hatzalah Without Borders) do not publish a standalone hypothermia protocol; MDA is the sole source. Additional references: Infomed.co.il, Medico.co.il (2026 update). MDA publication date approximated as 2024 based on Emergency Medicine Manual edition."
+  },
+  "protocol": {
+    "summary": "First aid for hypothermia (body temperature below 35 degrees C) through gradual rewarming, starting with the torso.",
+    "when_to_apply": "Person shows signs of hypothermia: shivering, confusion, pale/cold skin, fatigue, slurred speech, muscle rigidity, or loss of consciousness after cold exposure. Body temperature below 35 degrees C (95 degrees F).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon recognising hypothermia — call MDA at 101 as the first step."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call MDA immediately — dial 101.",
+        "detail": "Hypothermia can deteriorate rapidly. Request ambulance assistance immediately."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Move the person to a warm, dry shelter.",
+        "detail": "Protect from wind, rain, and further cold exposure. If outdoors, shield from the elements as best as possible."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Remove wet clothing promptly and replace with dry layers.",
+        "detail": "Wet clothing accelerates heat loss. Replace with dry, lightweight layered clothing that allows some movement, as movement generates heat."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Cover the person with blankets and layers, including the head.",
+        "detail": "Significant heat is lost through the head. Wrap thoroughly in blankets."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Warm the room to approximately 22 degrees C (72 degrees F) if indoors.",
+        "detail": "A warm ambient environment supports gradual rewarming."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess whether the person is conscious.",
+        "decision_point": {
+          "condition": "Is the person conscious and able to swallow?",
+          "if_yes": "Provide warm (NOT hot) beverages. Avoid alcohol and caffeine.",
+          "if_no": "Do not give any fluids. Monitor breathing closely and be prepared to begin CPR."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Apply heat packs to the chest, abdomen, and back ONLY.",
+        "detail": "Use a cloth barrier between heat packs and skin — never place directly on bare skin. Warm the torso FIRST, not the hands and feet.",
+        "warning": "Warming extremities first can cause cold blood to rush to the heart, potentially triggering cardiac arrest (afterdrop phenomenon)."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Monitor breathing continuously.",
+        "decision_point": {
+          "condition": "Has the person stopped breathing?",
+          "if_yes": "Begin CPR immediately.",
+          "if_no": "Continue monitoring and gradual rewarming until MDA arrives."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Continue gradual rewarming until emergency services arrive.",
+        "detail": "Rewarming must be gradual. Rapid rewarming can cause dangerous cardiac arrhythmias."
+      }
+    ],
+    "do_not": [
+      "Do NOT rub extremities — friction can cause tissue damage and cardiac complications.",
+      "Do NOT use direct intense heat (hot water baths, heating pads directly on skin) — rapid rewarming can cause dangerous cardiac arrhythmias.",
+      "Do NOT give alcohol — it dilates blood vessels and accelerates heat loss.",
+      "Do NOT give caffeine — it worsens hypothermia.",
+      "Do NOT warm extremities first — cold blood rushing to the heart can trigger cardiac arrest (afterdrop).",
+      "Do NOT apply vigorous external rewarming."
+    ],
+    "equipment_needed": [
+      "Blankets or thermal blankets (space blankets)",
+      "Dry clothing",
+      "Heat packs with cloth barrier",
+      "Warm (not hot) beverages (for conscious patients only)"
+    ]
+  },
+  "tags": [
+    "hypothermia",
+    "cold exposure",
+    "rewarming",
+    "environmental emergency",
+    "temperature regulation"
+  ]
+}

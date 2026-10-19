@@ -1,0 +1,155 @@
+{
+  "id": "IL-ADULT-FRACTURES-001",
+  "title": "Fractures and Sprains First Aid Protocol (Adult) -- Israel",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "fractures",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Fractures and Sprains First Aid Guidelines",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance (date not explicitly stated)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project rules. Both organisations are fully consistent on fracture and sprain treatment: immobilisation without realignment, RICE for sprains, ice/cooling for pain and swelling, and calling emergency services for all suspected fractures. No points of disagreement were identified. MDA primary page (mdais.org/101/first-aid) returned HTTP 471 during research; protocol synthesised from MDA-attributed media sources (Jerusalem Post article by Dr. Itay Gal; Ynet articles featuring named MDA paramedics Michal Mimoun and Tomer Mann). United Hatzalah does not publish detailed protocol documents publicly; their guidance is delivered through online and in-person courses and aligns with MDA standards."
+  },
+  "protocol": {
+    "summary": "First aid treatment for suspected fractures (open and closed) and sprains in adults, emphasising immobilisation, RICE for sprains, and recognising when to call emergency services.",
+    "when_to_apply": "When an adult has sustained an injury to a bone or joint. Signs include severe pain worsening with movement, swelling and bruising, visible deformity, inability to move the affected limb, possible crepitus, or a popping sensation at the time of injury.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for: any suspected fracture, open fractures (bone visible through skin), fractures involving the head, neck, spine, pelvis, or hip, loss of sensation or circulation below the injury, signs of shock, inability to immobilise the injury adequately, multiple injuries or high-energy mechanism (fall from height, road traffic accident), or any doubt about the severity of the injury."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call MDA at 101.",
+        "detail": "Keep the call on speaker and provide your location. MDA can provide phone guidance on how to manage the injury at the scene."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess whether the injury is a fracture or a sprain.",
+        "detail": "A fracture typically presents with severe pain that worsens with movement, visible deformity, inability to move the limb, and rapid swelling. A sprain presents with joint pain, swelling, bruising, and limited joint movement but no deformity. If in doubt, treat as a fracture.",
+        "decision_point": {
+          "condition": "Does the injury show signs of a fracture (deformity, severe pain, inability to move the limb, crepitus)?",
+          "if_yes": "Proceed to step 3 to assess fracture type.",
+          "if_no": "If the injury appears to be a sprain (joint pain, swelling, no deformity), proceed to step 9 for RICE protocol."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine whether the fracture is open or closed.",
+        "detail": "An open fracture means the bone has pierced through the skin, creating a wound. A closed fracture means the bone is broken but the skin remains intact.",
+        "decision_point": {
+          "condition": "Is there a wound with bone visible or protruding through the skin (open fracture)?",
+          "if_yes": "This is a medical emergency. Proceed to step 4 for open fracture management.",
+          "if_no": "This is a closed fracture. Proceed to step 6 for closed fracture management."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Open fracture: Control bleeding.",
+        "detail": "Apply direct pressure around (not on) the protruding bone to stop bleeding. If bleeding is severe and cannot be controlled with direct pressure, use a tourniquet.",
+        "warning": "Do NOT push the bone back in. Leave it as found."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Open fracture: Cover the wound and immobilise.",
+        "detail": "Cover the exposed bone and wound with a sterile dressing or clean cloth. Support the limb in the position found and do not attempt to realign. Monitor for shock -- keep the patient lying down, warm, and reassured. Open fractures carry a high risk of blood loss and shock. Continue to step 8."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Closed fracture: Do NOT move the limb unnecessarily.",
+        "detail": "Allow the injured person to sit or lie in the most comfortable position. Do NOT attempt to straighten the limb, pull it, or return a bone to its place -- such actions may tear arteries and nerves.",
+        "warning": "Do NOT attempt to straighten or realign the limb. This may cause further damage to blood vessels and nerves."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Closed fracture: Immobilise the injured area.",
+        "detail": "The core principle is 'minimum movement, maximum stability'.",
+        "decision_point": {
+          "condition": "Is the fracture in the arm or upper limb?",
+          "if_yes": "Support the injured arm with the person's healthy hand. Use an improvised sling (shirt, scarf, triangular bandage) and attach it to the chest. Place the apex of the triangle at the elbow, pass one side under the affected area and one above, and tie at the neck.",
+          "if_no": "For leg or lower limb fractures: ask the person not to move the leg. Place pillows or rolled blankets on both sides of the leg to prevent involuntary movement. For thigh fractures and below, use a triangular cloth above the injury site and tie firmly, securing the knot on the uninjured leg."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Apply cold therapy and remove restrictive items.",
+        "detail": "Apply ice wrapped in a cloth (never directly on skin) to reduce swelling and pain. Apply for 15-minute intervals. Remove rings, bracelets, watches, and jewellery immediately from the affected limb to prevent tourniquet effects as swelling occurs. Monitor for signs of shock (pale skin, rapid breathing, weak pulse) and keep the patient warm and comfortable until MDA arrives.",
+        "warning": "Do NOT apply ice directly to skin -- always wrap in cloth."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Sprain: Apply the RICE protocol -- Rest.",
+        "detail": "Stop all activity involving the injured joint. Do not bear weight on the injured limb."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Sprain: Ice.",
+        "detail": "Apply an ice pack wrapped in a cloth to the injured area for 15-20 minutes every 2-3 hours. Continue for the first 48-72 hours after injury. Do NOT apply ice directly to skin.",
+        "warning": "Do NOT apply ice directly to skin -- always wrap in cloth."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Sprain: Compression.",
+        "detail": "Bandage the area firmly but not too tightly around, above, and below the injury using an elastic bandage if available. The bandage should reduce swelling without cutting off circulation.",
+        "decision_point": {
+          "condition": "Do the fingers or toes below the bandage become numb, pale, or blue?",
+          "if_yes": "Loosen the bandage immediately -- circulation is being compromised.",
+          "if_no": "Bandage tension is appropriate. Continue to elevation."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Sprain: Elevation.",
+        "detail": "Elevate the injured limb above the level of the heart using pillows or cushions. This helps reduce swelling by promoting fluid drainage."
+      },
+      {
+        "step_number": 13,
+        "instruction": "Determine whether the sprain requires emergency evaluation.",
+        "detail": "Some sprains may actually be fractures and cannot be distinguished without imaging.",
+        "decision_point": {
+          "condition": "Can the person bear no weight at all on the limb, is there visible deformity, is pain severe and unrelenting, has numbness developed below the injury, or is swelling extreme and not improving with RICE?",
+          "if_yes": "Call MDA at 101 or go to an emergency department for further evaluation. Treat as a possible fracture.",
+          "if_no": "Continue RICE at home and seek medical evaluation if symptoms do not improve within 48-72 hours."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT attempt to straighten or realign a broken limb -- this may tear arteries and nerves.",
+      "Do NOT push a protruding bone back in during an open fracture.",
+      "Do NOT apply ice directly to skin -- always wrap in cloth first.",
+      "Do NOT apply heat to a fresh fracture or sprain -- heat increases swelling.",
+      "Do NOT allow the patient to walk on a suspected leg fracture.",
+      "Do NOT remove embedded objects from a wound associated with a fracture."
+    ],
+    "equipment_needed": [
+      "Triangular bandage or improvised sling (shirt, scarf)",
+      "Ice pack or cooling spray (wrapped in cloth)",
+      "Elastic bandage (for compression of sprains)",
+      "Pillows, blankets, or rolled towels (for leg immobilisation and elevation)",
+      "Sterile dressings or clean cloth (for open fracture wounds)",
+      "Tourniquet (for severe bleeding in open fractures)"
+    ]
+  },
+  "tags": [
+    "fractures",
+    "sprains",
+    "broken bones",
+    "immobilisation",
+    "splinting",
+    "sling",
+    "RICE",
+    "open fracture",
+    "closed fracture",
+    "joint injury",
+    "emergency",
+    "MDA",
+    "101"
+  ]
+}

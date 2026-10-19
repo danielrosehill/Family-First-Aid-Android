@@ -1,0 +1,175 @@
+{
+  "id": "IL-ADULT-HEAD-SPINAL-INJURY-001",
+  "title": "Head and Spinal Injury First Aid Protocol (Adult) -- Israel",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "head_spinal_injury",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Head and Spinal Injury First Aid Guidelines",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-01-01",
+    "edition": "Current MDA training materials, BLS Guide (2016), ALS Professional Manual (2024), and public guidance"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project rules. No substantive disagreements between the two organisations were identified. Both agree on: jaw thrust (not head-tilt) for airway management, manual in-line stabilisation, penetrating trauma exception for immobilisation, and the principle that standing/walking does not exclude spinal injury. United Hatzalah provides additional detail on explicit criteria for ruling out spinal injury (NEXUS-style), tourniquet preference over direct pressure for limb bleeding, and a systolic BP target of 100 mmHg for head injury patients (ALS-level). MDA primary page (mdais.org/101/first-aid) returned HTTP 471 during research; protocol synthesised from MDA BLS Guide 2016, ALS Professional Manual 2024 descriptions, MDA-attributed media sources, and Israeli Ministry of Education first aid instructions. United Hatzalah content extracted from 1221.org.il medical education articles."
+  },
+  "protocol": {
+    "summary": "First aid for suspected head and spinal injuries in adults, emphasising manual in-line stabilisation, jaw thrust airway management, and not moving the patient unless life is in immediate danger.",
+    "when_to_apply": "When an adult has sustained trauma to the head, neck, or back. Common scenarios in Israel include road traffic accidents, falls from height (hiking in wadis, cliffs), security incidents (blast, shrapnel), diving into shallow water, sports injuries, falls from ladders or rooftops, and any mechanism involving significant force to the head or spine.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately -- always -- for any suspected head or spinal injury. Do not wait to see if symptoms develop. Specific triggers: any loss of consciousness (even momentary), confusion or altered mental state after a blow to the head, neck or back pain after trauma, numbness/tingling/weakness in any limb, inability to move arms or legs, visible deformity of skull or spine, blood or clear fluid from nose or ears, unequal pupils, seizures after head trauma, or any mechanism suggesting significant force (road accident, fall from height greater than standing, blast injury, direct blow to head/neck)."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety.",
+        "detail": "Assess for ongoing danger: traffic, fire, structural instability, active security threat. Do NOT approach if the scene is unsafe -- call 101 and wait for professional responders.",
+        "decision_point": {
+          "condition": "Is there immediate life-threatening danger to the patient (fire, active shooting, imminent structural collapse)?",
+          "if_yes": "Move the patient only as a last resort using a log-roll technique keeping the spine aligned. Proceed to step 2.",
+          "if_no": "Do NOT move the patient. Proceed to step 2."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call MDA at 101 immediately.",
+        "detail": "Report: your precise location (GPS coordinates if in a remote area), mechanism of injury (how it happened), whether the patient is conscious and breathing, whether there is visible bleeding, and whether the patient can move their limbs. Keep the call on speaker if possible."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Assess mechanism of injury.",
+        "detail": "Determine the force and nature of the trauma. In the Israeli context, common high-risk mechanisms include: road traffic accidents (vehicle collision, motorcycle, pedestrian strike, ejection, rollover), security incidents (blast injuries causing primary/secondary/tertiary/quaternary injury, shrapnel), hiking falls (wadis in Negev, Judean Desert, Golan Heights), falls from height greater than the patient's standing height, diving into shallow water, sports injuries, falls from ladders or rooftops, heavy object striking the head or back, and any axial loading mechanism.",
+        "decision_point": {
+          "condition": "Is this isolated penetrating trauma (stab wound or gunshot) without blunt trauma component and without neurological deficits?",
+          "if_yes": "Spinal immobilisation is NOT required for isolated penetrating trauma. Manage wounds and bleeding. Still call 101.",
+          "if_no": "Assume spinal injury. Proceed to step 4 for manual in-line stabilisation."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Perform manual in-line stabilisation (yitzuv yadani).",
+        "detail": "This is the single most important first aid intervention for suspected spinal injury. Kneel or lie behind the patient's head. Place your hands on both sides of the patient's head, cupping the ears gently. Hold the head in a neutral position aligned with the body. Do NOT twist, flex, or extend the neck. Maintain this stabilisation continuously until professional help arrives. Talk to the patient to keep them calm and still.",
+        "warning": "Do NOT attempt to straighten the head if it is found in a rotated position and the patient resists or reports pain -- stabilise in the position found."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess airway and breathing.",
+        "decision_point": {
+          "condition": "Is the patient conscious and talking?",
+          "if_yes": "The airway is open. Maintain stabilisation and proceed to step 6.",
+          "if_no": "The patient is unconscious. Use the jaw thrust manoeuvre (mishlat leset) to open the airway. Do NOT use head-tilt chin-lift as this moves the cervical spine. Place your fingers behind the angles of the lower jaw on both sides and push the jaw forward without moving the neck. Proceed to check breathing."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If the patient is unconscious, check for breathing and pulse.",
+        "decision_point": {
+          "condition": "Is the patient breathing and does the patient have a pulse?",
+          "if_yes": "Maintain stabilisation and jaw thrust if needed. Proceed to step 7.",
+          "if_no": "Begin CPR with spinal precautions: use jaw thrust for ventilations (ideally two responders -- one maintains jaw thrust, second operates ventilation), perform chest compressions as normal. Control any severe haemorrhage before initiating CPR. Proceed to step 7 between CPR cycles."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Control bleeding.",
+        "detail": "If there is bleeding from the scalp, apply gentle direct pressure with a clean dressing. For associated limb bleeding, apply direct pressure or a tourniquet (CAT tourniquet) as indicated.",
+        "warning": "Do NOT apply pressure if you suspect a skull fracture (depressed bone, visible brain matter) -- cover loosely with a sterile dressing. If blood or clear fluid is draining from the ears, do NOT plug the ears -- allow drainage and cover loosely.",
+        "decision_point": {
+          "condition": "Is there a suspected skull fracture (depressed bone, visible deformity, brain matter visible)?",
+          "if_yes": "Do NOT apply direct pressure. Cover the wound loosely with a sterile dressing. Proceed to step 8.",
+          "if_no": "Apply gentle direct pressure to any scalp wounds with a clean dressing. Proceed to step 8."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Perform neurological assessment.",
+        "detail": "Check: Can the patient feel sensations in all four limbs? Can the patient move fingers and toes? Compare strength left versus right and note any asymmetry. Check pupil size and reactivity (unequal pupils suggest raised intracranial pressure). If trained, assess Glasgow Coma Scale (GCS) and report to MDA dispatchers. GCS 13-15 = mild, GCS 9-12 = moderate, GCS 3-8 = severe (critical)."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Apply a cervical collar if available.",
+        "detail": "A second person must maintain manual stabilisation while the collar is applied. Sizing must be correct -- an improperly sized collar can cause harm.",
+        "warning": "A collar alone is NOT sufficient. Continue to support the head even with a collar applied."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Monitor and reassure the patient continuously.",
+        "detail": "Keep the patient still and calm -- explain what you are doing. Monitor breathing and consciousness continuously. Note any changes in neurological status (can they still move fingers/toes? are they becoming more or less alert?). Watch for signs of deterioration: progressive loss of consciousness, repeated or projectile vomiting, seizures, unequal pupils, weakness on one side. Keep the patient warm -- cover with a blanket or clothing (hypothermia worsens trauma outcomes). In desert or hot conditions, shade the patient from direct sun while maintaining immobilisation."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Assess for concussion signs (zizua moach).",
+        "detail": "Concussion is a mild traumatic brain injury. Signs include: headache (most common), feeling foggy or confused, difficulty concentrating, dizziness, nausea, sensitivity to light and noise, fatigue and drowsiness, emotional changes (irritability, sadness), sleep disturbances, balance problems. A person does NOT need to lose consciousness to have a concussion. Concussion symptoms may be delayed and appear hours after the injury."
+      },
+      {
+        "step_number": 12,
+        "instruction": "If the unconscious patient is vomiting and must be placed on their side, use the log-roll technique with spinal precautions.",
+        "detail": "One person maintains head and neck alignment while others roll the patient onto their side as a single unit. Continue to support the head in alignment with the body. This requires a minimum of 3 people -- the person at the head commands the roll."
+      },
+      {
+        "step_number": 13,
+        "instruction": "If the patient must be moved due to a life-threatening situation, use a log-roll technique.",
+        "detail": "This applies ONLY when there is immediate danger to life (fire, active threat, imminent structural collapse). Minimum 3 people required: one controlling the head, others supporting the body. The person at the head commands the roll. Roll the patient as a single unit onto their side or onto a firm surface (door, board). Maintain spinal alignment throughout.",
+        "warning": "Moving the patient without proper technique may cause or worsen spinal cord damage, potentially resulting in permanent paralysis."
+      },
+      {
+        "step_number": 14,
+        "instruction": "Do NOT remove a motorcycle or bicycle helmet unless the patient cannot breathe.",
+        "detail": "Open the face shield first for communication and airway assessment. Full helmet removal requires two trained responders -- one maintains C-spine stabilisation while the other removes the helmet. A single responder cannot safely remove a helmet while maintaining cervical spine control.",
+        "decision_point": {
+          "condition": "Is the patient wearing a helmet and unable to breathe?",
+          "if_yes": "Remove the helmet with two trained responders: one maintains C-spine stabilisation while the other carefully removes the helmet.",
+          "if_no": "Leave the helmet in place. Open the face shield if present for communication and airway monitoring."
+        }
+      }
+    ],
+    "do_not": [
+      "Do NOT move the patient unless there is immediate danger to life (fire, active threat, structural collapse)",
+      "Do NOT twist, flex, or extend the neck",
+      "Do NOT attempt to sit the patient up",
+      "Do NOT use head-tilt chin-lift to open the airway -- use jaw thrust only",
+      "Do NOT remove a helmet without proper training and a second person",
+      "Do NOT give the patient food or drink",
+      "Do NOT leave the patient alone",
+      "Do NOT apply direct pressure to a suspected skull fracture (depressed bone, visible brain matter)",
+      "Do NOT plug the ears or nose if blood or clear fluid is draining",
+      "Do NOT pull the patient by the arms or legs",
+      "Do NOT attempt to extract a patient from a vehicle unless the vehicle is on fire or there is another immediate life threat",
+      "Do NOT give oral fluids even if the patient is dehydrated (risk of vomiting and aspiration)",
+      "Do NOT attempt to straighten the head if the patient resists or reports pain -- stabilise in the position found"
+    ],
+    "equipment_needed": [
+      "Disposable gloves",
+      "Clean dressings or bandages for wound care",
+      "Sterile dressing for skull fracture coverage",
+      "Cervical collar (if available and properly sized)",
+      "Blanket or thermal protection",
+      "Tourniquet (CAT) for associated limb haemorrhage",
+      "High-visibility vest (if responding at a road accident)"
+    ]
+  },
+  "tags": [
+    "head_injury",
+    "spinal_injury",
+    "cervical_spine",
+    "concussion",
+    "manual_in_line_stabilisation",
+    "jaw_thrust",
+    "log_roll",
+    "trauma",
+    "road_accident",
+    "blast_injury",
+    "security_incident",
+    "hiking_fall",
+    "skull_fracture",
+    "GCS",
+    "israel",
+    "MDA",
+    "101"
+  ]
+}

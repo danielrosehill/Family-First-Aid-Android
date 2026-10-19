@@ -1,0 +1,111 @@
+{
+  "id": "IL-CHILD-SPIDER-BITES-001",
+  "title": "Spider Bites First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "spider_bites",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Spider Bite First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials, supplemented by Ichud Hatzalah venomous animal injury guidelines, Ichilov Hospital (Tel Aviv Sourasky Medical Centre) spider bite guidance, and DrKids.co.il pediatric spider bite information"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources, supplemented by Israeli hospital sources (Ichilov/TASMC and DrKids). Neither MDA nor Hatzalah publishes a dedicated child-specific spider bite protocol. MDA used as primary authority. Hatzalah explicitly states for all venomous animal injuries: 'do NOT apply tourniquets, do not bandage, do not cut, do not suck, do not cool' -- this is stricter than MDA's general guidance which does allow cold compresses for spider bites specifically. The cold compress guidance comes from Israeli hospital sources (Ichilov, DrKids) which recommend ice/cold compress to reduce pain and swelling. Given the discrepancy, this protocol follows MDA/hospital guidance allowing cold compress for spider bites (distinct from snakebites where cold is contraindicated in some protocols). Hatzalah notes the first 6-8 hours are critical for determining recovery. Two venomous spider species in Israel: Brown Recluse (Loxosceles rufescens) and Black Widow (Latrodectus tredecimguttatus). Antivenom for black widow is available in Israeli hospitals. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for spider bites in children in Israel, focusing on the two venomous species: Brown Recluse (Loxosceles rufescens) and Black Widow (Latrodectus tredecimguttatus). Children are more vulnerable due to greater venom effect per body weight, faster onset of systemic symptoms, and inability to report the initial bite. Emphasises wound care, monitoring for systemic symptoms, and urgent hospital evaluation.",
+    "when_to_apply": "When a child has been bitten or suspected bitten by a spider. Treat all spider bites in children with medical evaluation due to the greater venom-to-body-weight ratio. Brown recluse bites are often painless initially with effects appearing hours later. Black widow bites cause pain within minutes. Common locations where children encounter spiders in Israel: wardrobes, shoes, stored clothing (brown recluse); gardens, stone walls, undisturbed outdoor areas (black widow).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 if the child develops systemic symptoms: severe pain, abdominal cramps, difficulty breathing, chest tightness, excessive sweating, altered consciousness, or if a black widow bite is suspected. Call for any spider bite in an infant or toddler. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Move the child away from the spider. If safely possible, capture or photograph the spider for identification.",
+        "detail": "Do not attempt to handle the spider directly. If the spider can be safely trapped under a glass or container, do so for hospital identification. A photograph from a safe distance is also helpful. Knowing the species guides hospital treatment decisions (antivenom for black widow).",
+        "warning": "Do NOT attempt to catch the spider if there is any risk of additional bites."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Wash the bite area with water and soap.",
+        "detail": "Clean the bite site gently with water and soap to reduce infection risk. Do not apply antiseptic, alcohol, or any other substance."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Apply a cold compress to reduce pain and swelling.",
+        "detail": "Apply ice or a cold compress wrapped in cloth to the bite area for 10-15 minutes. This helps reduce pain and local swelling. Remove for 10 minutes, then reapply.",
+        "warning": "Wrap ice in cloth -- do not apply ice directly to skin, especially on a child's sensitive skin."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Keep the bitten limb immobilised and at heart level.",
+        "detail": "Immobilise the bitten limb to slow venom distribution. Keep the limb at approximately heart level. Have the child lie down or sit still."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Monitor for systemic symptoms.",
+        "detail": "Watch closely for: severe or spreading pain, redness spreading along lymph pathways, abdominal cramps, difficulty breathing or swallowing, excessive sweating, muscle cramps (spreading to abdomen, back, chest), nausea/vomiting, elevated blood pressure, altered consciousness. In children, systemic symptoms develop faster due to lower body weight. Infants and toddlers cannot describe symptoms -- watch for irritability, unusual crying, poor feeding, and changes in behaviour.",
+        "decision_point": {
+          "condition": "Is the child developing systemic symptoms (severe pain, abdominal cramps, breathing difficulty, sweating, muscle cramps)?",
+          "if_yes": "Call 101 immediately if not already done. This may be a black widow bite requiring antivenom. Keep the child calm and still. Prepare for transport to hospital.",
+          "if_no": "Continue monitoring closely. Seek medical evaluation for all spider bites in children, even if no systemic symptoms are present."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Identify the spider species if possible.",
+        "detail": "Brown Recluse (shshan chum): small, brown, long legs, lives indoors. Bite barely felt initially, effects appear hours later. Causes local tissue damage and potentially necrotic ulcer. Black Widow (almana shchora): black with markings, found outdoors in gardens and stone walls. Bite causes immediate pain, burning, and rapid systemic symptoms. Female bite is the dangerous one.",
+        "decision_point": {
+          "condition": "Is the spider identified as or suspected to be a Black Widow?",
+          "if_yes": "Call 101 immediately. Black widow antivenom is available at Israeli hospitals. Transport urgently. Black widow venom effects can be more severe in children, including respiratory distress.",
+          "if_no": "Seek medical evaluation. Brown recluse bites require monitoring for delayed necrotic wound development. Hospital observation may be recommended for young children even with mild bites."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Transport to hospital for medical evaluation.",
+        "detail": "All spider bites in children should receive medical evaluation due to the greater venom-to-body-weight ratio. Bring the captured/photographed spider if available. Report the time of bite, symptoms observed, and any changes in the child's condition. Hospital may check tetanus vaccination status. The first 6-8 hours are critical for determining recovery and preventing permanent tissue damage."
+      }
+    ],
+    "do_not": [
+      "Do NOT apply a tourniquet -- tourniquets worsen envenomation outcomes by concentrating venom in the limb.",
+      "Do NOT cut the bite site -- causes additional injury and does not remove venom.",
+      "Do NOT attempt to suck out the venom -- ineffective and risks infection.",
+      "Do NOT apply antiseptic, alcohol, or any substance other than water and soap to the bite.",
+      "Do NOT bandage tightly over the bite site.",
+      "Do NOT delay medical evaluation for any spider bite in a child -- children are more vulnerable to venom effects.",
+      "Do NOT ignore a painless bite -- brown recluse bites are often painless initially but can develop serious necrotic wounds hours later.",
+      "Do NOT give the child medications (painkillers, antihistamines) without medical direction."
+    ],
+    "equipment_needed": [
+      "Water and soap (for wound cleaning)",
+      "Ice or cold compress wrapped in cloth",
+      "Container or glass (to safely capture the spider for identification)",
+      "Phone (to call 101 and photograph the spider)"
+    ]
+  },
+  "tags": [
+    "spider bite",
+    "brown recluse",
+    "Loxosceles rufescens",
+    "black widow",
+    "Latrodectus tredecimguttatus",
+    "envenomation",
+    "venom",
+    "antivenom",
+    "pediatric",
+    "child",
+    "infant",
+    "emergency",
+    "MDA",
+    "101",
+    "venomous animal",
+    "necrosis"
+  ]
+}

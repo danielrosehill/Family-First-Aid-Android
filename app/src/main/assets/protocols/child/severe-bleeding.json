@@ -1,0 +1,157 @@
+{
+  "id": "IL-CHILD-SEVERE-BLEEDING-001",
+  "title": "Severe Bleeding (Hemorrhage Control) -- Child",
+  "country": "israel",
+  "age_group": "child",
+  "category": "severe_bleeding",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA 101 First Aid Public Guidance (Bleeding Control) -- Pediatric Adaptation",
+    "url": "https://www.mdais.org/101/first-aid"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project convention. Neither organisation publishes a separate public-facing pediatric hemorrhage control protocol; MDA's general bleeding control guidance applies to all ages. Pediatric-specific considerations (blood volume, shock signs, tourniquet sizing, emotional management) are synthesised from MDA guidance, Israeli pediatric medical sources, and peer-reviewed literature (PMC systematic review on pediatric tourniquet use, 2021). United Hatzalah adds wound packing (sunburst technique for junctional wounds) and explicit pressure point guidance not emphasised in MDA civilian materials; these are included as supplementary steps. Both sources agree on escalation order, tourniquet indications, and the critical importance of not attributing tachycardia solely to anxiety or pain. Key pediatric difference from adult protocol: children have 80-90 mL/kg blood volume but much smaller total volume, compensate longer then decompensate rapidly, and hypotension is a late pre-arrest sign."
+  },
+  "protocol": {
+    "summary": "Control severe external bleeding in a child through escalating interventions: direct pressure, Israeli bandage, wound packing, and tourniquet, with pediatric-specific monitoring for rapid shock onset.",
+    "when_to_apply": "Severe or uncontrolled external bleeding in a child (approximately 1-12 years) from any cause including trauma, amputation, crush injury, or penetrating injury. Signs include rapid spurting or steady flow of blood, pooling blood, blood-soaked clothing, or a severed or partially severed limb. Children have significantly smaller blood volumes (a 3-year-old has only about 1,200 mL total) so what appears moderate in an adult may be life-threatening in a child.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon identifying severe or uncontrolled bleeding in a child. Emphasise to the 101 dispatcher that the patient is a child and provide approximate age and weight if known -- this affects MDA crew preparation. Children deteriorate faster than adults; do not delay the call."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and wear disposable gloves if available.",
+        "detail": "Do not approach the child until the scene is safe. If a parent or caregiver is present, involve them immediately -- they can help keep the child calm and assist with treatment."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (Magen David Adom) immediately.",
+        "detail": "Provide location, number of casualties, and nature of injuries. Emphasise that the patient is a child and give approximate age and weight if known. If alone and bleeding is immediately life-threatening, begin hemorrhage control first and call as soon as possible."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Calm the child using age-appropriate communication.",
+        "detail": "Speak softly and calmly using simple language. Involve the parent or caregiver -- position them where the child can see and hear them. Explain what you are doing in simple terms (e.g., 'I am going to press on your arm to help the bleeding stop'). Acknowledge the child's fear and pain. Shield the child from the sight of blood if possible by covering wounds promptly and positioning the child so they cannot see the wound."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Check for embedded or impaled objects in the wound.",
+        "decision_point": {
+          "condition": "Is there an embedded or impaled object (knife, shrapnel, glass, etc.) in the wound?",
+          "if_yes": "Do NOT remove the object. Stabilise it in place with padding and bandages around it. Apply pressure around the object, not on it. A distressed child may try to pull at an embedded object -- gently but firmly restrain the child's hands if necessary and explain age-appropriately that the object must stay in place. Skip to Step 10 (monitor for shock).",
+          "if_no": "Proceed to Step 5 (direct pressure)."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Apply strong, direct pressure to the source of bleeding with your gloved hand or sterile gauze.",
+        "detail": "Press firmly directly on the wound. Use your bare or gloved hand initially, then replace with a sterile bandage, towel, or clean cloth as soon as available. Maintain continuous, firm pressure without lifting to check -- this allows clot formation. On a small child, one adult hand may cover the entire wound area effectively."
+      },
+      {
+        "step_number": 6,
+        "instruction": "If the first dressing soaks through, add additional layers on top without removing the original dressing.",
+        "detail": "Never remove a blood-soaked dressing -- only add on top. Removing the dressing disrupts clot formation.",
+        "decision_point": {
+          "condition": "Has direct pressure controlled the bleeding?",
+          "if_yes": "Maintain pressure. Elevate the limb above heart level if possible (Step 7). Continue to Step 10 (monitor for shock).",
+          "if_no": "Proceed to Step 8 (apply Israeli bandage / pressure dressing)."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "If possible, elevate the injured limb above heart level.",
+        "detail": "Elevation is an adjunct to direct pressure, not a replacement. It reduces blood flow to the injured area."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Apply an Israeli Emergency Bandage (pressure dressing).",
+        "detail": "1) Apply the white sterile pad directly over the wound. 2) Wrap the elastic bandage around the injured area, passing through the pressure bar. 3) Reverse direction and continue wrapping to apply circumferential pressure. 4) Secure using the built-in closure bar. On smaller children, the elastic wrap may need to be folded or doubled to avoid covering too large an area.",
+        "warning": "The elastic component can more easily occlude arteries in smaller limbs. Verify distal pulse after application -- check for warmth, colour, and pulse below the bandage. If pulse is absent, loosen slightly and re-secure.",
+        "decision_point": {
+          "condition": "Has the Israeli bandage controlled the bleeding?",
+          "if_yes": "Maintain the dressing in place. Continue to Step 10 (monitor for shock).",
+          "if_no": "Assess wound location. If the wound is on a limb, proceed to Step 9b (tourniquet). If the wound is in a junctional area (groin, neck, axilla, shoulder), proceed to Step 9a (wound packing)."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Escalate hemorrhage control: wound packing (junctional areas) or tourniquet (limbs).",
+        "detail": "Choose the appropriate method based on wound location.",
+        "decision_point": {
+          "condition": "Is the wound on a limb (arm or leg)?",
+          "if_yes": "Assess child's age and limb size, then apply a tourniquet (Step 9b).",
+          "if_no": "Apply wound packing for junctional wounds -- groin, neck, axilla, shoulder (Step 9a)."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Wound packing for junctional areas (groin, neck, axilla, shoulder).",
+        "detail": "1) Insert hemostatic or plain gauze finger-by-finger into the wound. 2) Fill internally in a sunburst pattern to create internal pressure against the bleeding vessel. 3) Apply the attached dressing with direct pressure for 1-2 minutes. 4) Tighten bandage straps to maintain pressure. Use smaller amounts of gauze proportional to the child's wound size.",
+        "warning": "Do NOT use wound packing for penetrating stab wounds. Do NOT enlarge wound openings to facilitate packing."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Apply a tourniquet for uncontrolled limb bleeding.",
+        "detail": "1) Place the tourniquet 5-10 cm above the source of bleeding (proximal, toward the heart). 2) Tighten the windlass until bleeding completely stops. 3) Secure the windlass in place. 4) Record the time of application in 4-digit format (e.g., 'TQ 1430').",
+        "warning": "A tourniquet will cause significant pain. A frightened child in pain will likely scream and struggle -- this is expected. Do NOT loosen the tourniquet because the child is in distress. Enlist a caregiver to comfort the child while you maintain hemorrhage control. Do NOT remove or loosen the tourniquet unless instructed by a paramedic or physician.",
+        "decision_point": {
+          "condition": "Is the child aged 2 or older with a limb circumference of at least 13 cm?",
+          "if_yes": "Apply a CAT Gen 7 tourniquet. For children aged 6+ with limb circumference 16 cm+, both upper and lower extremity application is reliable. For children aged 2-5, upper extremity application has a 100% success rate; lower extremity has a 94.5% success rate.",
+          "if_no": "For infants and very small children under age 2, no evidence exists for manufactured tourniquets. Use sustained direct pressure as the primary method. Consider improvised narrow pressure devices only under medical direction."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Monitor the child for signs of hypovolemic shock.",
+        "detail": "Children enter hypovolemic shock faster than adults due to smaller blood volumes. Tachycardia (rapid heart rate) is the earliest and most reliable sign. Also watch for: pale, cool, clammy, or mottled skin; bluish discolouration around lips and fingernails; fast shallow breathing; weakness, lethargy, or confusion. Hypotension is a LATE sign in children -- do not wait for it. Children compensate longer then decompensate rapidly.",
+        "decision_point": {
+          "condition": "Is the child showing signs of shock (tachycardia, pale/cool/mottled skin, confusion, rapid breathing)?",
+          "if_yes": "Keep the child lying down. If conscious, elevate the legs above the level of the head. If unconscious, place in the recovery position. Maintain body temperature -- cover with a blanket even in warm weather (a child in shock can become hypothermic due to poor perfusion). Moisten lips with water but do NOT give food or drink. Urgently update the 101 dispatcher on the child's deterioration.",
+          "if_no": "Continue monitoring closely. Maintain hemorrhage control measures. Keep the child warm, calm, and reassured until MDA arrives. Reassess frequently -- children can decompensate suddenly."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not remove an embedded or impaled object from the wound.",
+      "Do not lift or remove a blood-soaked dressing to check the wound -- add layers on top.",
+      "Do not remove or loosen a tourniquet once applied unless instructed by a paramedic or physician.",
+      "Do not loosen a tourniquet because the child is screaming or in distress -- pain is expected.",
+      "Do not give food or drink to a child with severe bleeding or suspected shock.",
+      "Do not use wound packing for penetrating stab wounds.",
+      "Do not enlarge wound openings to facilitate wound packing.",
+      "Do not assume a rapid pulse (tachycardia) is caused only by anxiety, fear, or pain -- suspect significant blood loss.",
+      "Do not wait for hypotension to suspect shock in a child -- hypotension is a late, pre-arrest sign.",
+      "Do not delay calling 101 for severe or uncontrolled bleeding in a child.",
+      "Do not apply a tourniquet directly over a joint -- place it 5-10 cm above the wound on the limb.",
+      "Do not attempt to use a manufactured tourniquet on a child under 2 years old -- use sustained direct pressure instead.",
+      "Do not lie to the child about pain -- if something will hurt, say so honestly in age-appropriate language."
+    ],
+    "equipment_needed": [
+      "Disposable gloves",
+      "Sterile gauze or clean cloth",
+      "Israeli Emergency Bandage (pressure dressing)",
+      "Tourniquet (CAT Gen 7 -- evidence-supported for children aged 2+ with limb circumference 13 cm+)",
+      "Wound packing material (hemostatic gauze preferred)",
+      "Blanket or coat (for shock management and warmth)",
+      "Comfort item for the child (toy, stuffed animal) if available"
+    ]
+  },
+  "tags": [
+    "bleeding",
+    "hemorrhage",
+    "tourniquet",
+    "israeli-bandage",
+    "pressure-dressing",
+    "wound-packing",
+    "trauma",
+    "shock",
+    "hemorrhage-control",
+    "pediatric",
+    "child"
+  ]
+}

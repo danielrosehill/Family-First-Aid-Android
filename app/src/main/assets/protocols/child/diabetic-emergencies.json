@@ -1,0 +1,185 @@
+{
+  "id": "IL-CHILD-DIABETIC-EMERGENCIES-001",
+  "title": "Diabetic Emergencies in Children",
+  "country": "israel",
+  "age_group": "child",
+  "category": "diabetic_emergencies",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Treat a Diabetes Patient - MDA First Aid Protocol (כיצד לטפל בחולה סוכרת)",
+    "url": "https://www.mdais.org/101/diabetes",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Shamir Medical Center paediatric endocrinology guidance and MDA training materials"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. Both sources are broadly consistent on treatment protocols. Key differences: (1) United Hatzalah explicitly states their volunteers cannot administer glucagon, while MDA permits trained/authorised caregivers to do so; (2) United Hatzalah uses emergency number 1221, MDA uses 101 -- protocol defaults to MDA's 101; (3) United Hatzalah does not specify the child-specific 10g sugar dose for children under 6 (MDA/hospital guidance does). MDA source page could not be directly fetched due to bot protection (HTTP 471); content reconstructed from search engine excerpts and cross-referenced with Shamir Medical Center paediatric endocrinology guidance. Child-specific dosing (Rule of 15 with 10g modification for under-6) sourced from MDA-aligned Israeli hospital guidance. Glucagon dosing table consistent across both MDA and Hatzalah sources."
+  },
+  "protocol": {
+    "summary": "Assess the child's consciousness and ability to swallow, administer fast-acting sugar using the Rule of 15 (10g for children under 6), and call 101 for severe hypoglycemia, seizures, loss of consciousness, or signs of diabetic ketoacidosis. When in doubt, give sugar.",
+    "when_to_apply": "Child known or suspected to have diabetes is showing signs of hypoglycemia (paleness, sweating, trembling, rapid heartbeat, irritability, behavioural changes, confusion, decreased consciousness, seizures) or hyperglycemia/DKA (excessive thirst, frequent urination, vomiting, abdominal pain, rapid deep breathing, fruity-smelling breath, lethargy). Also applies when a child with a known diabetes diagnosis experiences sudden behavioural changes in a school or gan setting.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately if: the child loses consciousness or has decreased responsiveness; the child is having seizures; the child cannot swallow safely; blood glucose remains below 54 mg/dL after 30 minutes of treatment; two or more mild hypoglycemic episodes occur within one week; signs of diabetic ketoacidosis are present (vomiting, rapid breathing, fruity breath, lethargy); there is any uncertainty about the child's condition; glucagon has been administered (follow-up medical care required)."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the child's level of consciousness and ability to swallow safely.",
+        "detail": "Look for signs of hypoglycemia: paleness, sweating, trembling, rapid heartbeat, irritability, behavioural changes, confusion, decreased consciousness. In young children (especially in gan or school), sudden irritability, mood swings, or behavioural changes in a child known to have diabetes should prompt immediate assessment. Check for a medical alert bracelet or necklace.",
+        "decision_point": {
+          "condition": "Is the child conscious and able to swallow safely?",
+          "if_yes": "Proceed to Step 2 (mild/moderate hypoglycemia treatment).",
+          "if_no": "Skip to Step 7 (severe hypoglycemia -- unconscious child)."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Determine the child's age and administer the appropriate dose of fast-acting sugar (Rule of 15).",
+        "detail": "For children aged 6 and over: give 15 grams of simple sugar. For children under 6: give 10 grams of simple sugar. Suitable sources include: glucose gel syringe (preferred), 125 mL (half a cup) of sweetened juice (not diet), glucose tablets (4 tablets = approximately 15g), 2-3 teaspoons of sugar dissolved in water, a sugar cube, a teaspoon of honey, or 250 mL (one cup) of milk.",
+        "warning": "Avoid chocolate as the initial sugar source -- fat and protein content slows sugar absorption, making it less effective for rapid correction.",
+        "decision_point": {
+          "condition": "Is the child under 6 years old?",
+          "if_yes": "Give 10 grams of fast-acting sugar.",
+          "if_no": "Give 15 grams of fast-acting sugar."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Wait 15 minutes, then reassess the child.",
+        "detail": "Monitor the child during this period. If the child has a glucometer available, recheck blood glucose after 15 minutes.",
+        "decision_point": {
+          "condition": "Has the child's blood glucose risen above target (70 mg/dL for children 6+, 80 mg/dL for children under 6) and are symptoms improving?",
+          "if_yes": "Proceed to Step 4 (provide complex carbohydrates to sustain glucose).",
+          "if_no": "Repeat the sugar dose (Step 2). If glucose remains below 54 mg/dL after 30 minutes of treatment, call 101 immediately."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Once blood glucose is above target, provide complex carbohydrates to prevent recurrence.",
+        "detail": "Give the child a carbohydrate-rich snack: a slice of bread with cheese, a pastry or cracker, fruit, or any carbohydrate-containing food. This sustains glucose levels and prevents a repeat drop."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Check whether the child has an insulin pump connected.",
+        "detail": "If the child wears an insulin pump (usually attached to the abdomen or thigh) and is experiencing hypoglycemia, gently disconnect it to prevent further insulin delivery from worsening the low blood sugar.",
+        "decision_point": {
+          "condition": "Does the child have an insulin pump connected?",
+          "if_yes": "Gently disconnect the insulin pump without damaging the device or tubing.",
+          "if_no": "No action needed regarding insulin delivery. Continue monitoring."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "For moderate hypoglycemia where the child needs assistance but can still swallow: administer 20-30 grams of simple sugar and verify glucose rises above 80 mg/dL within 10 minutes.",
+        "detail": "If the child is too impaired to self-treat but can still swallow, another person must assist. If swallowing is becoming difficult, apply honey or glucose gel to the inside of the cheek or under the tongue (oral mucosa). Follow with complex carbohydrates once glucose stabilises.",
+        "warning": "If swallowing becomes unsafe at any point, stop oral administration immediately and proceed to Step 7 (severe hypoglycemia protocol)."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Severe hypoglycemia: the child is unconscious or having seizures. Do NOT give any food or drink by mouth.",
+        "detail": "This is a life-threatening emergency. Oral administration poses a choking risk when the child cannot protect their airway.",
+        "warning": "Never attempt to give food, drink, or oral medication to an unconscious or seizing child. This is a choking hazard."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Disconnect the insulin pump if the child has one.",
+        "detail": "Gently disconnect the pump without damaging the device. It is usually attached to the abdomen or thigh."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Assess whether a glucagon emergency kit is available and whether a trained person is present.",
+        "detail": "Glucagon kits (Hypo-Kit) may be stored at the child's school or gan. Only trained and authorised caregivers (parents, school nurses, designated staff trained by the child's medical team) may administer glucagon.",
+        "decision_point": {
+          "condition": "Is a glucagon kit available AND is there a trained/authorised person to administer it?",
+          "if_yes": "Proceed to Step 10 (glucagon administration).",
+          "if_no": "Call 101 (MDA) immediately. Place the child in the recovery position (on their side) and monitor breathing until help arrives."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Administer glucagon by intramuscular or subcutaneous injection using the correct child dose.",
+        "detail": "Dosing: children under 6 years or under 25 kg receive 0.5 mL (half the vial); children over 6 years or over 25 kg receive 1.0 mL (full vial). To prepare: draw the liquid from the syringe into the powder vial, shake until clear, draw the mixed solution back into the syringe, and inject into a large muscle or under the skin (buttock, abdomen, upper arm, or thigh).",
+        "decision_point": {
+          "condition": "Is the child under 6 years old or under 25 kg?",
+          "if_yes": "Administer 0.5 mL (half the vial).",
+          "if_no": "Administer 1.0 mL (full vial)."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Place the child in the recovery position (on their side) to protect the airway.",
+        "detail": "This prevents choking if the child vomits. Monitor breathing continuously."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Call MDA at 101 immediately.",
+        "detail": "Always call 101 after administering glucagon -- the child requires follow-up medical care. Glucagon effect begins approximately 10-15 minutes after injection and lasts approximately 30 minutes."
+      },
+      {
+        "step_number": 13,
+        "instruction": "Once the child regains consciousness and can swallow safely, provide complex carbohydrates.",
+        "detail": "Use the 10-15 minute window after glucagon takes effect to give the child carbohydrate-rich food (bread with cheese, crackers, fruit). This replenishes liver glycogen stores depleted by the glucagon.",
+        "decision_point": {
+          "condition": "Has the child regained consciousness and can swallow safely?",
+          "if_yes": "Provide complex carbohydrates and continue monitoring until MDA arrives.",
+          "if_no": "Maintain recovery position, monitor breathing, and wait for MDA."
+        }
+      },
+      {
+        "step_number": 14,
+        "instruction": "Assess for signs of hyperglycemia or diabetic ketoacidosis (DKA).",
+        "detail": "If the emergency is suspected hyperglycemia rather than hypoglycemia, look for: excessive thirst, frequent urination, nausea/vomiting, abdominal pain, deep rapid breathing (Kussmaul breathing), fruity/acetone-smelling breath, weakness, and lethargy progressing to decreased consciousness. Hyperglycemia is not managed by first aiders.",
+        "decision_point": {
+          "condition": "Are signs of diabetic ketoacidosis present (vomiting, abdominal pain, rapid deep breathing, fruity breath, decreased consciousness)?",
+          "if_yes": "Call 101 (MDA) immediately. This is a medical emergency requiring hospital treatment. Do NOT administer insulin.",
+          "if_no": "The child should still be evaluated at a medical facility. Arrange transport to hospital."
+        }
+      },
+      {
+        "step_number": 15,
+        "instruction": "If uncertain whether the child has hypoglycemia or hyperglycemia: treat for hypoglycemia by giving sugar.",
+        "detail": "Giving sugar to a hypoglycemic child is life-saving. Giving sugar to a hyperglycemic child will not cause immediate harm. The reverse is not true -- withholding sugar from a hypoglycemic child can be fatal. This is the 'when in doubt, give sugar' principle.",
+        "warning": "This rule applies only when the child is conscious and can swallow safely. Never give anything by mouth to an unconscious child."
+      }
+    ],
+    "do_not": [
+      "DO NOT administer insulin -- this is strictly a medical intervention and can be fatal if given inappropriately. First aiders should never give insulin.",
+      "DO NOT give food, drink, or oral medication to an unconscious or seizing child -- this is a choking hazard.",
+      "DO NOT use chocolate as the initial sugar source -- fat and protein slow absorption and delay correction.",
+      "DO NOT administer glucagon unless you are trained and authorised to do so.",
+      "DO NOT delay calling 101 (MDA) for severe hypoglycemia, seizures, or loss of consciousness.",
+      "DO NOT attempt to manage hyperglycemia or DKA with first aid measures -- this requires medical intervention.",
+      "DO NOT use diet drinks or sugar-free products as a sugar source for hypoglycemia treatment."
+    ],
+    "equipment_needed": [
+      "Glucose gel syringe (15g glucose)",
+      "Fast-acting sugar source (juice, glucose tablets, sugar cubes, honey)",
+      "Complex carbohydrate snack (bread, crackers, fruit)",
+      "Glucagon emergency kit (Hypo-Kit) if available and authorised to use",
+      "Blood glucose meter (glucometer) if available"
+    ]
+  },
+  "tags": [
+    "diabetes",
+    "diabetic emergency",
+    "hypoglycemia",
+    "hyperglycemia",
+    "diabetic ketoacidosis",
+    "DKA",
+    "low blood sugar",
+    "high blood sugar",
+    "glucagon",
+    "insulin pump",
+    "rule of 15",
+    "paediatric",
+    "child",
+    "type 1 diabetes",
+    "school",
+    "kindergarten",
+    "gan",
+    "blood glucose",
+    "emergency"
+  ]
+}

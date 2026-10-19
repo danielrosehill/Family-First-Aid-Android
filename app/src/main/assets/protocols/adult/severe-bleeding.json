@@ -1,0 +1,141 @@
+{
+  "id": "IL-ADULT-SEVERE-BLEEDING-001",
+  "title": "Severe Bleeding (Hemorrhage Control) -- Adult",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "severe_bleeding",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Stop Bleeding (MDA 101 Public Guidance)",
+    "url": "https://www.mdais.org/101/bleeding"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default per project convention. United Hatzalah adds wound packing (sunburst technique) and explicit pressure point guidance not emphasized in MDA civilian materials; these are included as supplementary steps. Both sources agree on escalation order, tourniquet indications, and tourniquet conversion rules. Hatzalah lists packing between Israeli bandage and tourniquet in escalation order; MDA civilian guidance omits packing detail. Hatzalah contraindicates wound packing for penetrating stab wounds specifically."
+  },
+  "protocol": {
+    "summary": "Control severe external bleeding through escalating interventions: direct pressure, Israeli bandage, wound packing, and tourniquet.",
+    "when_to_apply": "Severe or uncontrolled external bleeding from any cause including trauma, amputation, crush injury, or penetrating injury. Signs include rapid spurting or steady flow of blood, pooling blood, blood-soaked clothing, or a severed or partially severed limb.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon identifying severe or uncontrolled bleeding. Call 101 (Magen David Adom) before or in parallel with beginning hemorrhage control."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and wear disposable gloves if available.",
+        "detail": "Do not approach the casualty until the scene is safe. Gloves are standard in Israeli first aid kits."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (Magen David Adom) immediately.",
+        "detail": "Provide location, number of casualties, and nature of injuries. If alone and bleeding is immediately life-threatening, begin hemorrhage control first and call as soon as possible."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Check for embedded or impaled objects in the wound.",
+        "decision_point": {
+          "condition": "Is there an embedded or impaled object (knife, shrapnel, glass, etc.) in the wound?",
+          "if_yes": "Do NOT remove the object. Stabilise it in place with padding and bandages around it. Apply pressure around the object, not on it. Skip to Step 9 (monitor for shock).",
+          "if_no": "Proceed to Step 4 (direct pressure)."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Apply strong, direct pressure to the source of bleeding with your gloved hand or sterile gauze.",
+        "detail": "Press firmly directly on the wound. Use your bare or gloved hand initially, then replace with a sterile bandage, towel, or clean cloth as soon as available. Maintain continuous, firm pressure without lifting to check -- this allows clot formation."
+      },
+      {
+        "step_number": 5,
+        "instruction": "If the first dressing soaks through, add additional layers on top without removing the original dressing.",
+        "detail": "Use a triangular bandage, sheet, or clean towel if additional material is needed. Never remove a blood-soaked dressing -- only add on top.",
+        "decision_point": {
+          "condition": "Has direct pressure controlled the bleeding?",
+          "if_yes": "Maintain pressure. Elevate the limb above heart level if possible (Step 6). Continue to Step 9 (monitor for shock).",
+          "if_no": "Proceed to Step 7 (apply Israeli bandage / pressure dressing)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If possible, elevate the injured limb above heart level.",
+        "detail": "Elevation is an adjunct to direct pressure, not a replacement. It reduces blood flow to the injured area."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Apply an Israeli Emergency Bandage (pressure dressing).",
+        "detail": "1) Apply the white sterile pad directly over the wound. 2) Wrap the elastic bandage around the injured area, passing through the pressure bar. 3) Reverse direction and continue wrapping to apply circumferential pressure. 4) Secure using the built-in closure bar.",
+        "warning": "The elastic component can occlude arteries. Verify distal pulse after application. The bandage should be tight enough to control bleeding but not so tight as to act as a tourniquet (unless that is the intent).",
+        "decision_point": {
+          "condition": "Has the Israeli bandage controlled the bleeding?",
+          "if_yes": "Maintain the dressing in place. Continue to Step 9 (monitor for shock).",
+          "if_no": "Assess wound location. If the wound is on a limb, proceed to Step 8b (tourniquet). If the wound is in a junctional area (groin, neck, axilla, shoulder), proceed to Step 8a (wound packing)."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Escalate hemorrhage control: wound packing (junctional areas) or tourniquet (limbs).",
+        "detail": "Choose the appropriate method based on wound location.",
+        "decision_point": {
+          "condition": "Is the wound on a limb (arm or leg)?",
+          "if_yes": "Apply a tourniquet (Step 8b).",
+          "if_no": "Apply wound packing for junctional wounds -- groin, neck, axilla, shoulder (Step 8a)."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Wound packing for junctional areas (groin, neck, axilla, shoulder).",
+        "detail": "1) Insert specialised hemostatic or plain gauze finger-by-finger into the wound. 2) Fill internally in a sunburst pattern to create internal pressure against the bleeding vessel. 3) Apply the attached dressing with direct pressure for 1-2 minutes. 4) Tighten bandage straps to maintain pressure.",
+        "warning": "Do NOT use wound packing for penetrating stab wounds. Do NOT enlarge wound openings to facilitate packing."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Apply a tourniquet for uncontrolled limb bleeding.",
+        "detail": "1) Place the tourniquet 5-10 cm above the source of bleeding (proximal, toward the heart). 2) Tighten the windlass/mechanism until bleeding completely stops. 3) Secure the windlass in place. 4) Record the time of application -- write on the casualty's forehead or another visible location: 'TQ' followed by the time in 4-digit format (e.g., 'TQ 1430'). 5) Leave approximately 15 cm of strap, which can be folded in an R-shape for visibility.",
+        "warning": "A tourniquet completely blocks blood flow distal to the application point, risking tissue death and gangrene if left too long. A properly applied tourniquet will cause significant pain -- this is expected. Do NOT remove or loosen a tourniquet once applied unless instructed by a paramedic or physician."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Monitor the casualty for signs of hypovolemic shock.",
+        "detail": "Watch for: rapid pulse, pale/cool/clammy skin, confusion, rapid breathing. Keep the casualty warm and lying down. Reassure the casualty and wait for MDA responders.",
+        "decision_point": {
+          "condition": "Is the casualty showing signs of shock (rapid pulse, pale/cool/clammy skin, confusion, rapid breathing)?",
+          "if_yes": "Keep the casualty lying down with legs elevated if no spinal injury is suspected. Keep them warm with a blanket or coat. Do not give food or drink. Urgently update the 101 dispatcher on the casualty's deterioration.",
+          "if_no": "Continue monitoring. Maintain hemorrhage control measures. Keep the casualty warm and reassured until MDA arrives."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not remove an embedded or impaled object from the wound.",
+      "Do not lift or remove a blood-soaked dressing to check the wound -- add layers on top.",
+      "Do not remove or loosen a tourniquet once applied unless instructed by a paramedic or physician.",
+      "Do not give food or drink to a casualty with severe bleeding or suspected shock.",
+      "Do not use wound packing for penetrating stab wounds.",
+      "Do not enlarge wound openings to facilitate wound packing.",
+      "Do not assume a rapid pulse is caused only by anxiety or pain -- suspect significant blood loss.",
+      "Do not delay calling 101 for severe or uncontrolled bleeding.",
+      "Do not apply a tourniquet directly over a joint -- place it 5-10 cm above the wound on the limb."
+    ],
+    "equipment_needed": [
+      "Disposable gloves",
+      "Sterile gauze or clean cloth",
+      "Israeli Emergency Bandage (pressure dressing)",
+      "Tourniquet (CAT or equivalent)",
+      "Wound packing material (hemostatic gauze preferred)",
+      "Triangular bandage (supplementary)",
+      "Blanket or coat (for shock management)"
+    ]
+  },
+  "tags": [
+    "bleeding",
+    "hemorrhage",
+    "tourniquet",
+    "israeli-bandage",
+    "pressure-dressing",
+    "wound-packing",
+    "trauma",
+    "shock",
+    "hemorrhage-control"
+  ]
+}

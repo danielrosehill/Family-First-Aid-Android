@@ -1,0 +1,145 @@
+{
+  "id": "IL-ADULT-BLAST-INJURIES-001",
+  "title": "Blast / Shrapnel Injuries - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "blast_injuries",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA First Aid Guidelines - Blast and Shrapnel Injuries",
+    "url": "https://www.mdais.org/media/4954/mda-first-aid-guidelines-en.pdf",
+    "edition": "MDA First Aid Guidelines; corroborated by United Hatzalah trauma protocols, peer-reviewed analysis of MDA October 7 response, and Hadassah hospital blast injury data"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. Both organisations follow Ministry of Health standards and are fundamentally compatible. Key difference: United Hatzalah more aggressively favours tourniquet as a first-line intervention for limb hemorrhage ('preferable because it is powerful, rapid, and more likely to stop bleeding with certainty'), while MDA presents a more graduated approach (direct pressure first, then escalate). United Hatzalah also explicitly emphasises 'do not initiate resuscitation before controlling severe bleeding' and recommends jaw-thrust manoeuvre (not head-tilt) for airway management in blast/trauma patients due to potential spinal injury. This protocol follows MDA's graduated hemorrhage control sequence. MDA source PDF was inaccessible at time of access; content referenced via search excerpts, MDA training materials, peer-reviewed publications (PMC11496206, PMC10938385, PMC1297605), and MDA video guidance. Blast injuries classified into four mechanisms: primary (barotrauma), secondary (penetrating/shrapnel), tertiary (blunt/displacement), quaternary (thermal/burns). United Hatzalah notes epinephrine is generally contraindicated in hypovolemic trauma resuscitation. Publication date not specified by MDA."
+  },
+  "protocol": {
+    "summary": "Ensure scene safety, call 101, control life-threatening hemorrhage using direct pressure, Israeli bandage, wound packing, or tourniquet, stabilise embedded objects, monitor for shock, and treat burns while awaiting MDA.",
+    "when_to_apply": "Person has been injured by an explosion, blast, or shrapnel. Signs include: visible wounds from shrapnel or debris, active bleeding, burns, signs of shock (rapid pulse, pale/cold skin, confusion), difficulty breathing, hearing loss, visible embedded objects. Blast victims frequently have injuries from multiple mechanisms simultaneously.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately after confirming scene safety. Report location, number of casualties, and type of incident (explosion/blast). If multiple casualties, report this so MDA can activate mass-casualty protocols."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Confirm scene safety before approaching.",
+        "detail": "Do not approach until security forces confirm the area is safe. Be aware of secondary devices (second bombs), structural collapse, fire, and ongoing threats. Your safety comes first -- you cannot help the victim if you are wounded.",
+        "warning": "Secondary devices (second bombs) are a known tactic in Israel. Maintain distance until the area is declared safe."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call MDA at 101.",
+        "detail": "Report the location, number of casualties, and type of incident (explosion/blast). If there are multiple casualties, report this immediately so MDA can activate mass-casualty protocols."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Assess for life-threatening hemorrhage.",
+        "detail": "Quickly scan the victim for severe bleeding. Hemorrhage control is the life-saving priority. MDA's approach is 'scoop and run': perform only immediate life-saving treatment, then prepare for rapid evacuation.",
+        "decision_point": {
+          "condition": "Is there life-threatening bleeding from a limb?",
+          "if_yes": "Proceed immediately to hemorrhage control (Step 4). Hemorrhage control takes priority over all other interventions.",
+          "if_no": "Check for other injuries (embedded objects, burns, breathing difficulty). Proceed to Step 7."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Apply direct pressure to the bleeding site.",
+        "detail": "Apply your hand or sterile gauze directly to the wound. Maintain continuous pressure to allow clot formation. Transition to an Israeli bandage (emergency bandage) when possible -- its dual-pad design creates direct pressure while wrapping around the wound.",
+        "decision_point": {
+          "condition": "Has the bleeding stopped or slowed significantly with direct pressure?",
+          "if_yes": "Maintain pressure or secure with an Israeli bandage. Verify pulse distal to the bandage to confirm no arterial blockage. Proceed to check for other injuries (Step 7).",
+          "if_no": "Escalate to wound packing (Step 5) or tourniquet application (Step 6)."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Pack large wounds if direct pressure is insufficient.",
+        "detail": "For large wounds in limbs, shoulders, or groin, fill the wound with gauze to create internal pressure. Secure with bandaging over the top.",
+        "decision_point": {
+          "condition": "Has wound packing controlled the bleeding?",
+          "if_yes": "Secure the packing with bandaging and proceed to check for other injuries (Step 7).",
+          "if_no": "Apply a tourniquet (Step 6)."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Apply a tourniquet for uncontrollable limb hemorrhage.",
+        "detail": "Apply when direct pressure and wound packing fail, or when there is amputation, severe crushing injury, or uncontrollable hemorrhage. Also apply in multi-casualty situations where you cannot maintain pressure on every wound. Place the tourniquet above the injury site, tighten until bleeding stops, and document the time of application in an obvious location.",
+        "warning": "Do NOT remove the tourniquet once applied -- only medical professionals should make this decision. If bleeding does not stop, apply a second tourniquet above the first one."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Check for and stabilise embedded objects.",
+        "detail": "If shrapnel or debris is embedded in the body, do NOT remove or move it. Apply pressure on either side of the object and stabilise it in place if possible.",
+        "warning": "Never remove embedded objects -- removal may cause uncontrollable bleeding."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Look for additional wounds.",
+        "detail": "Blast victims often have multiple injury sites from different mechanisms (shrapnel, blast displacement, burns). Examine the entire body for wounds beyond the most obvious one.",
+        "decision_point": {
+          "condition": "Are there additional bleeding wounds found?",
+          "if_yes": "Apply hemorrhage control to each wound using the same graduated approach (direct pressure, wound packing, tourniquet as needed).",
+          "if_no": "Continue to monitoring and burn assessment."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Assess and treat burns.",
+        "detail": "Burns are present in approximately 33% of ICU-admitted blast patients. Cool burns with clean water if available. Do not remove clothing stuck to burns. Cover with clean, non-adherent dressing."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Monitor for shock and reassure the victim.",
+        "detail": "Watch for signs of shock: rapid pulse, pale or cold skin, confusion, rapid breathing. Speak to the victim and try to reassure them. Do not let them move until MDA arrives. Keep the victim warm.",
+        "decision_point": {
+          "condition": "Is the victim conscious and breathing?",
+          "if_yes": "Continue monitoring and reassurance. Keep the victim still and warm until MDA arrives.",
+          "if_no": "If unconscious but breathing, place in recovery position (on their side). If not breathing, begin CPR immediately (30:2 compression-to-ventilation ratio). Report status to MDA dispatch."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT approach the scene until security forces confirm it is safe -- secondary devices (second bombs) are a known tactic.",
+      "DO NOT remove embedded shrapnel or debris from the body -- this may cause uncontrollable bleeding.",
+      "DO NOT remove a tourniquet once it has been applied -- only medical professionals should make this decision.",
+      "DO NOT remove clothing that is stuck to burns.",
+      "DO NOT let the victim move or walk until MDA arrives.",
+      "DO NOT use head-tilt for airway management in blast/trauma victims -- use jaw-thrust manoeuvre to protect the cervical spine.",
+      "DO NOT administer epinephrine in hypovolemic trauma -- blood vessels are already maximally constricted from shock (EMT/paramedic-level note).",
+      "DO NOT assume only one injury site -- blast victims typically have injuries from multiple mechanisms simultaneously."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 (MDA)",
+      "Sterile gauze or clean cloth for direct pressure",
+      "Israeli bandage (emergency bandage)",
+      "Gauze for wound packing",
+      "Tourniquet (CAT tourniquet preferred; improvised tourniquet as last resort)",
+      "Non-adherent dressings for burns",
+      "Clean water for cooling burns",
+      "Blanket for warmth"
+    ]
+  },
+  "tags": [
+    "blast",
+    "shrapnel",
+    "explosion",
+    "penetrating trauma",
+    "hemorrhage",
+    "tourniquet",
+    "mass casualty",
+    "terror attack",
+    "rocket",
+    "burns",
+    "barotrauma",
+    "shock",
+    "israeli bandage",
+    "wound packing",
+    "scoop and run",
+    "emergency"
+  ]
+}

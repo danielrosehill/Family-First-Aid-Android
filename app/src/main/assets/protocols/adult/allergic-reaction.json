@@ -1,0 +1,130 @@
+{
+  "id": "IL-ADULT-ALLERGIC-REACTION-001",
+  "title": "Anaphylaxis / Allergic Reaction -- Adult (Israel)",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "allergic_reaction",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA First Aid Guidance on Allergies and ALS Protocol (April 2024); Israeli Ministry of Health Anaphylaxis Guidance",
+    "url": "https://www.mdais.org/101/allergy",
+    "publication_date": "2024-04-01",
+    "edition": "ALS Manual April 2024"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. Both protocols are substantially aligned -- same Sampson diagnostic criteria, identical weight-based IM dosing, same EpiPen technique (10-second hold, through clothing), same repeat dosing (up to 3 doses at 10-minute intervals). Minor difference: United Hatzalah explicitly notes upright positioning for respiratory-predominant anaphylaxis, while MDA defaults to supine with legs elevated. This is a clinical judgement call, not a protocol conflict. MDA used as authoritative default. Hatzalah sources consulted at 1221.org.il."
+  },
+  "protocol": {
+    "summary": "Recognition and first aid treatment of anaphylaxis in adults, including EpiPen administration and monitoring until EMS arrival.",
+    "when_to_apply": "Severe allergic reaction with involvement of breathing, circulation, or consciousness. High probability when: (1) acute onset with skin/mucosal involvement plus respiratory compromise or hypotension; (2) two or more of skin symptoms, respiratory compromise, hypotension, persistent GI symptoms after allergen exposure; or (3) sudden hypotension after known allergen exposure.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon recognising signs of anaphylaxis. Keep the phone on speaker and follow the dispatcher's instructions."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and recognise signs of severe allergic reaction.",
+        "detail": "Look for skin signs (rash, hives, swelling of face/lips/tongue/throat), respiratory signs (breathing difficulty, wheezing, stridor, throat tightness), cardiovascular signs (weak/rapid pulse, low blood pressure, pallor, confusion, loss of consciousness), and GI signs (nausea, vomiting, abdominal pain). Involvement of breathing, circulation, or consciousness indicates anaphylaxis rather than a mild allergic reaction.",
+        "decision_point": {
+          "condition": "Are signs of anaphylaxis present (breathing difficulty, circulatory compromise, or altered consciousness)?",
+          "if_yes": "Proceed to Step 2 -- call 101 immediately and continue protocol.",
+          "if_no": "Monitor for worsening. If only mild skin reaction (localised rash/itching) without systemic involvement, observe closely but do not administer epinephrine. Call 101 if condition worsens."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call MDA at 101 immediately.",
+        "detail": "Keep the phone on speaker mode and follow the dispatcher's instructions. Call for help from bystanders. If possible, identify the allergen (food, medication, insect sting, latex)."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Remove the offending agent if possible.",
+        "detail": "Remove a bee stinger by scraping sideways, stop any infusion or medication, move patient away from the allergen source. Do not delay other treatment to do this."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Manage the airway.",
+        "detail": "If facial or tongue swelling is present, assume airway compromise. Ensure the tongue is not obstructing the airway. Remove any food debris from the mouth. Loosen tight clothing around the neck and chest.",
+        "warning": "Airway swelling can progress rapidly. Continuous monitoring is essential."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the patient appropriately.",
+        "detail": "Positioning depends on the patient's condition and primary symptoms.",
+        "decision_point": {
+          "condition": "Is the patient conscious?",
+          "if_yes": "If breathing difficulty is the primary symptom, allow the patient to sit upright. If hypotension/shock is the primary symptom, position supine (lying down) with legs elevated.",
+          "if_no": "Proceed to Step 6 to assess breathing."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If the patient is unconscious, assess breathing.",
+        "decision_point": {
+          "condition": "Is the unconscious patient breathing?",
+          "if_yes": "Place in the recovery position. Continue to monitor breathing and proceed to Step 7 (EpiPen).",
+          "if_no": "Begin CPR immediately. Continue CPR until EMS arrives or the patient resumes breathing."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Administer epinephrine auto-injector (EpiPen) if available.",
+        "detail": "Epinephrine is the primary and most critical treatment for anaphylaxis. Adult dose (over 50 kg): 0.3 mg auto-injector. Technique: (1) Remove the EpiPen from its plastic case. (2) Remove the blue safety cap. (3) Hold with the orange tip pointing downward. (4) Position at 90 degrees to the middle of the outer thigh. (5) Press firmly (swing and jab) until a click is heard. (6) Hold in place for 10 seconds to ensure full delivery. (7) Can be administered through clothing -- do not waste time removing trousers. (8) After removal, massage the injection site for 10 seconds to aid absorption. (9) Hand the used auto-injector to paramedics or dispose in a sharps container.",
+        "warning": "Epinephrine is time-critical. Do not delay administration. Over 50% of anaphylaxis deaths occur within the first 60 minutes of onset.",
+        "decision_point": {
+          "condition": "Is an EpiPen available?",
+          "if_yes": "Administer immediately using the technique described. Proceed to Step 8.",
+          "if_no": "Maintain airway, positioning, and monitoring. Inform the 101 dispatcher that no EpiPen is available. Wait for EMS."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Reassess the patient after 5 minutes.",
+        "detail": "Check airway, breathing, circulation, and level of consciousness.",
+        "decision_point": {
+          "condition": "Has the patient's condition improved after 5 minutes?",
+          "if_yes": "Continue monitoring. Epinephrine effects last approximately 20 minutes; symptoms may recur (biphasic reaction). Do not leave the patient unattended.",
+          "if_no": "Administer a second dose of epinephrine if a second auto-injector is available. Continue monitoring."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Monitor continuously until EMS arrives.",
+        "detail": "Continuously monitor airway, breathing, and circulation. Be prepared to begin CPR if the patient loses consciousness and stops breathing. All patients with suspected anaphylaxis require hospital evaluation, even if symptoms fully resolve after epinephrine.",
+        "warning": "Biphasic reactions can occur hours after the initial event. Hospital observation is mandatory."
+      }
+    ],
+    "do_not": [
+      "Do not delay calling 101 -- anaphylaxis is a life-threatening emergency.",
+      "Do not delay epinephrine administration if anaphylaxis is suspected. Epinephrine is the only effective first-line treatment.",
+      "Do not substitute antihistamines (e.g., diphenhydramine) for epinephrine. Antihistamines are not effective against anaphylaxis and must not replace epinephrine.",
+      "Do not make the patient stand or sit up suddenly if they are hypotensive -- this can cause cardiac arrest.",
+      "Do not leave the patient unattended after epinephrine administration -- symptoms may recur.",
+      "Do not assume the patient is safe after symptoms resolve -- all suspected anaphylaxis requires hospital evaluation.",
+      "Do not waste time removing clothing before injecting the EpiPen -- it can be administered through trousers.",
+      "Do not administer the EpiPen into a vein -- it is an intramuscular injection into the outer thigh only.",
+      "Do not give food or drink to a patient experiencing anaphylaxis."
+    ],
+    "equipment_needed": [
+      "Epinephrine auto-injector (EpiPen) -- adult 0.3 mg",
+      "Phone to call MDA at 101"
+    ]
+  },
+  "tags": [
+    "anaphylaxis",
+    "allergic_reaction",
+    "epipen",
+    "epinephrine",
+    "airway",
+    "breathing",
+    "shock",
+    "life_threatening",
+    "adult",
+    "israel",
+    "mda"
+  ]
+}

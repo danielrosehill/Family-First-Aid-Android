@@ -1,0 +1,120 @@
+{
+  "id": "IL-ADULT-SNAKEBITE-001",
+  "title": "Snakebite - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "snakebite",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Treat a Snake Bite (כיצד לטפל בהכשת נחש)",
+    "url": "https://www.mdais.org/101/snake-bite",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Israeli Ministry of Health guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. United Hatzalah does not publish a dedicated snakebite protocol on their public website; their EMTs train to the same national standards as MDA, so no protocol differences are expected. MDA source page could not be directly fetched due to site restrictions (471 status); protocol synthesised from MDA page snippets, Israeli Ministry of Health guidance, Israeli first aid course material aligned with MDA curriculum, and corroborating clinical literature. Publication date not specified by MDA. Israel Poison Information Center 24/7 hotline: 04-7771900 (Rambam Health Care Campus, Haifa). Three medically dangerous venomous species in Israel: Daboia palaestinae (Palestine viper), Echis coloratus (painted saw-scaled viper), Atractaspis engaddensis (Israeli mole viper -- no antivenom available). Peak snakebite season: spring/summer."
+  },
+  "protocol": {
+    "summary": "Immobilise the victim and bitten limb, call 101 immediately, clean wound with soap and water only, monitor for systemic reaction, and transport to hospital for evaluation and possible antivenom.",
+    "when_to_apply": "Person has been bitten or suspected bitten by a snake. Signs include: puncture marks on skin, pain and swelling at bite site, redness or bruising around the wound. May progress to nausea, vomiting, abdominal pain, tachycardia, hypotension, difficulty breathing, or altered consciousness.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon suspecting a snakebite. MDA dispatch will provide telephone guidance until the medical team arrives. Also consider calling the Israel Poison Information Center at 04-7771900 for specialist toxicology advice."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call MDA immediately at 101.",
+        "detail": "MDA dispatch will provide real-time telephone guidance until paramedics arrive. Remain calm when calling -- do not create panic, as stress increases the victim's heart rate and accelerates venom spread."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Keep the victim calm and completely still.",
+        "detail": "Reassure the victim and reduce their stress and anxiety. Have them lie down. Immobility and a low heart rate are critical to slowing the spread of venom through the body. Panic increases heart rate and accelerates venom circulation."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Position and immobilise the bitten limb.",
+        "detail": "Position the bitten limb below heart level. The limb should not move at all. Immobilise (splint) the affected limb against the body to prevent any movement."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Remove constrictive items from the bite area.",
+        "detail": "Remove jewellery, watches, rings, and tight clothing from the bitten area and the entire affected limb. The bite area will swell, and constrictive items can cause additional tissue damage.",
+        "warning": "Swelling can progress rapidly. Remove all constrictive items as early as possible."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Clean the bite wound with soap and water only.",
+        "detail": "Gently wash the bite area with soap and water. Do NOT use alcohol-based disinfectants or any other cleaning agents.",
+        "warning": "Do NOT use alcohol-based disinfectants on the bite wound."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Attempt to identify the snake if it can be done safely.",
+        "detail": "If possible, photograph the snake from at least 2 metres away while remaining safe. If the snake is dead, keep it to show medical staff. Identification helps determine whether antivenom is needed and which type.",
+        "warning": "Do NOT attempt to catch or kill the snake. All snakes in Israel are protected under the Wildlife Protection Law. Approaching a snake risks additional bites.",
+        "decision_point": {
+          "condition": "Can the snake be safely photographed from at least 2 metres away?",
+          "if_yes": "Take a clear photograph of the snake and share it with arriving paramedics. Note the snake's colour, pattern, and approximate size.",
+          "if_no": "Do not approach the snake. Note any details you observed (colour, size, head shape) and report them to paramedics."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the victim for signs of systemic reaction or anaphylaxis.",
+        "detail": "Continuously watch for: difficulty breathing or swallowing, swelling spreading beyond the bite area, rash or itching, abdominal pain, nausea, vomiting, changes in consciousness, drop in blood pressure, rapid heart rate.",
+        "decision_point": {
+          "condition": "Is the victim showing signs of severe systemic reaction (difficulty breathing, altered consciousness, severe swelling, hypotension)?",
+          "if_yes": "Report symptoms immediately to MDA dispatch on the phone. Prepare to manage airway if victim loses consciousness. If the victim stops breathing, begin CPR. Keep the victim lying down with legs elevated if blood pressure drops.",
+          "if_no": "Continue monitoring while keeping the victim calm and still. Await paramedic arrival."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Wait for MDA paramedics and prepare for hospital transport.",
+        "detail": "The victim must be transported to a hospital for evaluation and possible antivenom administration. Antivenom is available for Daboia palaestinae and Echis coloratus bites (polyvalent equine-derived antiserum manufactured by Kamada Ltd.). Note: there is no antivenom available for Atractaspis engaddensis (Israeli mole viper) bites.",
+        "decision_point": {
+          "condition": "Is the victim in a remote location where MDA response will be significantly delayed?",
+          "if_yes": "If safe transport is available, begin moving the victim to the nearest hospital while keeping them immobile and the bitten limb below heart level. Maintain phone contact with MDA dispatch for guidance.",
+          "if_no": "Wait for MDA paramedics to arrive. Do not move the victim unnecessarily."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT apply a tourniquet -- it traps venom locally and causes severe tissue damage.",
+      "DO NOT suck the venom out of the wound -- this is ineffective and dangerous.",
+      "DO NOT cut or incise the bite area -- this increases infection risk and does not help remove venom.",
+      "DO NOT cool or apply ice to the bite area -- this can worsen tissue damage.",
+      "DO NOT give the victim food or drink -- this may complicate hospital treatment.",
+      "DO NOT induce vomiting.",
+      "DO NOT give aspirin, ibuprofen, or naproxen -- these can worsen bleeding because viper venom is often anticoagulant.",
+      "DO NOT use alcohol-based disinfectants on the wound.",
+      "DO NOT attempt to catch or kill the snake -- snakes are protected under Israeli law and approaching them risks additional bites.",
+      "DO NOT allow the victim to walk or move the bitten limb -- movement accelerates venom circulation."
+    ],
+    "equipment_needed": [
+      "Splint or improvised immobilisation material",
+      "Soap and clean water for wound cleaning",
+      "Phone or camera to photograph the snake"
+    ]
+  },
+  "tags": [
+    "snakebite",
+    "snake",
+    "venom",
+    "envenomation",
+    "antivenom",
+    "daboia palaestinae",
+    "echis coloratus",
+    "atractaspis engaddensis",
+    "palestine viper",
+    "immobilisation",
+    "poison",
+    "anaphylaxis",
+    "wilderness",
+    "emergency"
+  ]
+}

@@ -1,0 +1,64 @@
+name: Build APK
+
+# Every push builds the APK as a workflow artifact. Pushing a tag `v*` also
+# publishes a GitHub Release with the APK attached — that is how new versions
+# are distributed (sideload the APK from the release page).
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Version from tag
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            echo "VERSION_NAME=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_ENV"
+          fi
+          echo "VERSION_CODE=${GITHUB_RUN_NUMBER}" >> "$GITHUB_ENV"
+
+      - name: Decode signing key
+        env:
+          KEYSTORE_B64: ${{ secrets.SIGNING_KEYSTORE_B64 }}
+        if: env.KEYSTORE_B64 != ''
+        run: |
+          echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+          echo "SIGNING_KEYSTORE_PATH=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+
+      - name: Build
+        env:
+          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
+          SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: ./gradlew --no-daemon assembleRelease
+
+      - name: Rename
+        run: |
+          mkdir -p out
+          cp app/build/outputs/apk/release/app-release.apk "out/family-first-aid-${VERSION_NAME:-dev}.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: out/*.apk
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" out/*.apk --title "$GITHUB_REF_NAME" --notes-file RELEASE_NOTES.md

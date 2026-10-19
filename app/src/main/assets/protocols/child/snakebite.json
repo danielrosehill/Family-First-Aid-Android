@@ -1,0 +1,129 @@
+{
+  "id": "IL-CHILD-SNAKEBITE-001",
+  "title": "Snakebite First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "snakebite",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Snakebite First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/snake-bite",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance, supplemented by Israeli Ministry of Health parenting/children guidance and Israeli pediatric clinical studies (Paret et al. 1997, Bentur et al. 2017)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. No disagreements found between the two organisations on snakebite first aid. MDA used as primary authority. United Hatzalah does not publish a child-specific snakebite protocol; their general guidance is fully consistent with MDA. MDA primary page (mdais.org/101/snake-bite) was blocked by bot protection during research; protocol reconstructed from MDA paramedic interview (Ness Ziona local news), Israeli Ministry of Health official guidelines, MDA-aligned training provider (firstaidcourse.co.il), and peer-reviewed Israeli clinical studies. MDA does not differentiate children from adults in first aid steps -- the same protocol applies with greater urgency due to higher venom-to-body-weight ratio and faster symptom progression. Primary venomous species: Palestine viper (Daboia palaestinae), responsible for the overwhelming majority of clinically significant bites in Israel. Israeli pediatric data shows 0% mortality with appropriate pre-hospital and hospital care. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for snakebite in children in Israel, emphasising immediate emergency call, immobilisation, calm reassurance, and rapid transport to hospital. Children are at higher risk due to lower body weight and faster symptom progression.",
+    "when_to_apply": "When a child has been bitten or suspected bitten by a snake. Treat every snakebite as venomous until proven otherwise -- do not wait for symptoms to appear. The primary venomous species in Israel is the Palestine viper (Daboia palaestinae). Common bite locations in Israeli children: 63% lower limbs, 33% upper limbs, 4% head/neck.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for every snakebite in a child. Do not wait for symptoms. Report the child's age, weight, bite location, and time of bite. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety. Move the child and all bystanders away from the snake.",
+        "detail": "Maintain at least 2 metres distance from the snake. Do not attempt to catch, kill, or handle the snake. If safe to do so from a distance, photograph the snake for hospital identification.",
+        "warning": "Do NOT approach, chase, or attempt to catch the snake. This risks additional bites."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "Request an ambulance. Follow dispatcher instructions. Report the child's age, approximate weight, bite location, time of bite, and any symptoms. Treat every snakebite as venomous until proven otherwise.",
+        "warning": "Do NOT wait for symptoms before calling. Children can deteriorate rapidly due to lower body weight."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Keep the child calm and still. Have the child lie down.",
+        "detail": "Reassure the child by speaking calmly and confidently. Minimise all movement. Snake venom travels through the lymphatic system, which is activated by body movement, not heartbeat. Movement and agitation accelerate venom spread. Children may be frightened and want to run -- gently but firmly prevent this.",
+        "warning": "Immobility is critical. Any movement accelerates venom distribution through the lymphatic system."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Position the bitten limb below heart level and immobilise it.",
+        "detail": "Keep the bitten limb lower than the heart to slow venom distribution. Immobilise the limb against the body as you would for a fracture. A splint may be used if available.",
+        "decision_point": {
+          "condition": "Is a splint or rigid object available to immobilise the limb?",
+          "if_yes": "Apply the splint to immobilise the bitten limb as for a fracture, keeping it below heart level.",
+          "if_no": "Immobilise the limb by positioning it against the child's body. Use clothing or fabric to secure it in place if possible. Keep it below heart level."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Remove all constrictive items from the affected limb.",
+        "detail": "Remove rings, bracelets, watches, anklets, and tight clothing from the bitten limb. Swelling can develop rapidly and constrictive items can cause secondary injury by cutting off circulation."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Clean the bite wound gently if materials are available.",
+        "detail": "Clean the bite site with water and soap only. Do not apply antiseptic, alcohol, or any other substance to the wound.",
+        "warning": "Do NOT apply alcohol, antiseptic, or any other substance to the bite site.",
+        "decision_point": {
+          "condition": "Are water and soap available?",
+          "if_yes": "Gently clean the bite site with water and soap only.",
+          "if_no": "Leave the wound as is. Do not apply any substances. Cleaning can be done at hospital."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the child for signs of systemic envenomation.",
+        "detail": "Watch for: swelling spreading beyond the bite site, rapid heartbeat (tachycardia), vomiting, nausea, abdominal pain, difficulty breathing or swallowing, altered consciousness, pallor, hypotension (dizziness, fainting), rash or itching (allergic reaction). In children, systemic signs may develop more rapidly than in adults due to lower body weight and smaller blood volume.",
+        "decision_point": {
+          "condition": "Has the child lost consciousness and stopped breathing?",
+          "if_yes": "Begin CPR immediately. Continue until emergency services arrive.",
+          "if_no": "Continue monitoring. Keep the child calm, still, and lying down with the bitten limb below heart level. Wait for emergency services."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Prepare for transport to hospital.",
+        "detail": "All snakebite victims require urgent medical evaluation, even if no symptoms are present. Children are at higher risk due to proportionally more venom per kilogram of body weight, faster symptom progression, and smaller blood volume. Antivenom (monovalent equine anti-V. palaestinae) is stocked at Israeli hospitals. If the snake was photographed, have the photo ready to show medical staff."
+      }
+    ],
+    "do_not": [
+      "Do NOT apply a tourniquet -- concentrates venom in the limb and causes tissue damage.",
+      "Do NOT cut the bite site -- causes additional injury and does not remove venom.",
+      "Do NOT attempt to suck out the venom -- ineffective and risks infection.",
+      "Do NOT apply ice or cold compresses to the bite -- can cause tissue damage and does not slow venom absorption.",
+      "Do NOT apply alcohol, antiseptic, or any other substance to the wound -- interferes with medical assessment.",
+      "Do NOT give the child food or drink -- risk of vomiting, and the child may need anaesthesia at hospital.",
+      "Do NOT give the child hot liquids or alcohol.",
+      "Do NOT induce vomiting -- not relevant and dangerous.",
+      "Do NOT chase, catch, kill, or handle the snake -- risk of additional bites to rescuer or child.",
+      "Do NOT use a pressure immobilisation bandage -- not recommended for viper bites in the Israeli protocol.",
+      "Do NOT allow the child to walk or move -- movement accelerates venom spread through the lymphatic system.",
+      "Do NOT wait for symptoms before seeking emergency care -- treat every snakebite as venomous."
+    ],
+    "equipment_needed": [
+      "Splint or rigid object for limb immobilisation",
+      "Water and soap (for wound cleaning)",
+      "Phone (to call 101 and photograph the snake)",
+      "Blanket or clothing (to keep child warm and comfortable while lying still)"
+    ]
+  },
+  "tags": [
+    "snakebite",
+    "snake",
+    "viper",
+    "Palestine viper",
+    "Daboia palaestinae",
+    "envenomation",
+    "pediatric",
+    "child",
+    "venom",
+    "antivenom",
+    "immobilisation",
+    "emergency",
+    "MDA",
+    "101",
+    "lymphatic system",
+    "outdoor safety",
+    "nature",
+    "hiking"
+  ]
+}

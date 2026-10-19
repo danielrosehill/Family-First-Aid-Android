@@ -1,0 +1,135 @@
+{
+  "id": "IL-CHILD-ALLERGIC-REACTION-001",
+  "title": "Allergic Reaction / Anaphylaxis in Children",
+  "country": "israel",
+  "age_group": "child",
+  "category": "allergic_reaction",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA ALS Professional Manual (April 2024), MDA BLS Guide (January 2016), MDA Allergy Poster (2021), Israeli Ministry of Health Anaphylaxis in Children, Ministry of Education Epinephrine in Schools Directive",
+    "url": "https://www.mdais.org/media/5033/als-2024.pdf",
+    "publication_date": "2024-04-01",
+    "edition": "ALS Manual 2024 / BLS Guide 2016"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA (primary) and United Hatzalah sources. No material conflicts identified between the two organisations on paediatric anaphylaxis protocols. Dosing schedules are identical. United Hatzalah additionally emphasises pinching the thigh for small/thin children before injection. Additional Israeli context includes Ministry of Health and Ministry of Education directives on school/gan epinephrine requirements. Israeli allergist prescribing practice may use 0.3 mg dose from 20 kg rather than the label threshold of 30 kg -- follow the individual child's prescription. ALS-level weight-based dosing from MDA manual included for reference but the BLS/lay-responder protocol uses auto-injector doses only."
+  },
+  "protocol": {
+    "summary": "Recognise and treat anaphylaxis in children using epinephrine auto-injector, call MDA 101, and monitor until EMS arrives.",
+    "when_to_apply": "Child showing signs of severe allergic reaction: any combination of skin symptoms (hives, swelling of face/lips/tongue), respiratory symptoms (wheezing, stridor, throat tightness, difficulty breathing, hoarse voice or changed cry), cardiovascular symptoms (weak/rapid pulse, pallor, cyanosis, confusion, loss of consciousness), gastrointestinal symptoms (vomiting, diarrhoea, abdominal pain), or behavioural changes (sudden irritability, inconsolable crying, refusal to eat, clinging behaviour, pulling at ears or scratching). Any involvement of breathing, circulation, or consciousness indicates anaphylaxis -- do not wait.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon recognising signs of anaphylaxis. State the child's age and approximate weight. Mention if the child has a known allergy and whether an EpiPen is available."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and recognise anaphylaxis.",
+        "detail": "Look for signs of a severe allergic reaction. In young children and infants, watch for behavioural cues: sudden distress, inconsolable crying, drooling, difficulty swallowing. Skin signs include hives, facial swelling, pallor. Respiratory signs include wheezing, stridor, throat tightness, hoarse voice or change in cry. Any involvement of breathing, circulation, or consciousness indicates anaphylaxis.",
+        "decision_point": {
+          "condition": "Are signs of anaphylaxis present (breathing difficulty, facial/throat swelling, cardiovascular compromise, or multi-system involvement)?",
+          "if_yes": "Proceed immediately to Step 2. Do not wait for symptoms to worsen.",
+          "if_no": "Monitor closely. If only mild skin symptoms (localised hives, minor itching) with no breathing or circulation involvement, observe and be prepared to escalate if symptoms progress."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call MDA at 101 immediately.",
+        "detail": "Keep the phone on speaker and follow the dispatcher's instructions. State the child's age and approximate weight if known. Mention if the child has a known allergy and whether an EpiPen is available. United Hatzalah can also be reached at 1221."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Remove the triggering allergen if possible.",
+        "detail": "Remove food from the child's mouth. Remove a bee stinger by scraping sideways (do not squeeze). Move child away from the allergen source if environmental. Do not induce vomiting."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Manage the airway.",
+        "detail": "If facial or tongue swelling is present, assume airway compromise. Ensure the tongue is not obstructing the airway. Remove any food debris from the mouth. Loosen tight clothing around the neck and chest.",
+        "warning": "In infants: tilt head only slightly back to a neutral position. Do not over-extend the neck as this can collapse the infant's airway.",
+        "decision_point": {
+          "condition": "Is the child an infant (under 1 year)?",
+          "if_yes": "Use neutral head position only -- slight head tilt. Do not over-extend the neck.",
+          "if_no": "Use standard head-tilt chin-lift if needed to open the airway."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the child appropriately.",
+        "decision_point": {
+          "condition": "Is the child conscious?",
+          "if_yes": "If breathing difficulty is present, allow the child to sit upright or adopt a position of comfort (do not force to lie down). If no breathing difficulty, lie flat on back with legs elevated.",
+          "if_no": "If breathing, place in recovery position (on the side). If not breathing, begin paediatric CPR immediately."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Administer epinephrine auto-injector (EpiPen) immediately.",
+        "detail": "Epinephrine is the primary and most critical treatment. Do not delay. Dosing by weight: children 15-30 kg use EpiPen Junior 0.15 mg (green label); children over 30 kg use EpiPen 0.3 mg (yellow label). Note: some Israeli allergists prescribe the 0.3 mg dose from 20 kg based on clinical judgement -- follow the child's individual prescription if available. For children under 15 kg, no auto-injector is available for this weight range, but the 0.15 mg EpiPen Junior is still recommended over withholding treatment.",
+        "warning": "Do not substitute antihistamines (e.g., Benadryl/diphenhydramine) for epinephrine in anaphylaxis. Antihistamines are not a substitute and will not reverse anaphylaxis.",
+        "decision_point": {
+          "condition": "Is an epinephrine auto-injector available?",
+          "if_yes": "Administer immediately using the technique in Step 7. Do not delay.",
+          "if_no": "Wait for EMS. Continue monitoring airway, breathing, and circulation. Be prepared to begin CPR if needed."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Administer the EpiPen using correct technique.",
+        "detail": "1) Remove the EpiPen from its plastic case. 2) Remove the blue safety cap ('blue to the sky'). 3) Hold with the orange tip pointing downward ('orange to the thigh'). 4) Position at 90 degrees to the middle of the outer thigh. 5) For small or thin children, pinch the thigh muscle to create a firm surface and avoid hitting the bone. 6) Press firmly until a click is heard. 7) Hold in place for 10 seconds. 8) Can be administered through clothing -- do not waste time removing trousers. 9) After removal, massage the injection site for 10 seconds. 10) Dispose of the used auto-injector safely (hand to paramedics or place in sharps container).",
+        "warning": "Do not touch the orange tip. Do not inject into fingers, hands, feet, or buttocks. Outer thigh only. For small/thin children, always pinch the thigh before injection to avoid bone contact."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Reassess the child after 5 minutes.",
+        "detail": "Epinephrine effects last approximately 20 minutes. Symptoms may recur (biphasic reaction). Biphasic reactions can occur up to 72 hours after the initial reaction.",
+        "decision_point": {
+          "condition": "Has the child's condition improved after 5 minutes?",
+          "if_yes": "Continue monitoring. Maintain position. Wait for EMS. Do not assume the child is safe -- hospital evaluation is still required.",
+          "if_no": "If a second auto-injector is available, administer a second dose. Continue monitoring airway, breathing, and circulation."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "Monitor continuously until EMS arrives.",
+        "detail": "Continuously monitor airway, breathing, and circulation. Keep the child calm and reassured. Be prepared to begin paediatric CPR if the child loses consciousness and stops breathing. All suspected anaphylaxis in children requires hospital evaluation, even if symptoms fully resolve after epinephrine. Hospital monitoring is typically 4-6 hours minimum for children.",
+        "warning": "Never allow a child who has had anaphylaxis to leave without hospital evaluation. Biphasic reactions can be fatal."
+      }
+    ],
+    "do_not": [
+      "Do not delay epinephrine administration -- it is the only effective treatment for anaphylaxis",
+      "Do not substitute antihistamines (Benadryl/diphenhydramine) for epinephrine in anaphylaxis",
+      "Do not force the child to lie down if they are having breathing difficulty -- allow upright position of comfort",
+      "Do not over-extend an infant's neck when managing the airway -- use neutral position only",
+      "Do not inject epinephrine into fingers, hands, feet, or buttocks -- outer thigh only",
+      "Do not touch the orange tip of the EpiPen",
+      "Do not induce vomiting if the allergen was ingested",
+      "Do not allow a child who has had anaphylaxis to leave without hospital evaluation, even if symptoms resolve",
+      "Do not store EpiPen in a refrigerator, in a car, or in direct sunlight -- Israeli climate makes heat degradation a particular risk",
+      "Do not give oral medications (including antihistamines) to a child with throat swelling or difficulty swallowing"
+    ],
+    "equipment_needed": [
+      "EpiPen Junior 0.15 mg (green label) -- for children 15-30 kg",
+      "EpiPen 0.3 mg (yellow label) -- for children over 30 kg",
+      "Phone to call MDA at 101"
+    ]
+  },
+  "tags": [
+    "anaphylaxis",
+    "allergic_reaction",
+    "epipen",
+    "paediatric",
+    "child",
+    "epinephrine",
+    "israel",
+    "mda",
+    "airway",
+    "sesame_allergy",
+    "food_allergy",
+    "school",
+    "gan"
+  ]
+}

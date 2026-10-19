@@ -1,0 +1,31 @@
+{
+  "verified": "2026-10-20",
+  "groups": [
+    {
+      "title": "Emergency",
+      "items": [
+        {"name": "Magen David Adom (ambulance)", "number": "101", "note": "Medical emergency", "primary": true},
+        {"name": "United Hatzalah", "number": "1221", "note": "Volunteer first responders"},
+        {"name": "Police", "number": "100"},
+        {"name": "Fire and Rescue", "number": "102"},
+        {"name": "Home Front Command", "number": "104"},
+        {"name": "Poison Information Center (Rambam)", "number": "04-7771900", "note": "24/7"}
+      ]
+    },
+    {
+      "title": "Urgent care (non-emergency)",
+      "items": [
+        {"name": "Terem national line", "number": "1-599-520-520", "note": "Urgent care clinics"},
+        {"name": "Terem Romema (City Entrance), Jerusalem", "number": "02-5093333", "note": "80 Yirmeyahu St. Open 24/7"},
+        {"name": "Terem Katamon, Jerusalem", "number": "02-5612139", "note": "4 Gedud Haivri St"}
+      ]
+    },
+    {
+      "title": "Kupat Holim",
+      "items": [
+        {"name": "Maccabi Moked", "number": "*3555", "note": "24/7. Nurse line via the medical consultation menu. Not an emergency line."},
+        {"name": "Maccabi from abroad", "number": "+972-3-5143999"}
+      ]
+    }
+  ]
+}

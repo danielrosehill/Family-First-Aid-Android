@@ -1,0 +1,128 @@
+{
+  "id": "IL-ADULT-TOURNIQUET-001",
+  "title": "Tourniquet Application - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "tourniquet",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA First Aid Guidelines - Tourniquet Application and Hemorrhage Control",
+    "url": "https://www.mdais.org/media/4954/mda-first-aid-guidelines-en.pdf",
+    "edition": "MDA First Aid Guidelines and 'First Seven Minutes' initiative; corroborated by United Hatzalah hemorrhage control guide and trauma protocols"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. Key difference in emphasis: MDA presents tourniquet as part of a progressive hemorrhage control sequence (direct pressure, Israeli bandage, wound packing, pressure points, then tourniquet), while United Hatzalah more aggressively favours tourniquet as a first-line intervention, stating 'indirect pressure -- tourniquet application -- is preferable because it is powerful, rapid, and more likely to stop bleeding with certainty.' Both organisations agree on: indications (life-threatening limb hemorrhage, amputation, crushing, multi-casualty), never removing once applied, documenting time, and that tourniquet conversion is a professional-level decision only. Both follow Ministry of Health standards. MDA source PDF was inaccessible at time of access. Tourniquet use is widely taught to Israeli civilians -- approximately 500,000 people trained by MDA in 2024. During October 7, prolonged tourniquet application led to limb ischemia and amputation in several cases due to inability to evacuate from active combat zones. Publication date not specified by MDA."
+  },
+  "protocol": {
+    "summary": "Apply a tourniquet for life-threatening limb hemorrhage when direct pressure fails, for amputations, severe crushing injuries, or multi-casualty situations. Place above the injury, tighten until bleeding stops, document the time, and never remove once applied.",
+    "when_to_apply": "Life-threatening bleeding from a limb that cannot be controlled by direct pressure. Specific indications: direct pressure fails to control bleeding, partial or complete amputation, severe crushing injury to a limb, uncontrollable hemorrhage from a limb wound, multi-casualty situations where sustained direct pressure on each wound is not feasible, circumstances preventing sustained direct pressure (need to move casualty, treat others, or environment is too dangerous).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Always call MDA at 101 and mention that a tourniquet has been applied. Call as soon as hemorrhage is being controlled or have someone else call simultaneously."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Attempt direct pressure first (unless circumstances demand immediate tourniquet).",
+        "detail": "MDA teaches a progressive approach: direct pressure with hand or gauze, then Israeli bandage, then wound packing, then pressure points, then tourniquet. In multi-casualty or active-threat situations, skip directly to tourniquet.",
+        "decision_point": {
+          "condition": "Is direct pressure controlling the bleeding, or is the situation stable enough for graduated hemorrhage control?",
+          "if_yes": "Continue with direct pressure. Apply an Israeli bandage to maintain sustained pressure. Verify pulse distal to the bandage. Monitor closely.",
+          "if_no": "Proceed immediately to tourniquet application (Step 2). Apply a tourniquet when: direct pressure fails, there is amputation or crushing, you are in a multi-casualty situation, or you cannot maintain sustained pressure."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Expose the wound.",
+        "detail": "Cut or remove clothing to identify the bleeding source and determine correct tourniquet placement."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Position the tourniquet above the injury site.",
+        "detail": "Place the tourniquet between the wound and the heart, on the limb above the bleeding site. Position over a single bone if possible -- upper arm or upper thigh is preferred for most effective compression.",
+        "warning": "Tourniquets are NOT suitable for junctional zones (groin, armpit, neck), head wounds, or abdominal wounds. For these locations, use direct pressure, wound packing, or pressure points instead."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Tighten the tourniquet strap and secure it.",
+        "detail": "Pull the strap tight and fasten it. If using a CAT tourniquet, proceed to twist the windlass.",
+        "decision_point": {
+          "condition": "Are you using a commercial tourniquet (CAT or similar)?",
+          "if_yes": "Twist the windlass rod (Step 5) until bleeding stops completely.",
+          "if_no": "If improvising (shirt, towel, belt, etc.), apply as tightly as possible until bleeding stops. Improvised tourniquets are less reliable but can be effective as a last resort."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Twist the windlass until bleeding stops.",
+        "detail": "On a CAT tourniquet, turn the windlass rod until bleeding stops completely. Then secure the windlass by locking the rod in the clip or holder so it cannot unwind."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Verify that bleeding has stopped.",
+        "detail": "Check that there is no further blood flow from the wound.",
+        "decision_point": {
+          "condition": "Has the bleeding stopped completely?",
+          "if_yes": "Proceed to document the time (Step 7).",
+          "if_no": "Apply a second tourniquet above the first one. Tighten and verify again."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Document the time of tourniquet application.",
+        "detail": "Write the time on the tourniquet's white tab, on the patient's skin, or in any obvious visible location. This is critical -- hospital teams need this information to assess whether the limb can be saved.",
+        "warning": "Time documentation is critical for limb viability assessment. If you forget, estimate the time as accurately as possible."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Call MDA at 101.",
+        "detail": "Always mention that a tourniquet has been applied when calling emergency services. Report the location, the injury, and the time the tourniquet was applied."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Monitor the victim while awaiting MDA.",
+        "detail": "Watch for signs of shock (rapid pulse, pale/cold skin, confusion). Keep the victim calm and still. Do not allow them to walk or move the affected limb.",
+        "decision_point": {
+          "condition": "Is the victim conscious and breathing?",
+          "if_yes": "Continue monitoring and reassurance until MDA arrives. Keep the victim warm.",
+          "if_no": "If unconscious but breathing, place in recovery position. If not breathing, begin CPR. Report status change to MDA dispatch."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT remove the tourniquet once applied -- only medical professionals should decide whether to release or convert a tourniquet.",
+      "DO NOT apply a tourniquet to junctional zones (groin, armpit, neck), head, or abdomen -- use direct pressure, wound packing, or pressure points for these areas.",
+      "DO NOT apply the tourniquet over a joint -- place it on the limb above the wound, preferably over a single bone (upper arm or upper thigh).",
+      "DO NOT loosen or adjust the tourniquet to 'check if bleeding has stopped' -- this can restart hemorrhage.",
+      "DO NOT delay tourniquet application in life-threatening hemorrhage due to fear of limb loss -- loss of a limb is preferable to loss of life.",
+      "DO NOT allow the victim to walk or move the affected limb after tourniquet application.",
+      "DO NOT attempt tourniquet conversion (replacing tourniquet with direct pressure) -- this is a professional-level decision under medical direction only."
+    ],
+    "equipment_needed": [
+      "CAT tourniquet (Combat Application Tourniquet) -- preferred",
+      "Improvised tourniquet material (shirt, towel, belt) as last resort",
+      "Scissors or Leatherman Raptor for cutting clothing to expose the wound",
+      "Pen or marker to document tourniquet application time",
+      "Phone to call 101 (MDA)"
+    ]
+  },
+  "tags": [
+    "tourniquet",
+    "hemorrhage",
+    "bleeding control",
+    "CAT tourniquet",
+    "israeli bandage",
+    "amputation",
+    "crushing injury",
+    "limb hemorrhage",
+    "direct pressure",
+    "wound packing",
+    "mass casualty",
+    "trauma",
+    "first seven minutes",
+    "emergency"
+  ]
+}

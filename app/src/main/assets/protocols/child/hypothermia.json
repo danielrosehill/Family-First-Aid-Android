@@ -1,0 +1,114 @@
+{
+  "id": "IL-CHILD-HYPOTHERMIA-001",
+  "title": "Hypothermia First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "hypothermia",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Hypothermia First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2024-04-01",
+    "edition": "Current MDA training materials and ALS Professional Manual (April 2024), supplemented by Ichud Hatzalah general hypothermia and pediatric treatment approach guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a standalone child-specific hypothermia protocol. MDA used as primary authority. MDA states procedures for children are 'identical to adults but performed with much greater gentleness.' Hatzalah provides a four-stage severity classification (Stage 1: 37-35C, Stage 2: 35-32C, Stage 3: 32-28C, Stage 4: below 28C) which has been incorporated. Both sources agree on core treatment principles. Key principle from Hatzalah: 'No one is dead until they are warm and dead.' MDA first aid portal returned 471 error and ALS manual PDF was not retrievable during research. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for hypothermia in children in Israel, emphasising removal from cold, gentle rewarming, ABC assessment, and urgent hospital transport. Children are at higher risk due to immature thermoregulation, higher surface-area-to-body-mass ratio, and smaller body mass.",
+    "when_to_apply": "When a child shows signs of hypothermia (core body temperature below 35 degrees C). Signs include shivering (may be absent in infants), cold pale skin, confusion, slurred speech, coordination loss, lethargy, and progressive organ dysfunction. Infants may show bright red cold skin, low energy, and weak cry. Infants and young children are at particular risk due to underdeveloped thermoregulation, immobility, and high surface-area-to-volume ratio.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for any child showing signs of moderate or severe hypothermia (confusion, loss of consciousness, severe shivering or paradoxical cessation of shivering, muscle rigidity). Call for any infant with suspected hypothermia. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Remove the child from the cold environment immediately.",
+        "detail": "Move the child to a warm, sheltered location. Handle the child very gently -- rough movement can trigger cardiac arrhythmias in a cold heart.",
+        "warning": "Minimise all movement and jostling. A cold heart is extremely sensitive to movement and can develop fatal arrhythmias."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Remove any wet clothing.",
+        "detail": "Carefully cut or remove wet clothing. Wet clothing accelerates heat loss. Replace with dry clothing or blankets."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Dry the child and wrap in warm blankets.",
+        "detail": "Dry the child thoroughly. Position the child horizontally. Cover with warmed blankets, focusing on the head, neck, chest, and groin areas where major blood vessels are close to the surface."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Perform ABC assessment (Airway, Breathing, Circulation).",
+        "detail": "Check airway patency, breathing, and pulse. For infants, maintain nasal patency as they are obligate nasal breathers. Take up to 60 seconds to assess pulse and breathing in hypothermic patients, as vital signs may be very slow.",
+        "decision_point": {
+          "condition": "Is the child breathing and has a pulse?",
+          "if_yes": "Continue rewarming. Monitor breathing and pulse continuously. Place in recovery position if unconscious but breathing.",
+          "if_no": "Begin CPR immediately. Continue CPR and rewarming until emergency services arrive. A hypothermic patient may appear dead but can recover with proper rewarming."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Apply passive and active rewarming to the core body areas.",
+        "detail": "Apply warmed blankets or heat packs (wrapped in cloth to avoid burns) to the head, neck, chest, and groin. Warm the core first, not the extremities. For infants, ensure thorough coverage of the entire body.",
+        "warning": "Do NOT apply direct heat sources (hot water bottles, heating pads) directly against skin -- risk of burns. Always wrap heat sources in cloth."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess severity of hypothermia.",
+        "detail": "Stage 1 (37-35C): shivering, normal judgement. Stage 2 (35-32C): severe shivering, confusion, slurred speech, pallor. Stage 3 (32-28C): deteriorating consciousness, muscle rigidity, weakening reflexes. Stage 4 (below 28C): unconsciousness, absent reflexes, severely slowed or absent breathing.",
+        "decision_point": {
+          "condition": "Is the child conscious and able to swallow safely?",
+          "if_yes": "Offer warm (not hot) sweet drinks. No alcohol or caffeine.",
+          "if_no": "Do not give any fluids by mouth. Maintain airway and continue rewarming. Transport urgently."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Call 101 (MDA) and transport urgently to hospital.",
+        "detail": "All children with suspected hypothermia should be evaluated at hospital. During transport, continue to minimise movement and maintain rewarming. Keep the child horizontal during transport.",
+        "warning": "Minimise jostling during transport -- may trigger cardiac arrhythmias."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Monitor continuously until handover to emergency services.",
+        "detail": "Monitor breathing, pulse, and level of consciousness. Be prepared to perform CPR if the child deteriorates. Note: infants may NOT shiver even when hypothermic -- absence of shivering does not rule out hypothermia in infants."
+      }
+    ],
+    "do_not": [
+      "Do NOT give alcohol, caffeine, or allow smoking -- these worsen hypothermia.",
+      "Do NOT make excessive or rough movements -- risk of cardiac arrhythmias in a cold heart.",
+      "Do NOT apply direct heat to skin without a cloth barrier -- risk of burns.",
+      "Do NOT rewarm extremities before the core -- can cause dangerous drop in core temperature as cold blood returns to the heart.",
+      "Do NOT give fluids by mouth to an unconscious or semi-conscious child -- aspiration risk.",
+      "Do NOT assume a severely hypothermic child is dead -- 'no one is dead until they are warm and dead.'",
+      "Do NOT use hot water immersion for rewarming in the field -- risk of burns and cardiac arrhythmias.",
+      "Do NOT jostle or move the child unnecessarily during transport."
+    ],
+    "equipment_needed": [
+      "Warm blankets or sleeping bags",
+      "Dry clothing",
+      "Heat packs or warm water bottles (wrapped in cloth)",
+      "Phone (to call 101)"
+    ]
+  },
+  "tags": [
+    "hypothermia",
+    "cold exposure",
+    "cold injury",
+    "rewarming",
+    "pediatric",
+    "child",
+    "infant",
+    "thermoregulation",
+    "emergency",
+    "MDA",
+    "101",
+    "winter",
+    "outdoor safety"
+  ]
+}

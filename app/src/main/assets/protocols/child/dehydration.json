@@ -1,0 +1,123 @@
+{
+  "id": "IL-CHILD-DEHYDRATION-001",
+  "title": "Dehydration First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "dehydration",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Dehydration First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and Israeli emergency medicine standards, supplemented by Ichud Hatzalah hot climate injuries and pediatric emergency guidelines, and Hatzalah Without Borders dehydration guide"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah/Hatzalah Without Borders sources. Neither organisation publishes a dedicated child-specific dehydration protocol. MDA used as primary authority. Both sources agree: oral rehydration is preferred over IV for mild/moderate cases; avoid cola, fruit juice, plain water, and tea as they do not adequately replace electrolytes; use ORS (oral rehydration solution). MDA provides more detail on fontanelle assessment in infants and severity staging. Hatzalah emphasises that dehydration and heatstroke are distinct conditions. Both sources highlight the Israeli climate context (sharav heat waves, desert regions, school field trips). No ORS dosing by age/weight available from either source publicly. Hatzalah Without Borders dehydration article was truncated during access. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for dehydration in children in Israel, emphasising oral rehydration with electrolyte solutions, severity assessment including fontanelle check in infants, and urgent medical care for severe cases. Children dehydrate faster than adults due to higher metabolic rate, higher surface-area-to-body-mass ratio, and greater proportion of body water.",
+    "when_to_apply": "When a child shows signs of dehydration from any cause: insufficient fluid intake, excessive sweating (heat exposure), vomiting, diarrhoea, or fever. Particularly relevant during Israeli summer months (May-October), sharav (hamsin) heat waves, school field trips in desert areas (Negev, Arava, Dead Sea), and during childhood gastroenteritis. Signs include dry mouth, decreased urine output, sunken eyes, thirst, no tears when crying, lethargy, and sunken fontanelle in infants.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 if the child refuses to drink, has persistent vomiting, has blood in stool, has fever above 40 degrees C, shows signs of severe dehydration (lethargy, sunken fontanelle, no tears, rapid weak pulse, cool/mottled extremities, altered consciousness), or is an infant under 3 months with any signs of dehydration. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Move the child to a cool, shaded environment.",
+        "detail": "Remove the child from heat exposure. Move indoors to an air-conditioned space if possible, or to the nearest shade. Remove excess clothing."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Assess the severity of dehydration.",
+        "detail": "Mild: dry mouth, decreased urine output, slightly sunken eyes, thirst. Moderate: no tears when crying, sunken fontanelle in infants under 18 months, decreased skin turgor (skin pinch stays tented), lethargy. Severe: very sunken fontanelle, very dry mucous membranes, rapid weak pulse, cool or mottled extremities, altered consciousness.",
+        "decision_point": {
+          "condition": "Does the child show signs of severe dehydration (altered consciousness, rapid weak pulse, very sunken fontanelle, cool/mottled extremities)?",
+          "if_yes": "Call 101 immediately. This is a medical emergency. The child likely needs IV fluids. Continue with supportive care while waiting for emergency services.",
+          "if_no": "Begin oral rehydration. Proceed to Step 3."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Check the fontanelle in infants under 18 months.",
+        "detail": "The anterior fontanelle (soft spot on top of the head) is open until approximately 18 months of age. Gently palpate it. A sunken fontanelle is a key indicator of dehydration in infants. A bulging fontanelle may indicate other conditions (increased intracranial pressure) -- seek immediate medical care."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Begin oral rehydration with electrolyte-containing fluids.",
+        "detail": "Use ORS (Oral Rehydration Solution) packets available at Israeli pharmacies (beit mirkachat). Mix as directed on the packet. For infants: give small frequent sips using a spoon or oral syringe. For older children: encourage frequent small sips. Continue breastfeeding if the infant is breastfed.",
+        "decision_point": {
+          "condition": "Is ORS available?",
+          "if_yes": "Prepare ORS as directed on the packet and give small frequent sips.",
+          "if_no": "Use electrolyte-containing sports drinks diluted with equal parts water as a temporary alternative. Do NOT use homemade salt/sugar solutions unless no other option exists."
+        },
+        "warning": "Do NOT give cola, fruit juice, plain water alone, or tea -- these do not adequately replace lost electrolytes and can worsen dehydration."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess whether the child can drink.",
+        "detail": "Monitor the child's ability to tolerate oral fluids. Vomiting is common with gastroenteritis but small frequent sips are often still effective.",
+        "decision_point": {
+          "condition": "Can the child keep fluids down (not vomiting everything)?",
+          "if_yes": "Continue oral rehydration with small frequent sips. Give 5-10 ml every 2-5 minutes for young children.",
+          "if_no": "Call 101. The child may need IV fluids. Do not force oral intake if the child is vomiting persistently."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Monitor vital signs and urine output.",
+        "detail": "Check pulse rate, skin colour, alertness, and whether the child produces urine. Improvement signs include: resumption of urination, moist mouth, return of tears, improved alertness. Continue offering fluids until these signs appear."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Provide moderate salt-containing food if the child is alert and able to eat.",
+        "detail": "Once the child is tolerating fluids, offer salty crackers or pretzels to help replace sodium. Do not force food. Priority is fluids first."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Transport to hospital if dehydration is moderate or severe, or if the child does not improve.",
+        "detail": "All infants under 3 months with any signs of dehydration should be taken to hospital. Children with moderate dehydration who are not improving with oral rehydration need medical evaluation. Children with fever above 40 degrees C, blood in stool, or yellow/green vomit require emergency evaluation."
+      }
+    ],
+    "do_not": [
+      "Do NOT give cola, fruit juice, plain water alone, or tea -- these do not replace electrolytes adequately and can worsen dehydration.",
+      "Do NOT use homemade salt/sugar solutions unless ORS is completely unavailable.",
+      "Do NOT force large volumes of fluid at once -- small frequent sips are more effective and better tolerated.",
+      "Do NOT delay calling 101 for an infant under 3 months with any signs of dehydration.",
+      "Do NOT ignore a sunken fontanelle in an infant -- this is a key dehydration indicator.",
+      "Do NOT give anti-diarrhoea medications to children without medical direction.",
+      "Do NOT stop breastfeeding -- continue breastfeeding alongside ORS."
+    ],
+    "equipment_needed": [
+      "ORS (Oral Rehydration Solution) packets",
+      "Spoon or oral syringe (for infant fluid administration)",
+      "Phone (to call 101)",
+      "Thermometer (to check for fever)"
+    ]
+  },
+  "tags": [
+    "dehydration",
+    "fluid loss",
+    "oral rehydration",
+    "ORS",
+    "electrolytes",
+    "heat",
+    "sharav",
+    "hamsin",
+    "gastroenteritis",
+    "vomiting",
+    "diarrhoea",
+    "fontanelle",
+    "pediatric",
+    "child",
+    "infant",
+    "emergency",
+    "MDA",
+    "101",
+    "summer",
+    "desert"
+  ]
+}

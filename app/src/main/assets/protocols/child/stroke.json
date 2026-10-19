@@ -1,0 +1,109 @@
+{
+  "id": "IL-CHILD-STROKE-001",
+  "title": "Stroke (Cerebrovascular Event) in Children - Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "stroke",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Stroke Recognition Protocol (FAST) and AHA 2024 First Aid Guidelines - Pediatric Stroke Considerations",
+    "url": "https://www.mdais.org/101/stroke",
+    "publication_date": "2024-11-18"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "MDA does not publish a separate pediatric stroke protocol; the general FAST protocol applies to all ages. Pediatric-specific guidance is supplemented from AHA 2024 First Aid Guidelines (Table 1) and AHA 2026 Stroke Guideline. United Hatzalah's published stroke guidance is fully consistent with MDA and contains no meaningful differences. MDA stroke page (mdais.org/101/stroke) was blocked by bot protection; content reconstructed from search engine caches. Adult stroke screening tools (FAST, Cincinnati Prehospital Stroke Scale) are not validated in the pediatric population per AHA 2024 and should not solely be used to identify stroke in children. Emergency number defaulted to 101 (MDA) per project convention; United Hatzalah can also be reached at 1221."
+  },
+  "protocol": {
+    "summary": "Recognize stroke signs in children using FAST (with awareness of atypical pediatric presentations), call 101 immediately, note time of onset, keep the child calm and still, and do not give food, drink, or medications.",
+    "when_to_apply": "When a child shows any of the following: facial drooping or asymmetry, arm weakness or drift, slurred or incomprehensible speech, sudden severe headache with vomiting, new-onset seizure (especially one-sided), sudden altered mental status or confusion, sudden loss of balance or coordination, sudden vision loss, or sudden behavioural changes. Children may present differently from adults: seizures at onset are more common, symptoms may appear gradually, and very young children may show only irritability, feeding difficulty, or lethargy.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon suspecting stroke. Do not delay to wait and see if symptoms resolve."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Apply the FAST assessment to check for stroke signs.",
+        "detail": "F (Face): Ask the child to smile and check for facial drooping or asymmetry. A (Arms): Ask the child to raise both arms and check if one drifts downward or cannot be raised. S (Speech): Ask the child to repeat a simple phrase and check for slurred, confused, or incomprehensible speech. T (Time): Note the exact time symptoms began. Note: FAST is not validated for the pediatric population and may miss atypical presentations in children.",
+        "warning": "In children, stroke may present differently from adults. Be alert for seizures at onset, sudden severe headache with vomiting, gradual onset of symptoms, altered mental status, ataxia, or subtle signs in very young children (irritability, feeding difficulty, lethargy)."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately if any stroke signs are present.",
+        "detail": "State clearly that you suspect a child is having a stroke. Describe the symptoms observed. MDA dispatchers will guide you while sending an ambulance to the appropriate stroke centre.",
+        "decision_point": {
+          "condition": "Is any FAST sign present, or are there other neurological signs suggestive of stroke?",
+          "if_yes": "Call 101 immediately and continue with the remaining steps.",
+          "if_no": "Continue to monitor the child. If symptoms develop or you remain concerned, call 101."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Note the exact time symptoms began.",
+        "detail": "This is critical information for the medical team. Certain treatments (clot-dissolving medications) are only effective within a limited time window: approximately 4.5 hours for alteplase in children aged 28 days to 18 years (AHA 2026). Mechanical clot removal may be effective for children aged 6 and older within 6-24 hours in certain cases. If you did not witness onset, note the last time the child was seen acting normally."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Keep the child calm and still. Position the child appropriately.",
+        "detail": "Lay the child down in a comfortable position. If conscious, slightly elevate the head and shoulders. Loosen any tight clothing around the neck and chest.",
+        "decision_point": {
+          "condition": "Is the child conscious?",
+          "if_yes": "Lay the child down with head and shoulders slightly elevated. Keep them calm and still.",
+          "if_no": "Proceed to step 5 to assess breathing and position accordingly."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "If the child is unconscious, assess breathing and act accordingly.",
+        "decision_point": {
+          "condition": "Is the unconscious child breathing?",
+          "if_yes": "Place the child in the recovery position (on their side) and monitor continuously.",
+          "if_no": "Begin CPR immediately and follow MDA dispatcher instructions."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If the child has a seizure, manage it safely.",
+        "detail": "Do not restrain the child. Do not put anything in the child's mouth. Protect the child from injury by clearing the surrounding area. After the seizure stops, place the child on their side. Note the duration and type of seizure for medical personnel.",
+        "decision_point": {
+          "condition": "Is the child having a seizure?",
+          "if_yes": "Clear the area around the child to prevent injury. Do not restrain or insert anything into the mouth. After the seizure stops, place on their side. Note duration and type.",
+          "if_no": "Continue monitoring the child for changes in consciousness, breathing, and symptoms."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the child continuously until emergency services arrive.",
+        "detail": "Watch for changes in consciousness, breathing, and symptoms. Be prepared to report any progression to MDA paramedics on arrival. Be ready to begin CPR if the child becomes unresponsive and stops breathing."
+      }
+    ],
+    "do_not": [
+      "Do NOT delay calling 101 to wait and see if symptoms resolve.",
+      "Do NOT give the child any food or drink - stroke may impair the swallowing reflex, creating a risk of aspiration and choking.",
+      "Do NOT give any medications, especially not aspirin - if the stroke is haemorrhagic (bleeding), aspirin will worsen it.",
+      "Do NOT attempt to drive the child to hospital yourself unless MDA explicitly advises it. MDA ambulances can begin treatment en route and will transport to the appropriate stroke centre.",
+      "Do NOT assume a child cannot have a stroke - children can have strokes at any age.",
+      "Do NOT restrain the child during a seizure.",
+      "Do NOT put anything in the child's mouth during a seizure.",
+      "Do NOT rely solely on FAST to rule out stroke in children - adult stroke screening tools are not validated for the pediatric population and may miss atypical presentations."
+    ],
+    "equipment_needed": []
+  },
+  "tags": [
+    "stroke",
+    "cerebrovascular",
+    "FAST",
+    "pediatric",
+    "neurological",
+    "time-critical",
+    "seizure",
+    "sickle-cell",
+    "dehydration",
+    "israel",
+    "MDA",
+    "101"
+  ]
+}

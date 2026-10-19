@@ -1,0 +1,172 @@
+{
+  "id": "IL-ADULT-CPR-001",
+  "title": "CPR (Cardiopulmonary Resuscitation) -- Adult",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "cpr",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA CPR Protocol -- synthesised from MDA public CPR page, Maccabi Health adult resuscitation guide, and AHA 2025 Guidelines for CPR and ECC (adopted by MDA)",
+    "url": "https://www.mdais.org/101/cpr-hands-only",
+    "publication_date": "2025-01-01",
+    "edition": "AHA 2025 Guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah reference material. No protocol-level differences were identified between the two organisations; both follow AHA guidelines. MDA is used as the authoritative default per project rules. United Hatzalah's emergency number is 1221 but the national EMS number 101 (MDA) is used throughout. MDA does not publish a standalone English-language CPR protocol; this JSON was synthesised from MDA's public CPR page, aligned Israeli health sources (Maccabi Health, defibrillation.co.il), and the AHA 2025 guidelines that MDA formally adopts. MDA's BLS guide PDF dates from 2016; the ALS guide was updated April 2024."
+  },
+  "protocol": {
+    "summary": "Bystander and first-responder CPR protocol for unresponsive adults not breathing normally, following MDA/AHA guidelines with Israel-specific considerations.",
+    "when_to_apply": "An adult (age 12+) is found unresponsive and is not breathing normally (absent breathing or only gasping/agonal breathing).",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon determining that the person is unresponsive and not breathing normally. If alone, call 101 before beginning CPR. If with others, have a bystander call while you start compressions."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Check responsiveness: call out to the person, shake their shoulders gently, and ask loudly 'Are you okay?'",
+        "detail": "In Hebrew: 'Ha'im ata beseder?' Apply gentle stimulation such as a light pinch to determine if they respond to physical contact.",
+        "decision_point": {
+          "condition": "Is the person responsive?",
+          "if_yes": "Do not perform CPR. Assess their condition and provide appropriate first aid. Call 101 if medical help is needed.",
+          "if_no": "Proceed to step 2 (check breathing)."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Check breathing for no more than 10 seconds: look for chest rise, listen for breath sounds, feel for air on your cheek.",
+        "detail": "Gasping (agonal breathing) is NOT normal breathing -- treat it as cardiac arrest and proceed with CPR.",
+        "warning": "Do not spend more than 10 seconds checking for breathing. Delays reduce survival.",
+        "decision_point": {
+          "condition": "Is the person breathing normally?",
+          "if_yes": "Place the person in the recovery position (on their side, upper leg and hip bent at 90 degrees). Call 101. Monitor breathing continuously until EMS arrives.",
+          "if_no": "Proceed to step 3 (activate emergency response)."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Call 101 (MDA emergency dispatch) immediately.",
+        "detail": "If you are with someone else, have them call 101 and retrieve an AED while you begin CPR. If you are alone, call 101 first (use speakerphone), then retrieve an AED if one is nearby, then begin CPR. MDA dispatchers provide real-time CPR coaching over the phone (telephone-assisted CPR). Exception: if choking is suspected, perform CPR first, then call.",
+        "decision_point": {
+          "condition": "Is another person available to help?",
+          "if_yes": "Direct them to call 101 and retrieve the nearest AED while you begin compressions immediately.",
+          "if_no": "Call 101 yourself (use speakerphone if possible), then retrieve an AED if one is within close reach, then begin compressions."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Request or locate an AED.",
+        "detail": "By Israeli law, any public space with a capacity of 500+ people must have a defibrillator. MDA operates 1,000+ 'smart stands' that can be remotely unlocked by the 101 dispatch centre. Use the Eifo-Defi app to find the nearest AED. Send a bystander to retrieve it while you begin compressions."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Position the person supine (face up) on a firm, flat surface.",
+        "detail": "In extreme heat, move the person to shade if possible but do not delay compressions. Be aware that hot surfaces (asphalt, sand) can cause burns -- place a barrier under the person if feasible."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Place the heel of one hand in the centre of the chest, on the breastbone, between the nipples. Place your other hand on top with fingers interlocked.",
+        "detail": "Use upper body weight; press straight down; keep arms locked and straight."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Begin chest compressions: push hard and fast at a rate of 100-120 compressions per minute, to a depth of 5-6 cm (2-2.4 inches).",
+        "detail": "Allow the chest to fully return to its normal position between compressions (full recoil). Do not lean on the chest. Minimise interruptions -- keep pauses to under 10 seconds.",
+        "warning": "Inadequate depth or rate, incomplete recoil, and excessive interruptions all reduce CPR effectiveness.",
+        "decision_point": {
+          "condition": "Are you trained in CPR and willing to give rescue breaths?",
+          "if_yes": "Perform cycles of 30 compressions followed by 2 rescue breaths (proceed to step 8).",
+          "if_no": "Perform continuous chest compressions at 100-120 per minute without stopping for breaths (hands-only CPR). Skip to step 11."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "After 30 compressions, open the airway using the head-tilt/chin-lift manoeuvre: tilt the head back gently and lift the chin.",
+        "detail": "This manoeuvre lifts the tongue away from the back of the throat to open the airway."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Deliver 2 rescue breaths: pinch the nose closed, seal your mouth over theirs, and deliver each breath over 1 second with enough volume to produce visible chest rise.",
+        "warning": "Do not over-ventilate. Excessive ventilation increases gastric inflation and reduces venous return.",
+        "decision_point": {
+          "condition": "Does the chest rise visibly with each breath?",
+          "if_yes": "Resume compressions immediately after the 2 breaths (proceed to step 10).",
+          "if_no": "Reposition the head (re-tilt) and reattempt. If chest still does not rise, resume compressions -- do not delay compressions for repeated breath attempts."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Resume compressions immediately after the 2 breaths. Continue cycles of 30 compressions and 2 breaths.",
+        "detail": "Each cycle of 30:2 takes approximately 2 minutes for 5 cycles."
+      },
+      {
+        "step_number": 11,
+        "instruction": "When the AED arrives, turn it on and apply the electrode pads immediately without delay.",
+        "detail": "One pad goes under the right collarbone. The other pad goes under and to the left of the left breast. Alternative placement: one pad on the front of the chest, one on the back. Follow the diagram on the pads."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Follow the AED's voice prompts. The device will analyse the heart rhythm and advise whether a shock is indicated.",
+        "warning": "Ensure no one is touching the person during AED analysis and shock delivery. Announce 'Stand clear!' before the AED analyses and before any shock.",
+        "decision_point": {
+          "condition": "Does the AED advise a shock?",
+          "if_yes": "Ensure everyone is clear of the person, then press the shock button. Resume CPR immediately after the shock is delivered.",
+          "if_no": "Resume CPR immediately. The AED will re-analyse after 2 minutes."
+        }
+      },
+      {
+        "step_number": 13,
+        "instruction": "Resume CPR immediately after shock delivery (or if no shock is advised). Do not wait for the AED to re-analyse.",
+        "detail": "The AED will prompt for another rhythm check after approximately 2 minutes (5 cycles of 30:2)."
+      },
+      {
+        "step_number": 14,
+        "instruction": "Reassess every 2 minutes (approximately 5 cycles of 30:2).",
+        "detail": "If two or more trained rescuers are present, rotate compressors every 2 minutes to maintain compression quality. Complete the switch in under 10 seconds."
+      },
+      {
+        "step_number": 15,
+        "instruction": "Continue CPR until one of the following occurs: EMS (MDA) arrives and takes over; the person shows definite signs of life (breathing, movement, coughing); an AED prompts you to stop; or you are physically unable to continue.",
+        "decision_point": {
+          "condition": "Has the person begun breathing normally on their own?",
+          "if_yes": "Stop CPR. Place the person in the recovery position (on their side, upper leg and hip bent at 90 degrees) to maintain the airway and prevent aspiration. Continue monitoring until EMS arrives.",
+          "if_no": "Continue CPR cycles and AED use. Do not stop until EMS takes over or you are physically unable to continue."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not delay calling 101 -- early activation of EMS is critical for survival.",
+      "Do not spend more than 10 seconds checking for breathing.",
+      "Do not interrupt chest compressions for more than 10 seconds for any reason.",
+      "Do not lean on the chest between compressions -- allow full recoil.",
+      "Do not compress deeper than 6 cm (2.4 inches) to avoid internal injury.",
+      "Do not over-ventilate -- deliver each breath over 1 second only, just enough for visible chest rise.",
+      "Do not touch the person while the AED is analysing the rhythm or delivering a shock.",
+      "Do not delay AED use -- apply it as soon as it arrives, even if CPR is in progress.",
+      "Do not wait for the AED to re-analyse before resuming compressions after a shock.",
+      "Do not move the person unnecessarily -- perform CPR where they are unless the scene is unsafe.",
+      "Do not assume gasping (agonal breathing) is normal breathing -- it is a sign of cardiac arrest."
+    ],
+    "equipment_needed": [
+      "AED (Automated External Defibrillator)",
+      "Barrier device or pocket mask (for rescue breaths, if available)",
+      "Phone (to call 101 and use speakerphone for dispatcher-guided CPR)"
+    ]
+  },
+  "tags": [
+    "cpr",
+    "cardiac-arrest",
+    "bls",
+    "aed",
+    "chest-compressions",
+    "rescue-breathing",
+    "hands-only-cpr",
+    "adult",
+    "israel",
+    "mda",
+    "aha"
+  ]
+}

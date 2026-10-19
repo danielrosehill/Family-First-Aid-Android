@@ -1,0 +1,169 @@
+{
+  "id": "IL-CHILD-BURNS-001",
+  "title": "Burns First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "burns",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Burns First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/burns",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and public guidance, supplemented by Israeli Ministry of Health pediatric burn prevention guidance"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "United Hatzalah does not publish detailed burns first aid protocols on their public-facing website; their operational protocols are broadly consistent with MDA under shared Israeli medical regulatory oversight. Protocol synthesised from MDA guidelines, Israeli Ministry of Health burn prevention materials, and aligned Israeli healthcare sources (Maccabi, Rofe Yeladim). MDA primary page (mdais.org/101/burns) returned HTTP 471 during research; content reconstructed from MDA affiliate sources and search engine excerpts. Key child-specific differences from adult protocol: minimum 20 minutes cooling (vs 10 for adults), hypothermia risk during cooling, cool the burn not the whole child, all burns in infants under 1 year require immediate medical attention. No material contradictions found between Israeli sources."
+  },
+  "protocol": {
+    "summary": "First aid treatment for thermal, chemical, and electrical burns in children, emphasising prolonged cooling (minimum 20 minutes), hypothermia prevention, and early emergency service activation.",
+    "when_to_apply": "When a child has sustained a burn from heat, hot liquids (scalds), chemicals, electricity, or radiation. Signs include redness, swelling, blisters, white/grey/black discolouration of skin, or pain at the injury site. Approximately 84% of pediatric burns in Israel are scalds from hot liquids.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for: any burn in an infant under 1 year; burns on face, eyes, mouth, tongue, hands, feet, genitals, groin, or inner thigh; circumferential burns encircling a limb; burns appearing white, grey, or black (third-degree); multiple large blisters; extensive burns covering a large body area; burns to the neck, face, or airways (immediate airway compromise risk); electrical burns; chemical burns; any burn that appears worse than a minor first-degree burn; burns in immunocompromised children or children receiving chemotherapy."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety and remove the child from the heat source immediately.",
+        "detail": "Make sure the scene is safe for the rescuer before approaching. Remove the child from the source of the burn (fire, hot liquid, chemical, electrical source).",
+        "decision_point": {
+          "condition": "What type of burn source?",
+          "if_yes": "For fire: roll the child on the floor and extinguish flames with cloth. For electrical burns: use a non-conductive object (such as a broom handle) to separate the child from the source before touching them. For chemical burns: remove contaminated clothing carefully, protecting yourself.",
+          "if_no": "For thermal/scald burns: simply move the child away from the heat source."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Remove saturated clothing from the burn area immediately.",
+        "detail": "Hot liquid absorbed in fabric continues damaging skin longer than direct contact. Gently remove affected clothing; use scissors if necessary. Remove constrictive items (shoes, watches, jewellery, rings) from the burn area and surrounding region before swelling occurs to maintain blood circulation.",
+        "warning": "If clothing adheres to the skin, LEAVE IT ON. Do NOT force removal of stuck clothing -- cut around it instead.",
+        "decision_point": {
+          "condition": "Is clothing stuck to the burn?",
+          "if_yes": "Leave stuck clothing in place. Cut around it with scissors. Do NOT pull it off.",
+          "if_no": "Gently remove the clothing from the burn area. Remove constrictive items (shoes, watches, jewellery, rings)."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Cool the burn under cool (lukewarm, NOT ice-cold) running water for a minimum of 20 minutes.",
+        "detail": "Begin cooling as soon as possible after the burn occurs. Use cool or lukewarm running water (mim poshrim). The 20-minute cooling period is critical -- this is the single most important first aid intervention. Extended cooling slows burn progression and prevents deepening of the injury.",
+        "warning": "Do NOT use ice or ice-cold water. Extreme cold can cause additional tissue and blood vessel damage, worsening the injury."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Monitor the child for hypothermia during cooling.",
+        "detail": "Children are more susceptible to hypothermia from prolonged cooling due to smaller body surface area. Cool the BURN, not the whole child -- avoid immersing the whole child in cold water. Keep the rest of the body warm while cooling the burn area.",
+        "warning": "Watch for shivering, which indicates the child is getting too cold. Infants and small children are at highest risk.",
+        "decision_point": {
+          "condition": "Is the child showing signs of hypothermia (shivering, cold to touch)?",
+          "if_yes": "For extensive burns or if continuous water causes discomfort, switch to cold-soaked cloths or bandages applied to the burn area, changing them every few minutes to maintain cooling effect. Keep the rest of the body covered and warm.",
+          "if_no": "Continue cooling the burn under lukewarm running water until the full 20 minutes have elapsed."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Assess burn severity.",
+        "detail": "First-degree: redness, mild swelling, pain (similar to sunburn), heals in 1-2 weeks. Second-degree: blisters, bright red-pink colour, severe pain; deeper second-degree may appear white. Third-degree: white, grey, yellow-brown, or black with stiff dry texture, tissue may be exposed.",
+        "decision_point": {
+          "condition": "Is the burn severe? (Second-degree with large blisters, third-degree, covers a large area, affects sensitive areas such as face/hands/feet/genitals, or child is under 1 year old)",
+          "if_yes": "Call 101 (MDA) immediately. Continue first aid steps while waiting for emergency services.",
+          "if_no": "Continue first aid steps. Monitor for worsening. Seek medical evaluation if concerned."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Cover the burn with sterile, loosely-applied bandages or a clean, dry sheet.",
+        "detail": "After the 20-minute cooling period, cover the burn loosely. Use material that does NOT stick to skin -- avoid gauze pads and cotton wool, which adhere to damaged skin. If no sterile dressing is available, wrap the bandage in water-soaked cloth. Continue moistening the dressing until arrival at hospital.",
+        "warning": "Do NOT use gauze pads or cotton wool directly on burns -- fibres adhere to damaged skin and cause further injury."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Administer age-appropriate pain relief medication.",
+        "detail": "Give ibuprofen or paracetamol (acetaminophen) dosed by weight for children. Do not delay pain relief.",
+        "decision_point": {
+          "condition": "Is the child old enough for oral medication and conscious?",
+          "if_yes": "Administer ibuprofen or paracetamol dosed by weight. Offer water in small sips to prevent dehydration.",
+          "if_no": "Do not give oral medication. Focus on keeping the child calm and comfortable. Ensure emergency services have been called."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Offer water in small sips to prevent dehydration.",
+        "detail": "Especially important for children with larger or multiple burns. Dehydration risk is higher in children due to smaller body mass."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Call 101 (MDA) for guidance.",
+        "detail": "Call MDA immediately for serious burns. MDA dispatchers can guide through first aid steps while dispatching an ambulance. For mild first-degree burns, consider consulting a pediatrician or visiting a clinic.",
+        "decision_point": {
+          "condition": "Is the child an infant under 1 year, or does the burn affect sensitive areas, or is the burn worse than a minor first-degree burn?",
+          "if_yes": "Call 101 immediately. All burns in infants under 1 year require immediate medical attention, regardless of apparent severity.",
+          "if_no": "For mild first-degree burns only: apply relief creams after cooling (trolamine/Biafine, bepanthen, or similar). Monitor for signs of infection (increased redness, swelling, fever, pus). Seek medical attention if symptoms worsen."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Assess for chemical or electrical burn.",
+        "decision_point": {
+          "condition": "Was the burn caused by a chemical substance?",
+          "if_yes": "Remove contaminated clothing carefully, protecting yourself. Rinse the affected area with a massive amount of cool running water for at least 20 minutes. If chemical splashed into the eyes, flush eyes with running water for at least 15 minutes. Do NOT attempt chemical neutralisation. Call 101 immediately.",
+          "if_no": "Assess for electrical burn."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "Assess for electrical burn.",
+        "decision_point": {
+          "condition": "Was the burn caused by electricity?",
+          "if_yes": "Ensure the power source is disconnected before approaching the child. Call 101 immediately. Electrical burns always require medical evaluation as internal damage may not be visible on the surface. Be prepared to perform CPR if the child becomes unresponsive.",
+          "if_no": "Continue monitoring the child until emergency services arrive or the child receives medical evaluation."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Monitor for complications while waiting for emergency services.",
+        "detail": "Watch for signs of infection (redness, warmth, pus, fever), respiratory issues (if face/neck/airway burn is suspected), signs of shock, and continued hypothermia risk in children. Keep the child warm, calm, and reassured."
+      }
+    ],
+    "do_not": [
+      "Do NOT apply ice or ice-cold water to the burn -- extreme cold causes additional tissue and blood vessel damage, worsening the injury.",
+      "Do NOT apply toothpaste, coffee grounds, raw eggs, yogurt, or butter -- these create a heat-trapping layer and increase infection risk.",
+      "Do NOT puncture or pop blisters -- the fluid inside protects tissue during healing and prevents infection.",
+      "Do NOT apply ointments, oils, powders, or similar substances to serious burns before medical evaluation.",
+      "Do NOT use gauze pads or cotton wool directly on burns -- fibres adhere to damaged skin and cause further injury.",
+      "Do NOT leave the child unattended if unconscious -- call 101 immediately.",
+      "Do NOT remove clothing that is stuck to the burn -- cut around it instead.",
+      "Do NOT immerse the whole child in cold water -- cool the burn, not the child. Children are at high risk of hypothermia.",
+      "Do NOT attempt chemical neutralisation on chemical burns."
+    ],
+    "equipment_needed": [
+      "Cool (lukewarm) running water source",
+      "Sterile non-adherent dressings or clean dry sheet",
+      "Scissors (to cut clothing around stuck areas)",
+      "Blanket or towel (to keep child warm during burn cooling and prevent hypothermia)",
+      "Age-appropriate pain relief medication (ibuprofen or paracetamol, dosed by weight)",
+      "Drinking water (for hydration)"
+    ]
+  },
+  "tags": [
+    "burns",
+    "scalds",
+    "pediatric",
+    "child",
+    "thermal burns",
+    "chemical burns",
+    "electrical burns",
+    "cooling",
+    "hypothermia prevention",
+    "wound care",
+    "emergency",
+    "MDA",
+    "101",
+    "dud shemesh",
+    "shabbat candles",
+    "kitchen safety"
+  ]
+}

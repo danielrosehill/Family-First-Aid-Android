@@ -1,0 +1,134 @@
+{
+  "id": "IL-CHILD-SMOKE-INHALATION-001",
+  "title": "Smoke / Tear Gas Inhalation First Aid Protocol (Child) -- Israel",
+  "country": "israel",
+  "age_group": "child",
+  "category": "smoke_inhalation",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Smoke and Inhalation Injury First Aid Guidelines -- Pediatric",
+    "url": "https://www.mdais.org/101/first-aid",
+    "publication_date": "2026-01-01",
+    "edition": "Current MDA training materials and general first aid guidance, supplemented by Ichud Hatzalah inhalation poisoning, respiratory distress, and pediatric treatment approach guidelines"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. Neither organisation publishes a dedicated child-specific smoke/tear gas inhalation protocol. MDA used as primary authority. Both sources agree on core principles: remove from exposure, provide fresh air, administer oxygen, monitor for respiratory deterioration. Both sources cover carbon monoxide, cyanide, and chemical inhalation hazards. Hatzalah additionally covers organophosphate poisoning. MDA specifically mentions Lag B'Omer bonfires and winter apartment fires as common causes in Israeli children. Tear gas (CS/OC) specific protocols are not published by either organisation. Both sources note children are more vulnerable due to smaller airways, higher respiratory rate per kg, proximity to ground level, and less physiological reserve. Hatzalah provides management guidance for stridor in children. MDA first aid portal was not accessible during research. United Hatzalah dispatch number is 1221 (alternative to MDA 101)."
+  },
+  "protocol": {
+    "summary": "First aid for smoke, tear gas, and toxic inhalation injuries in children in Israel. Children are more vulnerable due to smaller airways, higher respiratory rate per kilogram, proximity to ground-level gas concentrations, and less physiological reserve. Emphasises immediate removal from exposure, fresh air, oxygen administration, and monitoring for delayed respiratory deterioration.",
+    "when_to_apply": "When a child has inhaled smoke, tear gas, toxic fumes, or combustion byproducts. Common Israeli contexts include Lag B'Omer bonfire smoke, apartment fires in winter (space heater use), tear gas exposure during security incidents near residential areas, and cleaning product fume inhalation. Signs include cough, shortness of breath, stridor (noisy breathing), chest pain, blue lips (cyanosis), dizziness, altered consciousness, and soot around nose or mouth.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for any child with smoke or toxic inhalation exposure. Also call Fire Department at 102 if the fire is ongoing. Children should be assessed even with light smoke exposure due to their vulnerability. Alternatively, call United Hatzalah at 1221."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure your own safety first.",
+        "detail": "Use protective equipment if available. Do NOT re-enter a burning building or hazardous area to rescue the child. Maintain distance from the exposure source. If the area is filled with smoke or gas, wait for Fire Department (102) rescue teams with breathing apparatus.",
+        "warning": "Do NOT enter a hazardous environment without proper protective equipment. More rescuers die from inhalation than from any other fire-related cause."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Remove the child from the exposure source to fresh air immediately.",
+        "detail": "Move the child as far from the smoke, gas, or fumes as possible. Move to an open, well-ventilated area. If indoors, move outdoors. Remove any contaminated clothing. If tear gas exposure, move upwind from the gas source.",
+        "warning": "Heavier gases (including some combustion byproducts) concentrate at ground level where children breathe. Move the child to higher ground or a ventilated area."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Call 101 (MDA) and 102 (Fire Department).",
+        "detail": "Report the type of exposure (smoke, tear gas, chemical fumes), the child's age and condition, and whether the exposure was in an enclosed space. Enclosed space exposure is more dangerous due to higher gas concentrations."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Position the child upright to ease breathing.",
+        "detail": "Seat the child in a comfortable upright position. This position maximises lung expansion and eases breathing effort. If the child is unconscious but breathing, place in the recovery position.",
+        "decision_point": {
+          "condition": "Is the child conscious?",
+          "if_yes": "Seat the child upright. Calm and reassure them. Proceed to Step 5.",
+          "if_no": "If breathing: place in recovery position (see recovery position protocol). If not breathing: begin CPR immediately."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Administer high-concentration oxygen if available.",
+        "detail": "If supplemental oxygen is available, administer at maximum concentration via face mask. This is critical for carbon monoxide poisoning (CO displaces oxygen from haemoglobin) and cyanide exposure. High-flow oxygen is the primary field treatment for inhalation injuries.",
+        "decision_point": {
+          "condition": "Is supplemental oxygen available?",
+          "if_yes": "Administer high-concentration oxygen via face mask. Continue until handover to emergency services.",
+          "if_no": "Ensure the child is in the freshest air possible. Keep them calm to reduce oxygen demand. Monitor breathing closely."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess for stridor and airway compromise.",
+        "detail": "Listen for stridor (high-pitched noisy breathing) which indicates upper airway swelling. In children, stridor is common between ages 3 months to 5 years and indicates significant airway compromise. Stridor after smoke exposure is urgent and indicates potential thermal airway injury. Croup-like symptoms (barking cough, stridor) after smoke exposure require urgent attention.",
+        "warning": "Stridor in a child after inhalation injury is a danger sign -- the airway may swell further and close. This child needs advanced airway management from emergency services.",
+        "decision_point": {
+          "condition": "Does the child have stridor or severe breathing difficulty?",
+          "if_yes": "This is urgent. Keep the child calm and upright. Do not examine the throat. Ensure 101 has been called. Cool mist humidifier if available. Be prepared for CPR if airway closes.",
+          "if_no": "Continue monitoring. Watch for delayed onset of respiratory distress which can develop hours after exposure."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor for signs of specific poisoning.",
+        "detail": "Carbon monoxide (CO): pink/reddish lips, headache, confusion, dizziness -- from incomplete combustion in enclosed spaces. Cyanide: altered consciousness, seizures -- from burning plastics, foam, paints. Both are colourless. Note any chemical containers or materials that were burning to report to emergency services.",
+        "warning": "Symptoms of inhalation injury can be delayed by hours. A child who appears well immediately after exposure may deteriorate later. All exposed children should be evaluated at hospital."
+      },
+      {
+        "step_number": 8,
+        "instruction": "For tear gas exposure: irrigate eyes and exposed skin.",
+        "detail": "If tear gas (CS/OC) exposure: irrigate the child's eyes with clean flowing water for 15 minutes. Wash exposed skin with soap and water. Remove contaminated clothing. Move upwind from the gas source. Fresh air is the primary treatment.",
+        "warning": "Do NOT rub the eyes after tear gas exposure -- this worsens irritation. In enclosed spaces, tear gas concentration can become dangerous rather than merely irritating."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Prevent hypothermia and monitor continuously until emergency services arrive.",
+        "detail": "Cover the child with a blanket -- children lose heat rapidly. Monitor breathing continuously. Be prepared to perform CPR if breathing stops. Note the duration of exposure and any substances involved for medical staff. Ensure adequate hydration if the child is alert and able to swallow."
+      }
+    ],
+    "do_not": [
+      "Do NOT re-enter a burning building or hazardous area -- wait for Fire Department rescue teams.",
+      "Do NOT ignore light smoke exposure in a child -- children should be assessed even with mild exposure.",
+      "Do NOT assume a well-appearing child is uninjured -- respiratory deterioration can be delayed by hours.",
+      "Do NOT rub the eyes after tear gas exposure -- this worsens irritation.",
+      "Do NOT give food or drink to a child with stridor or significant breathing difficulty -- aspiration risk.",
+      "Do NOT examine the throat of a child with stridor -- this can worsen airway swelling.",
+      "Do NOT leave the child unattended -- monitor breathing continuously.",
+      "Do NOT position a child with breathing difficulty lying flat -- keep upright."
+    ],
+    "equipment_needed": [
+      "Supplemental oxygen and face mask (if available -- typically first responder equipment)",
+      "Clean water (for eye irrigation after tear gas)",
+      "Blanket (to prevent hypothermia)",
+      "Cool mist humidifier (if available, for stridor management)",
+      "Phone (to call 101 and 102)"
+    ]
+  },
+  "tags": [
+    "smoke inhalation",
+    "tear gas",
+    "inhalation injury",
+    "carbon monoxide",
+    "CO poisoning",
+    "cyanide",
+    "chemical inhalation",
+    "fire",
+    "respiratory distress",
+    "stridor",
+    "airway",
+    "pediatric",
+    "child",
+    "Lag B'Omer",
+    "bonfire",
+    "emergency",
+    "MDA",
+    "101",
+    "102",
+    "fire department"
+  ]
+}

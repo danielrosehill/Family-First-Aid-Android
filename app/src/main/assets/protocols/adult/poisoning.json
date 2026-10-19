@@ -1,0 +1,159 @@
+{
+  "id": "IL-ADULT-POISONING-001",
+  "title": "Poisoning - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "poisoning",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "Poisoning First Aid Guidance (הרעלות)",
+    "url": "https://www.mdais.org/101/poisoningn",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by Rambam National Poison Information Center guidance and Israeli Medical Association clinical instructions"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No significant protocol differences found between MDA and United Hatzalah for adult poisoning -- both agree on: do not induce vomiting, preserve substance/container, contact Poison Information Center, supportive care as the primary first responder role. United Hatzalah explicitly frames the first responder role as supportive care, distinguishing between first aid and hospital-level interventions (activated charcoal, gastric lavage). MDA source page could not be directly fetched due to HTTP 471 error; protocol synthesised from MDA-affiliated sources and the Rambam National Poison Information Center guidance. The Israel Poison Information Center phone number (04-7771900) is from MDA sources; United Hatzalah references the centre but omits the number. Publication date not explicitly stated by MDA."
+  },
+  "protocol": {
+    "summary": "Scene safety assessment, call for help, identify route of exposure, provide route-specific first aid, preserve the substance, and monitor the patient until emergency services arrive.",
+    "when_to_apply": "Suspected poisoning through any route: ingestion of toxic substances (medications, cleaning products, chemicals, plants), inhalation of toxic fumes or gases (carbon monoxide, chlorine gas, chemical fumes), skin or eye contact with hazardous chemicals, or injection of toxins (venomous bites/stings, IV drug use). Signs include: nausea, vomiting, abdominal pain, confusion, drowsiness, breathing difficulty, seizures, chemical burns around mouth or skin, unusual smell on breath, or loss of consciousness.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately for any serious poisoning, unconsciousness, breathing difficulty, seizures, ingestion of caustic/corrosive substances, ingestion of unknown substances, large quantities ingested, intentional overdose, carbon monoxide exposure, or worsening symptoms. Also call the Israel Poison Information Center at 04-7771900 for guidance on specific substances."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Ensure scene safety before approaching the patient.",
+        "detail": "Assess the environment for hazards. Protect yourself from contamination. For suspected inhalation poisoning, do not enter a confined space with potential toxic fumes without proper protection -- wait for trained responders with protective equipment.",
+        "warning": "Do NOT enter areas with potential toxic gas exposure. You cannot help the patient if you become a casualty."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call 101 (MDA) immediately. Call the Israel Poison Information Center at 04-7771900 for substance-specific guidance.",
+        "detail": "Be prepared to provide: the substance involved, estimated amount, time of exposure, patient's age and weight, current symptoms, and the route of exposure (ingestion, inhalation, skin contact, or injection)."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Preserve the substance container, packaging, or remaining material.",
+        "detail": "Collect and keep all containers, packaging, pills, or remaining substance. Bring them to the hospital or have them available for emergency responders. This is critical for identification and appropriate treatment. If the patient has vomited, preserve a sample for analysis if possible."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Determine the route of exposure.",
+        "decision_point": {
+          "condition": "Was the poison ingested (swallowed)?",
+          "if_yes": "Proceed to Step 5 for ingestion-specific treatment.",
+          "if_no": "Proceed to Step 7 to check for inhalation exposure."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "For ingestion poisoning: determine if a caustic or corrosive substance was swallowed.",
+        "decision_point": {
+          "condition": "Was a caustic or corrosive substance ingested (acids, bases, strong detergents)?",
+          "if_yes": "NEVER induce vomiting. If the patient is conscious and breathing normally, give approximately 1 cup (250 ml) of water or milk to dilute the substance. Seek immediate medical care. Proceed to Step 10.",
+          "if_no": "Do NOT induce vomiting unless specifically directed by the Poison Information Center or a physician. If poison remains in the mouth, attempt careful removal. Do not give food or drink unless directed by the Poison Information Center. Proceed to Step 10."
+        },
+        "warning": "Do NOT induce vomiting. Vomiting is often ineffective, caustic substances cause additional burns on the way back up, and there is a risk of aspiration."
+      },
+      {
+        "step_number": 6,
+        "instruction": "For ingestion: do NOT give activated charcoal unless directed by medical professionals.",
+        "detail": "Activated charcoal is effective only within 1-2 hours of exposure and only for certain substances. This is a medical-level intervention, not a first aid action."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Check for inhalation exposure.",
+        "decision_point": {
+          "condition": "Was the poison inhaled (toxic fumes, gases, carbon monoxide)?",
+          "if_yes": "Move the patient to fresh air immediately -- remove from the contaminated area. Do NOT enter the area yourself if there is a risk of toxic gas exposure. Call 101. Proceed to Step 9.",
+          "if_no": "Proceed to Step 8 to check for skin or eye contact."
+        },
+        "warning": "Never mix bleach (Economica) with other cleaning products, especially acidic substances -- this releases toxic chlorine gas."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Check for skin or eye contact exposure.",
+        "decision_point": {
+          "condition": "Did the poison contact the skin or eyes?",
+          "if_yes": "Remove contaminated clothing immediately (protect yourself while doing so). For skin contact: flush the affected area with large amounts of cool running water for at least 15-20 minutes. For eye contact: rinse and flush eyes thoroughly with running water for at least 15 minutes, holding eyelids open. Do NOT attempt to chemically neutralise the substance. Proceed to Step 10.",
+          "if_no": "The exposure may be through injection (bites, stings, IV drug use). Proceed to Step 10 for general monitoring."
+        }
+      },
+      {
+        "step_number": 9,
+        "instruction": "For inhalation exposure: assess the patient's breathing after moving to fresh air.",
+        "decision_point": {
+          "condition": "Is the patient breathing?",
+          "if_yes": "Monitor breathing and vital signs continuously. Keep the patient calm and warm. Proceed to Step 10.",
+          "if_no": "Begin CPR immediately. Continue until emergency services arrive."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Assess the patient's level of consciousness.",
+        "decision_point": {
+          "condition": "Is the patient conscious?",
+          "if_yes": "Keep the patient calm and warm. Monitor breathing, pulse, and level of consciousness continuously. Do not leave the patient alone. Wait for emergency services.",
+          "if_no": "Proceed to Step 11."
+        }
+      },
+      {
+        "step_number": 11,
+        "instruction": "For an unconscious patient: check for breathing.",
+        "decision_point": {
+          "condition": "Is the unconscious patient breathing?",
+          "if_yes": "Place in the recovery position (lateral/side-lying position) to prevent aspiration. Monitor breathing continuously. Do not leave the patient alone.",
+          "if_no": "Begin CPR immediately. Continue until emergency services arrive."
+        }
+      },
+      {
+        "step_number": 12,
+        "instruction": "Recovery position for unconscious but breathing patients.",
+        "detail": "Kneel beside the patient. Place the arm nearest to you at a right angle to the body. Bring the far arm across the chest and hold the back of the hand against the near cheek. Pull the far knee up and roll the patient towards you onto their side. Adjust the top leg so the knee is at a right angle. Tilt the head back slightly to keep the airway open. Monitor breathing continuously."
+      },
+      {
+        "step_number": 13,
+        "instruction": "Continue monitoring until emergency services arrive.",
+        "detail": "Monitor breathing and pulse continuously. Be prepared to perform CPR if breathing or heartbeat stops. Keep the patient warm and calm. Do not leave the patient alone. Provide all collected substance information to arriving medical team."
+      }
+    ],
+    "do_not": [
+      "Do NOT induce vomiting unless specifically directed by the Poison Information Center (04-7771900) or a physician.",
+      "Do NOT give food or drink unless directed by medical professionals (exception: water or milk for conscious patients who ingested caustic substances, as directed).",
+      "Do NOT attempt to neutralise the poison (e.g., giving acid for base ingestion or vice versa).",
+      "Do NOT use home remedies (salt water, mustard, raw eggs, etc.).",
+      "Do NOT give activated charcoal without medical direction.",
+      "Do NOT enter a confined space with potential toxic fumes without proper protection.",
+      "Do NOT delay calling for help -- even if symptoms appear mild, they can deteriorate rapidly.",
+      "Do NOT administer antidotes -- this is a hospital-level intervention only.",
+      "Do NOT leave the patient alone."
+    ],
+    "equipment_needed": [
+      "Gloves (to protect against contamination)",
+      "Running water source (for skin or eye decontamination)"
+    ]
+  },
+  "tags": [
+    "poisoning",
+    "ingestion",
+    "inhalation",
+    "chemical exposure",
+    "skin contact",
+    "eye contact",
+    "caustic",
+    "corrosive",
+    "carbon monoxide",
+    "toxic fumes",
+    "overdose",
+    "vomiting",
+    "recovery position",
+    "CPR",
+    "poison center",
+    "decontamination",
+    "emergency"
+  ]
+}

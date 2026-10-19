@@ -1,0 +1,136 @@
+{
+  "id": "IL-ADULT-HEART-ATTACK-001",
+  "title": "Heart Attack / Chest Pain -- Adult",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "heart_attack",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "MDA Heart Attack Protocol -- synthesised from MDA public heart attack page, MDA BLS guide (2016), MDA ALS protocol (2024), and corroborating Israeli medical sources (Maccabi Healthcare, MyHeart.co.il, Defibrillation.co.il)",
+    "url": "https://www.mdais.org/101/mi-signs",
+    "publication_date": "2024-04-01",
+    "edition": "MDA ALS Protocol 2024 / BLS Guide 2016"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah reference material. United Hatzalah does not publish a detailed public heart attack first aid protocol; their clinical protocols are aligned with MDA/Ministry of Health standards. MDA is used as the authoritative default per project rules. United Hatzalah's emergency number (1221) is noted as an additional resource but 101 (MDA) is used as the primary emergency number. Aspirin dosage of 100-300 mg is consistent across all Israeli sources and aligns with international guidelines (AHA recommends 162-325 mg). MDA's public-facing web content is brief; detailed steps were synthesised from MDA public guidance, BLS training materials, and corroborating Israeli medical sources."
+  },
+  "protocol": {
+    "summary": "First aid protocol for suspected heart attack (acute myocardial infarction) in adults, following MDA guidelines with Israel-specific considerations.",
+    "when_to_apply": "An adult presents with chest pain or pressure (tightness, squeezing, heaviness, or burning in the centre of the chest) lasting more than 15 minutes, possibly with radiating pain to the arms, neck, jaw, back, or upper abdomen; shortness of breath; cold sweating; nausea; dizziness; or a feeling of impending doom. Atypical presentations (especially in women) may include extreme fatigue, upper back pain, or symptoms resembling heartburn without significant chest pain.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon suspecting a heart attack. Call 101 (MDA) as the first action. Optionally also call 1221 (United Hatzalah) for rapid volunteer first responder dispatch."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Call 101 (MDA) immediately.",
+        "detail": "State clearly that you suspect a heart attack. Provide the location and the patient's condition. Stay on the line -- the MDA dispatcher can guide you through first aid steps. If possible, ask a bystander to simultaneously call 1221 (United Hatzalah) and to call a family member."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Stop all physical activity -- the patient must rest completely.",
+        "detail": "Do not allow the patient to walk, go to the bathroom, or make any physical effort. Even minor exertion can worsen damage to the heart muscle by increasing its oxygen demand.",
+        "warning": "Any physical activity, even minor, can significantly worsen heart muscle damage."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Position the patient in a comfortable half-sitting position (semi-reclined) with their back supported and knees slightly bent.",
+        "detail": "The half-sitting position eases breathing and reduces the heart's workload. Alternatively, allow them to lie on their side if they prefer. Loosen tight clothing -- unbutton collar, loosen belt, remove tie. Keep the patient calm and speak reassuringly; stress increases the heart's oxygen demand. In Israel's hot climate, keep the patient cool and shaded while waiting."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Ask the patient whether they have a known allergy or sensitivity to aspirin.",
+        "decision_point": {
+          "condition": "Is the patient allergic to aspirin?",
+          "if_yes": "Do NOT give aspirin. Inform the arriving MDA team about the allergy. Skip to step 6.",
+          "if_no": "Proceed to step 5 (administer aspirin)."
+        }
+      },
+      {
+        "step_number": 5,
+        "instruction": "Administer 100-300 mg of aspirin. The patient must CHEW the aspirin, not swallow it whole.",
+        "detail": "In Israel, standard aspirin tablets are commonly 100 mg (Micro-Aspirin). Give 1 to 3 tablets for a total of 100-300 mg. Chewing ensures faster absorption into the bloodstream. Aspirin inhibits platelet aggregation (blood clotting), helping to limit the blockage in the coronary artery and reduce damage to the heart muscle.",
+        "warning": "Paracetamol (acetaminophen / Acamol) is NOT a substitute for aspirin. Only aspirin (acetylsalicylic acid) provides the needed antiplatelet effect."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Check whether the patient has a personal prescription for nitroglycerin (spray or sublingual tablets).",
+        "decision_point": {
+          "condition": "Does the patient have their own prescribed nitroglycerin?",
+          "if_yes": "Help the patient take their nitroglycerin as directed by their physician.",
+          "if_no": "Do NOT administer nitroglycerin. Proceed to step 7."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Monitor the patient continuously. Stay with them at all times.",
+        "detail": "Watch for changes in consciousness, breathing, and skin colour. Be prepared to escalate to CPR if the patient loses consciousness."
+      },
+      {
+        "step_number": 8,
+        "instruction": "If an AED is available nearby, send someone to retrieve it.",
+        "detail": "AEDs are widely deployed in Israeli public spaces (malls, train stations, public buildings). MDA maintains a registry of AED locations. Turn the AED on -- it will provide step-by-step voice instructions in Hebrew. No prior training is required. Apply pads as shown in the diagrams on the device. Do not apply the AED unless the patient becomes unresponsive and stops breathing normally."
+      },
+      {
+        "step_number": 9,
+        "instruction": "If the patient loses consciousness, check for responsiveness and normal breathing.",
+        "detail": "Tap and shout. Check for normal breathing: look for chest rise, listen for breath sounds, feel for air -- no more than 10 seconds. Gasping (agonal breathing) is NOT normal breathing.",
+        "decision_point": {
+          "condition": "Is the patient unconscious and not breathing normally?",
+          "if_yes": "Begin CPR immediately (proceed to step 10).",
+          "if_no": "Continue monitoring. Maintain the half-sitting position and keep the patient calm."
+        }
+      },
+      {
+        "step_number": 10,
+        "instruction": "Begin CPR: place the heel of one hand on the centre of the chest (sternum), other hand on top. Compress hard and fast.",
+        "detail": "Compress to a depth of at least 5 cm at a rate of 100-120 compressions per minute. Allow full chest recoil between compressions. If trained and willing, give 30 compressions followed by 2 rescue breaths. If untrained or unwilling, perform hands-only CPR (continuous compressions without breaths).",
+        "warning": "Do not stop CPR until MDA arrives and takes over, an AED is applied, or the patient regains consciousness and starts breathing normally."
+      },
+      {
+        "step_number": 11,
+        "instruction": "If an AED is available and the patient is in cardiac arrest, apply it immediately and follow voice prompts.",
+        "detail": "Apply pads as shown on the device. Ensure no one is touching the patient during analysis and shock delivery. Resume CPR immediately after shock delivery or if no shock is advised.",
+        "decision_point": {
+          "condition": "Does the AED advise a shock?",
+          "if_yes": "Ensure everyone is clear of the patient, press the shock button, then resume CPR immediately.",
+          "if_no": "Resume CPR immediately. The AED will re-analyse after approximately 2 minutes."
+        }
+      }
+    ],
+    "do_not": [
+      "Do not allow the patient to walk, exert themselves, or dismiss their symptoms.",
+      "Do not give the patient food or beverages.",
+      "Do not leave the patient alone (except briefly to call for help).",
+      "Do not give aspirin if the patient is allergic to it.",
+      "Do not give nitroglycerin that was not prescribed to this specific patient.",
+      "Do not wait to see if symptoms resolve on their own -- every minute of delay increases irreversible heart muscle damage.",
+      "Do not drive the patient to hospital yourself -- call 101 and wait for the ambulance. MDA has cardiac monitoring equipment and can begin treatment en route.",
+      "Do not substitute paracetamol (Acamol) for aspirin -- only aspirin provides the needed antiplatelet effect.",
+      "Do not give aspirin as a whole tablet -- it must be chewed for rapid absorption."
+    ],
+    "equipment_needed": [
+      "Aspirin tablets (100 mg, 1-3 tablets for 100-300 mg total)",
+      "AED (Automated External Defibrillator) -- if available",
+      "Phone (to call 101 MDA and optionally 1221 United Hatzalah)",
+      "Nitroglycerin (only if prescribed to the patient)"
+    ]
+  },
+  "tags": [
+    "heart-attack",
+    "chest-pain",
+    "myocardial-infarction",
+    "cardiac",
+    "aspirin",
+    "nitroglycerin",
+    "aed",
+    "cpr",
+    "adult",
+    "israel",
+    "mda"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "IL-ADULT-CHOKING-001",
+  "title": "Choking (Foreign Body Airway Obstruction) - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "choking",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "How to Treat Choking from a Foreign Body (כיצד לטפל בחנק מגוף זר)",
+    "url": "https://www.mdais.org/101/asphyxia",
+    "edition": "MDA 101 Public First Aid Guidance Series; corroborated by BLS Guide 2016"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-15",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-15",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default; no significant protocol differences found between MDA and United Hatzalah for adult choking. IMPORTANT DIVERGENCE: MDA/Israeli protocol explicitly discourages back blows (slaps on the back) for adults, calling them 'incorrect and potentially harmful'. This differs from AHA (2025) which recommends alternating 5 back blows and 5 abdominal thrusts, and from ERC (2025) which recommends 5 back blows first then 5 abdominal thrusts. MDA source page could not be directly fetched due to site restrictions; protocol synthesised from MDA page snippets, MDA BLS Guide 2016, and corroborating Israeli health sources. Publication date not specified by MDA."
+  },
+  "protocol": {
+    "summary": "Abdominal thrusts (Heimlich maneuver) for conscious adults with complete airway obstruction; transition to CPR if unconscious.",
+    "when_to_apply": "Person is choking: grasping neck, unable to speak/cough/breathe, face turning red or blue, high-pitched wheezing sounds, sudden distress while eating.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Immediately upon identifying complete airway obstruction. Instruct a bystander to call while you begin treatment. If alone, begin life-saving actions first, then call 101 as soon as possible."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Assess the choking victim. Ask: 'Are you choking? Can you speak?'",
+        "detail": "Determine whether the obstruction is partial or complete. Look for: grasping at throat, inability to speak or cough, face turning red/blue, high-pitched wheezing, loss of consciousness.",
+        "decision_point": {
+          "condition": "Can the person cough forcefully and speak?",
+          "if_yes": "DO NOT intervene. Allow them to cough and attempt to expel the object on their own. Coughing is the body's most effective defence. Monitor closely and be ready to act if the situation worsens.",
+          "if_no": "The airway is completely obstructed. Proceed immediately to Step 2."
+        }
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call for help. Instruct a bystander to call 101 (MDA) immediately.",
+        "detail": "If you are alone, begin life-saving actions first (Heimlich maneuver), then call 101 as soon as possible. Do not delay treatment to make the call."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Determine if the person is a special population requiring modified technique.",
+        "decision_point": {
+          "condition": "Is the person pregnant, very obese, or in a wheelchair?",
+          "if_yes": "Use chest thrusts instead of abdominal thrusts: place hands on the centre of the breastbone (sternum) and thrust firmly. For wheelchair users, perform thrusts while the person remains seated. Proceed to Step 4 using chest thrusts.",
+          "if_no": "Proceed to Step 4 using standard abdominal thrusts (Heimlich maneuver)."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "Perform abdominal thrusts (Heimlich maneuver).",
+        "detail": "Stand behind the choking person. Wrap your arms around their waist. Make a fist with one hand. Place the thumb side of the fist above the navel and below the breastbone, against the abdomen. Grasp the fist with your other hand. Perform rapid, forceful thrusts inward and upward, as if trying to lift the person. Repeat until the foreign object is expelled."
+      },
+      {
+        "step_number": 5,
+        "instruction": "After each set of thrusts, reassess the person.",
+        "decision_point": {
+          "condition": "Has the object been expelled and can the person breathe?",
+          "if_yes": "Stop thrusts. Monitor the person. Seek medical evaluation even after successful removal, as internal injuries from thrusts are possible.",
+          "if_no": "Continue thrusts. If the person is still conscious, repeat Step 4. If the person loses consciousness, proceed to Step 6."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "If the person loses consciousness: stop abdominal thrusts immediately.",
+        "detail": "Carefully lower the person to the ground onto a firm, flat surface.",
+        "warning": "Do not continue abdominal thrusts on an unconscious person."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Call 101 (MDA) if not already done.",
+        "detail": "If alone and emergency services have not yet been contacted, call now before beginning CPR."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Begin CPR: 30 chest compressions followed by 2 rescue breaths.",
+        "detail": "Before each set of rescue breaths, open the airway and look in the mouth for a visible object. If an object is visible, remove it carefully with a finger sweep. If no object is visible, do NOT perform a blind finger sweep. Continue CPR cycles (30:2) until emergency services arrive or the person recovers."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Self-treatment if choking while alone.",
+        "detail": "If you are alone and choking, lean over a firm object such as the back of a chair or a countertop edge. Press your upper abdomen forcefully against the object to generate an upward thrust. Repeat until the object is expelled. Call 101 as soon as you are able to speak."
+      }
+    ],
+    "do_not": [
+      "DO NOT perform abdominal thrusts on a person who can cough forcefully and speak -- you may worsen the obstruction or cause injury.",
+      "DO NOT perform back blows (slaps on the back) on an adult. The Israeli/MDA protocol explicitly describes this as incorrect and potentially harmful for adults.",
+      "DO NOT perform blind finger sweeps -- only remove an object from the mouth if you can clearly see it.",
+      "DO NOT attempt to give water or any liquid to a choking person.",
+      "DO NOT continue abdominal thrusts on an unconscious person -- transition to CPR.",
+      "DO NOT use abdominal thrusts on pregnant women or very obese individuals -- use chest thrusts instead."
+    ],
+    "equipment_needed": []
+  },
+  "tags": [
+    "choking",
+    "airway obstruction",
+    "heimlich",
+    "abdominal thrusts",
+    "chest thrusts",
+    "CPR",
+    "foreign body",
+    "emergency",
+    "conscious",
+    "unconscious"
+  ]
+}

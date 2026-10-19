@@ -1,0 +1,161 @@
+{
+  "id": "IL-CHILD-AED-OPERATION-001",
+  "title": "AED (Automated External Defibrillator) Operation - Child and Infant Protocol",
+  "country": "israel",
+  "age_group": "child",
+  "category": "aed_operation",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "AED Operation for Children and Infants - MDA Defibrillator Guidance (based on AHA 2025 Guidelines for CPR and ECC)",
+    "url": "https://www.mdais.org/kursim/defibrillator",
+    "edition": "AHA 2025 Guidelines as adopted by MDA; corroborated by Hebrew-language media sources (Ynet, Maariv) and Israeli AED legislation (aed.org.il)"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. No substantive differences found between the two organisations -- both follow AHA-based guidelines for paediatric AED use. United Hatzalah does not publish a distinct paediatric AED protocol; their public guidance confirms they follow the same AHA-based guidelines as MDA. MDA does not publish a standalone English-language AED protocol; this protocol is synthesised from MDA's defibrillator information page, Hebrew-language media articles based on MDA guidance, and AHA 2025 guidelines that MDA formally adopts. Age categories per MDA/AHA: infant (under 1 year), child (1-8 years). Children aged 8 and above or showing signs of puberty should use the adult AED protocol."
+  },
+  "protocol": {
+    "summary": "Use an AED on a child or infant in cardiac arrest: activate paediatric mode or use paediatric pads if available, apply anteroposterior pad placement for small chests, follow device prompts, and integrate with age-appropriate CPR.",
+    "when_to_apply": "Child (age 1-8) or infant (under 1 year) who is unresponsive, not breathing normally (no breathing or only gasping/agonal breathing), and in suspected cardiac arrest (no pulse if trained to check).",
+    "call_emergency": {
+      "number": "101",
+      "when": "If a bystander is present, send them to call 101 (MDA) and fetch the nearest AED while you begin CPR. If alone with a child, perform 2 minutes of CPR first (cardiac arrest in children is more often respiratory in origin), then call 101 and retrieve an AED."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Recognise cardiac arrest in the child or infant.",
+        "detail": "Check responsiveness by calling out and tapping or shaking the child's shoulders (for infants, flick the sole of the foot). Check breathing for no more than 10 seconds -- look, listen, and feel. If the child is unresponsive and not breathing normally (absent breathing or only gasping), suspect cardiac arrest."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Call for help and send for an AED.",
+        "detail": "If a bystander is present, instruct them to call 101 (MDA) immediately and retrieve the nearest AED. Use the Eifo-Defi app to locate the nearest device, or call 101 -- MDA dispatch can locate the nearest smart stand and remotely unlock it. Check nearby buildings, shopping centres, train stations, and sports facilities.",
+        "decision_point": {
+          "condition": "Is a bystander available to help?",
+          "if_yes": "Send the bystander to call 101 and fetch the nearest AED. Begin CPR immediately (proceed to Step 3).",
+          "if_no": "If alone, perform 2 minutes of CPR first (approximately 5 cycles of 30:2), then call 101 and retrieve the AED. Cardiac arrest in children is more often respiratory in origin, so early CPR is critical."
+        }
+      },
+      {
+        "step_number": 3,
+        "instruction": "Begin CPR immediately while waiting for the AED.",
+        "detail": "Place the child on a firm, flat surface. Begin chest compressions appropriate to the child's age. For children (1-8 years): use the heel of one hand on the centre of the chest, compress to approximately one-third of chest depth (about 5 cm / 2 inches), at a rate of 100-120 compressions per minute. For infants (under 1 year): use two fingers on the sternum just below the nipple line (or two-thumb encircling technique with two rescuers), compress to approximately one-third of chest depth (about 4 cm / 1.5 inches). Give 2 rescue breaths after every 30 compressions (solo rescuer) or 15 compressions (two trained rescuers).",
+        "decision_point": {
+          "condition": "Is the victim an infant (under 1 year)?",
+          "if_yes": "Use two-finger compression technique (solo rescuer) or two-thumb encircling technique (two rescuers). Compress to about 4 cm / 1.5 inches. Use slight head tilt only when opening the airway for rescue breaths.",
+          "if_no": "Use one-hand compression technique on the centre of the chest. Compress to about 5 cm / 2 inches. Use standard head-tilt chin-lift for rescue breaths."
+        }
+      },
+      {
+        "step_number": 4,
+        "instruction": "When the AED arrives, open and power on the device.",
+        "detail": "Open the AED cover -- most devices power on automatically when opened (some models require pressing a power button). The AED will begin providing voice instructions in Hebrew (and other languages depending on the model). Put MDA dispatch on speakerphone if still on the call -- they will guide you."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Activate paediatric mode on the AED.",
+        "detail": "Many AEDs in Israel have a paediatric mode switch -- a button or key that switches the device to deliver a lower energy dose appropriate for children. Activate this before applying pads if the patient is a child under 8 years or under 25 kg. MDA notes that 'the device has a switch to child mode and/or pad replacement depending on the model.'",
+        "decision_point": {
+          "condition": "Does the AED have a paediatric mode switch or paediatric pads available?",
+          "if_yes": "Activate the paediatric mode switch and/or use the paediatric pads (reduced energy dose). Proceed to Step 6.",
+          "if_no": "Use adult pads -- do NOT delay defibrillation because paediatric pads are unavailable. The AED can still be used safely. Proceed to Step 6."
+        },
+        "warning": "Do NOT delay defibrillation to search for paediatric pads or a paediatric mode. If unavailable, use adult pads immediately."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Expose the child's bare chest and prepare the skin.",
+        "detail": "Remove or cut away clothing. Ensure the chest is dry -- wipe off sweat, water, or moisture. Remove any medication patches from the chest area and wipe the skin. If there is an implanted pacemaker/defibrillator (visible lump under the skin), place pads at least 2.5 cm (1 inch) away from the device."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Apply the electrode pads using the correct placement for the child's size.",
+        "detail": "Follow the diagram printed on the pads. For small children and infants, anteroposterior (front-and-back) placement is preferred because the chest may be too small for both pads to fit on the front without touching.",
+        "decision_point": {
+          "condition": "Is the child's chest large enough for both pads to be placed on the front (anterolateral) with at least 2.5 cm between them and no overlap?",
+          "if_yes": "Use anterolateral placement (same as adults): Pad 1 below the right collarbone to the right of the sternum; Pad 2 on the left side of the chest below the armpit in line with the nipple.",
+          "if_no": "Use anteroposterior (front-and-back) placement: Front pad on the centre of the chest (sternum) at the level of the heart; Back pad on the centre of the back between the shoulder blades, directly behind the front pad."
+        },
+        "warning": "Pads must NEVER touch or overlap each other. If the child's chest is too small for anterolateral placement, always use anteroposterior placement."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Connect the pads to the AED if not pre-connected.",
+        "detail": "Plug the pad cable into the AED connector if the pads are not already pre-connected. Ensure the pads are firmly adhered to the skin with no air gaps."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Allow the AED to analyse the heart rhythm.",
+        "detail": "The AED will instruct: 'Do not touch the patient' / 'Analysing heart rhythm.' Stop CPR and ensure nobody is touching the child during analysis. The AED will determine whether a shockable rhythm (ventricular fibrillation or pulseless ventricular tachycardia) is present.",
+        "warning": "Everyone must stop touching the child during rhythm analysis. Any movement or contact can interfere with the analysis."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Follow the AED's shock decision.",
+        "decision_point": {
+          "condition": "Does the AED advise a shock ('Shock advised')?",
+          "if_yes": "Ensure nobody is touching the child. Call out clearly: 'Stand clear!' (Hebrew: 'Hitrachku!'). Press the shock button when instructed. Some fully automatic AEDs deliver the shock without pressing a button. After the shock, immediately resume CPR (proceed to Step 11).",
+          "if_no": "The AED says 'No shock advised.' Resume CPR immediately (proceed to Step 11). The AED will not deliver a shock if the rhythm is not shockable -- the device cannot harm the child."
+        },
+        "warning": "Ensure all bystanders are clear of the child before delivering the shock. Visually verify nobody is touching the child."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Immediately resume CPR after the shock or 'no shock' advisory.",
+        "detail": "Continue age-appropriate CPR for 2 minutes (approximately 5 cycles of 30:2 for a solo rescuer, or 15:2 for two trained rescuers). Use the correct compression technique for the child's age: one-hand for children 1-8 years, two-finger or two-thumb for infants. The AED will automatically re-analyse the rhythm after 2 minutes."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Continue the cycle of CPR and AED analysis until help arrives.",
+        "detail": "Repeat the cycle: CPR for 2 minutes, then AED analysis, then shock if advised, then CPR again. Do NOT turn off the AED. Leave pads attached at all times, even if the child shows signs of recovery.",
+        "decision_point": {
+          "condition": "Has the child shown obvious signs of life (moves, breathes normally, opens eyes) OR have MDA paramedics arrived?",
+          "if_yes": "If paramedics arrive, hand over to them. If the child shows signs of life, stop compressions but leave AED pads attached and the device on -- monitor closely and be ready to resume CPR if the child deteriorates. Place in recovery position if breathing normally.",
+          "if_no": "Continue the CPR and AED cycle. Do not stop unless MDA paramedics take over, the child shows obvious signs of life, or you are physically unable to continue."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT use an AED on a child who is conscious and breathing normally -- AEDs are only for cardiac arrest.",
+      "DO NOT use an AED while the child is submerged in water or lying in a puddle -- move them to dry ground first before applying pads.",
+      "DO NOT use an AED near flammable gases or oxygen-enriched atmospheres.",
+      "DO NOT delay defibrillation because paediatric pads are unavailable -- use adult pads with anteroposterior placement if needed.",
+      "DO NOT allow pads to touch or overlap each other -- use anteroposterior placement if the chest is too small for anterolateral placement.",
+      "DO NOT touch the child during AED rhythm analysis or shock delivery.",
+      "DO NOT turn off the AED or remove the pads once applied, even if the child regains consciousness.",
+      "DO NOT use an AED on a child who is breathing and has a pulse -- place in recovery position and monitor instead.",
+      "DO NOT perform adult-depth compressions on a child or infant -- compress to one-third of chest depth only.",
+      "DO NOT use adult pads with standard anterolateral placement on an infant or small child if the pads would touch or overlap -- switch to anteroposterior placement."
+    ],
+    "equipment_needed": [
+      "AED (Automated External Defibrillator)",
+      "Paediatric AED pads (preferred for children under 8 / under 25 kg)",
+      "Adult AED pads (if paediatric pads unavailable)",
+      "Scissors or shears (to cut away clothing)",
+      "Towel or cloth (to dry the chest)",
+      "Razor (included in many AED kits, for removing excessive chest hair if needed)"
+    ]
+  },
+  "tags": [
+    "AED",
+    "defibrillator",
+    "cardiac arrest",
+    "paediatric",
+    "child",
+    "infant",
+    "defibrillation",
+    "CPR",
+    "paediatric pads",
+    "anteroposterior",
+    "shockable rhythm",
+    "ventricular fibrillation",
+    "emergency",
+    "101",
+    "MDA",
+    "smart stand",
+    "Eifo-Defi"
+  ]
+}

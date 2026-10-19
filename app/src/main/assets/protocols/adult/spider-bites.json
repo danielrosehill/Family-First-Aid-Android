@@ -1,0 +1,119 @@
+{
+  "id": "IL-ADULT-SPIDER-BITES-001",
+  "title": "Spider Bites - Adult Protocol",
+  "country": "israel",
+  "age_group": "adult",
+  "category": "spider_bites",
+  "source": {
+    "authority": "Magen David Adom (MDA)",
+    "document_title": "First Aid for Spider Bites - Mediterranean Recluse and Black Widow",
+    "url": "https://www.mdais.org/media/4954/mda-first-aid-guidelines-en.pdf",
+    "edition": "MDA First Aid Guidelines; supplemented by peer-reviewed Mediterranean spider bite literature (PMC7534902), Israel Poison Information Center clinical data, and United Hatzalah training framework"
+  },
+  "import_metadata": {
+    "imported_date": "2026-03-16",
+    "imported_by": "claude-agent",
+    "last_verified_date": "2026-03-16",
+    "notes": "Unified from MDA and United Hatzalah sources. MDA used as authoritative default. GAP: Neither MDA nor United Hatzalah publish specific spider bite first aid protocols in publicly accessible online materials. Protocol synthesised from MDA's general bite/sting guidance principles, peer-reviewed medical literature on Mediterranean spider bites (PMC7534902, ScienceDirect historical Loxosceles study), Israel Poison Information Center clinical data (Rambam Health Care Campus), and standard first aid protocols consistent with Israeli emergency medicine practice. No significant disagreements between the two sources -- both would provide the same basic first aid and refer to the Israel Poison Information Center (04-7771900) for species-specific guidance. Two medically significant spider species in Israel: Mediterranean recluse (Loxosceles rufescens) -- very common, initially painless bite, progressive necrosis, no antivenom available; and Mediterranean black widow (Latrodectus tredecimguttatus) -- less common, neurotoxic venom, antivenom available for severe cases. Diagnostic caution: 83.5% of cases presenting as 'spider bites' are actually other conditions (bacterial infections, allergic reactions, other arthropod bites). Publication date not specified by MDA."
+  },
+  "protocol": {
+    "summary": "Stay calm, clean the bite with soap and water, apply cool compress, elevate the bitten area, do not apply tourniquet or cut the wound, attempt spider identification if safe, call MDA at 101 or the Poison Center at 04-7771900 if symptoms are severe or involve a suspected black widow or recluse bite.",
+    "when_to_apply": "Person has been bitten or suspected bitten by a spider. Signs vary by species: local pain, swelling, redness at bite site; for recluse bites -- initially painless 'pricking sensation' progressing to burning, swelling, blistering, and blue-white-red concentric pattern; for black widow bites -- local pain (onset 15 minutes to 1 hour), two fang marks, spreading pain, muscle cramps/spasms (especially abdominal), sweating.",
+    "call_emergency": {
+      "number": "101",
+      "when": "Call MDA at 101 immediately for suspected black widow bites, systemic symptoms, or if the victim is a child, elderly, or has pre-existing conditions. Also call the Israel Poison Information Center at 04-7771900 (24/7) for species-specific toxicology guidance."
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Stay calm and move away from the spider.",
+        "detail": "Reassure the victim that most spider bites in Israel are not life-threatening. Do not attempt to catch the spider, but if safely possible, note its appearance or take a photo for identification."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Clean the bite wound with mild soap and water.",
+        "detail": "Gently wash the bite area to reduce infection risk."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Apply a cool compress to the bite site.",
+        "detail": "Use a clean cloth dampened with cold water or a wrapped ice pack. Apply for 15 minutes per hour to reduce pain and swelling. Do not apply ice directly to skin."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Keep the bitten area elevated and still.",
+        "detail": "Elevate the bitten limb above heart level if possible. Minimise movement of the affected area."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Attempt to identify the spider if it can be done safely.",
+        "detail": "Photograph the spider or note its colour, size, and distinguishing features. Do not risk another bite. Two species of medical significance in Israel: Mediterranean recluse (Loxosceles rufescens) -- small brown 'violin spider,' very common in citrus groves and buildings; Mediterranean black widow (Latrodectus tredecimguttatus) -- dark with markings, less common but more systemically dangerous.",
+        "decision_point": {
+          "condition": "Can the spider be safely identified or photographed without risk of additional bites?",
+          "if_yes": "Take a photograph or note distinguishing features. Share with medical responders.",
+          "if_no": "Do not approach the spider. Report any details you observed to paramedics when they arrive."
+        }
+      },
+      {
+        "step_number": 6,
+        "instruction": "Assess whether the bite requires emergency medical attention.",
+        "decision_point": {
+          "condition": "Is the victim showing any of the following: severe pain, muscle cramps/spasms (especially abdominal), difficulty breathing, nausea/vomiting/fever, spreading redness or discolouration, or any systemic symptoms beyond the bite site?",
+          "if_yes": "Call MDA at 101 immediately. Also call the Poison Center at 04-7771900. This requires urgent medical evaluation. Proceed to Step 7.",
+          "if_no": "Monitor the bite. Call the Poison Center at 04-7771900 for guidance. Seek medical attention if symptoms worsen or the victim is a child, elderly, or has pre-existing conditions."
+        }
+      },
+      {
+        "step_number": 7,
+        "instruction": "Determine suspected spider type for appropriate monitoring.",
+        "decision_point": {
+          "condition": "Is a black widow (Latrodectus) bite suspected? Signs: local pain onset within an hour, muscle cramps/spasms, abdominal pain, sweating, spreading pain.",
+          "if_yes": "Call MDA at 101 immediately -- black widow bites require hospital evaluation and possible antivenom. Monitor breathing closely as respiratory compromise is possible in severe cases. Keep the victim calm and still.",
+          "if_no": "If recluse (Loxosceles) suspected: initially painless bite progressing to burning, blistering, blue-white-red pattern. Call Poison Center (04-7771900) for guidance. Seek medical attention -- do not wait for symptoms to worsen. Do NOT attempt to cut out or excise the bite wound."
+        }
+      },
+      {
+        "step_number": 8,
+        "instruction": "Monitor the victim while awaiting medical help.",
+        "detail": "Watch for worsening local symptoms (spreading redness, necrosis, increasing swelling) and systemic symptoms (muscle cramps, breathing difficulty, nausea, fever, confusion). Be prepared to report all observations to arriving paramedics.",
+        "decision_point": {
+          "condition": "Is the victim conscious and breathing adequately?",
+          "if_yes": "Continue monitoring. Keep the bitten area elevated, cool compress applied, and the victim calm.",
+          "if_no": "If unconscious but breathing, place in recovery position. If not breathing, begin CPR immediately. Call MDA at 101 if not already done."
+        }
+      }
+    ],
+    "do_not": [
+      "DO NOT apply a tourniquet -- spider venom is not stopped by tourniquets and a tourniquet will cause tissue damage.",
+      "DO NOT cut, suck, or apply suction to the bite wound -- this is ineffective and increases infection risk.",
+      "DO NOT apply heat to the bite -- use only cool compresses.",
+      "DO NOT attempt to catch the spider at risk of additional bites -- photograph from a safe distance if possible.",
+      "DO NOT attempt to cut out or excise a recluse spider bite wound -- early surgical excision is contraindicated and worsens outcomes.",
+      "DO NOT apply ice directly to skin -- wrap in cloth first.",
+      "DO NOT ignore initially mild symptoms -- recluse bites are often painless at first but progress to serious tissue necrosis over hours to days.",
+      "DO NOT assume a bite is from a spider without confirmation -- 83.5% of cases presenting as 'spider bites' are actually other conditions (bacterial infections, allergic reactions, other arthropod bites)."
+    ],
+    "equipment_needed": [
+      "Phone to call 101 (MDA) and 04-7771900 (Israel Poison Information Center)",
+      "Phone or camera to photograph the spider if safe to do so",
+      "Mild soap and clean water for wound cleaning",
+      "Clean cloth or wrapped ice pack for cool compress"
+    ]
+  },
+  "tags": [
+    "spider bite",
+    "envenomation",
+    "venom",
+    "loxosceles rufescens",
+    "mediterranean recluse",
+    "latrodectus tredecimguttatus",
+    "black widow",
+    "necrosis",
+    "neurotoxin",
+    "antivenom",
+    "poison center",
+    "bite",
+    "arachnid",
+    "emergency"
+  ]
+}
