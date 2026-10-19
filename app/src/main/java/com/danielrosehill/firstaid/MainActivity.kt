@@ -91,7 +91,10 @@ class MainActivity : ComponentActivity() {
         val store = ReviewStore(this)
         val prefs = getSharedPreferences("app", Context.MODE_PRIVATE)
         setContent {
-            MaterialTheme(colorScheme = lightColorScheme(primary = Blue, error = Danger)) {
+            MaterialTheme(colorScheme = lightColorScheme(
+                primary = Blue, error = Danger,
+                background = Color(0xFFFAFAFA), surface = Color(0xFFFAFAFA),
+            )) {
                 var accepted by remember { mutableStateOf(prefs.getBoolean("disclaimer", false)) }
                 if (!accepted) {
                     DisclaimerScreen { prefs.edit().putBoolean("disclaimer", true).apply(); accepted = true }

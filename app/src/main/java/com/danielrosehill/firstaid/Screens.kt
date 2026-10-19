@@ -80,7 +80,7 @@ fun StatusDot(p: UnitProgress?) {
 @Composable
 fun HomeScreen(c: Content, store: ReviewStore, age: Age, setAge: (Age) -> Unit, go: (Screen) -> Unit) {
     val due = store.all().values.count { it.daysUntilDue() <= 0 }
-    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).statusBarsPadding().padding(16.dp)) {
+    Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Image(painterResource(R.drawable.ic_star_of_david), null, Modifier.size(44.dp))
             Spacer(Modifier.width(12.dp))
