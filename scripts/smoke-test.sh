@@ -50,7 +50,7 @@ back; back; back; back
 tapnav "Topics";         expect "CPR"; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "Severe bleeding"; shot 07-topics-search
 tap "Severe bleeding";     expect "Step-by-step decision guide"; shot 08-topic
 tap "See the whole flowchart"; expect "Walk me through it"; shot 08b-topic-flowchart; back
-scrollto "Your progress"; tap "Your progress"; scrollto "Mark as completed"; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
+scrollto "Your progress"; tap "Your progress"; scrollto "Mark as completed"; tap "Mark as completed"; scrollto "Mark as reviewed"; expect "Mark as reviewed"; shot 09-completed
 back; expect "due in"; tap "Severe bleeding"; tap "Child / infant"; scrollto "Your progress"; tap "Your progress"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
 back; back
 tapnav "Flowcharts";      expect "full map"; shot 14-flowcharts
