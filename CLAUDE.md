@@ -6,3 +6,4 @@
 - The release keystore is in GitHub secrets. Keep the same key forever, or users can't upgrade in place.
 - `print/` flowcharts are not regenerated from the JSON. Flag that if you change a protocol.
 - No INTERNET permission. Keep the app offline.
+- This repo is public. Before copying anything in from a private predecessor, grep it for family names and personal details (this happened once: the curriculum archive named a child and was pulled out of history on 2026-10-20).

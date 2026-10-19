@@ -59,7 +59,6 @@ docs/prior-art.md        What existed before this repo (own and external)
 docs/illustration-style-guide.md   Rules for the (planned) AI-generated illustrations
 docs/protocol-schema.json          JSON Schema for protocol files
 reference/israel/        Per-source research notes (MDA / Hatzalah) behind each protocol
-reference/curriculum/    Earlier parent-focused curriculum and PDF manual (archive)
 reference/kit/           First-aid kit shopping and stock-check lists
 print/                   Printable Typst/PDF flowcharts
 ```
@@ -74,5 +73,5 @@ print/                   Printable Typst/PDF flowcharts
 
 ## History
 
-This repository consolidates and replaces three earlier repos: `Israel-First-Aid`,
-`Israel-First-Aid-App` and `First-Aid-Curriculum`. See `docs/prior-art.md`.
+This repository consolidates and replaces earlier first-aid repos (`Israel-First-Aid`,
+`Israel-First-Aid-App`, `First-Aid-Curriculum`). See `docs/prior-art.md`.
