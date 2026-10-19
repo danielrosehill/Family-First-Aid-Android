@@ -9,6 +9,12 @@ lets you walk through each protocol as a decision flowchart, and keeps a
 > Hatzalah or Ministry of Health product. It does not replace first-aid training.
 > **In an emergency, call 101.**
 
+<p>
+<img src="docs/screenshots/02-home.png" width="160"> <img src="docs/screenshots/03-triage.png" width="160"> <img src="docs/screenshots/06-walkthrough.png" width="160"> <img src="docs/screenshots/09-completed.png" width="160"> <img src="docs/screenshots/11-review.png" width="160"> <img src="docs/screenshots/12-numbers.png" width="160"> 
+</p>
+
+<sub>Screenshots are from the CI emulator smoke test (<code>scripts/smoke-test.sh</code>), which taps through these screens on every push.</sub>
+
 ## Install
 
 Download the latest `family-first-aid-*.apk` from
