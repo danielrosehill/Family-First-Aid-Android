@@ -11,7 +11,8 @@
           "emphasis": "danger",
           "action": {
             "goto": "unresponsive"
-          }
+          },
+          "icon": "😵"
         },
         {
           "label": "Choking — can't speak or cough",
@@ -26,7 +27,8 @@
           "emphasis": "danger",
           "action": {
             "goto": "bleeding"
-          }
+          },
+          "icon": "🩸"
         },
         {
           "label": "Chest pain / heart attack signs",
@@ -84,7 +86,8 @@
           "label": "Drowning / pulled from water",
           "action": {
             "goto": "drowning"
-          }
+          },
+          "icon": "🌊"
         },
         {
           "label": "Electrocution",
@@ -132,7 +135,8 @@
           "label": "Bite or sting",
           "action": {
             "goto": "bite"
-          }
+          },
+          "icon": "🐍"
         },
         {
           "label": "Diabetic emergency (low / high blood sugar)",

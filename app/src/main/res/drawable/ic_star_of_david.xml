@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The launcher star without the adaptive-icon padding, for use inside the app. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="100" android:viewportHeight="100">
+    <path android:strokeColor="#C62828" android:strokeWidth="7" android:strokeLineJoin="miter"
+        android:pathData="M50,10 L84.64,70 L15.36,70 Z" />
+    <path android:strokeColor="#C62828" android:strokeWidth="7" android:strokeLineJoin="miter"
+        android:pathData="M50,90 L84.64,30 L15.36,30 Z" />
+</vector>

@@ -39,7 +39,8 @@ data class Protocol(
     val notes: String?,
 )
 
-data class TopicGroup(val title: String, val topics: List<String>)
+// color is an ARGB int (parsed from "#RRGGBB"); the UI tints the group's topics with it.
+data class TopicGroup(val title: String, val topics: List<String>, val color: Int?)
 
 sealed class TriageAction {
     data class OpenTopic(val topic: String) : TriageAction()
@@ -47,7 +48,7 @@ sealed class TriageAction {
     data class Goto(val node: String) : TriageAction()
 }
 
-data class TriageAnswer(val label: String, val emphasis: String?, val action: TriageAction)
+data class TriageAnswer(val label: String, val emphasis: String?, val icon: String?, val action: TriageAction)
 data class TriageNode(val id: String, val question: String, val helper: String?, val answers: List<TriageAnswer>)
 
 data class Contact(val name: String, val number: String, val note: String?, val primary: Boolean)
@@ -56,6 +57,8 @@ data class ContactGroup(val title: String, val items: List<Contact>)
 class Content(
     val groups: List<TopicGroup>,
     val names: Map<String, String>,
+    val icons: Map<String, String>,
+    val quick: List<String>,
     val protocols: Map<Pair<String, Age>, Protocol>,
     val triageRoot: String,
     val triage: Map<String, TriageNode>,
@@ -64,6 +67,8 @@ class Content(
 ) {
     val allTopics: List<String> get() = groups.flatMap { it.topics }
     fun name(topic: String) = names[topic] ?: topic
+    fun icon(topic: String) = icons[topic] ?: "🩺"
+    fun groupOf(topic: String) = groups.firstOrNull { topic in it.topics }
     fun protocol(topic: String, age: Age) = protocols[topic to age]
 
     companion object {
@@ -72,10 +77,16 @@ class Content(
 
             val topicsJson = JSONObject(read("topics.json"))
             val groups = topicsJson.getJSONArray("groups").objects().map {
-                TopicGroup(it.getString("title"), it.getJSONArray("topics").strings())
+                TopicGroup(
+                    it.getString("title"), it.getJSONArray("topics").strings(),
+                    it.optStringOrNull("color")?.let { c -> android.graphics.Color.parseColor(c) },
+                )
             }
             val namesJson = topicsJson.getJSONObject("names")
             val names = namesJson.keys().asSequence().associateWith { namesJson.getString(it) }
+            val iconsJson = topicsJson.optJSONObject("icons") ?: JSONObject()
+            val icons = iconsJson.keys().asSequence().associateWith { iconsJson.getString(it) }
+            val quick = topicsJson.optJSONArray("quick")?.strings() ?: emptyList()
 
             val protocols = mutableMapOf<Pair<String, Age>, Protocol>()
             for (age in Age.entries) {
@@ -101,7 +112,7 @@ class Content(
                             act.optString("route") == "call" -> TriageAction.Call(act.getString("number"))
                             else -> TriageAction.OpenTopic(act.getString("category"))
                         }
-                        TriageAnswer(a.getString("label"), a.optStringOrNull("emphasis"), action)
+                        TriageAnswer(a.getString("label"), a.optStringOrNull("emphasis"), a.optStringOrNull("icon"), action)
                     },
                 )
             }
@@ -114,7 +125,7 @@ class Content(
             }
 
             return Content(
-                groups, names, protocols,
+                groups, names, icons, quick, protocols,
                 triageJson.getString("root"), triage,
                 contacts, contactsJson.getString("verified"),
             )

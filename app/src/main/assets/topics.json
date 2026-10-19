@@ -12,7 +12,8 @@
         "asthma",
         "allergic-reaction",
         "drowning"
-      ]
+      ],
+      "color": "#C62828"
     },
     {
       "title": "Bleeding and trauma",
@@ -26,7 +27,8 @@
         "eye-injuries",
         "blast-injuries",
         "electrocution"
-      ]
+      ],
+      "color": "#D84315"
     },
     {
       "title": "Medical",
@@ -36,14 +38,16 @@
         "poisoning",
         "smoke-inhalation",
         "dehydration"
-      ]
+      ],
+      "color": "#6A1B9A"
     },
     {
       "title": "Environment",
       "topics": [
         "heatstroke",
         "hypothermia"
-      ]
+      ],
+      "color": "#00838F"
     },
     {
       "title": "Bites and stings",
@@ -51,7 +55,8 @@
         "snakebite",
         "scorpion-stings",
         "spider-bites"
-      ]
+      ],
+      "color": "#6D4C41"
     }
   ],
   "names": {
@@ -83,5 +88,45 @@
     "snakebite": "Snakebite",
     "scorpion-stings": "Scorpion sting",
     "spider-bites": "Spider bite"
-  }
+  },
+  "icons": {
+    "cpr": "❤️",
+    "aed-operation": "💓",
+    "choking": "🫁",
+    "recovery-position": "🛌",
+    "heart-attack": "💔",
+    "stroke": "🧠",
+    "asthma": "🌬️",
+    "allergic-reaction": "💉",
+    "drowning": "🌊",
+    "severe-bleeding": "🩸",
+    "tourniquet": "🩹",
+    "shock": "😰",
+    "head-spinal-injury": "🤕",
+    "fractures": "🦴",
+    "burns": "🔥",
+    "eye-injuries": "👁️",
+    "blast-injuries": "💥",
+    "electrocution": "⚡",
+    "seizures": "🌀",
+    "diabetic-emergencies": "🍬",
+    "poisoning": "☠️",
+    "smoke-inhalation": "💨",
+    "dehydration": "💧",
+    "heatstroke": "☀️",
+    "hypothermia": "🥶",
+    "snakebite": "🐍",
+    "scorpion-stings": "🦂",
+    "spider-bites": "🕷️"
+  },
+  "quick": [
+    "cpr",
+    "choking",
+    "severe-bleeding",
+    "allergic-reaction",
+    "heart-attack",
+    "stroke",
+    "seizures",
+    "burns"
+  ]
 }

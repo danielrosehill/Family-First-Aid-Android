@@ -29,7 +29,7 @@ one. Your review progress is kept.
 | **Material** | 28 topics × adult and child = 56 protocols, grouped by type of emergency (breathing and circulation, bleeding and trauma, medical, environment, bites and stings). Each has a summary, when to use it, steps, "do not" list, equipment and source. |
 | **Decision flows** | *What's happening?* is a standalone triage tree that routes to a protocol. Every protocol also has a **step-by-step** mode: one step on screen at a time, big YES/NO buttons at each decision point, and jumps to the step that the answer points to. |
 | **Spaced review** | Mark a topic completed for adult and/or child, then *mark as reviewed* when due. Intervals: 1 week → 1 month → 3 months → 6 months → yearly. The app shows a progress bar, a due list and the review dates, and has a reset. Progress is stored on the device only. |
-| **Crisis UI** | A "CALL 101" bar is pinned to every screen. A numbers page has click-to-dial for MDA, Hatzalah, police, fire, Home Front Command, the poison center, Terem (national line and Jerusalem branches) and the Maccabi Moked. |
+| **Crisis UI** | A "CALL 101" bar and a colour-coded section bar (Home · Help now · Topics · Review · Numbers) are pinned to every screen, with breadcrumbs under the title to jump back up the path. Home has one-tap tiles for the most urgent protocols, and the adult / child choice is made once and carried everywhere. Each topic group has its own colour and every topic an icon. The launcher icon is a red Star of David. A numbers page has click-to-dial for MDA, Hatzalah, police, fire, Home Front Command, the poison center, Terem (national line and Jerusalem branches) and the Maccabi Moked. |
 
 The app has no internet permission, so everything works offline.
 
@@ -38,11 +38,11 @@ The app has no internet permission, so everything works offline.
 The idea is meant to be forked. All content is data in `app/src/main/assets/`:
 
 - `protocols/{adult,child}/<topic>.json`: one protocol per file, schema in `docs/protocol-schema.json`.
-- `topics.json`: topic grouping and display names.
-- `triage.json`: the *What's happening?* tree (nodes → answers → `goto` / `category` / `call`).
+- `topics.json`: topic grouping, display names, group `color`, per-topic `icons` (emoji) and the `quick` list of home-screen tiles.
+- `triage.json`: the *What's happening?* tree (nodes → answers → `goto` / `category` / `call`). An answer that `goto`s another node can carry an `icon`; answers that open a topic use the topic's icon.
 - `contacts.json`: click-to-dial numbers.
 
-To make your own version, replace those files, change `"101"` in `EmergencyBar` / `DISCLAIMER` (`MainActivity.kt`), change `applicationId`, and push.
+To make your own version, replace those files, change `"101"` in `EmergencyBar` (`MainActivity.kt`) and `DISCLAIMER` (`Screens.kt`), replace the star in `res/drawable/ic_launcher_foreground.xml`, change `applicationId`, and push.
 
 ## Building
 
