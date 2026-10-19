@@ -71,7 +71,6 @@ fun Context.dial(number: String) {
 @Composable
 fun App(content: Content, store: ReviewStore) {
     val stack = remember { mutableStateListOf<Screen>(Screen.Home) }
-    var version by remember { mutableIntStateOf(0) } // bumped when review data changes
     val go: (Screen) -> Unit = { stack.add(it) }
     val back: () -> Unit = { if (stack.size > 1) stack.removeAt(stack.lastIndex) }
     BackHandler(enabled = stack.size > 1) { back() }
@@ -82,18 +81,16 @@ fun App(content: Content, store: ReviewStore) {
         bottomBar = { EmergencyBar() },
     ) { pad ->
         Box(Modifier.padding(pad).fillMaxSize()) {
-            key(version) {
                 when (screen) {
                     Screen.Home -> HomeScreen(content, store, go)
                     is Screen.Triage -> TriageScreen(content, screen.node, go)
                     Screen.Topics -> TopicsScreen(content, store, go)
-                    is Screen.Topic -> TopicScreen(content, store, screen.topic, screen.age, go, { stack[stack.lastIndex] = it }) { version++ }
+                    is Screen.Topic -> TopicScreen(content, store, screen.topic, screen.age, go, { stack[stack.lastIndex] = it }) {}
                     is Screen.Walkthrough -> WalkthroughScreen(content, screen.topic, screen.age)
-                    Screen.Review -> ReviewScreen(content, store, go) { version++ }
+                    Screen.Review -> ReviewScreen(content, store, go) {}
                     Screen.Contacts -> ContactsScreen(content)
                     Screen.About -> AboutScreen()
                 }
-            }
         }
     }
 }
