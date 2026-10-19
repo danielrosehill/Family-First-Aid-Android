@@ -36,7 +36,7 @@ back; back; back; back
 tap "Browse by type";      expect "CPR"; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "Severe bleeding"; shot 07-topics-search
 tap "Severe bleeding";     expect "Step-by-step decision guide"; shot 08-topic
 scrollto "Mark as completed"; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
-back; tap "Severe bleeding"; tap "Child / infant"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
+back; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "due in"; tap "Severe bleeding"; tap "Child / infant"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
 back; back
 tap "Spaced review";       expect "1 of 56 completed"; shot 11-review
 back
