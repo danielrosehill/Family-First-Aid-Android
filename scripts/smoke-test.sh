@@ -32,7 +32,7 @@ tap "Collapsed";           expect "breathing normally"; shot 04-triage-unrespons
 tap "NO / not sure";       expect "Step-by-step decision guide"; shot 05-cpr
 tap "Step-by-step decision guide"; expect "step 1 of"; shot 06-walkthrough
 back; back; back; back
-tap "Browse by type";      expect "Severe bleeding"; shot 07-topics
+tap "Browse by type";      expect "CPR"; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "Severe bleeding"; shot 07-topics-search
 tap "Severe bleeding";     expect "Mark as completed"; shot 08-topic
 adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300
 adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300
