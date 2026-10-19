@@ -23,6 +23,7 @@ for m in re.finditer(r'<node [^>]*>', x):
   [ -n "$b" ] || { echo "cannot tap: $1"; shot fail; exit 1; }
   adb shell input tap $b; sleep 2
 }
+scrollto() { for _ in $(seq 1 25); do dump | grep -q "$1" && return 0; adb shell input swipe 540 1700 540 700 250; sleep 1; done; }
 back() { adb shell input keyevent KEYCODE_BACK; sleep 2; }
 
 expect "Before you start"; shot 01-disclaimer
@@ -33,11 +34,10 @@ tap "NO / not sure";       expect "Step-by-step decision guide"; shot 05-cpr
 tap "Step-by-step decision guide"; expect "step 1 of"; shot 06-walkthrough
 back; back; back; back
 tap "Browse by type";      expect "CPR"; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "Severe bleeding"; shot 07-topics-search
-tap "Severe bleeding";     expect "Mark as completed"; shot 08-topic
-adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300
-adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300; adb shell input swipe 500 1800 500 300 300
-sleep 1; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
-tap "Child / infant";      expect "Mark as completed"; shot 10-child
+tap "Severe bleeding";     expect "Step-by-step decision guide"; shot 08-topic
+scrollto "Mark as completed"; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
+adb shell input swipe 540 600 540 2000 100; adb shell input swipe 540 600 540 2000 100; adb shell input swipe 540 600 540 2000 100
+scrollto "Child / infant"; tap "Child / infant"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
 back; back
 tap "Spaced review";       expect "1 of 56 completed"; shot 11-review
 back
