@@ -24,5 +24,14 @@
         <intent>
             <action android:name="android.intent.action.DIAL" />
         </intent>
+        <!-- Terem branch pages and map searches open in the browser / maps app. -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
     </queries>
 </manifest>

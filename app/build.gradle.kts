@@ -44,6 +44,8 @@ android {
     }
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true }
+    // Glossary clips are opened with AssetManager.openFd, which needs them stored uncompressed.
+    androidResources { noCompress += "mp3" }
 }
 
 dependencies {

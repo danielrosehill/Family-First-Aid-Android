@@ -15,9 +15,7 @@
     {
       "title": "Urgent care (non-emergency)",
       "items": [
-        {"name": "Terem national line", "number": "1-599-520-520", "note": "Urgent care clinics"},
-        {"name": "Terem Romema (City Entrance), Jerusalem", "number": "02-5093333", "note": "80 Yirmeyahu St. Open 24/7"},
-        {"name": "Terem Katamon, Jerusalem", "number": "02-5612139", "note": "4 Gedud Haivri St"}
+        {"name": "Terem national line", "number": "1-599-520-520", "note": "Urgent care clinics. Branches have no numbers of their own: see Resources → Terem for addresses and hours"}
       ]
     },
     {

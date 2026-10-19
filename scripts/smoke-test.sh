@@ -49,12 +49,18 @@ tap "Step-by-step decision guide"; expect "step 1 of"; expect "Step by step"; sh
 back; back; back; back
 tapnav "Topics";         expect "CPR"; tap "Search"; adb shell input text bleeding; sleep 2; adb shell input keyevent KEYCODE_BACK; sleep 1; expect "Severe bleeding"; shot 07-topics-search
 tap "Severe bleeding";     expect "Step-by-step decision guide"; shot 08-topic
-scrollto "Mark as completed"; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
-back; expect "due in"; tap "Severe bleeding"; tap "Child / infant"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
+tap "See the whole flowchart"; expect "Walk me through it"; shot 08b-topic-flowchart; back
+scrollto "Your progress"; tap "Your progress"; scrollto "Mark as completed"; tap "Mark as completed"; expect "Mark as reviewed"; shot 09-completed
+back; expect "due in"; tap "Severe bleeding"; tap "Child / infant"; scrollto "Your progress"; tap "Your progress"; scrollto "Mark as completed"; expect "Mark as completed"; shot 10-child
 back; back
-tapnav "Review";          expect "1 of 56 completed"; shot 11-review
-back
-tapnav "Numbers";         expect "Magen David Adom (ambulance)"; shot 12-numbers; scrollto "Maccabi Moked"; expect "Maccabi Moked"; shot 13-numbers-kupah
+tapnav "Flowcharts";      expect "full map"; shot 14-flowcharts
+tap "full map";           expect "breathing normally"; shot 15-triage-map; back
+tap "Choking";            expect "Walk me through it"; shot 16-flowchart; back
+tapnav "Resources";       expect "Hebrew glossary"; shot 17-resources
+tap "Review schedule";    expect "1 of 56 completed"; shot 11-review; back
+tap "Phone numbers";      expect "Magen David Adom (ambulance)"; shot 12-numbers; scrollto "Maccabi Moked"; expect "Maccabi Moked"; shot 13-numbers-kupah; back
+tap "Terem urgent care";  expect "Romema Sarei Israel"; shot 18-terem; back
+tap "Hebrew glossary";    expect "hatsilu"; tap "Help!"; sleep 1; shot 19-glossary
 
 if adb logcat -d | grep -E "FATAL EXCEPTION|AndroidRuntime: .*$PKG"; then echo "crash in logcat"; exit 1; fi
 adb shell pidof "$PKG" >/dev/null || { echo "app not running"; exit 1; }

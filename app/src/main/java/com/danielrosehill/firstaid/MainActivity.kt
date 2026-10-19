@@ -22,9 +22,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Call
-import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -50,8 +50,14 @@ sealed class Screen {
     data object Topics : Screen()
     data class Topic(val topic: String, val age: Age) : Screen()
     data class Walkthrough(val topic: String, val age: Age) : Screen()
+    data object Flowcharts : Screen()
+    data class Flowchart(val topic: String, val age: Age) : Screen()
+    data object TriageMap : Screen()
+    data object Resources : Screen()
     data object Review : Screen()
     data object Contacts : Screen()
+    data object Terem : Screen()
+    data object Glossary : Screen()
     data object About : Screen()
 }
 
@@ -61,26 +67,28 @@ val Ok = Color(0xFF2E7D32)
 val Blue = Color(0xFF1E40AF)
 val Slate = Color(0xFF37474F)
 val Teal = Color(0xFF00695C)
+val Purple = Color(0xFF6A1B9A)
 
 // An opaque pale version of a colour, for card and strip backgrounds.
 fun Color.tint(amount: Float = 0.12f) = copy(alpha = amount).compositeOver(Color.White)
 
 // The sections in the bottom bar. Each one's colour also tints its top bar and
-// breadcrumbs, so the colour tells you where you are.
+// breadcrumbs, so the colour tells you where you are. Ordered by how urgently
+// you need them: Review lives under Resources, since no one studies mid-crisis.
 enum class Tab(val label: String, val icon: ImageVector, val color: Color) {
     HOME("Home", Icons.Filled.Home, Slate),
     GUIDE("Help now", Icons.Filled.Warning, Danger),
+    FLOWS("Flowcharts", Icons.Filled.Share, Purple),
     TOPICS("Topics", Icons.AutoMirrored.Filled.List, Blue),
-    REVIEW("Review", Icons.Filled.DateRange, Ok),
-    NUMBERS("Numbers", Icons.Filled.Phone, Teal),
+    MORE("Resources", Icons.Filled.Info, Teal),
 }
 
 fun tabOf(s: Screen?) = when (s) {
+    null, Screen.Home -> Tab.HOME
     is Screen.Triage -> Tab.GUIDE
+    Screen.Flowcharts, is Screen.Flowchart, Screen.TriageMap -> Tab.FLOWS
     Screen.Topics, is Screen.Topic, is Screen.Walkthrough -> Tab.TOPICS
-    Screen.Review -> Tab.REVIEW
-    Screen.Contacts -> Tab.NUMBERS
-    else -> Tab.HOME
+    Screen.Resources, Screen.Review, Screen.Contacts, Screen.Terem, Screen.Glossary, Screen.About -> Tab.MORE
 }
 
 class MainActivity : ComponentActivity() {
@@ -110,6 +118,12 @@ fun Context.dial(number: String) {
     startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + Uri.encode(number))))
 }
 
+// Hands a web page or map search to another app. The app itself stays offline.
+fun Context.view(uri: String) {
+    runCatching { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(uri))) }
+        .onFailure { android.widget.Toast.makeText(this, "No app can open this link", android.widget.Toast.LENGTH_SHORT).show() }
+}
+
 // One back stack for the whole app. Each entry has an id so its scroll position
 // and search text survive while it is covered by a later screen.
 class Entry(val id: Int, val screen: Screen)
@@ -137,6 +151,7 @@ fun App(content: Content, store: ReviewStore, prefs: SharedPreferences) {
     val color = when (screen) {
         is Screen.Topic -> topicColor(content, screen.topic)
         is Screen.Walkthrough -> topicColor(content, screen.topic)
+        is Screen.Flowchart -> topicColor(content, screen.topic)
         else -> tab.color
     }
     val due = store.all().values.count { it.daysUntilDue() <= 0 }
@@ -165,9 +180,9 @@ fun App(content: Content, store: ReviewStore, prefs: SharedPreferences) {
                     when (t) {
                         Tab.HOME -> {}
                         Tab.GUIDE -> go(Screen.Triage(content.triageRoot))
+                        Tab.FLOWS -> go(Screen.Flowcharts)
                         Tab.TOPICS -> go(Screen.Topics)
-                        Tab.REVIEW -> go(Screen.Review)
-                        Tab.NUMBERS -> go(Screen.Contacts)
+                        Tab.MORE -> go(Screen.Resources)
                     }
                 }
             }
@@ -181,8 +196,14 @@ fun App(content: Content, store: ReviewStore, prefs: SharedPreferences) {
                     Screen.Topics -> TopicsScreen(content, store, age, go)
                     is Screen.Topic -> TopicScreen(content, store, screen.topic, screen.age, go) { setAge(it); replace(Screen.Topic(screen.topic, it)) }
                     is Screen.Walkthrough -> WalkthroughScreen(content, screen.topic, screen.age)
+                    Screen.Flowcharts -> FlowchartsScreen(content, age, setAge, go)
+                    is Screen.Flowchart -> FlowchartScreen(content, screen.topic, screen.age, go) { setAge(it); replace(Screen.Flowchart(screen.topic, it)) }
+                    Screen.TriageMap -> TriageMapScreen(content, age, setAge, go)
+                    Screen.Resources -> ResourcesScreen(content, store, go)
                     Screen.Review -> ReviewScreen(content, store, go)
-                    Screen.Contacts -> ContactsScreen(content)
+                    Screen.Contacts -> ContactsScreen(content, go)
+                    Screen.Terem -> TeremScreen(content)
+                    Screen.Glossary -> GlossaryScreen(content)
                     Screen.About -> AboutScreen()
                 }
             }
@@ -198,8 +219,14 @@ fun title(s: Screen, c: Content) = when (s) {
     Screen.Topics -> "Topics"
     is Screen.Topic -> c.name(s.topic)
     is Screen.Walkthrough -> c.name(s.topic) + " — step by step"
+    Screen.Flowcharts -> "Flowcharts"
+    is Screen.Flowchart -> c.name(s.topic) + " — flowchart"
+    Screen.TriageMap -> "What's happening? — full map"
+    Screen.Resources -> "Resources"
     Screen.Review -> "Review"
     Screen.Contacts -> "Numbers"
+    Screen.Terem -> "Terem urgent care"
+    Screen.Glossary -> "Hebrew glossary"
     Screen.About -> "About"
 }
 
@@ -210,8 +237,14 @@ fun crumb(s: Screen, c: Content): String {
         Screen.Topics -> "Topics"
         is Screen.Topic -> "${c.icon(s.topic)} ${c.name(s.topic)}"
         is Screen.Walkthrough -> "Step by step"
+        Screen.Flowcharts -> "Flowcharts"
+        is Screen.Flowchart -> "Flowchart"
+        Screen.TriageMap -> "Full map"
+        Screen.Resources -> "Resources"
         Screen.Review -> "Review"
         Screen.Contacts -> "Numbers"
+        Screen.Terem -> "Terem"
+        Screen.Glossary -> "Glossary"
         Screen.About -> "About"
     }
     return if (label.length > 30) label.take(28).trimEnd() + "…" else label
@@ -275,7 +308,7 @@ fun BottomNav(current: Tab, due: Int, onTab: (Tab) -> Unit) {
                 selected = t == current,
                 onClick = { onTab(t) },
                 icon = {
-                    BadgedBox(badge = { if (t == Tab.REVIEW && due > 0) Badge { Text("$due") } }) { Icon(t.icon, null) }
+                    BadgedBox(badge = { if (t == Tab.MORE && due > 0) Badge { Text("$due") } }) { Icon(t.icon, null) }
                 },
                 label = { Text(t.label, maxLines = 1, fontWeight = if (t == current) FontWeight.Bold else FontWeight.Normal) },
                 colors = NavigationBarItemDefaults.colors(

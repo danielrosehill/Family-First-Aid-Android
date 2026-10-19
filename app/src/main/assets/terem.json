@@ -1,0 +1,276 @@
+{
+  "verified": "2026-10-20",
+  "note": "Every branch page on terem.com was fetched and matched on 2026-10-20. Branch pages list no per-branch phone; the only number is the national line. Source list: https://www.terem.com/wp-json/wp/v2/clinic?per_page=100 (27 branches). url = English page, url_he = canonical Hebrew page.",
+  "phone": "1-599-520-520",
+  "site": "https://www.terem.com/?lang=en",
+  "regions": [
+    {
+      "title": "Jerusalem",
+      "branches": [
+        {
+          "name": "Romema Sarei Israel",
+          "he": "טרם רוממה שרי ישראל",
+          "address": "15 Sarei Israel Blvd, corner of Jaffa St",
+          "city": "Jerusalem",
+          "hours": "24/7",
+          "url": "https://www.terem.com/clinic/romema-sarei-israel/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a8%d7%95%d7%9e%d7%9e%d7%94-%d7%a9%d7%a8%d7%99-%d7%99%d7%a9%d7%a8%d7%90%d7%9c/"
+        },
+        {
+          "name": "Tayelet",
+          "he": "טרם טיילת",
+          "address": "6 Daniel Yanovski St",
+          "city": "Jerusalem",
+          "hours": "Daily 08:30–00:00",
+          "url": "https://www.terem.com/clinic/tayelet/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%98%d7%99%d7%99%d7%9c%d7%aa/"
+        },
+        {
+          "name": "Pisgat Ze'ev",
+          "he": "טרם פסגת זאב",
+          "address": "158 Moshe Dayan St, Pisgat Ze'ev",
+          "city": "Jerusalem",
+          "hours": "Sun–Thu 16:00–23:30 · Fri–Sat 09:00–23:30",
+          "url": "https://www.terem.com/clinic/pisgat-zeev/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a4%d7%a1%d7%92%d7%aa-%d7%96%d7%90%d7%91/"
+        }
+      ]
+    },
+    {
+      "title": "Around Jerusalem",
+      "branches": [
+        {
+          "name": "Ma'ale Adumim",
+          "he": "טרם מעלה אדומים",
+          "address": "68 HaEshel St",
+          "city": "Ma'ale Adumim",
+          "hours": "Sun–Thu 09:00–23:30 · Fri 08:00–23:30 · Sat 09:00–00:00",
+          "url": "https://www.terem.com/clinic/maale-adumim/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9e%d7%a2%d7%9c%d7%94-%d7%90%d7%93%d7%95%d7%9e%d7%99%d7%9d/"
+        },
+        {
+          "name": "Beit Shemesh",
+          "he": "טרם בית שמש",
+          "address": "1 Yigal Alon Blvd, Big Center, 5th floor",
+          "city": "Beit Shemesh",
+          "hours": "Sun–Fri 09:00–06:00 · Sat 08:00–06:00",
+          "url": "https://www.terem.com/clinic/beit-shemesh/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%91%d7%99%d7%aa-%d7%a9%d7%9e%d7%a9/"
+        },
+        {
+          "name": "Beitar Illit",
+          "he": "טרם ביתר עילית",
+          "address": "1 Elazar HaModai St",
+          "city": "Beitar Illit",
+          "hours": "Sun–Thu 19:00–06:00 · Fri 15:00–06:00 · Sat from 06:00. Doctor part of the time only",
+          "url": "https://www.terem.com/clinic/beitar-illit/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%91%d7%99%d7%aa%d7%a8-%d7%a2%d7%99%d7%9c%d7%99%d7%aa/"
+        },
+        {
+          "name": "Modi'in",
+          "he": "טרם מודיעין",
+          "address": "8 Tiltan St",
+          "city": "Modi'in",
+          "hours": "24/7",
+          "url": "https://www.terem.com/clinic/modiin/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9e%d7%95%d7%93%d7%99%d7%a2%d7%99%d7%9f/"
+        },
+        {
+          "name": "Modi'in Illit",
+          "he": "טרם מודיעין עילית",
+          "address": "46 Avnei Nezer St, Kesem Center, 2nd floor",
+          "city": "Modi'in Illit",
+          "hours": "Sun–Thu 17:00–00:00 · Fri 09:00–00:00 · Sat 10:00–00:00",
+          "url": "https://www.terem.com/clinic/modiin-illit/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9e%d7%95%d7%93%d7%99%d7%a2%d7%99%d7%9f-%d7%a2%d7%99%d7%9c%d7%99%d7%aa/"
+        }
+      ]
+    },
+    {
+      "title": "Centre",
+      "branches": [
+        {
+          "name": "Bnei Brak Ichilov",
+          "he": "טרם בני ברק איכילוב",
+          "address": "160 Jabotinsky St, Bnei Brak",
+          "city": "Bnei Brak",
+          "hours": "24/7",
+          "url": "https://www.terem.com/clinic/bnei-brak-ichilov/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%91%d7%a0%d7%99-%d7%91%d7%a8%d7%a7-%d7%90%d7%99%d7%9b%d7%99%d7%9c%d7%95%d7%91/"
+        },
+        {
+          "name": "Petah Tikva",
+          "he": "טרם פתח תקווה",
+          "address": "182 Rothschild St, above Super-Pharm",
+          "city": "Petah Tikva",
+          "hours": "Daily 09:00–23:30",
+          "url": "https://www.terem.com/clinic/1440/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a4%d7%aa%d7%97-%d7%aa%d7%a7%d7%95%d7%95%d7%94/"
+        },
+        {
+          "name": "Rosh HaAyin",
+          "he": "טרם ראש העין",
+          "address": "14 HaAvoda St",
+          "city": "Rosh HaAyin",
+          "hours": "Sun–Fri 09:00–23:30 · Sat 08:00–23:30",
+          "url": "https://www.terem.com/clinic/rosh-haayin/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a8%d7%90%d7%a9-%d7%94%d7%a2%d7%99%d7%9f/"
+        },
+        {
+          "name": "Lod",
+          "he": "טרם לוד",
+          "address": "2 David HaMelech Blvd",
+          "city": "Lod",
+          "hours": "Daily 09:00–23:30",
+          "url": "https://www.terem.com/clinic/lod/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9c%d7%95%d7%93/"
+        },
+        {
+          "name": "Rehovot",
+          "he": "טרם רחובות",
+          "address": "2 Derech Yerushalayim, Sarona Center",
+          "city": "Rehovot",
+          "hours": "Daily 09:00–23:30",
+          "url": "https://www.terem.com/clinic/rehovot/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a8%d7%97%d7%95%d7%91%d7%95%d7%aa/"
+        },
+        {
+          "name": "Yavne",
+          "he": "טרם יבנה",
+          "address": "7 HaMisgav St, Azrieli Center, 1st floor",
+          "city": "Yavne",
+          "hours": "Daily 09:00–23:45",
+          "url": "https://www.terem.com/clinic/yavne/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%99%d7%91%d7%a0%d7%94/"
+        },
+        {
+          "name": "Netanya",
+          "he": "טרם נתניה",
+          "address": "17 Yehoshua Stampfer St, inside Leumit, 3rd floor",
+          "city": "Netanya",
+          "hours": "Evenings Sun–Thu (from 16:00–19:30) · Fri 13:00–00:00 · Sat 09:00–00:00",
+          "url": "https://www.terem.com/clinic/netanya/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a0%d7%aa%d7%a0%d7%99%d7%94/"
+        }
+      ]
+    },
+    {
+      "title": "South",
+      "branches": [
+        {
+          "name": "Ashdod",
+          "he": "טרם אשדוד",
+          "address": "1 Hana Senesh St",
+          "city": "Ashdod",
+          "hours": "24/7",
+          "url": "https://www.terem.com/clinic/ashdod/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%90%d7%a9%d7%93%d7%95%d7%93/"
+        },
+        {
+          "name": "Ashkelon",
+          "he": "טרם אשקלון",
+          "address": "3 HaPalmach St",
+          "city": "Ashkelon",
+          "hours": "Daily 09:00–00:30",
+          "url": "https://www.terem.com/clinic/ashkelon/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%90%d7%a9%d7%a7%d7%9c%d7%95%d7%9f/"
+        },
+        {
+          "name": "Kiryat Gat",
+          "he": "טרם קריית גת",
+          "address": "10 Heshvan St",
+          "city": "Kiryat Gat",
+          "hours": "Sun–Fri 09:00–05:45 · Sat 08:00–05:45",
+          "url": "https://www.terem.com/clinic/kiryat-malachi-2/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a7%d7%a8%d7%99%d7%99%d7%aa-%d7%92%d7%aa/"
+        },
+        {
+          "name": "Kiryat Malachi",
+          "he": "טרם קריית מלאכי",
+          "address": "20 Jabotinsky St, behind City Hall",
+          "city": "Kiryat Malachi",
+          "hours": "Sun–Thu 18:00–06:00 · Fri 12:00–06:00 · Sat 09:00–06:00",
+          "url": "https://www.terem.com/clinic/kiryat-malachi/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a7%d7%a8%d7%99%d7%99%d7%aa-%d7%9e%d7%9c%d7%90%d7%9b%d7%99/"
+        },
+        {
+          "name": "Sderot",
+          "he": "טרם שדרות",
+          "address": "2 HaPlada St",
+          "city": "Sderot",
+          "hours": "Sun–Thu 16:00–07:00 · Fri–Sat 09:00–07:00",
+          "url": "https://www.terem.com/clinic/sderot/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a9%d7%93%d7%a8%d7%95%d7%aa/"
+        },
+        {
+          "name": "Be'er Sheva",
+          "he": "טרם באר שבע",
+          "address": "1 Nordau St",
+          "city": "Be'er Sheva",
+          "hours": "Daily 09:00–00:30",
+          "url": "https://www.terem.com/clinic/beer-sheva/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%91%d7%90%d7%a8-%d7%a9%d7%91%d7%a2/"
+        },
+        {
+          "name": "Mitzpe Ramon",
+          "he": "טרם מצפה רמון",
+          "address": "1 Nahal Hava St",
+          "city": "Mitzpe Ramon",
+          "hours": "Clinic Fri 19:00–22:00, Sat 10:00–17:00 · on-call doctor nights",
+          "url": "https://www.terem.com/clinic/mitzpe-ramon/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9e%d7%a6%d7%a4%d7%94-%d7%a8%d7%9e%d7%95%d7%9f/"
+        },
+        {
+          "name": "Eilat",
+          "he": "טרם אילת",
+          "address": "2 Kaman St, Magic Palace Promenade",
+          "city": "Eilat",
+          "hours": "Afternoons/evenings to 23:00 · Sat 09:00–23:00",
+          "url": "https://www.terem.com/clinic/eilat/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9e%d7%95%d7%a7%d7%93-%d7%98%d7%a8%d7%9d-%d7%90%d7%99%d7%9c%d7%aa/"
+        }
+      ]
+    },
+    {
+      "title": "North",
+      "branches": [
+        {
+          "name": "Karmiel",
+          "he": "טרם כרמיאל",
+          "address": "15 HaYotzrim St",
+          "city": "Karmiel",
+          "hours": "Daily 08:00–01:00",
+          "url": "https://www.terem.com/clinic/karmiel/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%9b%d7%a8%d7%9e%d7%99%d7%90%d7%9c/"
+        },
+        {
+          "name": "Nahariya",
+          "he": "טרם נהריה",
+          "address": "21 Gedud St",
+          "city": "Nahariya",
+          "hours": "Sun–Thu 16:00–00:00 · Fri 09:00–00:00 · Sat 08:00–00:00",
+          "url": "https://www.terem.com/clinic/nahariya/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a0%d7%94%d7%a8%d7%99%d7%94/"
+        },
+        {
+          "name": "Kiryat Bialik",
+          "he": "טרם קריית ביאליק",
+          "address": "22 Derech Akko, Leumit building, 2nd floor",
+          "city": "Kiryat Bialik",
+          "hours": "Sun–Thu 19:30–23:30 · Fri 15:00–21:00 · Sat 17:00–23:00",
+          "url": "https://www.terem.com/clinic/1436/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a7%d7%a8%d7%99%d7%99%d7%aa-%d7%91%d7%99%d7%90%d7%9c%d7%99%d7%a7/"
+        },
+        {
+          "name": "Katzrin",
+          "he": "טרם קצרין",
+          "address": "4 Si'on St",
+          "city": "Katzrin",
+          "hours": "Sun–Thu 19:00–00:00 · Fri 14:00–00:00 · Sat 09:00–00:00",
+          "url": "https://www.terem.com/clinic/katzrin/?lang=en",
+          "url_he": "https://www.terem.com/clinic/%d7%a7%d7%a6%d7%a8%d7%99%d7%9f/"
+        }
+      ]
+    }
+  ]
+}
