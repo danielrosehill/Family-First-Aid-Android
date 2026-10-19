@@ -10,7 +10,7 @@ lets you walk through each protocol as a decision flowchart, and keeps a
 > **In an emergency, call 101.**
 
 <p>
-<img src="docs/screenshots/02-home.png" width="160"> <img src="docs/screenshots/03-triage.png" width="160"> <img src="docs/screenshots/05-cpr.png" width="160"> <img src="docs/screenshots/06-walkthrough.png" width="160"> <img src="docs/screenshots/09-completed.png" width="160"> <img src="docs/screenshots/11-review.png" width="160"> <img src="docs/screenshots/12-numbers.png" width="160"> 
+<img src="docs/screenshots/02-home.png" width="160"> <img src="docs/screenshots/03-triage.png" width="160"> <img src="docs/screenshots/08-topic.png" width="160"> <img src="docs/screenshots/14-flowcharts.png" width="160"> <img src="docs/screenshots/16-flowchart.png" width="160"> <img src="docs/screenshots/06-walkthrough.png" width="160"> <img src="docs/screenshots/17-resources.png" width="160"> <img src="docs/screenshots/18-terem.png" width="160"> <img src="docs/screenshots/19-glossary.png" width="160"> <img src="docs/screenshots/11-review.png" width="160">
 </p>
 
 <sub>Screenshots are from the CI emulator smoke test (<code>scripts/smoke-test.sh</code>), which taps through these screens on every push.</sub>
@@ -27,9 +27,10 @@ one. Your review progress is kept.
 | Strand | What it does |
 |---|---|
 | **Material** | 28 topics × adult and child = 56 protocols, grouped by type of emergency (breathing and circulation, bleeding and trauma, medical, environment, bites and stings). Each has a summary, when to use it, steps, "do not" list, equipment and source. |
-| **Decision flows** | *What's happening?* is a standalone triage tree that routes to a protocol. Every protocol also has a **step-by-step** mode: one step on screen at a time, big YES/NO buttons at each decision point, and jumps to the step that the answer points to. |
+| **Decision flows** | *What's happening?* is a standalone triage tree that routes to a protocol. Every protocol also has a **step-by-step** mode: one step on screen at a time, big YES/NO buttons at each decision point, and jumps to the step that the answer points to. The **Flowcharts** tab shows every protocol as a chart of its decision forks (YES / NO outcomes, tap "→ Step N" to jump), plus a full map of the *What's happening?* tree, without going through a topic page. |
 | **Spaced review** | Mark a topic completed for adult and/or child, then *mark as reviewed* when due. Intervals: 1 week → 1 month → 3 months → 6 months → yearly. The app shows a progress bar, a due list and the review dates, and has a reset. Progress is stored on the device only. |
-| **Crisis UI** | A "CALL 101" bar and a colour-coded section bar (Home · Help now · Topics · Review · Numbers) are pinned to every screen, with breadcrumbs under the title to jump back up the path. Home has one-tap tiles for the most urgent protocols, and the adult / child choice is made once and carried everywhere. Each topic group has its own colour and every topic an icon. The launcher icon is a red Star of David. A numbers page has click-to-dial for MDA, Hatzalah, police, fire, Home Front Command, the poison center, Terem (national line and Jerusalem branches) and the Maccabi Moked. |
+| **Crisis UI** | A "CALL 101" bar and a colour-coded section bar (Home · Help now · Flowcharts · Topics · Resources) are pinned to every screen, with breadcrumbs under the title to jump back up the path. Home has one-tap tiles for the most urgent protocols, and the adult / child choice is made once and carried everywhere. Each topic group has its own colour and every topic an icon. The launcher icon is a red Star of David. Long pages have a pinned "Jump to" bar. On topic pages, equipment, source and review progress fold into accordions so the steps stay in view. |
+| **Resources** | Click-to-dial numbers (MDA, Hatzalah, police, fire, Home Front Command, the poison center, the Terem national line, the Maccabi Moked); all 27 **Terem** branches with address, hours, a link to the branch page on terem.com and a map search; a **Hebrew glossary** of 77 emergency words and phrases with transliteration and tap-to-play audio; the review schedule; about. |
 
 The app has no internet permission, so everything works offline.
 
@@ -41,6 +42,8 @@ The idea is meant to be forked. All content is data in `app/src/main/assets/`:
 - `topics.json`: topic grouping, display names, group `color`, per-topic `icons` (emoji) and the `quick` list of home-screen tiles.
 - `triage.json`: the *What's happening?* tree (nodes → answers → `goto` / `category` / `call`). An answer that `goto`s another node can carry an `icon`; answers that open a topic use the topic's icon.
 - `contacts.json`: click-to-dial numbers.
+- `terem.json`: Terem branches (checked against terem.com; branch pages publish no phone, so only the national line is dialable).
+- `glossary.json` + `glossary/<id>.mp3`: the Hebrew glossary. Regenerate the audio with `uvx --from edge-tts python scripts/gen-glossary-audio.py` (Microsoft neural TTS, voice `he-IL-HilaNeural`; an optional `tts` field holds a niqqud spelling where plain Hebrew is ambiguous).
 
 To make your own version, replace those files, change `"101"` in `EmergencyBar` (`MainActivity.kt`) and `DISCLAIMER` (`Screens.kt`), replace the star in `res/drawable/ic_launcher_foreground.xml`, change `applicationId`, and push.
 
@@ -76,6 +79,7 @@ print/                   Printable Typst/PDF flowcharts
 - **Review reminders**: a local notification when a review falls due.
 - **Phase 2**: sign in with Google and sync review history to Drive, so two parents share one schedule. `ReviewStore.exportJson()` is the payload.
 - Hebrew UI.
+- `print/` flowcharts are separate Typst files, not generated from the JSON; the in-app Flowcharts tab is.
 
 ## History
 
